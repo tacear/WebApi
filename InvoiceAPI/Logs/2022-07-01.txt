@@ -1,0 +1,144 @@
+﻿2022-07-01 17:41:39,523 [24] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-07-01 17:41:40,730 [24] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-07-01 17:41:40,870 [24] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-07-01 17:41:41,985 [24] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-07-01 17:41:42,008 [24] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 09315200, Número de serie del certificado: 30001000000400002434, rfc: EKU9003173C9, Serie: A 
+2022-07-01 17:41:42,009 [24] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-07-01 17:41:42,084 [24] ERROR InvoiceAPI.LoggerManager - App  Error - Ocurrió un error en la búsqueda del comprobante en la base de datos. 
+2022-07-01 17:41:42,085 [24] ERROR InvoiceAPI.LoggerManager - App  Error - Mensaje: Object reference not set to an instance of an object. 
+2022-07-01 17:41:42,085 [24] ERROR InvoiceAPI.LoggerManager - App  Error - StackTrace:    at InvoiceAPI.Data.BrokerDAL.ExisteComprobanteOracle(ComprobantesDTO comprobante) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Data\BrokerDAL.cs:line 453
+   at InvoiceAPI.Controllers.InvoicesController.SearchData(String xml) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 863 
+2022-07-01 17:42:43,536 [26] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-07-01 17:43:07,779 [16] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-07-01 17:43:41,980 [16] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-07-01 17:43:59,524 [16] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-07-01 17:44:06,569 [16] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-07-01 17:44:19,753 [16] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 09315200, Número de serie del certificado: 30001000000400002434, rfc: EKU9003173C9, Serie: A 
+2022-07-01 17:44:21,300 [16] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-07-01 17:46:18,878 [16] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-07-01 17:46:21,357 [16] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-07-01 17:46:21,499 [16] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-07-01 17:46:22,700 [16] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-07-01 17:46:22,728 [16] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 09315200, Número de serie del certificado: 30001000000400002434, rfc: EKU9003173C9, Serie: A 
+2022-07-01 17:46:22,732 [16] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-07-01 17:46:22,804 [16] ERROR InvoiceAPI.LoggerManager - App  Error - Ocurrió un error en la búsqueda del comprobante en la base de datos. 
+2022-07-01 17:46:22,805 [16] ERROR InvoiceAPI.LoggerManager - App  Error - Mensaje: Object reference not set to an instance of an object. 
+2022-07-01 17:46:22,806 [16] ERROR InvoiceAPI.LoggerManager - App  Error - StackTrace:    at InvoiceAPI.Data.BrokerDAL.ExisteComprobanteOracle(ComprobantesDTO comprobante) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Data\BrokerDAL.cs:line 459
+   at InvoiceAPI.Controllers.InvoicesController.SearchData(String xml) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 863 
+2022-07-01 17:47:28,312 [10] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-07-01 17:47:30,995 [10] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-07-01 17:47:31,131 [10] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-07-01 17:47:32,647 [10] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-07-01 17:47:32,670 [10] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 09315200, Número de serie del certificado: 30001000000400002434, rfc: EKU9003173C9, Serie: A 
+2022-07-01 17:47:32,672 [10] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-07-01 17:49:14,003 [10] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-07-01 17:49:15,339 [10] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-07-01 17:49:15,472 [10] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-07-01 17:49:16,875 [10] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-07-01 17:49:16,900 [10] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 09315200, Número de serie del certificado: 30001000000400002434, rfc: EKU9003173C9, Serie: A 
+2022-07-01 17:49:16,901 [10] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-07-01 17:49:40,170 [10] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Diverza.  
+2022-07-01 17:49:40,177 [10] INFO InvoiceAPI.LoggerManager - App  Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"123414","token": "$2b$12$JgIf1J7db4e6f06VnNPsUOaQD3SpwUnzPqXDkuirQklcc8gMCMIDS" },"issuer": {"rfc": "EKU9003173C9"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "EKU9003173C9A09315200","certificate-number": "30001000000400002434","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0_complemento+xml","content": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48Y2ZkaTpDb21wcm9iYW50ZSB4bWxuczpjZmRpPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvY2ZkLzQiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhzaTpzY2hlbWFMb2NhdGlvbj0iaHR0cDovL3d3dy5zYXQuZ29iLm14L2NmZC80IGh0dHA6Ly93d3cuc2F0LmdvYi5teC9zaXRpb19pbnRlcm5ldC9jZmQvNC9jZmR2NDAueHNkIiBWZXJzaW9uPSI0LjAiIFNlcmllPSJBIiBGb2xpbz0iMDkzMTUyMDAiIEZlY2hhPSIyMDIyLTA2LTMwVDEyOjI2OjA4IiBGb3JtYVBhZ289IjAzIiBOb0NlcnRpZmljYWRvPSIzMDAwMTAwMDAwMDQwMDAwMjQzNCIgU3ViVG90YWw9IjQxMTcxLjA4IiBNb25lZGE9Ik1YTiIgVG90YWw9IjQ3NzU4LjQ1IiBUaXBvRGVDb21wcm9iYW50ZT0iSSIgRXhwb3J0YWNpb249IjAxIiBNZXRvZG9QYWdvPSJQVUUiIEx1Z2FyRXhwZWRpY2lvbj0iMDY1MDAiIENlcnRpZmljYWRvPSJNSUlGdXpDQ0E2T2dBd0lCQWdJVU16QXdNREV3TURBd01EQTBNREF3TURJME16UXdEUVlKS29aSWh2Y05BUUVMQlFBd2dnRXJNUTh3RFFZRFZRUUREQVpCUXlCVlFWUXhMakFzQmdOVkJBb01KVk5GVWxaSlEwbFBJRVJGSUVGRVRVbE9TVk5VVWtGRFNVOU9JRlJTU1VKVlZFRlNTVUV4R2pBWUJnTlZCQXNNRVZOQlZDMUpSVk1nUVhWMGFHOXlhWFI1TVNnd0pnWUpLb1pJaHZjTkFRa0JGaGx2YzJOaGNpNXRZWEowYVc1bGVrQnpZWFF1WjI5aUxtMTRNUjB3R3dZRFZRUUpEQlF6Y21FZ1kyVnljbUZrWVNCa1pTQmpZV1JwZWpFT01Bd0dBMVVFRVF3Rk1EWXpOekF4Q3pBSkJnTlZCQVlUQWsxWU1Sa3dGd1lEVlFRSURCQkRTVlZFUVVRZ1JFVWdUVVZZU1VOUE1SRXdEd1lEVlFRSERBaERUMWxQUVVOQlRqRVJNQThHQTFVRUxSTUlNaTQxTGpRdU5EVXhKVEFqQmdrcWhraUc5dzBCQ1FJVEZuSmxjM0J2Ym5OaFlteGxPaUJCUTBSTlFTMVRRVlF3SGhjTk1Ua3dOakUzTVRrME5ERTBXaGNOTWpNd05qRTNNVGswTkRFMFdqQ0I0akVuTUNVR0ExVUVBeE1lUlZORFZVVk1RU0JMUlUxUVJWSWdWVkpIUVZSRklGTkJJRVJGSUVOV01TY3dKUVlEVlFRcEV4NUZVME5WUlV4QklFdEZUVkJGVWlCVlVrZEJWRVVnVTBFZ1JFVWdRMVl4SnpBbEJnTlZCQW9USGtWVFExVkZURUVnUzBWTlVFVlNJRlZTUjBGVVJTQlRRU0JFUlNCRFZqRWxNQ01HQTFVRUxSTWNSVXRWT1RBd016RTNNME01SUM4Z1dFbFJRamc1TVRFeE5sRkZOREVlTUJ3R0ExVUVCUk1WSUM4Z1dFbFJRamc1TVRFeE5rMUhVazFhVWpBMU1SNHdIQVlEVlFRTEV4VkZjMk4xWld4aElFdGxiWEJsY2lCVmNtZGhkR1V3Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQ04wcGVLcGdmT0w3NWlZUnYxZnFxK29WWXNMUFZVUi9HaWJZbUdLYzlJbkhGeTVsWUY2T1RZam5JSXZta09kUm9iYkdsQ1V4T1JYL3RMc2w4WWE5Z202WW83aEhuT0RSQklEdXAzR0lTRnpCLzk2UjlLL016WVFPY3NjTUlvQkRBUmF5Y25Mdnk3RmxNdk83L3JsVm5zU0FSeFpSTzhLejhaa2tzajJ6cGVZcGpaSXlhLzM2OStvR3FRazFjVFJrSG81OUp2SjRUZmJrLzNpSXlmNEgvSW5pOW5CZTljWVdvME1uS29iN0REdC92c2RpNXRBOG1NdEE5NTNMYXBOeUNaSURDUlFRbFVHTmdEcVk5LzhGNW1VdlZna2NjenNJZ0dkdmY5dk1RUFNmM2pqQ2lLajdqNnVjeGwxK0Z3SldtYnZnTm1pYVVSLzBxNG0ycm03OGxGQWdNQkFBR2pIVEFiTUF3R0ExVWRFd0VCL3dRQ01BQXdDd1lEVlIwUEJBUURBZ2JBTUEwR0NTcUdTSWIzRFFFQkN3VUFBNElDQVFCY3BqMVRqVDRqaWluSXVqSWRBbEZ6RTZrUndZSkNuREcwOHpTcDRrU25TaGp4QURHRVhIMmNoZWhLTVYwRlk3YzRuakE1ZURHZEEvRzJPQ1RQdkY1cnBlQ1pQNUR3NTA0UlprWURsMnN1Unord2Exc05CVnBibkJKRUswZlFjTjNJZnRCd3NnTkZkRmhVdEN5dzNsdXMxU1NKYlB4akxIUzZGY1paNTFZU2VJZmNOWE9BdVRxZGltdXNhWHExNUdyU3JDT2tNNm4yamZqMnNNSllNMkhYYVhKNnJHVEVnWW1oWWR3eFd0aWw2UmZaQitmR1EvSDlJOVdMbmw0S1RaVVM2QzkrTkxIaDRGUERoU2sxOWZwUzJTLzU2YXFnRm9HQWtYQVl0OUZ5NUVDYVBjVUxJZkoxREVic1hLeVJkQ3YzSlk4OSswTU5rT2RhRG5zZW1TMm81R2wwOHpJNGlZdHQzTDQwZ0FaNjBOUGgzMWtWTG5ZTnNtdmZOeFl5S3ArQWVKdERIeVc5dzdmdE0wSG9pK0J1Um1jQVFTS0ZWM3BrOGo1MWxhK2pyUkJyQVV2OGJsYlJjUTVCaVpVd0p6SEZFS0l3VHNSR29SeUV4OTZzTm5CMDNuNkdUd2pJR3o5MlNtTGRObDk1cjlya3ZwKzJtNFM2cTFsUHVYYUZnN0RHQnJYV0M4aXlxZVdFMmlvYmR3SUl1WFBUTVZxUWIxMm0xZEFrSlZSTzVOZEhuUC9NcHFPdk9nTHFvWkJOSEd5Qmc0R3FtNHNDSkhDeEExYzhFbGZhMlJRVENrMHRBemxsTDR2T25JMUdIa0dKbjY1eG9rR3NhVTRCNEQzNnhoN2VXcmZqNC9wZ1dIbXRvREFZYTh3elN3bzJHVkNaT3MrbXRFZ09RQjkxL2c9PSIgU2VsbG89ImdIV3dnMkNNOVlkQUxrS1YzRmtLQ3hnVjhhaVVHRXpNUVl3TzBhaVpJa1dCZk1WUitWZVhDQ1VpZ1VFL0diWGsrVzg0WUJVUmloVFY1TDI0VDRMc3RLV3BsUm1xeEZzcGZpNC9YWlF0UnE4L0tiSkZxZUZHVTBvV0ljNWUxNHA4WGZZUnVTVGRZajg0U2lxS2FGZkYyc1JpTHFJVUxLblJRWkY1SWhybWkxU0RNcjVaTjdQa2JHR09mVyt2dmMwaUhKTlhoUXFUQXk4Zm9EMWw4Q1BYcjNwVXZiN0JodHFXSzJ3bVpuWXFKM2hvU3VQUEVsWmhkd0diWGRLZDZ5Q1Q4L0xCNXliL21TaUl1ZFdkdFNORGdLTVdUdW5XY2FJNzdZQjFOVnRldWptNlFNRjVGZ29HL2pxZ2dKTGFnajVJNlI0SHhUcEt5OUVTa200Z09jYWdHZz09Ij48Y2ZkaTpFbWlzb3IgUmZjPSJFS1U5MDAzMTczQzkiIE5vbWJyZT0iRVNDVUVMQSBLRU1QRVIgVVJHQVRFIFNBIERFIENWIiBSZWdpbWVuRmlzY2FsPSI2MDEiIC8+PGNmZGk6UmVjZXB0b3IgUmZjPSJQV0UxMDExMjVLSjYiIE5vbWJyZT0iUEFOIFdFQkVSJ1MiIERvbWljaWxpb0Zpc2NhbFJlY2VwdG9yPSIyMjQzMCIgUmVnaW1lbkZpc2NhbFJlY2VwdG9yPSI2MDEiIFVzb0NGREk9IkcwMyIgLz48Y2ZkaTpDb25jZXB0b3M+PGNmZGk6Q29uY2VwdG8gQ2xhdmVQcm9kU2Vydj0iODAxMjE2MDQiIENhbnRpZGFkPSIxLjAwIiBDbGF2ZVVuaWRhZD0iRTQ4IiBVbmlkYWQ9IkFDVCIgRGVzY3JpcGNpb249IkRlcmVjaG8gZGUgcGF0ZW50ZXMsIG1hcmNhcyBvIGRlcmVjaG9zIGRlIGF1dG9yIiBWYWxvclVuaXRhcmlvPSI0MTE3MS4wOCIgSW1wb3J0ZT0iNDExNzEuMDgiIE9iamV0b0ltcD0iMDIiPjxjZmRpOkltcHVlc3Rvcz48Y2ZkaTpUcmFzbGFkb3M+PGNmZGk6VHJhc2xhZG8gQmFzZT0iNDExNzEuMDgiIEltcHVlc3RvPSIwMDIiIFRpcG9GYWN0b3I9IlRhc2EiIFRhc2FPQ3VvdGE9IjAuMTYwMDAwIiBJbXBvcnRlPSI2NTg3LjM3IiAvPjwvY2ZkaTpUcmFzbGFkb3M+PC9jZmRpOkltcHVlc3Rvcz48L2NmZGk6Q29uY2VwdG8+PC9jZmRpOkNvbmNlcHRvcz48Y2ZkaTpJbXB1ZXN0b3MgVG90YWxJbXB1ZXN0b3NUcmFzbGFkYWRvcz0iNjU4Ny4zNyI+PGNmZGk6VHJhc2xhZG9zPjxjZmRpOlRyYXNsYWRvIEJhc2U9IjQxMTcxLjA4IiBJbXB1ZXN0bz0iMDAyIiBUaXBvRmFjdG9yPSJUYXNhIiBUYXNhT0N1b3RhPSIwLjE2MDAwMCIgSW1wb3J0ZT0iNjU4Ny4zNyIgLz48L2NmZGk6VHJhc2xhZG9zPjwvY2ZkaTpJbXB1ZXN0b3M+PC9jZmRpOkNvbXByb2JhbnRlPg=="}} 
+2022-07-01 17:49:40,183 [10] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar con Diverza.  
+2022-07-01 17:49:40,184 [10] INFO InvoiceAPI.LoggerManager - App  Info - Request enviado: System.Net.Http.StringContent 
+2022-07-01 17:49:40,490 [10] INFO InvoiceAPI.LoggerManager - App  Info - Response recibido: StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Fri, 01 Jul 2022 22:49:44 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: c4jrhovvat5fs1ugfj2fe6ln6vekktpu
+  Connection: close
+  Content-Length: 605
+  Content-Type: application/json; charset=utf-8
+} 
+2022-07-01 17:49:40,541 [10] INFO InvoiceAPI.LoggerManager - App  Info - Error de respuesta del timbrado Diverza: ["CFDI xml not valid, contains SAT Anexo 20 Mandatory unscaped characters"] 
+2022-07-01 17:49:40,541 [10] INFO InvoiceAPI.LoggerManager - App  Info - Detalle de error de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5419
+} 
+2022-07-01 17:49:40,545 [10] ERROR InvoiceAPI.LoggerManager - App  Error - No se pudo realizar el timbrado con Diverza.  
+2022-07-01 17:49:40,546 [10] ERROR InvoiceAPI.LoggerManager - App  Error - código: ***DIVERZA CODE: 400 
+2022-07-01 17:49:40,546 [10] ERROR InvoiceAPI.LoggerManager - App  Error - detalle: ***DIVERZA DETAILS***: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5419
+} 
+2022-07-01 17:49:40,546 [10] ERROR InvoiceAPI.LoggerManager - App  Error - message: ***DIVERZA MESSAGE***: ["CFDI xml not valid, contains SAT Anexo 20 Mandatory unscaped characters"] 
+2022-07-01 17:49:40,547 [10] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Seguridata.  
+2022-07-01 17:49:40,548 [10] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Seguridata.  
+2022-07-01 17:49:40,575 [10] INFO InvoiceAPI.LoggerManager - App  Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="da8d4ba9-9d64-4946-a20d-d4996b986e91"
+  Content-Length: 4030
+} 
+2022-07-01 17:49:40,580 [10] INFO InvoiceAPI.LoggerManager - App  Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+2022-07-01 17:49:40,581 [10] ERROR InvoiceAPI.LoggerManager - App  Error - No se pudo realizar el timbrado con Seguridata.  
+2022-07-01 17:49:40,581 [10] ERROR InvoiceAPI.LoggerManager - App  Error - código: 404 
+2022-07-01 17:49:40,582 [10] ERROR InvoiceAPI.LoggerManager - App  Error - detalle: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="da8d4ba9-9d64-4946-a20d-d4996b986e91"
+  Content-Length: 4030
+} 
+2022-07-01 17:49:40,582 [10] ERROR InvoiceAPI.LoggerManager - App  Error - message: {"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+2022-07-01 17:52:52,527 [23] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-07-01 17:53:12,703 [23] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-07-01 17:53:12,733 [23] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-07-01 17:53:17,702 [23] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-07-01 17:53:17,706 [23] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 09315200, Número de serie del certificado: 30001000000400002434, rfc: EKU9003173C9, Serie: A 
+2022-07-01 17:53:17,707 [23] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-07-01 17:53:19,786 [23] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Diverza.  
+2022-07-01 17:53:19,787 [23] INFO InvoiceAPI.LoggerManager - App  Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"123414","token": "$2b$12$JgIf1J7db4e6f06VnNPsUOaQD3SpwUnzPqXDkuirQklcc8gMCMIDS" },"issuer": {"rfc": "EKU9003173C9"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "EKU9003173C9A09315200","certificate-number": "30001000000400002434","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0_complemento+xml","content": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48Y2ZkaTpDb21wcm9iYW50ZSB4bWxuczpjZmRpPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvY2ZkLzQiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhzaTpzY2hlbWFMb2NhdGlvbj0iaHR0cDovL3d3dy5zYXQuZ29iLm14L2NmZC80IGh0dHA6Ly93d3cuc2F0LmdvYi5teC9zaXRpb19pbnRlcm5ldC9jZmQvNC9jZmR2NDAueHNkIiBWZXJzaW9uPSI0LjAiIFNlcmllPSJBIiBGb2xpbz0iMDkzMTUyMDAiIEZlY2hhPSIyMDIyLTA2LTMwVDEyOjI2OjA4IiBGb3JtYVBhZ289IjAzIiBOb0NlcnRpZmljYWRvPSIzMDAwMTAwMDAwMDQwMDAwMjQzNCIgU3ViVG90YWw9IjQxMTcxLjA4IiBNb25lZGE9Ik1YTiIgVG90YWw9IjQ3NzU4LjQ1IiBUaXBvRGVDb21wcm9iYW50ZT0iSSIgRXhwb3J0YWNpb249IjAxIiBNZXRvZG9QYWdvPSJQVUUiIEx1Z2FyRXhwZWRpY2lvbj0iMDY1MDAiIENlcnRpZmljYWRvPSJNSUlGdXpDQ0E2T2dBd0lCQWdJVU16QXdNREV3TURBd01EQTBNREF3TURJME16UXdEUVlKS29aSWh2Y05BUUVMQlFBd2dnRXJNUTh3RFFZRFZRUUREQVpCUXlCVlFWUXhMakFzQmdOVkJBb01KVk5GVWxaSlEwbFBJRVJGSUVGRVRVbE9TVk5VVWtGRFNVOU9JRlJTU1VKVlZFRlNTVUV4R2pBWUJnTlZCQXNNRVZOQlZDMUpSVk1nUVhWMGFHOXlhWFI1TVNnd0pnWUpLb1pJaHZjTkFRa0JGaGx2YzJOaGNpNXRZWEowYVc1bGVrQnpZWFF1WjI5aUxtMTRNUjB3R3dZRFZRUUpEQlF6Y21FZ1kyVnljbUZrWVNCa1pTQmpZV1JwZWpFT01Bd0dBMVVFRVF3Rk1EWXpOekF4Q3pBSkJnTlZCQVlUQWsxWU1Sa3dGd1lEVlFRSURCQkRTVlZFUVVRZ1JFVWdUVVZZU1VOUE1SRXdEd1lEVlFRSERBaERUMWxQUVVOQlRqRVJNQThHQTFVRUxSTUlNaTQxTGpRdU5EVXhKVEFqQmdrcWhraUc5dzBCQ1FJVEZuSmxjM0J2Ym5OaFlteGxPaUJCUTBSTlFTMVRRVlF3SGhjTk1Ua3dOakUzTVRrME5ERTBXaGNOTWpNd05qRTNNVGswTkRFMFdqQ0I0akVuTUNVR0ExVUVBeE1lUlZORFZVVk1RU0JMUlUxUVJWSWdWVkpIUVZSRklGTkJJRVJGSUVOV01TY3dKUVlEVlFRcEV4NUZVME5WUlV4QklFdEZUVkJGVWlCVlVrZEJWRVVnVTBFZ1JFVWdRMVl4SnpBbEJnTlZCQW9USGtWVFExVkZURUVnUzBWTlVFVlNJRlZTUjBGVVJTQlRRU0JFUlNCRFZqRWxNQ01HQTFVRUxSTWNSVXRWT1RBd016RTNNME01SUM4Z1dFbFJRamc1TVRFeE5sRkZOREVlTUJ3R0ExVUVCUk1WSUM4Z1dFbFJRamc1TVRFeE5rMUhVazFhVWpBMU1SNHdIQVlEVlFRTEV4VkZjMk4xWld4aElFdGxiWEJsY2lCVmNtZGhkR1V3Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQ04wcGVLcGdmT0w3NWlZUnYxZnFxK29WWXNMUFZVUi9HaWJZbUdLYzlJbkhGeTVsWUY2T1RZam5JSXZta09kUm9iYkdsQ1V4T1JYL3RMc2w4WWE5Z202WW83aEhuT0RSQklEdXAzR0lTRnpCLzk2UjlLL016WVFPY3NjTUlvQkRBUmF5Y25Mdnk3RmxNdk83L3JsVm5zU0FSeFpSTzhLejhaa2tzajJ6cGVZcGpaSXlhLzM2OStvR3FRazFjVFJrSG81OUp2SjRUZmJrLzNpSXlmNEgvSW5pOW5CZTljWVdvME1uS29iN0REdC92c2RpNXRBOG1NdEE5NTNMYXBOeUNaSURDUlFRbFVHTmdEcVk5LzhGNW1VdlZna2NjenNJZ0dkdmY5dk1RUFNmM2pqQ2lLajdqNnVjeGwxK0Z3SldtYnZnTm1pYVVSLzBxNG0ycm03OGxGQWdNQkFBR2pIVEFiTUF3R0ExVWRFd0VCL3dRQ01BQXdDd1lEVlIwUEJBUURBZ2JBTUEwR0NTcUdTSWIzRFFFQkN3VUFBNElDQVFCY3BqMVRqVDRqaWluSXVqSWRBbEZ6RTZrUndZSkNuREcwOHpTcDRrU25TaGp4QURHRVhIMmNoZWhLTVYwRlk3YzRuakE1ZURHZEEvRzJPQ1RQdkY1cnBlQ1pQNUR3NTA0UlprWURsMnN1Unord2Exc05CVnBibkJKRUswZlFjTjNJZnRCd3NnTkZkRmhVdEN5dzNsdXMxU1NKYlB4akxIUzZGY1paNTFZU2VJZmNOWE9BdVRxZGltdXNhWHExNUdyU3JDT2tNNm4yamZqMnNNSllNMkhYYVhKNnJHVEVnWW1oWWR3eFd0aWw2UmZaQitmR1EvSDlJOVdMbmw0S1RaVVM2QzkrTkxIaDRGUERoU2sxOWZwUzJTLzU2YXFnRm9HQWtYQVl0OUZ5NUVDYVBjVUxJZkoxREVic1hLeVJkQ3YzSlk4OSswTU5rT2RhRG5zZW1TMm81R2wwOHpJNGlZdHQzTDQwZ0FaNjBOUGgzMWtWTG5ZTnNtdmZOeFl5S3ArQWVKdERIeVc5dzdmdE0wSG9pK0J1Um1jQVFTS0ZWM3BrOGo1MWxhK2pyUkJyQVV2OGJsYlJjUTVCaVpVd0p6SEZFS0l3VHNSR29SeUV4OTZzTm5CMDNuNkdUd2pJR3o5MlNtTGRObDk1cjlya3ZwKzJtNFM2cTFsUHVYYUZnN0RHQnJYV0M4aXlxZVdFMmlvYmR3SUl1WFBUTVZxUWIxMm0xZEFrSlZSTzVOZEhuUC9NcHFPdk9nTHFvWkJOSEd5Qmc0R3FtNHNDSkhDeEExYzhFbGZhMlJRVENrMHRBemxsTDR2T25JMUdIa0dKbjY1eG9rR3NhVTRCNEQzNnhoN2VXcmZqNC9wZ1dIbXRvREFZYTh3elN3bzJHVkNaT3MrbXRFZ09RQjkxL2c9PSIgU2VsbG89ImdIV3dnMkNNOVlkQUxrS1YzRmtLQ3hnVjhhaVVHRXpNUVl3TzBhaVpJa1dCZk1WUitWZVhDQ1VpZ1VFL0diWGsrVzg0WUJVUmloVFY1TDI0VDRMc3RLV3BsUm1xeEZzcGZpNC9YWlF0UnE4L0tiSkZxZUZHVTBvV0ljNWUxNHA4WGZZUnVTVGRZajg0U2lxS2FGZkYyc1JpTHFJVUxLblJRWkY1SWhybWkxU0RNcjVaTjdQa2JHR09mVyt2dmMwaUhKTlhoUXFUQXk4Zm9EMWw4Q1BYcjNwVXZiN0JodHFXSzJ3bVpuWXFKM2hvU3VQUEVsWmhkd0diWGRLZDZ5Q1Q4L0xCNXliL21TaUl1ZFdkdFNORGdLTVdUdW5XY2FJNzdZQjFOVnRldWptNlFNRjVGZ29HL2pxZ2dKTGFnajVJNlI0SHhUcEt5OUVTa200Z09jYWdHZz09Ij48Y2ZkaTpFbWlzb3IgUmZjPSJFS1U5MDAzMTczQzkiIE5vbWJyZT0iRVNDVUVMQSBLRU1QRVIgVVJHQVRFIFNBIERFIENWIiBSZWdpbWVuRmlzY2FsPSI2MDEiIC8+PGNmZGk6UmVjZXB0b3IgUmZjPSJQV0UxMDExMjVLSjYiIE5vbWJyZT0iUEFOIFdFQkVSJ1MiIERvbWljaWxpb0Zpc2NhbFJlY2VwdG9yPSIyMjQzMCIgUmVnaW1lbkZpc2NhbFJlY2VwdG9yPSI2MDEiIFVzb0NGREk9IkcwMyIgLz48Y2ZkaTpDb25jZXB0b3M+PGNmZGk6Q29uY2VwdG8gQ2xhdmVQcm9kU2Vydj0iODAxMjE2MDQiIENhbnRpZGFkPSIxLjAwIiBDbGF2ZVVuaWRhZD0iRTQ4IiBVbmlkYWQ9IkFDVCIgRGVzY3JpcGNpb249IkRlcmVjaG8gZGUgcGF0ZW50ZXMsIG1hcmNhcyBvIGRlcmVjaG9zIGRlIGF1dG9yIiBWYWxvclVuaXRhcmlvPSI0MTE3MS4wOCIgSW1wb3J0ZT0iNDExNzEuMDgiIE9iamV0b0ltcD0iMDIiPjxjZmRpOkltcHVlc3Rvcz48Y2ZkaTpUcmFzbGFkb3M+PGNmZGk6VHJhc2xhZG8gQmFzZT0iNDExNzEuMDgiIEltcHVlc3RvPSIwMDIiIFRpcG9GYWN0b3I9IlRhc2EiIFRhc2FPQ3VvdGE9IjAuMTYwMDAwIiBJbXBvcnRlPSI2NTg3LjM3IiAvPjwvY2ZkaTpUcmFzbGFkb3M+PC9jZmRpOkltcHVlc3Rvcz48L2NmZGk6Q29uY2VwdG8+PC9jZmRpOkNvbmNlcHRvcz48Y2ZkaTpJbXB1ZXN0b3MgVG90YWxJbXB1ZXN0b3NUcmFzbGFkYWRvcz0iNjU4Ny4zNyI+PGNmZGk6VHJhc2xhZG9zPjxjZmRpOlRyYXNsYWRvIEJhc2U9IjQxMTcxLjA4IiBJbXB1ZXN0bz0iMDAyIiBUaXBvRmFjdG9yPSJUYXNhIiBUYXNhT0N1b3RhPSIwLjE2MDAwMCIgSW1wb3J0ZT0iNjU4Ny4zNyIgLz48L2NmZGk6VHJhc2xhZG9zPjwvY2ZkaTpJbXB1ZXN0b3M+PC9jZmRpOkNvbXByb2JhbnRlPg=="}} 
+2022-07-01 17:53:19,788 [23] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar con Diverza.  
+2022-07-01 17:53:19,788 [23] INFO InvoiceAPI.LoggerManager - App  Info - Request enviado: System.Net.Http.StringContent 
+2022-07-01 17:53:20,001 [23] INFO InvoiceAPI.LoggerManager - App  Info - Response recibido: StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Fri, 01 Jul 2022 22:53:24 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: hi1f5be1kvjgvpjla7k5p24s4p7da0oq
+  Connection: close
+  Content-Length: 605
+  Content-Type: application/json; charset=utf-8
+} 
+2022-07-01 17:53:20,009 [23] INFO InvoiceAPI.LoggerManager - App  Info - Error de respuesta del timbrado Diverza: ["CFDI xml not valid, contains SAT Anexo 20 Mandatory unscaped characters"] 
+2022-07-01 17:53:20,009 [23] INFO InvoiceAPI.LoggerManager - App  Info - Detalle de error de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5419
+} 
+2022-07-01 17:53:20,013 [23] ERROR InvoiceAPI.LoggerManager - App  Error - No se pudo realizar el timbrado con Diverza.  
+2022-07-01 17:53:20,013 [23] ERROR InvoiceAPI.LoggerManager - App  Error - código: ***DIVERZA CODE: 400 
+2022-07-01 17:53:20,013 [23] ERROR InvoiceAPI.LoggerManager - App  Error - detalle: ***DIVERZA DETAILS***: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5419
+} 
+2022-07-01 17:53:20,013 [23] ERROR InvoiceAPI.LoggerManager - App  Error - message: ***DIVERZA MESSAGE***: ["CFDI xml not valid, contains SAT Anexo 20 Mandatory unscaped characters"] 
+2022-07-01 17:53:20,014 [23] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Seguridata.  
+2022-07-01 17:53:20,014 [23] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Seguridata.  
+2022-07-01 17:53:20,036 [23] INFO InvoiceAPI.LoggerManager - App  Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="f1f491c3-7047-452e-9e11-ee0366e9559d"
+  Content-Length: 4030
+} 
+2022-07-01 17:53:20,040 [23] INFO InvoiceAPI.LoggerManager - App  Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+2022-07-01 17:53:20,040 [23] ERROR InvoiceAPI.LoggerManager - App  Error - No se pudo realizar el timbrado con Seguridata.  
+2022-07-01 17:53:20,041 [23] ERROR InvoiceAPI.LoggerManager - App  Error - código: 404 
+2022-07-01 17:53:20,041 [23] ERROR InvoiceAPI.LoggerManager - App  Error - detalle: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="f1f491c3-7047-452e-9e11-ee0366e9559d"
+  Content-Length: 4030
+} 
+2022-07-01 17:53:20,042 [23] ERROR InvoiceAPI.LoggerManager - App  Error - message: {"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+2022-07-01 17:55:55,290 [10] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-07-01 17:57:29,653 [10] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-07-01 17:58:51,470 [10] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-07-01 17:59:02,135 [10] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-07-01 17:59:09,886 [10] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 09315200, Número de serie del certificado: 30001000000400002434, rfc: EKU9003173C9, Serie: A 
+2022-07-01 17:59:11,607 [10] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-07-01 18:00:04,274 [10] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Diverza.  

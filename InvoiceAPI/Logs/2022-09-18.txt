@@ -1,0 +1,87 @@
+﻿2022-09-18 19:21:29,080 [42] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-09-18 19:23:34,484 [42] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-09-18 19:26:18,818 [42] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-09-18 19:26:20,068 [42] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-09-18 19:26:20,105 [42] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 15, Número de serie del certificado: 30001000000400002436, rfc: EKU9003173C9, Serie: PCGEEEEA 
+2022-09-18 19:26:20,105 [42] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-09-18 19:26:36,650 [42] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Luna.  
+2022-09-18 19:26:37,972 [42] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Luna.  
+2022-09-18 19:29:13,605 [42] INFO InvoiceAPI.LoggerManager - App  Info - Inserta la información en la base de datos.  
+2022-09-18 19:29:13,987 [42] INFO InvoiceAPI.LoggerManager - App  Info - No hubo error en el timbrado y se inserta la información en la base de datos.  
+2022-09-18 19:29:13,989 [42] INFO InvoiceAPI.LoggerManager - App  Info - Respuesta recibida. Request:  
+2022-09-18 19:29:15,519 [42] INFO InvoiceAPI.LoggerManager - App  Info - Se realizó el timbrado con LUNA.  
+2022-09-18 19:29:15,521 [42] INFO InvoiceAPI.LoggerManager - App  Info - código:  === Código Luna === success 
+2022-09-18 19:29:15,522 [42] INFO InvoiceAPI.LoggerManager - App  Info - detalle:  === Detalles Luna ===  
+2022-09-18 19:29:15,523 [42] INFO InvoiceAPI.LoggerManager - App  Info - message: <?xml version="1.0" encoding="utf-8"?><cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="PCGEEEEA" Folio="15" Fecha="2022-09-18T10:29:55" FormaPago="99" NoCertificado="30001000000400002434" CondicionesDePago="PAGO 30 DIAS DESPUES DE LA FECHA DE FACTURACION." SubTotal="267720.00" Moneda="MXN" TipoCambio="1" Total="267720.00" TipoDeComprobante="I" Exportacion="01" MetodoPago="PPD" LugarExpedicion="45116" Certificado="MIIFuzCCA6OgAwIBAgIUMzAwMDEwMDAwMDA0MDAwMDI0MzQwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWRpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMTkwNjE3MTk0NDE0WhcNMjMwNjE3MTk0NDE0WjCB4jEnMCUGA1UEAxMeRVNDVUVMQSBLRU1QRVIgVVJHQVRFIFNBIERFIENWMScwJQYDVQQpEx5FU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YxJzAlBgNVBAoTHkVTQ1VFTEEgS0VNUEVSIFVSR0FURSBTQSBERSBDVjElMCMGA1UELRMcRUtVOTAwMzE3M0M5IC8gWElRQjg5MTExNlFFNDEeMBwGA1UEBRMVIC8gWElRQjg5MTExNk1HUk1aUjA1MR4wHAYDVQQLExVFc2N1ZWxhIEtlbXBlciBVcmdhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCN0peKpgfOL75iYRv1fqq+oVYsLPVUR/GibYmGKc9InHFy5lYF6OTYjnIIvmkOdRobbGlCUxORX/tLsl8Ya9gm6Yo7hHnODRBIDup3GISFzB/96R9K/MzYQOcscMIoBDARaycnLvy7FlMvO7/rlVnsSARxZRO8Kz8Zkksj2zpeYpjZIya/369+oGqQk1cTRkHo59JvJ4Tfbk/3iIyf4H/Ini9nBe9cYWo0MnKob7DDt/vsdi5tA8mMtA953LapNyCZIDCRQQlUGNgDqY9/8F5mUvVgkcczsIgGdvf9vMQPSf3jjCiKj7j6ucxl1+FwJWmbvgNmiaUR/0q4m2rm78lFAgMBAAGjHTAbMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBCwUAA4ICAQBcpj1TjT4jiinIujIdAlFzE6kRwYJCnDG08zSp4kSnShjxADGEXH2chehKMV0FY7c4njA5eDGdA/G2OCTPvF5rpeCZP5Dw504RZkYDl2suRz+wa1sNBVpbnBJEK0fQcN3IftBwsgNFdFhUtCyw3lus1SSJbPxjLHS6FcZZ51YSeIfcNXOAuTqdimusaXq15GrSrCOkM6n2jfj2sMJYM2HXaXJ6rGTEgYmhYdwxWtil6RfZB+fGQ/H9I9WLnl4KTZUS6C9+NLHh4FPDhSk19fpS2S/56aqgFoGAkXAYt9Fy5ECaPcULIfJ1DEbsXKyRdCv3JY89+0MNkOdaDnsemS2o5Gl08zI4iYtt3L40gAZ60NPh31kVLnYNsmvfNxYyKp+AeJtDHyW9w7ftM0Hoi+BuRmcAQSKFV3pk8j51la+jrRBrAUv8blbRcQ5BiZUwJzHFEKIwTsRGoRyEx96sNnB03n6GTwjIGz92SmLdNl95r9rkvp+2m4S6q1lPuXaFg7DGBrXWC8iyqeWE2iobdwIIuXPTMVqQb12m1dAkJVRO5NdHnP/MpqOvOgLqoZBNHGyBg4Gqm4sCJHCxA1c8Elfa2RQTCk0tAzllL4vOnI1GHkGJn65xokGsaU4B4D36xh7eWrfj4/pgWHmtoDAYa8wzSwo2GVCZOs+mtEgOQB91/g==" Sello="K26xklRLXv2NDdjDZxqS/DcGMGz8O0XvCkW8kbUxZksqYJ5U2SblP95BkgkNJ164tSesxufTu5DD5VMzMlNTRxC3x73lj7z6Szy4mXLsBrmxTAJ7jQ5z0/Xx2BAX3uI3W3LwSR47vuxg+9THAtxON7iAVc0GItSmu8TZ13C/W2ud0khaiw7IMsO/+99GMWcx4vz3OKv1ztFlT7X6FkU7XoVukNERdXfVaeTs+2PR3aWgr5++pOwtd5GSkur+m8RpgUTaKLTWJBI/miQ0XJVBriBWcU9kQB19KKIwkpHND7ecXpMiMNZhhf7jWV8JqNxHehbf5ovDSqtES3IEkKJfJw=="><cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE" RegimenFiscal="601" /><cfdi:Receptor Rfc="XAXX010101000" Nombre="MALTA TEXO DE MEXICO, SA DE CV" DomicilioFiscalReceptor="45116" RegimenFiscalReceptor="616" UsoCFDI="S01" /><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="10121501" NoIdentificacion="301701" Cantidad="23.890" ClaveUnidad="TNE" Unidad="Tonelada Metrica" Descripcion="SALVADO DE TRIGO        De Referencia: MLA422406  Fecha Emb.: 2022-04-29" ValorUnitario="6000.00" Importe="143340.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="143340.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00" /></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto><cfdi:Concepto ClaveProdServ="10121501" NoIdentificacion="301701" Cantidad="20.730" ClaveUnidad="TNE" Unidad="Tonelada Metrica" Descripcion="SALVADO DE TRIGO        De Referencia: MSJT438298  Fecha Emb.: 2022-05-01" ValorUnitario="6000.00" Importe="124380.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="124380.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00" /></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="0.00"><cfdi:Traslados><cfdi:Traslado Base="267720.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00" /></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento><tfd:TimbreFiscalDigital xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="33edcaef-8ceb-4cdf-8f7b-fa7107c7ba3a" FechaTimbrado="2022-09-18T19:29:17" RfcProvCertif="SPR190613I52" SelloCFD="K26xklRLXv2NDdjDZxqS/DcGMGz8O0XvCkW8kbUxZksqYJ5U2SblP95BkgkNJ164tSesxufTu5DD5VMzMlNTRxC3x73lj7z6Szy4mXLsBrmxTAJ7jQ5z0/Xx2BAX3uI3W3LwSR47vuxg+9THAtxON7iAVc0GItSmu8TZ13C/W2ud0khaiw7IMsO/+99GMWcx4vz3OKv1ztFlT7X6FkU7XoVukNERdXfVaeTs+2PR3aWgr5++pOwtd5GSkur+m8RpgUTaKLTWJBI/miQ0XJVBriBWcU9kQB19KKIwkpHND7ecXpMiMNZhhf7jWV8JqNxHehbf5ovDSqtES3IEkKJfJw==" NoCertificadoSAT="30001000000400002495" SelloSAT="PT/TnSh95EZ8kWlXG9DhsCRjIaqCS1c2YedsGkZPSoMiUZgySLWAuoaWq1Qb0NXw71/SgAu9rQ080cGBDkt03M1kp3178gO/GbvNniHqJjPc/J8Xr3VYDwMGRkRMxT66KYXfqVW2xQ45OpmgC0U8iX+9hvOOY50J/f+2jOg3HVCa8yux8CJ5ecLXj+mRYiOce61HeRfuXTBE9DbwiMT/TeDCt8/7kALj6oTFaJfr7DhksPr8cmGt1l5cV8scj5OAfOwQFQotxfHx2uqK32UHyz2ZqnX205wQESzCE7roptn/Wo+X6lyEdcmlOzFd8Z2fsxdAo5iCiJ2URKihdLPjBw==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></cfdi:Complemento></cfdi:Comprobante> 
+2022-09-18 19:29:55,845 [57] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-09-18 19:30:02,742 [57] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-09-18 19:30:49,552 [57] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-09-18 19:34:15,164 [57] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-09-18 19:34:43,451 [57] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 15, Número de serie del certificado: 30001000000400002436, rfc: EKU9003173C9, Serie: PCGEEEEA 
+2022-09-18 19:34:48,961 [57] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-09-18 19:53:04,845 [20] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-09-18 19:53:24,958 [20] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-09-18 19:55:08,476 [20] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-09-18 19:56:54,179 [20] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-09-18 19:57:00,300 [20] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 15, Número de serie del certificado: 30001000000400002436, rfc: EKU9003173C9, Serie: PCGEEEEA 
+2022-09-18 19:57:01,640 [20] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-09-18 19:58:05,948 [9] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-09-18 19:58:21,085 [9] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-09-18 19:59:01,738 [9] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-09-18 19:59:23,999 [9] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-09-18 19:59:31,088 [9] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 15, Número de serie del certificado: 30001000000400002436, rfc: EKU9003173C9, Serie: PCGEEEEA 
+2022-09-18 19:59:40,737 [9] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-09-18 20:35:32,630 [10] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-09-18 20:35:41,951 [10] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-09-18 20:36:03,727 [10] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-09-18 20:37:49,925 [10] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-09-18 20:38:56,337 [10] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 15, Número de serie del certificado: 30001000000400002436, rfc: EKU9003173C9, Serie: PCGEEEEA 
+2022-09-18 20:39:03,002 [10] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-09-18 20:41:51,617 [10] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-09-18 20:42:11,056 [10] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-09-18 20:42:23,640 [10] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-09-18 20:42:39,752 [10] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-09-18 20:42:44,612 [10] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 15, Número de serie del certificado: 30001000000400002436, rfc: EKU9003173C9, Serie: PCGEEEEA 
+2022-09-18 20:42:46,190 [10] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-09-18 20:49:40,361 [10] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-09-18 20:49:50,002 [10] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-09-18 20:49:57,120 [10] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-09-18 20:50:09,569 [10] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-09-18 20:50:23,178 [10] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 15, Número de serie del certificado: 30001000000400002436, rfc: EKU9003173C9, Serie: PCGEEEEA 
+2022-09-18 20:50:30,950 [10] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-09-18 20:54:53,880 [10] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-09-18 20:55:06,921 [10] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-09-18 20:55:39,385 [10] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-09-18 20:55:44,198 [10] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-09-18 20:55:44,226 [10] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 15, Número de serie del certificado: 30001000000400002436, rfc: EKU9003173C9, Serie: PCGEEEEA 
+2022-09-18 20:55:44,227 [10] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-09-18 21:06:52,817 [10] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-09-18 21:07:53,053 [10] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-09-18 21:08:43,753 [10] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-09-18 21:08:57,953 [10] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-09-18 21:09:05,774 [10] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 15, Número de serie del certificado: 30001000000400002436, rfc: EKU9003173C9, Serie: PCGEEEEA 
+2022-09-18 21:09:12,582 [10] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-09-18 21:14:24,704 [19] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-09-18 21:14:29,130 [19] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-09-18 21:15:00,244 [19] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-09-18 21:15:10,758 [19] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-09-18 21:15:16,744 [19] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 15, Número de serie del certificado: 30001000000400002436, rfc: EKU9003173C9, Serie: PCGEEEEA 
+2022-09-18 21:15:18,622 [19] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-09-18 21:20:25,889 [17] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-09-18 21:20:29,926 [17] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-09-18 21:20:46,908 [17] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-09-18 21:20:48,420 [17] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-09-18 21:20:48,445 [17] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 15, Número de serie del certificado: 30001000000400002436, rfc: EKU9003173C9, Serie: PCGEEEEA 
+2022-09-18 21:20:48,447 [17] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-09-18 21:29:17,636 [26] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-09-18 21:29:20,024 [26] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-09-18 21:29:26,211 [26] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-09-18 21:29:45,804 [26] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-09-18 21:29:52,126 [26] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 15, Número de serie del certificado: 30001000000400002436, rfc: EKU9003173C9, Serie: PCGEEEEA 
+2022-09-18 21:29:54,863 [26] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-09-18 21:47:02,925 [17] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-09-18 21:47:07,876 [17] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-09-18 21:47:15,157 [17] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-09-18 21:47:16,199 [17] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-09-18 21:47:16,245 [17] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 15, Número de serie del certificado: 30001000000400002436, rfc: EKU9003173C9, Serie: PCGEEEEA 
+2022-09-18 21:47:16,246 [17] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 

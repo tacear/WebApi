@@ -1,0 +1,245 @@
+﻿2022-05-02 13:29:34,419 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-02 13:31:11,996 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-05-02 13:31:12,123 [10] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-05-02 13:31:12,127 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-05-02 13:31:12,147 [10] INFO  App  
+ Info - Datos del comprobante. Folio: 941, Número de serie del certificado: 00001000000510819349, Serie: NARHD 
+ 
+2022-05-02 13:31:12,160 [10] WARN  App  
+ Warn: El comprobante ya fue timbrado y se encuentra en la base de datos. Folio repetido. 
+ 
+2022-05-02 13:31:12,161 [10] WARN  App  
+ Warn - código: 1000 
+ 
+2022-05-02 13:31:12,161 [10] WARN  App  
+ Warn - detalle: El comprobante ya fué timbrado. 
+ 
+2022-05-02 13:31:12,162 [10] WARN  App  
+ Warn - message: Ya se encuentra registrado el comprobante en la BD. 
+ 
+2022-05-02 13:31:28,857 [17] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-02 13:33:32,159 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-02 13:34:47,277 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-02 13:36:42,895 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-02 13:37:27,405 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-05-02 13:37:27,538 [10] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-05-02 13:37:27,546 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-05-02 13:37:27,567 [10] INFO  App  
+ Info - Datos del comprobante. Folio: 951, Número de serie del certificado: 00001000000510819349, Serie: NARHQ 
+ 
+2022-05-02 13:37:27,585 [10] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-05-02 13:37:27,586 [10] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-05-02 13:37:27,619 [10] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="7ae54d95-26eb-4394-88c6-2d5df36a518c"
+  Content-Length: 4484
+} 
+ 
+2022-05-02 13:37:27,623 [10] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-05-02 13:37:27,624 [10] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-05-02 13:37:27,624 [10] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 404 
+ 
+2022-05-02 13:37:27,625 [10] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="7ae54d95-26eb-4394-88c6-2d5df36a518c"
+  Content-Length: 4484
+} 
+ 
+2022-05-02 13:37:27,625 [10] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+ 
+2022-05-02 13:37:27,625 [10] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-05-02 13:37:27,628 [10] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"114410","token": "$2b$12$bEDTbnccx6Hcg1plzYI1aeKEBzsWHZ2c5iIOG/vYrPHTL/tJysyyS" },"issuer": {"rfc": "MORJ7408292M8"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "MORJ7408292M8NARHQ951","certificate-number": "00001000000510819349","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0+xml","content": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48Y2ZkaTpDb21wcm9iYW50ZSB4bWxuczpjYXRDRkRJPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkL2NhdGFsb2dvcyIgeG1sbnM6dGRDRkRJPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkL3RpcG9EYXRvcy90ZENGREkiIHhtbG5zOmNmZGk9Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9jZmQvNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvY2ZkLzQgaHR0cDovL3d3dy5zYXQuZ29iLm14L3NpdGlvX2ludGVybmV0L2NmZC80L2NmZHY0MC54c2QiIFZlcnNpb249IjQuMCIgU2VyaWU9Ik5BUkhRIiBGb2xpbz0iOTUxIiBGZWNoYT0iMjAyMi0wNC0yOVQwODoxMzo1MSIgU2VsbG89IkEzd3dtRi85MkFubTJRU3phSkQ5d0djQ3Y4ekdlRjU3QS9DR0h3YjFBTEJpQ1ZsZlFpZVo2Y1lMK0YxMWU5NTFlOTdqeGc5NkNCRzJWR2dDMHorR2JuWFhra1psM2swaWFtUWRuNUNsM3RLYWd0UVZuMm1oQytPcVRzWTQ2K1BuRmdybGYzUktraTNlcWxhVFRRUVl5WXk0TlcrSjJsK1hsWUZvbU9oVTRlMzNJdWM3M3c2SUJOMVRwUHcwTFdsZ0dlQmwvY2xwcmR0U1lXOVdmcHdEKzVTdTNBQjl4UWx2cllwVG8vZmVaRzJDYjcvOGVIZHNGcDA5R3BNRDFrdTN2VHl0ckovV2JheVlCYXZhTkd5bTJCWDBaUUZ2OC96NWJveTE0b0xVbDJ0anhVL05vMVoyTHZwK3B2NGZXbTNZVjNBWVpkQ1phL1RJQW1yOE4rT1M4QT09IiBGb3JtYVBhZ289IjAxIiBOb0NlcnRpZmljYWRvPSIwMDAwMTAwMDAwMDUxMDgxOTM0OSIgQ2VydGlmaWNhZG89Ik1JSUY3ekNDQTllZ0F3SUJBZ0lVTURBd01ERXdNREF3TURBMU1UQTRNVGt6TkRrd0RRWUpLb1pJaHZjTkFRRUxCUUF3Z2dHRU1TQXdIZ1lEVlFRRERCZEJWVlJQVWtsRVFVUWdRMFZTVkVsR1NVTkJSRTlTUVRFdU1Dd0dBMVVFQ2d3bFUwVlNWa2xEU1U4Z1JFVWdRVVJOU1U1SlUxUlNRVU5KVDA0Z1ZGSkpRbFZVUVZKSlFURWFNQmdHQTFVRUN3d1JVMEZVTFVsRlV5QkJkWFJvYjNKcGRIa3hLakFvQmdrcWhraUc5dzBCQ1FFV0cyTnZiblJoWTNSdkxuUmxZMjVwWTI5QWMyRjBMbWR2WWk1dGVERW1NQ1FHQTFVRUNRd2RRVll1SUVoSlJFRk1SMDhnTnpjc0lFTlBUQzRnUjFWRlVsSkZVazh4RGpBTUJnTlZCQkVNQlRBMk16QXdNUXN3Q1FZRFZRUUdFd0pOV0RFWk1CY0dBMVVFQ0F3UVEwbFZSRUZFSUVSRklFMUZXRWxEVHpFVE1CRUdBMVVFQnd3S1ExVkJWVWhVUlUxUFF6RVZNQk1HQTFVRUxSTU1VMEZVT1Rjd056QXhUazR6TVZ3d1dnWUpLb1pJaHZjTkFRa0NFMDF5WlhOd2IyNXpZV0pzWlRvZ1FVUk5TVTVKVTFSU1FVTkpUMDRnUTBWT1ZGSkJUQ0JFUlNCVFJWSldTVU5KVDFNZ1ZGSkpRbFZVUVZKSlQxTWdRVXdnUTA5T1ZGSkpRbFZaUlU1VVJUQWVGdzB5TWpBeE1URXhPVFV5TlRaYUZ3MHlOakF4TVRFeE9UVXlOVFphTUlHOU1TWXdKQVlEVlFRREV4MUtWVUZPSUUxQlRsVkZUQ0JOVDFKQlRFVlRJRkpQUkZKSlIxVkZXakVtTUNRR0ExVUVLUk1kU2xWQlRpQk5RVTVWUlV3Z1RVOVNRVXhGVXlCU1QwUlNTVWRWUlZveEpqQWtCZ05WQkFvVEhVcFZRVTRnVFVGT1ZVVk1JRTFQVWtGTVJWTWdVazlFVWtsSFZVVmFNUll3RkFZRFZRUXRFdzFOVDFKS056UXdPREk1TWswNE1Sc3dHUVlEVlFRRkV4Sk5UMUpLTnpRd09ESTVTRVJHVWtST01Ea3hEakFNQmdOVkJBc1RCVXh2WTJGc01JSUJJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBUThBTUlJQkNnS0NBUUVBb0R2c1d0YlR3YkJUUDYvcVVXaEpTNW5Vc3RaOGNtbm1pY1g4dEZDLzhtalovbVhIaC8xV1RXanJXdEVqQ3ZYNHVuTUlkZHRRdWUvU0NNUmUvVmM1MDRxc0VaZlBBNjljNzRLVjRSWXhpQ21SZ3Nkc0xzWEk5SWoyZFJGbVFlR2tJTll3ays5ck5tMnExdElJdHhjZ0VZcEllWDZ6eUpyajVQaVJzRTVmRm9aa2ROV3gvbFBGMGV4SzdFZ0RMaTNsOFNNeUFSd3B0UUpLaThKVzB4QkVHa1NnRnRwUTJkWWg2WmVFM2Y5K0Q0T0tNNzBnbGZ4STlrLzZyWVg0Yi9PU1FJVnJ2b0d2bW94U0gvWU1oWWtweHNOM3drTnpVbWx4UDd6NzM3SnljamhUWjFteHZhZDRRMjkwa0RkSjBuYTVjOTdOZ0JXY2hJYnpXdGRXMjhuclZRSURBUUFCb3gwd0d6QU1CZ05WSFJNQkFmOEVBakFBTUFzR0ExVWREd1FFQXdJR3dEQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FnRUFqNk13bS8rTFJBOFFYanNNNTYrZ0M0TFRuVVQzMytaOWZ3VGdPNnFzTWRSczNaVXAxdDNTNjhKNDhZS1lPQko5eVpCelpCTjc0L21uZGQxT1pmQ1dTZ2JJNHNBUXFMemp6aE1XLzZ2L016RlJuRXpneGR2TXJtZ2xWMS9lcTB2MUpUMWNiSEZScHAwK1VUbmJ5OUdvQVVZU2lLb3ZHWjcwZTVZdlp0TXFiS09HelkzcEhqMGVFL3pOQXAxbzVNL1VmdlUwRSthL0tiTWk4dnhUUDgydDlvUXVHQjhrR21KT2oxSUw4QkVORHBGZzBLNDdOTVF6K2xzY1RvbGk0cUlPSDVQTDI5RFFJMmR6KytNbVJzL2JJZjk4M0VPaXU4Zit5NHFGSGQ0MEp2STduZ0NVN3JwL1Zta0YxZmkvREVMTGN1U2VISWc2dHlzdTBkZ2U4SUlsSCtHVDAvWXFDaVJVVTRHNnRkTi9ORVdVVkRWZWZwV2huNEpIZ1E0bndUOXlDanJWS2FVS0QwVW9DS3FFNTNQVFFYbTgxOGRNWU9xbkcrMTRLay9KWE5kUlFiTHlad1hUODgxVVA0aG5ZN0ltTVh3TG5waWtweHZIMmFGTTI4UE9TejBuTW9RSk51SDhPUDlERXJPQjhGMTJJaHp4a1FhN001L0RZTUdtYlpBbUJJenFLaDh2a0M0anU5NjF0TzkxaytiNTFCUFFTWlR4QThSSWhUalBPdm02M01TOWhHMFQ4WEFzbnV6WjBFTlAyM21GeHVkaTFFWnN4a3RKcVZvYW00ZksvUzJGbllnTVpuNmwvRWE4L1NWZDFibENRemZoSXF4UFpJbXEvOFM4RjNRaHJtZU5nQkkySjVEOHFibURVK1NINjlkRk9WQUxnSmpLMmJ3N0ZHST0iIENvbmRpY2lvbmVzRGVQYWdvPSIzMCBkw61hcyIgU3ViVG90YWw9IjEwMDAwLjAwIiBUb3RhbD0iMTE2MDAuMDAiIE1vbmVkYT0iRVVSIiBUaXBvQ2FtYmlvPSI3NzcuNzciIFRpcG9EZUNvbXByb2JhbnRlPSJFIiBFeHBvcnRhY2lvbj0iMDEiIE1ldG9kb1BhZ289IlBVRSIgTHVnYXJFeHBlZGljaW9uPSI2NDAwMCI+PGNmZGk6RW1pc29yIFJmYz0iTU9SSjc0MDgyOTJNOCIgTm9tYnJlPSJKVUFOIE1BTlVFTCBNT1JBTEVTIFJPRFJJR1VFWiIgUmVnaW1lbkZpc2NhbD0iNjEyIiAvPjxjZmRpOlJlY2VwdG9yIFJmYz0iWEVYWDAxMDEwMTAwMCIgTm9tYnJlPSIuJmFtcDthbXAmYW1wO2FtcENBUkxPUyBGRVJOQU5ETyBWaXJ0dWFsICBTQU5DSEVaICIgRG9taWNpbGlvRmlzY2FsUmVjZXB0b3I9IjY0MDAwIiBSZWdpbWVuRmlzY2FsUmVjZXB0b3I9IjYxNiIgVXNvQ0ZEST0iUzAxIiAvPjxjZmRpOkNvbmNlcHRvcz48Y2ZkaTpDb25jZXB0byBDbGF2ZVByb2RTZXJ2PSI4NDExMTUwNiIgTm9JZGVudGlmaWNhY2lvbj0iQTFCMkMzRDQiIENhbnRpZGFkPSIxLjAwMDAwMCIgQ2xhdmVVbmlkYWQ9Ikg4NyIgVW5pZGFkPSJQaWV6YSIgRGVzY3JpcGNpb249IkNvbmNlcHRvIGRlIHBydWViYSIgVmFsb3JVbml0YXJpbz0iMTAwMDAuMDAiIEltcG9ydGU9IjEwMDAwLjAwIiBPYmpldG9JbXA9IjAyIj48Y2ZkaTpJbXB1ZXN0b3M+PGNmZGk6VHJhc2xhZG9zPjxjZmRpOlRyYXNsYWRvIEJhc2U9IjEwMDAwLjAwIiBJbXB1ZXN0bz0iMDAyIiBUaXBvRmFjdG9yPSJUYXNhIiBUYXNhT0N1b3RhPSIwLjE2MDAwMCIgSW1wb3J0ZT0iMTYwMC4wMCIgLz48IS0tIDxjZmRpOlRyYXNsYWRvIEJhc2U9IjUwLjAwMDAwMCIgSW1wdWVzdG89IjAwMSIgVGlwb0ZhY3Rvcj0iVGFzYSIKICAgICAgICAgICAgICAgICAgICAgICAgVGFzYU9DdW90YT0iNTAuMDAwMDAwIiBJbXBvcnRlPSI1MC4wMDAwMDAiLz4tLT48L2NmZGk6VHJhc2xhZG9zPjwvY2ZkaTpJbXB1ZXN0b3M+PC9jZmRpOkNvbmNlcHRvPjwvY2ZkaTpDb25jZXB0b3M+PGNmZGk6SW1wdWVzdG9zIFRvdGFsSW1wdWVzdG9zVHJhc2xhZGFkb3M9IjE2MDAuMDAiPjxjZmRpOlRyYXNsYWRvcz48Y2ZkaTpUcmFzbGFkbyBCYXNlPSIxMDAwMC4wMCIgSW1wdWVzdG89IjAwMiIgVGlwb0ZhY3Rvcj0iVGFzYSIgVGFzYU9DdW90YT0iMC4xNjAwMDAiIEltcG9ydGU9IjE2MDAuMDAiIC8+PC9jZmRpOlRyYXNsYWRvcz48L2NmZGk6SW1wdWVzdG9zPjwvY2ZkaTpDb21wcm9iYW50ZT4="}} 
+ 
+2022-05-02 13:37:27,630 [10] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-05-02 13:37:27,630 [10] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-05-02 13:37:28,460 [10] INFO  App  
+ Info - Response recibido: StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Mon, 02 May 2022 18:37:29 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: 4al6cflmhqjv4qb2o2cravkh1k66dhkk
+  Connection: close
+  Content-Length: 570
+  Content-Type: application/json; charset=utf-8
+} 
+ 
+2022-05-02 13:37:28,472 [10] INFO  App  
+ Info - Error de respuesta del timbrado Diverza: ["La fecha de emision no puede ser anterior a 72 horas"] 
+ 
+2022-05-02 13:37:28,473 [10] INFO  App  
+ Info - Detalle de error de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5996
+} 
+ 
+2022-05-02 13:37:28,475 [10] ERROR App  
+ Error - No se pudo realizar el timbrado con Diverza.  
+ 
+2022-05-02 13:37:28,476 [10] ERROR App  
+ Error - código: 400 
+ 
+2022-05-02 13:37:28,476 [10] ERROR App  
+ Error - detalle: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5996
+} 
+ 
+2022-05-02 13:37:28,476 [10] ERROR App  
+ Error - message: ["La fecha de emision no puede ser anterior a 72 horas"] 
+ 
+2022-05-02 13:37:52,973 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-02 13:38:23,773 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-05-02 13:38:23,805 [10] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-05-02 13:38:23,806 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-05-02 13:38:23,807 [10] INFO  App  
+ Info - Datos del comprobante. Folio: 951, Número de serie del certificado: 00001000000510819349, Serie: NARHQ 
+ 
+2022-05-02 13:38:23,818 [10] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-05-02 13:38:23,822 [10] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-05-02 13:38:23,837 [10] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="7180ac8b-331d-4fd8-88dc-285f7fe1dfd3"
+  Content-Length: 4484
+} 
+ 
+2022-05-02 13:38:23,842 [10] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-05-02 13:38:23,842 [10] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-05-02 13:38:23,842 [10] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 404 
+ 
+2022-05-02 13:38:23,843 [10] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="7180ac8b-331d-4fd8-88dc-285f7fe1dfd3"
+  Content-Length: 4484
+} 
+ 
+2022-05-02 13:38:23,843 [10] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+ 
+2022-05-02 13:38:23,844 [10] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-05-02 13:38:23,844 [10] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"114410","token": "$2b$12$bEDTbnccx6Hcg1plzYI1aeKEBzsWHZ2c5iIOG/vYrPHTL/tJysyyS" },"issuer": {"rfc": "MORJ7408292M8"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "MORJ7408292M8NARHQ951","certificate-number": "00001000000510819349","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0+xml","content": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48Y2ZkaTpDb21wcm9iYW50ZSB4bWxuczpjYXRDRkRJPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkL2NhdGFsb2dvcyIgeG1sbnM6dGRDRkRJPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkL3RpcG9EYXRvcy90ZENGREkiIHhtbG5zOmNmZGk9Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9jZmQvNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvY2ZkLzQgaHR0cDovL3d3dy5zYXQuZ29iLm14L3NpdGlvX2ludGVybmV0L2NmZC80L2NmZHY0MC54c2QiIFZlcnNpb249IjQuMCIgU2VyaWU9Ik5BUkhRIiBGb2xpbz0iOTUxIiBGZWNoYT0iMjAyMi0wNC0zMFQwODoxMzo1MSIgU2VsbG89IkpBbzVVUkd4cFdTcHpseGZKMGtxUFlSOWs3K0M3QXVOcDlhdDFta21QaHhSRm4rVVd5M3hEWU9GQnJCYkJZRzJoR3dRTEdrL3JickYvMUdhWlZRVi9zRVhwbW40RFpRVTF1cFo2QmJnak5COHpSeUJOVi82amJkMjluWlpDZzBvWTZUS2E5WnYrZVUvL0I3VVJSZG5YNmphTlRaQnJESEI5aXZ1YnF3RFhsdktCR1lKc3ZRejRiN29XT2JxanprdUlBQWQ1WGlvazZBVi9oSUU3VTJzSi9Ba3B5elRHR0cwMmlmQmZSNzY0OGZmV3RiSUxuZVFjYkEyOEs3KzdSOWIxNktZdTZ3ZGRCdzhIczNUVm4rN3JxR2VxOWJka0VEZFhHN1pFb2VzYUUvNm0ydkNQZVlwMTNsbWRTSjVFSjlreDlVdUh2WnJlRnBSTis2Q2k1TnA0UT09IiBGb3JtYVBhZ289IjAxIiBOb0NlcnRpZmljYWRvPSIwMDAwMTAwMDAwMDUxMDgxOTM0OSIgQ2VydGlmaWNhZG89Ik1JSUY3ekNDQTllZ0F3SUJBZ0lVTURBd01ERXdNREF3TURBMU1UQTRNVGt6TkRrd0RRWUpLb1pJaHZjTkFRRUxCUUF3Z2dHRU1TQXdIZ1lEVlFRRERCZEJWVlJQVWtsRVFVUWdRMFZTVkVsR1NVTkJSRTlTUVRFdU1Dd0dBMVVFQ2d3bFUwVlNWa2xEU1U4Z1JFVWdRVVJOU1U1SlUxUlNRVU5KVDA0Z1ZGSkpRbFZVUVZKSlFURWFNQmdHQTFVRUN3d1JVMEZVTFVsRlV5QkJkWFJvYjNKcGRIa3hLakFvQmdrcWhraUc5dzBCQ1FFV0cyTnZiblJoWTNSdkxuUmxZMjVwWTI5QWMyRjBMbWR2WWk1dGVERW1NQ1FHQTFVRUNRd2RRVll1SUVoSlJFRk1SMDhnTnpjc0lFTlBUQzRnUjFWRlVsSkZVazh4RGpBTUJnTlZCQkVNQlRBMk16QXdNUXN3Q1FZRFZRUUdFd0pOV0RFWk1CY0dBMVVFQ0F3UVEwbFZSRUZFSUVSRklFMUZXRWxEVHpFVE1CRUdBMVVFQnd3S1ExVkJWVWhVUlUxUFF6RVZNQk1HQTFVRUxSTU1VMEZVT1Rjd056QXhUazR6TVZ3d1dnWUpLb1pJaHZjTkFRa0NFMDF5WlhOd2IyNXpZV0pzWlRvZ1FVUk5TVTVKVTFSU1FVTkpUMDRnUTBWT1ZGSkJUQ0JFUlNCVFJWSldTVU5KVDFNZ1ZGSkpRbFZVUVZKSlQxTWdRVXdnUTA5T1ZGSkpRbFZaUlU1VVJUQWVGdzB5TWpBeE1URXhPVFV5TlRaYUZ3MHlOakF4TVRFeE9UVXlOVFphTUlHOU1TWXdKQVlEVlFRREV4MUtWVUZPSUUxQlRsVkZUQ0JOVDFKQlRFVlRJRkpQUkZKSlIxVkZXakVtTUNRR0ExVUVLUk1kU2xWQlRpQk5RVTVWUlV3Z1RVOVNRVXhGVXlCU1QwUlNTVWRWUlZveEpqQWtCZ05WQkFvVEhVcFZRVTRnVFVGT1ZVVk1JRTFQVWtGTVJWTWdVazlFVWtsSFZVVmFNUll3RkFZRFZRUXRFdzFOVDFKS056UXdPREk1TWswNE1Sc3dHUVlEVlFRRkV4Sk5UMUpLTnpRd09ESTVTRVJHVWtST01Ea3hEakFNQmdOVkJBc1RCVXh2WTJGc01JSUJJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBUThBTUlJQkNnS0NBUUVBb0R2c1d0YlR3YkJUUDYvcVVXaEpTNW5Vc3RaOGNtbm1pY1g4dEZDLzhtalovbVhIaC8xV1RXanJXdEVqQ3ZYNHVuTUlkZHRRdWUvU0NNUmUvVmM1MDRxc0VaZlBBNjljNzRLVjRSWXhpQ21SZ3Nkc0xzWEk5SWoyZFJGbVFlR2tJTll3ays5ck5tMnExdElJdHhjZ0VZcEllWDZ6eUpyajVQaVJzRTVmRm9aa2ROV3gvbFBGMGV4SzdFZ0RMaTNsOFNNeUFSd3B0UUpLaThKVzB4QkVHa1NnRnRwUTJkWWg2WmVFM2Y5K0Q0T0tNNzBnbGZ4STlrLzZyWVg0Yi9PU1FJVnJ2b0d2bW94U0gvWU1oWWtweHNOM3drTnpVbWx4UDd6NzM3SnljamhUWjFteHZhZDRRMjkwa0RkSjBuYTVjOTdOZ0JXY2hJYnpXdGRXMjhuclZRSURBUUFCb3gwd0d6QU1CZ05WSFJNQkFmOEVBakFBTUFzR0ExVWREd1FFQXdJR3dEQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FnRUFqNk13bS8rTFJBOFFYanNNNTYrZ0M0TFRuVVQzMytaOWZ3VGdPNnFzTWRSczNaVXAxdDNTNjhKNDhZS1lPQko5eVpCelpCTjc0L21uZGQxT1pmQ1dTZ2JJNHNBUXFMemp6aE1XLzZ2L016RlJuRXpneGR2TXJtZ2xWMS9lcTB2MUpUMWNiSEZScHAwK1VUbmJ5OUdvQVVZU2lLb3ZHWjcwZTVZdlp0TXFiS09HelkzcEhqMGVFL3pOQXAxbzVNL1VmdlUwRSthL0tiTWk4dnhUUDgydDlvUXVHQjhrR21KT2oxSUw4QkVORHBGZzBLNDdOTVF6K2xzY1RvbGk0cUlPSDVQTDI5RFFJMmR6KytNbVJzL2JJZjk4M0VPaXU4Zit5NHFGSGQ0MEp2STduZ0NVN3JwL1Zta0YxZmkvREVMTGN1U2VISWc2dHlzdTBkZ2U4SUlsSCtHVDAvWXFDaVJVVTRHNnRkTi9ORVdVVkRWZWZwV2huNEpIZ1E0bndUOXlDanJWS2FVS0QwVW9DS3FFNTNQVFFYbTgxOGRNWU9xbkcrMTRLay9KWE5kUlFiTHlad1hUODgxVVA0aG5ZN0ltTVh3TG5waWtweHZIMmFGTTI4UE9TejBuTW9RSk51SDhPUDlERXJPQjhGMTJJaHp4a1FhN001L0RZTUdtYlpBbUJJenFLaDh2a0M0anU5NjF0TzkxaytiNTFCUFFTWlR4QThSSWhUalBPdm02M01TOWhHMFQ4WEFzbnV6WjBFTlAyM21GeHVkaTFFWnN4a3RKcVZvYW00ZksvUzJGbllnTVpuNmwvRWE4L1NWZDFibENRemZoSXF4UFpJbXEvOFM4RjNRaHJtZU5nQkkySjVEOHFibURVK1NINjlkRk9WQUxnSmpLMmJ3N0ZHST0iIENvbmRpY2lvbmVzRGVQYWdvPSIzMCBkw61hcyIgU3ViVG90YWw9IjEwMDAwLjAwIiBUb3RhbD0iMTE2MDAuMDAiIE1vbmVkYT0iRVVSIiBUaXBvQ2FtYmlvPSI3NzcuNzciIFRpcG9EZUNvbXByb2JhbnRlPSJFIiBFeHBvcnRhY2lvbj0iMDEiIE1ldG9kb1BhZ289IlBVRSIgTHVnYXJFeHBlZGljaW9uPSI2NDAwMCI+PGNmZGk6RW1pc29yIFJmYz0iTU9SSjc0MDgyOTJNOCIgTm9tYnJlPSJKVUFOIE1BTlVFTCBNT1JBTEVTIFJPRFJJR1VFWiIgUmVnaW1lbkZpc2NhbD0iNjEyIiAvPjxjZmRpOlJlY2VwdG9yIFJmYz0iWEVYWDAxMDEwMTAwMCIgTm9tYnJlPSIuJmFtcDthbXAmYW1wO2FtcENBUkxPUyBGRVJOQU5ETyBWaXJ0dWFsICBTQU5DSEVaICIgRG9taWNpbGlvRmlzY2FsUmVjZXB0b3I9IjY0MDAwIiBSZWdpbWVuRmlzY2FsUmVjZXB0b3I9IjYxNiIgVXNvQ0ZEST0iUzAxIiAvPjxjZmRpOkNvbmNlcHRvcz48Y2ZkaTpDb25jZXB0byBDbGF2ZVByb2RTZXJ2PSI4NDExMTUwNiIgTm9JZGVudGlmaWNhY2lvbj0iQTFCMkMzRDQiIENhbnRpZGFkPSIxLjAwMDAwMCIgQ2xhdmVVbmlkYWQ9Ikg4NyIgVW5pZGFkPSJQaWV6YSIgRGVzY3JpcGNpb249IkNvbmNlcHRvIGRlIHBydWViYSIgVmFsb3JVbml0YXJpbz0iMTAwMDAuMDAiIEltcG9ydGU9IjEwMDAwLjAwIiBPYmpldG9JbXA9IjAyIj48Y2ZkaTpJbXB1ZXN0b3M+PGNmZGk6VHJhc2xhZG9zPjxjZmRpOlRyYXNsYWRvIEJhc2U9IjEwMDAwLjAwIiBJbXB1ZXN0bz0iMDAyIiBUaXBvRmFjdG9yPSJUYXNhIiBUYXNhT0N1b3RhPSIwLjE2MDAwMCIgSW1wb3J0ZT0iMTYwMC4wMCIgLz48IS0tIDxjZmRpOlRyYXNsYWRvIEJhc2U9IjUwLjAwMDAwMCIgSW1wdWVzdG89IjAwMSIgVGlwb0ZhY3Rvcj0iVGFzYSIKICAgICAgICAgICAgICAgICAgICAgICAgVGFzYU9DdW90YT0iNTAuMDAwMDAwIiBJbXBvcnRlPSI1MC4wMDAwMDAiLz4tLT48L2NmZGk6VHJhc2xhZG9zPjwvY2ZkaTpJbXB1ZXN0b3M+PC9jZmRpOkNvbmNlcHRvPjwvY2ZkaTpDb25jZXB0b3M+PGNmZGk6SW1wdWVzdG9zIFRvdGFsSW1wdWVzdG9zVHJhc2xhZGFkb3M9IjE2MDAuMDAiPjxjZmRpOlRyYXNsYWRvcz48Y2ZkaTpUcmFzbGFkbyBCYXNlPSIxMDAwMC4wMCIgSW1wdWVzdG89IjAwMiIgVGlwb0ZhY3Rvcj0iVGFzYSIgVGFzYU9DdW90YT0iMC4xNjAwMDAiIEltcG9ydGU9IjE2MDAuMDAiIC8+PC9jZmRpOlRyYXNsYWRvcz48L2NmZGk6SW1wdWVzdG9zPjwvY2ZkaTpDb21wcm9iYW50ZT4="}} 
+ 
+2022-05-02 13:38:23,845 [10] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-05-02 13:38:23,845 [10] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-05-02 13:38:25,295 [10] INFO  App  
+ Info - Response recibido: StatusCode: 201, ReasonPhrase: 'Created', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Mon, 02 May 2022 18:38:26 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: 7m1nipnn4fo6a4bl7ciqb252r1g70m8j
+  Content-Length: 6993
+  Content-Type: application/json; charset=utf-8
+} 
+ 
+2022-05-02 13:38:25,302 [10] INFO  App  
+ Info - Mensaje de respuesta del timbrado Diverza: <?xml version="1.0" encoding="utf-8" ?>
+<cfdi:Comprobante xmlns:catCFDI="http://www.sat.gob.mx/sitio_internet/cfd/catalogos" xmlns:tdCFDI="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="NARHQ" Folio="951" Fecha="2022-04-30T08:13:51" Sello="JAo5URGxpWSpzlxfJ0kqPYR9k7+C7AuNp9at1mkmPhxRFn+UWy3xDYOFBrBbBYG2hGwQLGk/rbrF/1GaZVQV/sEXpmn4DZQU1upZ6BbgjNB8zRyBNV/6jbd29nZZCg0oY6TKa9Zv+eU//B7URRdnX6jaNTZBrDHB9ivubqwDXlvKBGYJsvQz4b7oWObqjzkuIAAd5Xiok6AV/hIE7U2sJ/AkpyzTGGG02ifBfR7648ffWtbILneQcbA28K7+7R9b16KYu6wddBw8Hs3TVn+7rqGeq9bdkEDdXG7ZEoesaE/6m2vCPeYp13lmdSJ5EJ9kx9UuHvZreFpRN+6Ci5Np4Q==" FormaPago="01" NoCertificado="00001000000510819349" Certificado="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" CondicionesDePago="30 días" SubTotal="10000.00" Total="11600.00" Moneda="EUR" TipoCambio="777.77" TipoDeComprobante="E" Exportacion="01" MetodoPago="PUE" LugarExpedicion="64000"><cfdi:Emisor Rfc="MORJ7408292M8" Nombre="JUAN MANUEL MORALES RODRIGUEZ" RegimenFiscal="612"/><cfdi:Receptor Rfc="XEXX010101000" Nombre=".&amp;amp&amp;ampCARLOS FERNANDO Virtual  SANCHEZ " DomicilioFiscalReceptor="64000" RegimenFiscalReceptor="616" UsoCFDI="S01"/><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="84111506" NoIdentificacion="A1B2C3D4" Cantidad="1.000000" ClaveUnidad="H87" Unidad="Pieza" Descripcion="Concepto de prueba" ValorUnitario="10000.00" Importe="10000.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="1600.00"><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento>
+        <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="dd943f54-b1d4-49b1-bfb3-403fb271aa4c" RfcProvCertif="SPR190613I52" FechaTimbrado="2022-05-02T13:38:25" SelloCFD="JAo5URGxpWSpzlxfJ0kqPYR9k7+C7AuNp9at1mkmPhxRFn+UWy3xDYOFBrBbBYG2hGwQLGk/rbrF/1GaZVQV/sEXpmn4DZQU1upZ6BbgjNB8zRyBNV/6jbd29nZZCg0oY6TKa9Zv+eU//B7URRdnX6jaNTZBrDHB9ivubqwDXlvKBGYJsvQz4b7oWObqjzkuIAAd5Xiok6AV/hIE7U2sJ/AkpyzTGGG02ifBfR7648ffWtbILneQcbA28K7+7R9b16KYu6wddBw8Hs3TVn+7rqGeq9bdkEDdXG7ZEoesaE/6m2vCPeYp13lmdSJ5EJ9kx9UuHvZreFpRN+6Ci5Np4Q==" NoCertificadoSAT="30001000000400002495" SelloSAT="VLxKqLd1ayWyQA/JFwEn9CNC/9cosymcVc0oluk065S8EH/tYAD1l3U3sWvV5pywm+ngGWVOdeD1Kb2myLdmC7AIYLM//MxzAw228nbpOSjK2T4EjbDThTiTgXPYhDhx0GivyeJ0yN64/PtrS+D6lmXOievsugrSu113jkCnDVwWuG51eHkcyD2sfhSOUOmFktSJTx3QoQlK2cogkOXfhJGMhdjnPNbVhVxVhqvq2XWJ1zMyVToxuP+2W4mKeWrzeVQVyPuFX68yikgXGLb7tjD9XQV0paBDcvYdpvv68dy2RyFj49xOLyBXzj0tguB3ePVU+iwLLXsBoaVfiG2dnQ=="/>
+    </cfdi:Complemento></cfdi:Comprobante> 
+ 
+2022-05-02 13:38:25,302 [10] INFO  App  
+ Info - Detalle de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5996
+} 
+ 
+2022-05-02 13:38:25,303 [10] INFO  App  
+ Info - Inserta la información en la base de datos.  
+ 
+2022-05-02 13:38:25,331 [10] INFO  App  
+ Info - No hubo error en el timbrado y se inserta la información en la base de datos.  
+ 
+2022-05-02 13:38:25,335 [10] INFO  App  
+ Info - Se realizó el timbrado con Diverza.  
+ 
+2022-05-02 13:38:25,336 [10] INFO  App  
+ Info - código: 201 
+ 
+2022-05-02 13:38:25,336 [10] INFO  App  
+ Info - detalle: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5996
+} 
+ 
+2022-05-02 13:38:25,337 [10] INFO  App  
+ Info - message: <?xml version="1.0" encoding="utf-8" ?>
+<cfdi:Comprobante xmlns:catCFDI="http://www.sat.gob.mx/sitio_internet/cfd/catalogos" xmlns:tdCFDI="http://www.sat.gob.mx/sitio_internet/cfd/tipoDatos/tdCFDI" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="NARHQ" Folio="951" Fecha="2022-04-30T08:13:51" Sello="JAo5URGxpWSpzlxfJ0kqPYR9k7+C7AuNp9at1mkmPhxRFn+UWy3xDYOFBrBbBYG2hGwQLGk/rbrF/1GaZVQV/sEXpmn4DZQU1upZ6BbgjNB8zRyBNV/6jbd29nZZCg0oY6TKa9Zv+eU//B7URRdnX6jaNTZBrDHB9ivubqwDXlvKBGYJsvQz4b7oWObqjzkuIAAd5Xiok6AV/hIE7U2sJ/AkpyzTGGG02ifBfR7648ffWtbILneQcbA28K7+7R9b16KYu6wddBw8Hs3TVn+7rqGeq9bdkEDdXG7ZEoesaE/6m2vCPeYp13lmdSJ5EJ9kx9UuHvZreFpRN+6Ci5Np4Q==" FormaPago="01" NoCertificado="00001000000510819349" Certificado="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" CondicionesDePago="30 días" SubTotal="10000.00" Total="11600.00" Moneda="EUR" TipoCambio="777.77" TipoDeComprobante="E" Exportacion="01" MetodoPago="PUE" LugarExpedicion="64000"><cfdi:Emisor Rfc="MORJ7408292M8" Nombre="JUAN MANUEL MORALES RODRIGUEZ" RegimenFiscal="612"/><cfdi:Receptor Rfc="XEXX010101000" Nombre=".&amp;amp&amp;ampCARLOS FERNANDO Virtual  SANCHEZ " DomicilioFiscalReceptor="64000" RegimenFiscalReceptor="616" UsoCFDI="S01"/><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="84111506" NoIdentificacion="A1B2C3D4" Cantidad="1.000000" ClaveUnidad="H87" Unidad="Pieza" Descripcion="Concepto de prueba" ValorUnitario="10000.00" Importe="10000.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="1600.00"><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento>
+        <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="dd943f54-b1d4-49b1-bfb3-403fb271aa4c" RfcProvCertif="SPR190613I52" FechaTimbrado="2022-05-02T13:38:25" SelloCFD="JAo5URGxpWSpzlxfJ0kqPYR9k7+C7AuNp9at1mkmPhxRFn+UWy3xDYOFBrBbBYG2hGwQLGk/rbrF/1GaZVQV/sEXpmn4DZQU1upZ6BbgjNB8zRyBNV/6jbd29nZZCg0oY6TKa9Zv+eU//B7URRdnX6jaNTZBrDHB9ivubqwDXlvKBGYJsvQz4b7oWObqjzkuIAAd5Xiok6AV/hIE7U2sJ/AkpyzTGGG02ifBfR7648ffWtbILneQcbA28K7+7R9b16KYu6wddBw8Hs3TVn+7rqGeq9bdkEDdXG7ZEoesaE/6m2vCPeYp13lmdSJ5EJ9kx9UuHvZreFpRN+6Ci5Np4Q==" NoCertificadoSAT="30001000000400002495" SelloSAT="VLxKqLd1ayWyQA/JFwEn9CNC/9cosymcVc0oluk065S8EH/tYAD1l3U3sWvV5pywm+ngGWVOdeD1Kb2myLdmC7AIYLM//MxzAw228nbpOSjK2T4EjbDThTiTgXPYhDhx0GivyeJ0yN64/PtrS+D6lmXOievsugrSu113jkCnDVwWuG51eHkcyD2sfhSOUOmFktSJTx3QoQlK2cogkOXfhJGMhdjnPNbVhVxVhqvq2XWJ1zMyVToxuP+2W4mKeWrzeVQVyPuFX68yikgXGLb7tjD9XQV0paBDcvYdpvv68dy2RyFj49xOLyBXzj0tguB3ePVU+iwLLXsBoaVfiG2dnQ=="/>
+    </cfdi:Complemento></cfdi:Comprobante> 
+ 

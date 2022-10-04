@@ -1,0 +1,17 @@
+﻿2022-06-28 14:00:45,232 [21] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-06-28 14:00:50,201 [21] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-06-28 14:00:50,365 [21] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-06-28 14:00:50,816 [21] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-06-28 14:00:50,872 [21] ERROR InvoiceAPI.LoggerManager - App  Error - Ocurrió un error en la búsqueda del comprobante en la base de datos. 
+2022-06-28 14:00:50,872 [21] ERROR InvoiceAPI.LoggerManager - App  Error - Mensaje: Object reference not set to an instance of an object. 
+2022-06-28 14:00:50,970 [21] ERROR InvoiceAPI.LoggerManager - App  Error - StackTrace:    at InvoiceAPI.Controllers.InvoicesController.SearchData(String xml) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 848 
+2022-06-28 14:04:41,225 [38] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-06-28 14:04:46,314 [38] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-06-28 14:04:46,341 [38] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-06-28 14:04:47,156 [38] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-06-28 14:04:47,158 [38] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 6001000024, Número de serie del certificado: 30001000000400002434, rfc: EKU9003173C9, Serie: Jerry 
+2022-06-28 14:04:47,159 [38] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-06-28 14:04:47,241 [38] ERROR InvoiceAPI.LoggerManager - App  Error - Ocurrió un error en la búsqueda del comprobante en la base de datos. 
+2022-06-28 14:04:47,241 [38] ERROR InvoiceAPI.LoggerManager - App  Error - Mensaje: Object reference not set to an instance of an object. 
+2022-06-28 14:04:47,242 [38] ERROR InvoiceAPI.LoggerManager - App  Error - StackTrace:    at InvoiceAPI.Data.BrokerDAL.ExisteComprobanteOracle(ComprobantesDTO comprobante) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Data\BrokerDAL.cs:line 453
+   at InvoiceAPI.Controllers.InvoicesController.SearchData(String xml) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 859 

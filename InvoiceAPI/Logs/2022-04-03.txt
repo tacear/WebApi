@@ -1,0 +1,106 @@
+﻿2022-04-03 23:40:13,657 [18] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-03 23:40:13,674 [18] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-03 23:40:13,698 [18] ERROR App  
+ Error - Ocurrio un error en el procesamiento del docuemnto.  
+ 
+2022-04-03 23:40:13,698 [18] ERROR App  
+ Error - Mensaje: String reference not set to an instance of a String.
+Parameter name: s 
+ 
+2022-04-03 23:40:13,710 [18] ERROR App  
+ Error - StackTrace:    at System.Text.Encoding.GetBytes(String s)
+   at InvoiceAPI.Controllers.InvoicesController.GetEncodeUTF8(String stringEncode) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\Controllers\InvoicesController.cs:line 805
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\Controllers\InvoicesController.cs:line 882 
+ 
+2022-04-03 23:40:13,713 [18] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-03 23:40:13,734 [18] INFO  App  
+ Info - Datos del comprobante. Folio: 001, Número de serie del certificado: 30001000000400002495, Serie: NCR 
+ 
+2022-04-03 23:40:14,082 [18] WARN  App  
+ Warn: El comprobante ya fue timbrado y se encuentra en la base de datos. 
+ 
+2022-04-03 23:40:14,083 [18] WARN  App  
+ Warn - código: 1000 
+ 
+2022-04-03 23:40:14,083 [18] WARN  App  
+ Warn - detalle: Ocurrió un error al verificar el comprobante en la BD. 
+ 
+2022-04-03 23:40:14,083 [18] WARN  App  
+ Warn - message: ORA-00942: table or view does not exist 
+ 
+2022-04-03 23:44:11,692 [18] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-03 23:44:11,721 [18] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-03 23:44:11,751 [18] ERROR App  
+ Error - Ocurrio un error en el procesamiento del docuemnto.  
+ 
+2022-04-03 23:44:11,751 [18] ERROR App  
+ Error - Mensaje: String reference not set to an instance of a String.
+Parameter name: s 
+ 
+2022-04-03 23:44:11,786 [18] ERROR App  
+ Error - StackTrace:    at System.Text.Encoding.GetBytes(String s)
+   at InvoiceAPI.Controllers.InvoicesController.GetEncodeUTF8(String stringEncode) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\Controllers\InvoicesController.cs:line 805
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\Controllers\InvoicesController.cs:line 882 
+ 
+2022-04-03 23:44:11,790 [18] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-03 23:44:11,811 [18] INFO  App  
+ Info - Datos del comprobante. Folio: 001, Número de serie del certificado: 30001000000400002495, Serie: NCR 
+ 
+2022-04-03 23:44:11,837 [18] ERROR App  
+ Error - código: 1001 
+ 
+2022-04-03 23:44:11,837 [18] ERROR App  
+ Error - detalle: Proceso de procesamiento inválido. 
+ 
+2022-04-03 23:44:11,838 [18] ERROR App  
+ Error - message: String reference not set to an instance of a String.
+Parameter name: s 
+ 
+2022-04-03 23:46:10,557 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-03 23:46:10,578 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-03 23:46:10,604 [10] ERROR App  
+ Error - Ocurrio un error en el procesamiento del docuemnto.  
+ 
+2022-04-03 23:46:10,605 [10] ERROR App  
+ Error - Mensaje: String reference not set to an instance of a String.
+Parameter name: s 
+ 
+2022-04-03 23:46:10,616 [10] ERROR App  
+ Error - StackTrace:    at System.Text.Encoding.GetBytes(String s)
+   at InvoiceAPI.Controllers.InvoicesController.GetEncodeUTF8(String stringEncode) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\Controllers\InvoicesController.cs:line 805
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\Controllers\InvoicesController.cs:line 882 
+ 
+2022-04-03 23:46:10,619 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-03 23:46:10,640 [10] INFO  App  
+ Info - Datos del comprobante. Folio: 001, Número de serie del certificado: 30001000000400002495, Serie: NCR 
+ 
+2022-04-03 23:46:10,666 [10] ERROR App  
+ Error - código: 1001 
+ 
+2022-04-03 23:46:10,666 [10] ERROR App  
+ Error - detalle: Proceso de procesamiento inválido. 
+ 
+2022-04-03 23:46:10,666 [10] ERROR App  
+ Error - message: String reference not set to an instance of a String.
+Parameter name: s    at System.Text.Encoding.GetBytes(String s)
+   at InvoiceAPI.Controllers.InvoicesController.GetEncodeUTF8(String stringEncode) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\Controllers\InvoicesController.cs:line 805
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\Controllers\InvoicesController.cs:line 882 
+ 

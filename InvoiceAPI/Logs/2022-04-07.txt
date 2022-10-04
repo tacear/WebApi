@@ -1,0 +1,1000 @@
+﻿2022-04-07 00:07:39,779 [47] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 00:07:39,783 [47] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+ 
+2022-04-07 00:07:39,807 [47] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 00:07:39,807 [47] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 00:07:39,811 [47] INFO  App  
+ Info - Datos del comprobante. Folio: 443, Número de serie del certificado: 00000000000000000000, Serie: NNEY 
+ 
+2022-04-07 00:07:39,822 [47] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-07 00:07:39,823 [47] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-07 00:07:39,904 [47] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/stamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="7f42931a-fb2f-4376-928d-11adbdbd26f3"
+  Content-Length: 4308
+} 
+ 
+2022-04-07 00:07:39,908 [47] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-07 00:07:39,909 [47] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-04-07 00:07:39,909 [47] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 500 
+ 
+2022-04-07 00:07:39,910 [47] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/stamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="7f42931a-fb2f-4376-928d-11adbdbd26f3"
+  Content-Length: 4308
+} 
+ 
+2022-04-07 00:07:39,910 [47] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":500,"message":"402 El RFC del emisor no se encuentra en la lista de LCO o no cuenta con obligaciones fiscales para facturar."} 
+ 
+2022-04-07 00:07:39,910 [47] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-04-07 00:07:39,911 [47] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"123414","token": "$2b$12$JgIf1J7db4e6f06VnNPsUOaQD3SpwUnzPqXDkuirQklcc8gMCMIDS" },"issuer": {"rfc": "MORJ7408292M8"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "MORJ7408292M8NNEY443","certificate-number": "30001000000400002434","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0_complemento+xml","content": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxjZmRpOkNvbXByb2JhbnRlIEV4cG9ydGFjaW9uPSIwMSIgTHVnYXJFeHBlZGljaW9uPSI1MjIyNyIgVGlwb0RlQ29tcHJvYmFudGU9IkUiIE1ldG9kb1BhZ289IlBVRSIgVG90YWw9IjExLjYwIiBNb25lZGE9Ik1YTiIgU3ViVG90YWw9IjEwLjAwIiBDZXJ0aWZpY2Fkbz0iTUlJRnV6Q0NBNk9nQXdJQkFnSVVNekF3TURFd01EQXdNREEwTURBd01ESTBNelF3RFFZSktvWklodmNOQVFFTEJRQXdnZ0VyTVE4d0RRWURWUVFEREFaQlF5QlZRVlF4TGpBc0JnTlZCQW9NSlZORlVsWkpRMGxQSUVSRklFRkVUVWxPU1ZOVVVrRkRTVTlPSUZSU1NVSlZWRUZTU1VFeEdqQVlCZ05WQkFzTUVWTkJWQzFKUlZNZ1FYVjBhRzl5YVhSNU1TZ3dKZ1lKS29aSWh2Y05BUWtCRmhsdmMyTmhjaTV0WVhKMGFXNWxla0J6WVhRdVoyOWlMbTE0TVIwd0d3WURWUVFKREJRemNtRWdZMlZ5Y21Ga1lTQmtaU0JqWVdScGVqRU9NQXdHQTFVRUVRd0ZNRFl6TnpBeEN6QUpCZ05WQkFZVEFrMVlNUmt3RndZRFZRUUlEQkJEU1ZWRVFVUWdSRVVnVFVWWVNVTlBNUkV3RHdZRFZRUUhEQWhEVDFsUFFVTkJUakVSTUE4R0ExVUVMUk1JTWk0MUxqUXVORFV4SlRBakJna3Foa2lHOXcwQkNRSVRGbkpsYzNCdmJuTmhZbXhsT2lCQlEwUk5RUzFUUVZRd0hoY05NVGt3TmpFM01UazBOREUwV2hjTk1qTXdOakUzTVRrME5ERTBXakNCNGpFbk1DVUdBMVVFQXhNZVJWTkRWVVZNUVNCTFJVMVFSVklnVlZKSFFWUkZJRk5CSUVSRklFTldNU2N3SlFZRFZRUXBFeDVGVTBOVlJVeEJJRXRGVFZCRlVpQlZVa2RCVkVVZ1UwRWdSRVVnUTFZeEp6QWxCZ05WQkFvVEhrVlRRMVZGVEVFZ1MwVk5VRVZTSUZWU1IwRlVSU0JUUVNCRVJTQkRWakVsTUNNR0ExVUVMUk1jUlV0Vk9UQXdNekUzTTBNNUlDOGdXRWxSUWpnNU1URXhObEZGTkRFZU1Cd0dBMVVFQlJNVklDOGdXRWxSUWpnNU1URXhOazFIVWsxYVVqQTFNUjR3SEFZRFZRUUxFeFZGYzJOMVpXeGhJRXRsYlhCbGNpQlZjbWRoZEdVd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUUNOMHBlS3BnZk9MNzVpWVJ2MWZxcStvVllzTFBWVVIvR2liWW1HS2M5SW5IRnk1bFlGNk9UWWpuSUl2bWtPZFJvYmJHbENVeE9SWC90THNsOFlhOWdtNllvN2hIbk9EUkJJRHVwM0dJU0Z6Qi85NlI5Sy9NellRT2NzY01Jb0JEQVJheWNuTHZ5N0ZsTXZPNy9ybFZuc1NBUnhaUk84S3o4Wmtrc2oyenBlWXBqWkl5YS8zNjkrb0dxUWsxY1RSa0hvNTlKdko0VGZiay8zaUl5ZjRIL0luaTluQmU5Y1lXbzBNbktvYjdERHQvdnNkaTV0QThtTXRBOTUzTGFwTnlDWklEQ1JRUWxVR05nRHFZOS84RjVtVXZWZ2tjY3pzSWdHZHZmOXZNUVBTZjNqakNpS2o3ajZ1Y3hsMStGd0pXbWJ2Z05taWFVUi8wcTRtMnJtNzhsRkFnTUJBQUdqSFRBYk1Bd0dBMVVkRXdFQi93UUNNQUF3Q3dZRFZSMFBCQVFEQWdiQU1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQ0FRQmNwajFUalQ0amlpbkl1aklkQWxGekU2a1J3WUpDbkRHMDh6U3A0a1NuU2hqeEFER0VYSDJjaGVoS01WMEZZN2M0bmpBNWVER2RBL0cyT0NUUHZGNXJwZUNaUDVEdzUwNFJaa1lEbDJzdVJ6K3dhMXNOQlZwYm5CSkVLMGZRY04zSWZ0QndzZ05GZEZoVXRDeXczbHVzMVNTSmJQeGpMSFM2RmNaWjUxWVNlSWZjTlhPQXVUcWRpbXVzYVhxMTVHclNyQ09rTTZuMmpmajJzTUpZTTJIWGFYSjZyR1RFZ1ltaFlkd3hXdGlsNlJmWkIrZkdRL0g5STlXTG5sNEtUWlVTNkM5K05MSGg0RlBEaFNrMTlmcFMyUy81NmFxZ0ZvR0FrWEFZdDlGeTVFQ2FQY1VMSWZKMURFYnNYS3lSZEN2M0pZODkrME1Oa09kYURuc2VtUzJvNUdsMDh6STRpWXR0M0w0MGdBWjYwTlBoMzFrVkxuWU5zbXZmTnhZeUtwK0FlSnRESHlXOXc3ZnRNMEhvaStCdVJtY0FRU0tGVjNwazhqNTFsYStqclJCckFVdjhibGJSY1E1QmlaVXdKekhGRUtJd1RzUkdvUnlFeDk2c05uQjAzbjZHVHdqSUd6OTJTbUxkTmw5NXI5cmt2cCsybTRTNnExbFB1WGFGZzdER0JyWFdDOGl5cWVXRTJpb2Jkd0lJdVhQVE1WcVFiMTJtMWRBa0pWUk81TmRIblAvTXBxT3ZPZ0xxb1pCTkhHeUJnNEdxbTRzQ0pIQ3hBMWM4RWxmYTJSUVRDazB0QXpsbEw0dk9uSTFHSGtHSm42NXhva0dzYVU0QjREMzZ4aDdlV3JmajQvcGdXSG10b0RBWWE4d3pTd28yR1ZDWk9zK210RWdPUUI5MS9nPT0iIE5vQ2VydGlmaWNhZG89IjMwMDAxMDAwMDAwNDAwMDAyNDM0IiBGb3JtYVBhZ289IjAxIiBTZWxsbz0iU0trR243REd5SXpyYVZnTkVCYjkvemN5UlZVUFU3aHZGampCZDlDLzVnNjdDYkFIeU05QkdyZE5XNEJBKzFVc2VZenJLckhRUlJXUWhxQnNFU3IzN1JSZno4RnhRSzBlNnVLVG1tOElPWWJzcVp4aHBadGpxY1I5L0tSZ0w4dXFaQ051VlNCV0kzbnY0djFMOUttektJc1BlKzQ3aC81Zm5ZeVh4dkVBSVpvRUorZXVzSDhaeTFGbnlOcmlicFhVNEMvUXB5SUpBNFRDeTNZMDNuSzBMVW1DMmRFVVBYOEMySzU4YmUybkdLeDg4RlFlNHVoZ3d5NXJncmswSzVIRkdQaTVQSmIyM0pVVmx0QmdlRjVNN2RYOFZTRmF5M2luS05NdUREekRUTXg4WXBYMng3bWphN1FjNnJpNUhlanlsZlFKUksvR2xIVzJMNG9DN2drNitBPT0iIEZlY2hhPSIyMDIyLTA0LTA2VDE4OjI0OjI2IiBGb2xpbz0iNDQzIiBTZXJpZT0iTk5FWSIgVmVyc2lvbj0iNC4wIiB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9jZmQvNCBodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkLzQvY2ZkdjQwLnhzZCIgeG1sbnM6dGRDRkRJPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkL3RpcG9EYXRvcy90ZENGREkiIHhtbG5zOm5zMz0iaHR0cDovL3d3dy5zYXQuZ29iLm14L1RpbWJyZUZpc2NhbERpZ2l0YWwiIHhtbG5zOmNmZGk9Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9jZmQvNCIgeG1sbnM6Y2F0Q0ZEST0iaHR0cDovL3d3dy5zYXQuZ29iLm14L3NpdGlvX2ludGVybmV0L2NmZC9jYXRhbG9nb3MiIHhtbG5zOnBhZ28yMD0iaHR0cDovL3d3dy5zYXQuZ29iLm14L1BhZ29zMjAiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiPjxjZmRpOkVtaXNvciBSZWdpbWVuRmlzY2FsPSI2MTIiIE5vbWJyZT0iSlVBTiBNQU5VRUwgTU9SQUxFUyBST0RSSUdVRVoiIFJmYz0iTU9SSjc0MDgyOTJNOCIgLz48Y2ZkaTpSZWNlcHRvciBSZWdpbWVuRmlzY2FsUmVjZXB0b3I9IjYxNiIgRG9taWNpbGlvRmlzY2FsUmVjZXB0b3I9IjUyMjI3IiBVc29DRkRJPSJTMDEiIFJlc2lkZW5jaWFGaXNjYWw9IlNMViIgTm9tYnJlPSJQRVRFUiBQQVJLRVIiIFJmYz0iWEVYWDAxMDEwMTAwMCIgLz48Y2ZkaTpDb25jZXB0b3M+PGNmZGk6Q29uY2VwdG8gT2JqZXRvSW1wPSIwMiIgSW1wb3J0ZT0iMTAuMDAiIFZhbG9yVW5pdGFyaW89IjEwLjAwIiBEZXNjcmlwY2lvbj0iU0VSVklDSU8gUE9SIElOVEVSQ09ORVhJT04gUUxMUCAwNDQgTExBTTogMzUzNjg5ODkiIFVuaWRhZD0iU2VydmljaW8iIENsYXZlVW5pZGFkPSJFNDgiIENhbnRpZGFkPSIxIiBOb0lkZW50aWZpY2FjaW9uPSIwIiBDbGF2ZVByb2RTZXJ2PSI4MzExMjUwNSI+PGNmZGk6SW1wdWVzdG9zPjxjZmRpOlRyYXNsYWRvcz48Y2ZkaTpUcmFzbGFkbyBJbXBvcnRlPSIxLjYwIiBUYXNhT0N1b3RhPSIwLjE2MDAwMCIgVGlwb0ZhY3Rvcj0iVGFzYSIgSW1wdWVzdG89IjAwMiIgQmFzZT0iMTAuMDAiIC8+PC9jZmRpOlRyYXNsYWRvcz48L2NmZGk6SW1wdWVzdG9zPjwvY2ZkaTpDb25jZXB0bz48L2NmZGk6Q29uY2VwdG9zPjxjZmRpOkltcHVlc3RvcyBUb3RhbEltcHVlc3Rvc1RyYXNsYWRhZG9zPSIxLjYwIj48Y2ZkaTpUcmFzbGFkb3M+PGNmZGk6VHJhc2xhZG8gSW1wb3J0ZT0iMS42MCIgVGFzYU9DdW90YT0iMC4xNjAwMDAiIFRpcG9GYWN0b3I9IlRhc2EiIEltcHVlc3RvPSIwMDIiIEJhc2U9IjEwLjAwIiAvPjwvY2ZkaTpUcmFzbGFkb3M+PC9jZmRpOkltcHVlc3Rvcz48L2NmZGk6Q29tcHJvYmFudGU+"}} 
+ 
+2022-04-07 00:07:39,912 [47] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-04-07 00:07:39,912 [47] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-04-07 00:07:40,166 [47] INFO  App  
+ Info - Response recibido: StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Thu, 07 Apr 2022 05:07:41 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: 8kaj7q1949rscrs46huogne1vh9emp2f
+  Connection: close
+  Content-Length: 609
+  Content-Type: application/json; charset=utf-8; charset=utf-8
+} 
+ 
+2022-04-07 00:07:40,171 [47] INFO  App  
+ Info - Error de respuesta del timbrado Diverza: [{"issuer.rfc":"Client rfc: EKU9003173C9, does not match request issuer rfc: MORJ7408292M8"}] 
+ 
+2022-04-07 00:07:40,171 [47] INFO  App  
+ Info - Detalle de error de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5787
+} 
+ 
+2022-04-07 00:07:40,173 [47] ERROR App  
+ Error - No se pudo realizar el timbrado con Diverza.  
+ 
+2022-04-07 00:07:40,173 [47] ERROR App  
+ Error - código: 400 
+ 
+2022-04-07 00:07:40,173 [47] ERROR App  
+ Error - detalle: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5787
+} 
+ 
+2022-04-07 00:07:40,174 [47] ERROR App  
+ Error - message: [{"issuer.rfc":"Client rfc: EKU9003173C9, does not match request issuer rfc: MORJ7408292M8"}] 
+ 
+2022-04-07 01:15:09,692 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 01:15:09,713 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 01:15:09,740 [10] ERROR App  
+ Error - Ocurrio un error en el procesamiento del docuemnto.  
+ 
+2022-04-07 01:15:09,740 [10] ERROR App  
+ Error - Mensaje: String reference not set to an instance of a String.
+Parameter name: s 
+ 
+2022-04-07 01:15:09,741 [10] ERROR App  
+ Error - StackTrace:    at System.Text.Encoding.GetBytes(String s)
+   at InvoiceAPI.Controllers.InvoicesController.GetEncodeUTF8(String stringEncode) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0 - Copy\InvoiceAPI\Controllers\InvoicesController.cs:line 808
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0 - Copy\InvoiceAPI\Controllers\InvoicesController.cs:line 885 
+ 
+2022-04-07 01:15:09,744 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 01:15:09,764 [10] INFO  App  
+ Info - Datos del comprobante. Folio: 443, Número de serie del certificado: 00000000000000000000, Serie: NNEY 
+ 
+2022-04-07 01:15:09,782 [10] ERROR App  
+ Error - código: 1001 
+ 
+2022-04-07 01:15:09,782 [10] ERROR App  
+ Error - detalle: Proceso de procesamiento inválido. 
+ 
+2022-04-07 01:15:09,782 [10] ERROR App  
+ Error - message: String reference not set to an instance of a String.
+Parameter name: s    at System.Text.Encoding.GetBytes(String s)
+   at InvoiceAPI.Controllers.InvoicesController.GetEncodeUTF8(String stringEncode) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0 - Copy\InvoiceAPI\Controllers\InvoicesController.cs:line 808
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0 - Copy\InvoiceAPI\Controllers\InvoicesController.cs:line 885 
+ 
+2022-04-07 13:55:35,803 [20] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 13:55:35,825 [20] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 13:55:35,957 [20] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 13:55:35,958 [20] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 13:55:35,979 [20] INFO  App  
+ Info - Datos del comprobante. Folio: 443, Número de serie del certificado: 00000000000000000000, Serie: NNEY 
+ 
+2022-04-07 13:55:36,005 [20] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-07 13:55:36,006 [20] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-07 13:55:38,265 [20] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/stamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="2cdc5f58-031a-46e7-b616-a1b1a22bdac5"
+  Content-Length: 4376
+} 
+ 
+2022-04-07 13:55:38,277 [20] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-07 13:55:38,278 [20] INFO  App  
+ Info - Inserta la información en la base de datos.  
+ 
+2022-04-07 13:55:38,412 [21] ERROR App  
+ Error - Ocurrio un error al insertar un registro de comprobante. Message: ORA-02291: integrity constraint (SEGDATACFDI.FK_CE_COMPROBANTES_LLAVESSELLO) violated - parent key not found 
+ 
+2022-04-07 13:55:38,413 [20] INFO  App  
+ Info - No hubo error en el timbrado y se inserta la información en la base de datos.  
+ 
+2022-04-07 13:55:38,413 [20] INFO  App  
+ Info - Se realizó el timbrado con Seguridata.  
+ 
+2022-04-07 13:55:38,413 [20] INFO  App  
+ Info - código: 200 
+ 
+2022-04-07 13:55:38,414 [20] INFO  App  
+ Info - detalle: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/stamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="2cdc5f58-031a-46e7-b616-a1b1a22bdac5"
+  Content-Length: 4376
+} 
+ 
+2022-04-07 13:55:38,414 [20] INFO  App  
+ Info - message: <?xml version="1.0" encoding="utf-8"?><cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xs="http://www.w3.org/2001/XMLSchema" Version="4.0" Serie="NNEY" Folio="443" Fecha="2022-04-06T18:24:26" Sello="TEB+CcwJC2AW24SgjnoAPk0U88yUfYVJjq+T0edUEzbIZk3pzCqsVUgTQJT3Vr5ZXzYmpp5SHCLWcgzkJpJhuXZ9uLbpGcWGjDHxshyRuUwlU5a5A8Er4Q/MIyGwuAcLObjsMzyGB+MirGqxwxBKdZdjWnuizfbJTPq6f2af7hBrdC55dinuiZ/B499WluOw2VEoPwW/RB/r7eS/AJtPycjfi7JXZ83v4QuX/1+yqOXfNsfchB60qK82VRWF6XVCxH3mX8di8ktJ+NbQj7RlbHZlYBWEhdiD7Or8recqq/f6YZBk4v5LWcgdTP4rQrrIn+3Pew6kTorrDFEJsM9ECQ==" FormaPago="01" NoCertificado="00001000000510819349" Certificado="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" SubTotal="10.00" Moneda="MXN" Total="11.60" TipoDeComprobante="E" Exportacion="01" MetodoPago="PUE" LugarExpedicion="52227" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd"><cfdi:Emisor Rfc="MORJ7408292M8" Nombre="JUAN MANUEL MORALES RODRIGUEZ" RegimenFiscal="612" /><cfdi:Receptor Rfc="XEXX010101000" Nombre="PETER PARKER" DomicilioFiscalReceptor="52227" ResidenciaFiscal="SLV" RegimenFiscalReceptor="616" UsoCFDI="S01" /><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="83112505" NoIdentificacion="0" Cantidad="1" ClaveUnidad="E48" Unidad="Servicio" Descripcion="SERVICIO POR INTERCONEXION QLLP 044 LLAM: 35368989" ValorUnitario="10.00" Importe="10.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="10.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1.60" /></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="1.60"><cfdi:Traslados><cfdi:Traslado Base="10.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1.60" /></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento><tfd:TimbreFiscalDigital Version="1.1" UUID="633B68CC-DB31-4B44-9D78-3C8EF31713C0" FechaTimbrado="2022-04-07T13:55:36" RfcProvCertif="SPR961217NK9" Leyenda="ValorDelAtributoLeyenda" SelloCFD="TEB+CcwJC2AW24SgjnoAPk0U88yUfYVJjq+T0edUEzbIZk3pzCqsVUgTQJT3Vr5ZXzYmpp5SHCLWcgzkJpJhuXZ9uLbpGcWGjDHxshyRuUwlU5a5A8Er4Q/MIyGwuAcLObjsMzyGB+MirGqxwxBKdZdjWnuizfbJTPq6f2af7hBrdC55dinuiZ/B499WluOw2VEoPwW/RB/r7eS/AJtPycjfi7JXZ83v4QuX/1+yqOXfNsfchB60qK82VRWF6XVCxH3mX8di8ktJ+NbQj7RlbHZlYBWEhdiD7Or8recqq/f6YZBk4v5LWcgdTP4rQrrIn+3Pew6kTorrDFEJsM9ECQ==" NoCertificadoSAT="30001000000400002495" SelloSAT="DkFtD6O4U0LkjWNzom1w/XzX8GVaJ60sH/EvLO0zzPTtyT6zPicx1s6cM8HyuUhwLrMV2I9Jle7m5DLUburnEjjsHyeKpbqOZsaXi3ZKigfScKWxEczH30Ex3NSjgihEwJ9KdCyVqdet+OrQcnOILfZBFmyiO+B4NJQb0GRC/z0zD4czeSI4eta/0RKub/WlW2/idCTNZKXhU1ef3SsO7BIOSjNxE8qs0Ugtumo3RSJAuhb/Nmx3A5iQnTIL5a4gHvzHmmGJZrwyUkMjBrQbNm8yK8OlpJThO93eczqRXYubmJYXfCFk076nJwUHayvuXf2oz1IyGGsIyE9EE/S4nA==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" /></cfdi:Complemento></cfdi:Comprobante> 
+ 
+2022-04-07 14:01:53,305 [23] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 14:01:53,337 [23] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 14:01:53,465 [23] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 14:01:53,466 [23] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 14:01:53,487 [23] INFO  App  
+ Info - Datos del comprobante. Folio: 444, Número de serie del certificado: 00000000000000000000, Serie: NNEZ 
+ 
+2022-04-07 14:01:53,508 [23] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-07 14:01:53,509 [23] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-07 14:01:53,669 [23] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/stamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="435547c1-db63-411c-812a-e237f6c14975"
+  Content-Length: 4376
+} 
+ 
+2022-04-07 14:01:53,674 [23] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-07 14:01:53,674 [23] INFO  App  
+ Info - Inserta la información en la base de datos.  
+ 
+2022-04-07 14:01:53,819 [23] ERROR App  
+ Error - Ocurrio un error al insertar un registro de comprobante. Message: ORA-02291: integrity constraint (SEGDATACFDI.FK_CE_COMPROBANTES_LLAVESSELLO) violated - parent key not found 
+ 
+2022-04-07 14:01:53,820 [23] INFO  App  
+ Info - No hubo error en el timbrado y se inserta la información en la base de datos.  
+ 
+2022-04-07 14:01:53,820 [23] INFO  App  
+ Info - Se realizó el timbrado con Seguridata.  
+ 
+2022-04-07 14:01:53,820 [23] INFO  App  
+ Info - código: 200 
+ 
+2022-04-07 14:01:53,820 [23] INFO  App  
+ Info - detalle: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/stamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="435547c1-db63-411c-812a-e237f6c14975"
+  Content-Length: 4376
+} 
+ 
+2022-04-07 14:01:53,820 [23] INFO  App  
+ Info - message: <?xml version="1.0" encoding="utf-8"?><cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xs="http://www.w3.org/2001/XMLSchema" Version="4.0" Serie="NNEZ" Folio="444" Fecha="2022-04-06T18:24:26" Sello="S8k/38l+WbsLkQpFu6tZ6+OaWHmOzZnry9SiTg1fVC4aCQLV5m1X8pfDd3d8IlndLP5ZZi7sUjBZo++piUy8P5q+zYwhd1cvsPasp81skBX2Lrgwp7PxKG6PHJRB+Qu5XlmSg/DPN/Rc1MsDyyk/GhCHWuWqCvhHG1O0PZI/v+MXP8Fn+dj1kWdCVCBStEz0j6st8Am2GryNTUQ77vye25HUiDt+K0/1Qo75zC6EKQhUb+ZY+lN6Sj6/hKWZM/sdsLcEDs+DPQ4VFrQLgiHrQtAWkE9s+LvElqlsiimsuX46x3cvRj+bRKM94yEb+03AcXl8X/POFiS9MBbGvII+9A==" FormaPago="01" NoCertificado="00001000000510819349" Certificado="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" SubTotal="10.00" Moneda="MXN" Total="11.60" TipoDeComprobante="E" Exportacion="01" MetodoPago="PUE" LugarExpedicion="52227" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd"><cfdi:Emisor Rfc="MORJ7408292M8" Nombre="JUAN MANUEL MORALES RODRIGUEZ" RegimenFiscal="612" /><cfdi:Receptor Rfc="XEXX010101000" Nombre="PETER PARKER" DomicilioFiscalReceptor="52227" ResidenciaFiscal="SLV" RegimenFiscalReceptor="616" UsoCFDI="S01" /><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="83112505" NoIdentificacion="0" Cantidad="1" ClaveUnidad="E48" Unidad="Servicio" Descripcion="SERVICIO POR INTERCONEXION QLLP 044 LLAM: 35368989" ValorUnitario="10.00" Importe="10.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="10.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1.60" /></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="1.60"><cfdi:Traslados><cfdi:Traslado Base="10.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1.60" /></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento><tfd:TimbreFiscalDigital Version="1.1" UUID="A2ECC4E5-276A-4B99-8F9C-E0067D5412A7" FechaTimbrado="2022-04-07T14:01:51" RfcProvCertif="SPR961217NK9" Leyenda="ValorDelAtributoLeyenda" SelloCFD="S8k/38l+WbsLkQpFu6tZ6+OaWHmOzZnry9SiTg1fVC4aCQLV5m1X8pfDd3d8IlndLP5ZZi7sUjBZo++piUy8P5q+zYwhd1cvsPasp81skBX2Lrgwp7PxKG6PHJRB+Qu5XlmSg/DPN/Rc1MsDyyk/GhCHWuWqCvhHG1O0PZI/v+MXP8Fn+dj1kWdCVCBStEz0j6st8Am2GryNTUQ77vye25HUiDt+K0/1Qo75zC6EKQhUb+ZY+lN6Sj6/hKWZM/sdsLcEDs+DPQ4VFrQLgiHrQtAWkE9s+LvElqlsiimsuX46x3cvRj+bRKM94yEb+03AcXl8X/POFiS9MBbGvII+9A==" NoCertificadoSAT="30001000000400002495" SelloSAT="RbilmFY/C1DNPZB13sSHuNcynSBror5LOvvRuUkn3oLMsU5bTzhGxAMWCK55ix5zSYnl9s+SVrG0d75ZABXfGWVm6PRH1+fQRIj12AzSRbDggIYPbCjv66B0rNKLM13Q/+nyy6AnuHLZN8JAucLBUxkHwRG7tpaNm+kZembRwW8pyjTf0FczEFNnGejAFbfQLaMQOiWA8XrWQCgCBloA19745m7t2ocr+2EaikBM15J0hR31HgPgP+S9Xz4mS1W87Ijo1hlR0wMT7aJuJJuLMA3uBAMIY8TMYiWV8a+XMQ4NBfWjMgNfkooyDdDqYWqiylvoxvDNcO1ZjG00kTBIcA==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" /></cfdi:Complemento></cfdi:Comprobante> 
+ 
+2022-04-07 14:07:26,076 [37] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 14:07:26,076 [37] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 14:07:26,098 [37] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 14:07:26,100 [37] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 14:07:26,102 [37] INFO  App  
+ Info - Datos del comprobante. Folio: 444, Número de serie del certificado: 00000000000000000000, Serie: NNEZ 
+ 
+2022-04-07 14:07:51,544 [37] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-07 14:07:54,023 [37] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-07 14:08:14,315 [37] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/stamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="4fc7a7c0-2599-4af8-bd16-290ea98f4ef3"
+  Content-Length: 4376
+} 
+ 
+2022-04-07 14:08:25,140 [37] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-07 14:08:47,366 [37] INFO  App  
+ Info - Inserta la información en la base de datos.  
+ 
+2022-04-07 14:20:23,564 [16] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 14:20:23,582 [16] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 14:20:23,712 [16] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 14:20:23,713 [16] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 14:20:23,734 [16] INFO  App  
+ Info - Datos del comprobante. Folio: 444, Número de serie del certificado: 00000000000000000000, Serie: NNEZ 
+ 
+2022-04-07 14:20:35,548 [16] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-07 14:20:35,550 [16] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-07 14:20:35,600 [16] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/stamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="34da8769-f208-462d-906a-2ba4390cee82"
+  Content-Length: 4376
+} 
+ 
+2022-04-07 14:20:35,607 [16] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-07 14:20:35,608 [16] INFO  App  
+ Info - Inserta la información en la base de datos.  
+ 
+2022-04-07 14:35:19,497 [16] ERROR App  
+ Error - Ocurrio un error al insertar un registro de comprobante. Message: ORA-02291: integrity constraint (SEGDATACFDI.FK_CE_COMPROBANTES_LLAVESSELLO) violated - parent key not found 
+ 
+2022-04-07 14:35:19,497 [16] INFO  App  
+ Info - No hubo error en el timbrado y se inserta la información en la base de datos.  
+ 
+2022-04-07 14:35:19,498 [16] INFO  App  
+ Info - Se realizó el timbrado con Seguridata.  
+ 
+2022-04-07 14:35:19,498 [16] INFO  App  
+ Info - código: 200 
+ 
+2022-04-07 14:35:19,498 [16] INFO  App  
+ Info - detalle: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/stamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="34da8769-f208-462d-906a-2ba4390cee82"
+  Content-Length: 4376
+} 
+ 
+2022-04-07 14:35:19,499 [16] INFO  App  
+ Info - message: <?xml version="1.0" encoding="utf-8"?><cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xs="http://www.w3.org/2001/XMLSchema" Version="4.0" Serie="NNEZ" Folio="444" Fecha="2022-04-06T18:24:26" Sello="S8k/38l+WbsLkQpFu6tZ6+OaWHmOzZnry9SiTg1fVC4aCQLV5m1X8pfDd3d8IlndLP5ZZi7sUjBZo++piUy8P5q+zYwhd1cvsPasp81skBX2Lrgwp7PxKG6PHJRB+Qu5XlmSg/DPN/Rc1MsDyyk/GhCHWuWqCvhHG1O0PZI/v+MXP8Fn+dj1kWdCVCBStEz0j6st8Am2GryNTUQ77vye25HUiDt+K0/1Qo75zC6EKQhUb+ZY+lN6Sj6/hKWZM/sdsLcEDs+DPQ4VFrQLgiHrQtAWkE9s+LvElqlsiimsuX46x3cvRj+bRKM94yEb+03AcXl8X/POFiS9MBbGvII+9A==" FormaPago="01" NoCertificado="00001000000510819349" Certificado="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" SubTotal="10.00" Moneda="MXN" Total="11.60" TipoDeComprobante="E" Exportacion="01" MetodoPago="PUE" LugarExpedicion="52227" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd"><cfdi:Emisor Rfc="MORJ7408292M8" Nombre="JUAN MANUEL MORALES RODRIGUEZ" RegimenFiscal="612" /><cfdi:Receptor Rfc="XEXX010101000" Nombre="PETER PARKER" DomicilioFiscalReceptor="52227" ResidenciaFiscal="SLV" RegimenFiscalReceptor="616" UsoCFDI="S01" /><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="83112505" NoIdentificacion="0" Cantidad="1" ClaveUnidad="E48" Unidad="Servicio" Descripcion="SERVICIO POR INTERCONEXION QLLP 044 LLAM: 35368989" ValorUnitario="10.00" Importe="10.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="10.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1.60" /></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="1.60"><cfdi:Traslados><cfdi:Traslado Base="10.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1.60" /></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento><tfd:TimbreFiscalDigital Version="1.1" UUID="A2ECC4E5-276A-4B99-8F9C-E0067D5412A7" FechaTimbrado="2022-04-07T14:01:51" RfcProvCertif="SPR961217NK9" Leyenda="ValorDelAtributoLeyenda" SelloCFD="S8k/38l+WbsLkQpFu6tZ6+OaWHmOzZnry9SiTg1fVC4aCQLV5m1X8pfDd3d8IlndLP5ZZi7sUjBZo++piUy8P5q+zYwhd1cvsPasp81skBX2Lrgwp7PxKG6PHJRB+Qu5XlmSg/DPN/Rc1MsDyyk/GhCHWuWqCvhHG1O0PZI/v+MXP8Fn+dj1kWdCVCBStEz0j6st8Am2GryNTUQ77vye25HUiDt+K0/1Qo75zC6EKQhUb+ZY+lN6Sj6/hKWZM/sdsLcEDs+DPQ4VFrQLgiHrQtAWkE9s+LvElqlsiimsuX46x3cvRj+bRKM94yEb+03AcXl8X/POFiS9MBbGvII+9A==" NoCertificadoSAT="30001000000400002495" SelloSAT="RbilmFY/C1DNPZB13sSHuNcynSBror5LOvvRuUkn3oLMsU5bTzhGxAMWCK55ix5zSYnl9s+SVrG0d75ZABXfGWVm6PRH1+fQRIj12AzSRbDggIYPbCjv66B0rNKLM13Q/+nyy6AnuHLZN8JAucLBUxkHwRG7tpaNm+kZembRwW8pyjTf0FczEFNnGejAFbfQLaMQOiWA8XrWQCgCBloA19745m7t2ocr+2EaikBM15J0hR31HgPgP+S9Xz4mS1W87Ijo1hlR0wMT7aJuJJuLMA3uBAMIY8TMYiWV8a+XMQ4NBfWjMgNfkooyDdDqYWqiylvoxvDNcO1ZjG00kTBIcA==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" /></cfdi:Complemento></cfdi:Comprobante> 
+ 
+2022-04-07 14:35:23,013 [20] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 14:35:23,013 [20] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 14:35:23,037 [20] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 14:35:23,037 [20] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 14:35:23,038 [20] INFO  App  
+ Info - Datos del comprobante. Folio: 444, Número de serie del certificado: 00000000000000000000, Serie: NNEZ 
+ 
+2022-04-07 14:35:33,261 [20] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-07 14:35:33,262 [20] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-07 14:35:33,302 [20] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/stamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="f47c065d-2bda-49aa-ae94-e42498a21a74"
+  Content-Length: 4376
+} 
+ 
+2022-04-07 14:35:33,310 [20] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-07 14:35:33,310 [20] INFO  App  
+ Info - Inserta la información en la base de datos.  
+ 
+2022-04-07 14:35:54,599 [20] INFO  App  
+ Info - No hubo error en el timbrado y se inserta la información en la base de datos.  
+ 
+2022-04-07 14:35:54,601 [20] INFO  App  
+ Info - Se realizó el timbrado con Seguridata.  
+ 
+2022-04-07 14:35:54,603 [20] INFO  App  
+ Info - código: 200 
+ 
+2022-04-07 14:35:54,608 [20] INFO  App  
+ Info - detalle: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/stamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="f47c065d-2bda-49aa-ae94-e42498a21a74"
+  Content-Length: 4376
+} 
+ 
+2022-04-07 14:35:54,609 [20] INFO  App  
+ Info - message: <?xml version="1.0" encoding="utf-8"?><cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xs="http://www.w3.org/2001/XMLSchema" Version="4.0" Serie="NNEZ" Folio="444" Fecha="2022-04-06T18:24:26" Sello="S8k/38l+WbsLkQpFu6tZ6+OaWHmOzZnry9SiTg1fVC4aCQLV5m1X8pfDd3d8IlndLP5ZZi7sUjBZo++piUy8P5q+zYwhd1cvsPasp81skBX2Lrgwp7PxKG6PHJRB+Qu5XlmSg/DPN/Rc1MsDyyk/GhCHWuWqCvhHG1O0PZI/v+MXP8Fn+dj1kWdCVCBStEz0j6st8Am2GryNTUQ77vye25HUiDt+K0/1Qo75zC6EKQhUb+ZY+lN6Sj6/hKWZM/sdsLcEDs+DPQ4VFrQLgiHrQtAWkE9s+LvElqlsiimsuX46x3cvRj+bRKM94yEb+03AcXl8X/POFiS9MBbGvII+9A==" FormaPago="01" NoCertificado="00001000000510819349" Certificado="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" SubTotal="10.00" Moneda="MXN" Total="11.60" TipoDeComprobante="E" Exportacion="01" MetodoPago="PUE" LugarExpedicion="52227" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd"><cfdi:Emisor Rfc="MORJ7408292M8" Nombre="JUAN MANUEL MORALES RODRIGUEZ" RegimenFiscal="612" /><cfdi:Receptor Rfc="XEXX010101000" Nombre="PETER PARKER" DomicilioFiscalReceptor="52227" ResidenciaFiscal="SLV" RegimenFiscalReceptor="616" UsoCFDI="S01" /><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="83112505" NoIdentificacion="0" Cantidad="1" ClaveUnidad="E48" Unidad="Servicio" Descripcion="SERVICIO POR INTERCONEXION QLLP 044 LLAM: 35368989" ValorUnitario="10.00" Importe="10.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="10.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1.60" /></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="1.60"><cfdi:Traslados><cfdi:Traslado Base="10.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1.60" /></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento><tfd:TimbreFiscalDigital Version="1.1" UUID="A2ECC4E5-276A-4B99-8F9C-E0067D5412A7" FechaTimbrado="2022-04-07T14:01:51" RfcProvCertif="SPR961217NK9" Leyenda="ValorDelAtributoLeyenda" SelloCFD="S8k/38l+WbsLkQpFu6tZ6+OaWHmOzZnry9SiTg1fVC4aCQLV5m1X8pfDd3d8IlndLP5ZZi7sUjBZo++piUy8P5q+zYwhd1cvsPasp81skBX2Lrgwp7PxKG6PHJRB+Qu5XlmSg/DPN/Rc1MsDyyk/GhCHWuWqCvhHG1O0PZI/v+MXP8Fn+dj1kWdCVCBStEz0j6st8Am2GryNTUQ77vye25HUiDt+K0/1Qo75zC6EKQhUb+ZY+lN6Sj6/hKWZM/sdsLcEDs+DPQ4VFrQLgiHrQtAWkE9s+LvElqlsiimsuX46x3cvRj+bRKM94yEb+03AcXl8X/POFiS9MBbGvII+9A==" NoCertificadoSAT="30001000000400002495" SelloSAT="RbilmFY/C1DNPZB13sSHuNcynSBror5LOvvRuUkn3oLMsU5bTzhGxAMWCK55ix5zSYnl9s+SVrG0d75ZABXfGWVm6PRH1+fQRIj12AzSRbDggIYPbCjv66B0rNKLM13Q/+nyy6AnuHLZN8JAucLBUxkHwRG7tpaNm+kZembRwW8pyjTf0FczEFNnGejAFbfQLaMQOiWA8XrWQCgCBloA19745m7t2ocr+2EaikBM15J0hR31HgPgP+S9Xz4mS1W87Ijo1hlR0wMT7aJuJJuLMA3uBAMIY8TMYiWV8a+XMQ4NBfWjMgNfkooyDdDqYWqiylvoxvDNcO1ZjG00kTBIcA==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" /></cfdi:Complemento></cfdi:Comprobante> 
+ 
+2022-04-07 14:36:40,690 [24] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 14:36:40,694 [24] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 14:36:40,716 [24] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 14:36:40,716 [24] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 14:36:40,717 [24] INFO  App  
+ Info - Datos del comprobante. Folio: 444, Número de serie del certificado: 00000000000000000000, Serie: NNEZ 
+ 
+2022-04-07 14:36:43,841 [24] WARN  App  
+ Warn: El comprobante ya fue timbrado y se encuentra en la base de datos. 
+ 
+2022-04-07 14:36:43,842 [24] WARN  App  
+ Warn - código: 1000 
+ 
+2022-04-07 14:36:43,843 [24] WARN  App  
+ Warn - detalle: Ocurrió un error al verificar el comprobante en la BD. 
+ 
+2022-04-07 14:36:43,844 [24] WARN  App  
+ Warn - message: ORA-12537: Network Session: End of file 
+ 
+2022-04-07 14:41:17,479 [35] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 14:41:17,479 [35] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 14:41:17,503 [35] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 14:41:25,150 [35] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 14:41:42,609 [35] INFO  App  
+ Info - Datos del comprobante. Folio: 444, Número de serie del certificado: 00000000000000000000, Serie: NNEZ 
+ 
+2022-04-07 14:51:00,001 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 14:51:00,020 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 14:51:00,157 [10] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 14:51:05,803 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 14:51:10,850 [10] INFO  App  
+ Info - Datos del comprobante. Folio: 444, Número de serie del certificado: 00000000000000000000, Serie: NNEZ 
+ 
+2022-04-07 14:52:22,836 [10] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-07 14:52:22,838 [10] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-07 14:52:22,905 [10] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/stamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="7dd395d8-2c18-4a2f-b705-c71d03eea68a"
+  Content-Length: 4376
+} 
+ 
+2022-04-07 14:52:22,911 [10] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-07 14:52:22,911 [10] INFO  App  
+ Info - Inserta la información en la base de datos.  
+ 
+2022-04-07 14:52:27,029 [10] ERROR App  
+ Error - Ocurrio un error al insertar un registro de comprobante. Message: ORA-00001: unique constraint (SEGDATACFDI.INDX_CE_COMP_RFC_SERIE_FOLIO) violated 
+ 
+2022-04-07 14:52:27,029 [10] INFO  App  
+ Info - No hubo error en el timbrado y se inserta la información en la base de datos.  
+ 
+2022-04-07 14:52:27,030 [10] INFO  App  
+ Info - Se realizó el timbrado con Seguridata.  
+ 
+2022-04-07 14:52:27,030 [10] INFO  App  
+ Info - código: 200 
+ 
+2022-04-07 14:52:27,030 [10] INFO  App  
+ Info - detalle: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/stamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="7dd395d8-2c18-4a2f-b705-c71d03eea68a"
+  Content-Length: 4376
+} 
+ 
+2022-04-07 14:52:27,030 [10] INFO  App  
+ Info - message: <?xml version="1.0" encoding="utf-8"?><cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xs="http://www.w3.org/2001/XMLSchema" Version="4.0" Serie="NNEZ" Folio="444" Fecha="2022-04-06T18:24:26" Sello="S8k/38l+WbsLkQpFu6tZ6+OaWHmOzZnry9SiTg1fVC4aCQLV5m1X8pfDd3d8IlndLP5ZZi7sUjBZo++piUy8P5q+zYwhd1cvsPasp81skBX2Lrgwp7PxKG6PHJRB+Qu5XlmSg/DPN/Rc1MsDyyk/GhCHWuWqCvhHG1O0PZI/v+MXP8Fn+dj1kWdCVCBStEz0j6st8Am2GryNTUQ77vye25HUiDt+K0/1Qo75zC6EKQhUb+ZY+lN6Sj6/hKWZM/sdsLcEDs+DPQ4VFrQLgiHrQtAWkE9s+LvElqlsiimsuX46x3cvRj+bRKM94yEb+03AcXl8X/POFiS9MBbGvII+9A==" FormaPago="01" NoCertificado="00001000000510819349" Certificado="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" SubTotal="10.00" Moneda="MXN" Total="11.60" TipoDeComprobante="E" Exportacion="01" MetodoPago="PUE" LugarExpedicion="52227" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd"><cfdi:Emisor Rfc="MORJ7408292M8" Nombre="JUAN MANUEL MORALES RODRIGUEZ" RegimenFiscal="612" /><cfdi:Receptor Rfc="XEXX010101000" Nombre="PETER PARKER" DomicilioFiscalReceptor="52227" ResidenciaFiscal="SLV" RegimenFiscalReceptor="616" UsoCFDI="S01" /><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="83112505" NoIdentificacion="0" Cantidad="1" ClaveUnidad="E48" Unidad="Servicio" Descripcion="SERVICIO POR INTERCONEXION QLLP 044 LLAM: 35368989" ValorUnitario="10.00" Importe="10.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="10.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1.60" /></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="1.60"><cfdi:Traslados><cfdi:Traslado Base="10.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1.60" /></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento><tfd:TimbreFiscalDigital Version="1.1" UUID="A2ECC4E5-276A-4B99-8F9C-E0067D5412A7" FechaTimbrado="2022-04-07T14:01:51" RfcProvCertif="SPR961217NK9" Leyenda="ValorDelAtributoLeyenda" SelloCFD="S8k/38l+WbsLkQpFu6tZ6+OaWHmOzZnry9SiTg1fVC4aCQLV5m1X8pfDd3d8IlndLP5ZZi7sUjBZo++piUy8P5q+zYwhd1cvsPasp81skBX2Lrgwp7PxKG6PHJRB+Qu5XlmSg/DPN/Rc1MsDyyk/GhCHWuWqCvhHG1O0PZI/v+MXP8Fn+dj1kWdCVCBStEz0j6st8Am2GryNTUQ77vye25HUiDt+K0/1Qo75zC6EKQhUb+ZY+lN6Sj6/hKWZM/sdsLcEDs+DPQ4VFrQLgiHrQtAWkE9s+LvElqlsiimsuX46x3cvRj+bRKM94yEb+03AcXl8X/POFiS9MBbGvII+9A==" NoCertificadoSAT="30001000000400002495" SelloSAT="RbilmFY/C1DNPZB13sSHuNcynSBror5LOvvRuUkn3oLMsU5bTzhGxAMWCK55ix5zSYnl9s+SVrG0d75ZABXfGWVm6PRH1+fQRIj12AzSRbDggIYPbCjv66B0rNKLM13Q/+nyy6AnuHLZN8JAucLBUxkHwRG7tpaNm+kZembRwW8pyjTf0FczEFNnGejAFbfQLaMQOiWA8XrWQCgCBloA19745m7t2ocr+2EaikBM15J0hR31HgPgP+S9Xz4mS1W87Ijo1hlR0wMT7aJuJJuLMA3uBAMIY8TMYiWV8a+XMQ4NBfWjMgNfkooyDdDqYWqiylvoxvDNcO1ZjG00kTBIcA==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" /></cfdi:Complemento></cfdi:Comprobante> 
+ 
+2022-04-07 14:52:43,347 [18] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 14:52:43,348 [18] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 14:52:43,370 [18] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 14:52:50,334 [18] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 14:52:58,633 [18] INFO  App  
+ Info - Datos del comprobante. Folio: 444, Número de serie del certificado: 00000000000000000000, Serie: NNEZ 
+ 
+2022-04-07 14:53:39,233 [18] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-07 14:53:39,234 [18] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-07 14:53:39,277 [18] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/stamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="75e1577e-5b08-407c-83dc-8887440d982d"
+  Content-Length: 4376
+} 
+ 
+2022-04-07 14:53:39,282 [18] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-07 14:53:39,282 [18] INFO  App  
+ Info - Inserta la información en la base de datos.  
+ 
+2022-04-07 14:53:43,622 [18] ERROR App  
+ Error - Ocurrio un error al insertar un registro de comprobante. Message: ORA-00001: unique constraint (SEGDATACFDI.INDX_CE_COMP_RFC_SERIE_FOLIO) violated 
+ 
+2022-04-07 14:53:43,622 [18] INFO  App  
+ Info - No hubo error en el timbrado y se inserta la información en la base de datos.  
+ 
+2022-04-07 14:53:43,623 [18] INFO  App  
+ Info - Se realizó el timbrado con Seguridata.  
+ 
+2022-04-07 14:53:43,623 [18] INFO  App  
+ Info - código: 200 
+ 
+2022-04-07 14:53:43,623 [18] INFO  App  
+ Info - detalle: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/stamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="75e1577e-5b08-407c-83dc-8887440d982d"
+  Content-Length: 4376
+} 
+ 
+2022-04-07 14:53:43,624 [18] INFO  App  
+ Info - message: <?xml version="1.0" encoding="utf-8"?><cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xs="http://www.w3.org/2001/XMLSchema" Version="4.0" Serie="NNEZ" Folio="444" Fecha="2022-04-06T18:24:26" Sello="S8k/38l+WbsLkQpFu6tZ6+OaWHmOzZnry9SiTg1fVC4aCQLV5m1X8pfDd3d8IlndLP5ZZi7sUjBZo++piUy8P5q+zYwhd1cvsPasp81skBX2Lrgwp7PxKG6PHJRB+Qu5XlmSg/DPN/Rc1MsDyyk/GhCHWuWqCvhHG1O0PZI/v+MXP8Fn+dj1kWdCVCBStEz0j6st8Am2GryNTUQ77vye25HUiDt+K0/1Qo75zC6EKQhUb+ZY+lN6Sj6/hKWZM/sdsLcEDs+DPQ4VFrQLgiHrQtAWkE9s+LvElqlsiimsuX46x3cvRj+bRKM94yEb+03AcXl8X/POFiS9MBbGvII+9A==" FormaPago="01" NoCertificado="00001000000510819349" Certificado="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" SubTotal="10.00" Moneda="MXN" Total="11.60" TipoDeComprobante="E" Exportacion="01" MetodoPago="PUE" LugarExpedicion="52227" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd"><cfdi:Emisor Rfc="MORJ7408292M8" Nombre="JUAN MANUEL MORALES RODRIGUEZ" RegimenFiscal="612" /><cfdi:Receptor Rfc="XEXX010101000" Nombre="PETER PARKER" DomicilioFiscalReceptor="52227" ResidenciaFiscal="SLV" RegimenFiscalReceptor="616" UsoCFDI="S01" /><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="83112505" NoIdentificacion="0" Cantidad="1" ClaveUnidad="E48" Unidad="Servicio" Descripcion="SERVICIO POR INTERCONEXION QLLP 044 LLAM: 35368989" ValorUnitario="10.00" Importe="10.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="10.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1.60" /></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="1.60"><cfdi:Traslados><cfdi:Traslado Base="10.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1.60" /></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento><tfd:TimbreFiscalDigital Version="1.1" UUID="A2ECC4E5-276A-4B99-8F9C-E0067D5412A7" FechaTimbrado="2022-04-07T14:01:51" RfcProvCertif="SPR961217NK9" Leyenda="ValorDelAtributoLeyenda" SelloCFD="S8k/38l+WbsLkQpFu6tZ6+OaWHmOzZnry9SiTg1fVC4aCQLV5m1X8pfDd3d8IlndLP5ZZi7sUjBZo++piUy8P5q+zYwhd1cvsPasp81skBX2Lrgwp7PxKG6PHJRB+Qu5XlmSg/DPN/Rc1MsDyyk/GhCHWuWqCvhHG1O0PZI/v+MXP8Fn+dj1kWdCVCBStEz0j6st8Am2GryNTUQ77vye25HUiDt+K0/1Qo75zC6EKQhUb+ZY+lN6Sj6/hKWZM/sdsLcEDs+DPQ4VFrQLgiHrQtAWkE9s+LvElqlsiimsuX46x3cvRj+bRKM94yEb+03AcXl8X/POFiS9MBbGvII+9A==" NoCertificadoSAT="30001000000400002495" SelloSAT="RbilmFY/C1DNPZB13sSHuNcynSBror5LOvvRuUkn3oLMsU5bTzhGxAMWCK55ix5zSYnl9s+SVrG0d75ZABXfGWVm6PRH1+fQRIj12AzSRbDggIYPbCjv66B0rNKLM13Q/+nyy6AnuHLZN8JAucLBUxkHwRG7tpaNm+kZembRwW8pyjTf0FczEFNnGejAFbfQLaMQOiWA8XrWQCgCBloA19745m7t2ocr+2EaikBM15J0hR31HgPgP+S9Xz4mS1W87Ijo1hlR0wMT7aJuJJuLMA3uBAMIY8TMYiWV8a+XMQ4NBfWjMgNfkooyDdDqYWqiylvoxvDNcO1ZjG00kTBIcA==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" /></cfdi:Complemento></cfdi:Comprobante> 
+ 
+2022-04-07 14:54:57,874 [26] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 14:54:57,876 [26] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 14:54:57,898 [26] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 14:55:04,526 [26] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 14:55:42,185 [26] INFO  App  
+ Info - Datos del comprobante. Folio: 444, Número de serie del certificado: 00000000000000000000, Serie: NNEZ 
+ 
+2022-04-07 14:57:38,263 [9] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 14:57:38,289 [9] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 14:57:38,419 [9] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 14:57:46,196 [9] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 14:58:15,337 [9] INFO  App  
+ Info - Datos del comprobante. Folio: 444, Número de serie del certificado: 00000000000000000000, Serie: NNEZ 
+ 
+2022-04-07 15:31:07,922 [9] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-07 15:31:07,923 [9] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-07 15:31:37,860 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 15:31:37,877 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 15:31:38,008 [10] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 15:31:43,052 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 15:31:53,510 [10] INFO  App  
+ Info - Datos del comprobante. Folio: 444, Número de serie del certificado: 00000000000000000000, Serie: NNEZ 
+ 
+2022-04-07 15:33:46,433 [17] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 15:33:46,451 [17] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 15:33:46,587 [17] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 15:33:52,876 [17] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 15:34:03,769 [17] INFO  App  
+ Info - Datos del comprobante. Folio: 444, Número de serie del certificado: 00000000000000000000, Serie: NNEZ 
+ 
+2022-04-07 15:37:57,981 [17] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 15:37:58,000 [17] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 15:37:58,134 [17] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 15:38:02,684 [17] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 15:38:08,431 [17] INFO  App  
+ Info - Datos del comprobante. Folio: 444, Número de serie del certificado: 00000000000000000000, Serie: NNEZ 
+ 
+2022-04-07 15:40:28,846 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 15:40:28,866 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 15:40:28,992 [10] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 15:40:34,638 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 15:40:38,875 [10] INFO  App  
+ Info - Datos del comprobante. Folio: 444, Número de serie del certificado: 00000000000000000000, Serie: NNEZ 
+ 
+2022-04-07 15:41:09,304 [10] WARN  App  
+ Warn: El comprobante ya fue timbrado y se encuentra en la base de datos. 
+ 
+2022-04-07 15:41:09,309 [10] WARN  App  
+ Warn - código: 1000 
+ 
+2022-04-07 15:41:09,314 [10] WARN  App  
+ Warn - detalle: El comprobante ya fué timbrado. 
+ 
+2022-04-07 15:41:09,315 [10] WARN  App  
+ Warn - message: Ya se encuentra registrado el comprobante en la BD. 
+ 
+2022-04-07 16:27:42,832 [24] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 16:27:42,853 [24] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 16:27:42,980 [24] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 16:27:49,114 [24] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 16:27:57,689 [24] INFO  App  
+ Info - Datos del comprobante. Folio: 444, Número de serie del certificado: 00000000000000000000, Serie: NNEZ 
+ 
+2022-04-07 16:38:06,686 [25] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 16:38:06,707 [25] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 16:38:06,847 [25] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 16:38:11,469 [25] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 16:38:17,136 [25] INFO  App  
+ Info - Datos del comprobante. Folio: 444, Número de serie del certificado: 00000000000000000000, Serie: NNEZ 
+ 
+2022-04-07 16:38:59,074 [25] WARN  App  
+ Warn: El comprobante ya fue timbrado y se encuentra en la base de datos. Folio repetido. 
+ 
+2022-04-07 16:38:59,080 [25] WARN  App  
+ Warn - código: 1000 
+ 
+2022-04-07 16:38:59,082 [25] WARN  App  
+ Warn - detalle: El comprobante ya fué timbrado. 
+ 
+2022-04-07 16:38:59,088 [25] WARN  App  
+ Warn - message: Folio duplicado. RFC: MORJ7408292M8. SERIE: NNEZ. FOLIO: 444. 
+ 
+2022-04-07 16:39:53,093 [26] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 16:39:53,100 [26] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 16:39:53,149 [26] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 16:39:59,738 [26] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 16:40:07,356 [26] INFO  App  
+ Info - Datos del comprobante. Folio: 445, Número de serie del certificado: 00000000000000000000, Serie: NNEA 
+ 
+2022-04-07 16:42:11,372 [17] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 16:42:11,394 [17] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 16:42:11,523 [17] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 16:42:15,759 [17] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 16:42:21,898 [17] INFO  App  
+ Info - Datos del comprobante. Folio: 445, Número de serie del certificado: 00000000000000000000, Serie: NNEA 
+ 
+2022-04-07 16:44:00,996 [19] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 16:44:01,015 [19] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 16:44:01,145 [19] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 16:44:07,573 [19] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 16:44:15,633 [19] INFO  App  
+ Info - Datos del comprobante. Folio: 445, Número de serie del certificado: 00000000000000000000, Serie: NNEA 
+ 
+2022-04-07 16:45:04,062 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 16:45:04,082 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 16:45:04,212 [10] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 16:45:10,801 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 16:45:18,860 [10] INFO  App  
+ Info - Datos del comprobante. Folio: 445, Número de serie del certificado: 00000000000000000000, Serie: NNEA 
+ 
+2022-04-07 16:46:18,899 [17] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 16:46:18,916 [17] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 16:46:19,052 [17] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 16:46:26,631 [17] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 16:46:32,025 [17] INFO  App  
+ Info - Datos del comprobante. Folio: 445, Número de serie del certificado: 00000000000000000000, Serie: NNEA 
+ 
+2022-04-07 16:46:51,515 [17] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-07 16:46:51,522 [17] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-07 16:46:53,707 [17] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/stamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="20e56484-265c-46fe-970f-2e9116e688b6"
+  Content-Length: 4376
+} 
+ 
+2022-04-07 16:46:53,713 [17] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-07 16:46:53,713 [17] INFO  App  
+ Info - Inserta la información en la base de datos.  
+ 
+2022-04-07 16:46:59,289 [17] INFO  App  
+ Info - No hubo error en el timbrado y se inserta la información en la base de datos.  
+ 
+2022-04-07 16:46:59,289 [17] INFO  App  
+ Info - Se realizó el timbrado con Seguridata.  
+ 
+2022-04-07 16:46:59,289 [17] INFO  App  
+ Info - código: 200 
+ 
+2022-04-07 16:46:59,290 [17] INFO  App  
+ Info - detalle: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/stamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="20e56484-265c-46fe-970f-2e9116e688b6"
+  Content-Length: 4376
+} 
+ 
+2022-04-07 16:46:59,291 [17] INFO  App  
+ Info - message: <?xml version="1.0" encoding="utf-8"?><cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xs="http://www.w3.org/2001/XMLSchema" Version="4.0" Serie="NNEA" Folio="445" Fecha="2022-04-06T18:24:26" Sello="Z8kkIMENjMdrHkN+dHLNpDZ/I55rpBq6JtQUJ4AEDWnebGGFe0VXUQ/FFE+rYHGPNR4nmZx+gTRg4oYM6iGW1RLJAaESdJOqL8WPR42Kb2zHz4JzsGAaWh5avArjphCkeqQ5IAqk0uXNsFjU9htV2sp1OFN9AbPDgs9gtj/x/rfEWTKiGdRu0Zy67g8MEwywCQFaUa7ODHtMLYNVVVadPwSkG5Sb0KrsuBXqGieivxzdzrw8miLg4Ih0XcIodkXk0pX43mEGQAMaAGpIM0TyqCWT6IufqCaxb5Lt1DAiRghNdoShKT2xGcA3wH+/XwJ3EywNhh+Hlyk3EwhtFXI4vw==" FormaPago="01" NoCertificado="00001000000510819349" Certificado="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" SubTotal="10.00" Moneda="MXN" Total="11.60" TipoDeComprobante="E" Exportacion="01" MetodoPago="PUE" LugarExpedicion="52227" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd"><cfdi:Emisor Rfc="MORJ7408292M8" Nombre="JUAN MANUEL MORALES RODRIGUEZ" RegimenFiscal="612" /><cfdi:Receptor Rfc="XEXX010101000" Nombre="PETER PARKER" DomicilioFiscalReceptor="52227" ResidenciaFiscal="SLV" RegimenFiscalReceptor="616" UsoCFDI="S01" /><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="83112505" NoIdentificacion="0" Cantidad="1" ClaveUnidad="E48" Unidad="Servicio" Descripcion="SERVICIO POR INTERCONEXION QLLP 044 LLAM: 35368989" ValorUnitario="10.00" Importe="10.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="10.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1.60" /></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="1.60"><cfdi:Traslados><cfdi:Traslado Base="10.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1.60" /></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento><tfd:TimbreFiscalDigital Version="1.1" UUID="E13B979E-E7E8-43EC-8F82-D608DA7D95C4" FechaTimbrado="2022-04-07T16:46:51" RfcProvCertif="SPR961217NK9" Leyenda="ValorDelAtributoLeyenda" SelloCFD="Z8kkIMENjMdrHkN+dHLNpDZ/I55rpBq6JtQUJ4AEDWnebGGFe0VXUQ/FFE+rYHGPNR4nmZx+gTRg4oYM6iGW1RLJAaESdJOqL8WPR42Kb2zHz4JzsGAaWh5avArjphCkeqQ5IAqk0uXNsFjU9htV2sp1OFN9AbPDgs9gtj/x/rfEWTKiGdRu0Zy67g8MEwywCQFaUa7ODHtMLYNVVVadPwSkG5Sb0KrsuBXqGieivxzdzrw8miLg4Ih0XcIodkXk0pX43mEGQAMaAGpIM0TyqCWT6IufqCaxb5Lt1DAiRghNdoShKT2xGcA3wH+/XwJ3EywNhh+Hlyk3EwhtFXI4vw==" NoCertificadoSAT="30001000000400002495" SelloSAT="UgBrEDGAEW0C/wIyXfP1dbXQ8jkHOiWl4EOHIerAENdNWs8eG0vsc7wVaSMRA0skTh1eRra64XmrRubNJc+07HLl+xAUi+KT5VOGex3UHt2RMJXJyLietoOVV7wUy3ZMVuE+VKM8Tb6y9kmLSJyGPN/aLiITEkqHGImtWm8N7PoW8sNtidSgsl9v/8XKYFT0bb7UHiNtyCwInJEnXlVAQVEGGrxyiZ4eBeb3IlJUVtzGmfa7g841sqpOCKj+5Bc99jI4xr9R82Vh42j95tgAGNCeguWXpcHbg/RsZV/y7uwzwbEMLsR0wXNT7ejC0DSU2KLaQr9bv3LUOrgDf1tQyQ==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" /></cfdi:Complemento></cfdi:Comprobante> 
+ 
+2022-04-07 16:48:01,158 [26] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 16:48:01,159 [26] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 16:48:01,186 [26] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 16:48:07,337 [26] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 16:48:17,618 [26] INFO  App  
+ Info - Datos del comprobante. Folio: 445, Número de serie del certificado: 00000000000000000000, Serie: NNEA 
+ 
+2022-04-07 16:48:48,679 [26] WARN  App  
+ Warn: El comprobante ya fue timbrado y se encuentra en la base de datos. Folio repetido. 
+ 
+2022-04-07 16:48:48,689 [26] WARN  App  
+ Warn - código: 1000 
+ 
+2022-04-07 16:48:48,689 [26] WARN  App  
+ Warn - detalle: Ocurrió un error al verificar el comprobante en la BD. 
+ 
+2022-04-07 16:48:48,691 [26] WARN  App  
+ Warn - message: ORA-12537: Network Session: End of file 
+ 
+2022-04-07 16:49:09,206 [29] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 16:49:09,208 [29] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 16:49:09,233 [29] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 16:49:13,722 [29] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 16:49:13,724 [29] INFO  App  
+ Info - Datos del comprobante. Folio: 445, Número de serie del certificado: 00000000000000000000, Serie: NNEA 
+ 
+2022-04-07 16:49:26,282 [29] WARN  App  
+ Warn: El comprobante ya fue timbrado y se encuentra en la base de datos. Folio repetido. 
+ 
+2022-04-07 16:49:26,291 [29] WARN  App  
+ Warn - código: 1000 
+ 
+2022-04-07 16:49:26,294 [29] WARN  App  
+ Warn - detalle: Ocurrió un error al verificar el comprobante en la BD. 
+ 
+2022-04-07 16:49:26,297 [29] WARN  App  
+ Warn - message: ORA-12537: Network Session: End of file 
+ 
+2022-04-07 16:49:29,714 [32] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 16:49:29,715 [32] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 16:49:29,735 [32] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 16:49:34,416 [32] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 16:49:49,331 [32] INFO  App  
+ Info - Datos del comprobante. Folio: 445, Número de serie del certificado: 00000000000000000000, Serie: NNEA 
+ 
+2022-04-07 16:51:13,939 [16] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 16:51:13,956 [16] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 16:51:14,085 [16] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 16:51:41,966 [16] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 16:51:51,754 [16] INFO  App  
+ Info - Datos del comprobante. Folio: 445, Número de serie del certificado: 00000000000000000000, Serie: NNEA 
+ 
+2022-04-07 16:52:26,726 [16] WARN  App  
+ Warn: El comprobante ya fue timbrado y se encuentra en la base de datos. Folio repetido. 
+ 
+2022-04-07 16:52:26,728 [16] WARN  App  
+ Warn - código: 1000 
+ 
+2022-04-07 16:52:26,732 [16] WARN  App  
+ Warn - detalle: El comprobante ya fué timbrado. 
+ 
+2022-04-07 16:52:26,735 [16] WARN  App  
+ Warn - message: Folio duplicado. RFC: MORJ7408292M8. SERIE: NNEA. FOLIO: 445. 
+ 
+2022-04-07 16:53:58,354 [20] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 16:53:58,355 [20] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 16:53:58,400 [20] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 16:54:17,138 [20] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 16:54:17,139 [20] INFO  App  
+ Info - Datos del comprobante. Folio: 446, Número de serie del certificado: 00000000000000000000, Serie: NNEB 
+ 
+2022-04-07 16:54:29,686 [20] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-07 16:54:29,691 [20] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-07 16:54:29,838 [20] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/stamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="40f75174-bf8e-47a6-a61a-adccef7c7332"
+  Content-Length: 4376
+} 
+ 
+2022-04-07 16:54:29,843 [20] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-07 16:54:29,845 [20] INFO  App  
+ Info - Inserta la información en la base de datos.  
+ 
+2022-04-07 16:54:32,070 [20] INFO  App  
+ Info - No hubo error en el timbrado y se inserta la información en la base de datos.  
+ 
+2022-04-07 16:54:32,070 [20] INFO  App  
+ Info - Se realizó el timbrado con Seguridata.  
+ 
+2022-04-07 16:54:32,071 [20] INFO  App  
+ Info - código: 200 
+ 
+2022-04-07 16:54:32,071 [20] INFO  App  
+ Info - detalle: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/stamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="40f75174-bf8e-47a6-a61a-adccef7c7332"
+  Content-Length: 4376
+} 
+ 
+2022-04-07 16:54:32,072 [20] INFO  App  
+ Info - message: <?xml version="1.0" encoding="utf-8"?><cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xs="http://www.w3.org/2001/XMLSchema" Version="4.0" Serie="NNEB" Folio="446" Fecha="2022-04-06T18:24:26" Sello="l+4AYa21J8uIMelMz6+MH+GRrbwQqtfDvvG459eX4G1R3A7uQpj7ZpUeuJ8mD2GsCLNd++9N2pKi8QxHdvzkX3S14c3zOOru3E4xYIXlmbRNW8RGuYE4P+dlm93in+UJ4PfrNqtk2g6ABn9zzrlrCumj+xJcUmp8nyAIZrfjEpW3Bb+mjP6wxPg6VWZvemFgOFklXn8rBqt87MTQkAny5Bg4dB/GB5gMI8SexvYk29UGr4tMg5wYniTFQWPokSY0OUg64YMEmx8lrCnv77TMxH8FZN2pSs2SdBmkTrsAzZDHq70CRqRIDBmtbhImDJHAK1jf+OBJM8s8rIRSpQaVaw==" FormaPago="01" NoCertificado="00001000000510819349" Certificado="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" SubTotal="10.00" Moneda="MXN" Total="11.60" TipoDeComprobante="E" Exportacion="01" MetodoPago="PUE" LugarExpedicion="52227" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd"><cfdi:Emisor Rfc="MORJ7408292M8" Nombre="JUAN MANUEL MORALES RODRIGUEZ" RegimenFiscal="612" /><cfdi:Receptor Rfc="XEXX010101000" Nombre="PETER PARKER" DomicilioFiscalReceptor="52227" ResidenciaFiscal="SLV" RegimenFiscalReceptor="616" UsoCFDI="S01" /><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="83112505" NoIdentificacion="0" Cantidad="1" ClaveUnidad="E48" Unidad="Servicio" Descripcion="SERVICIO POR INTERCONEXION QLLP 044 LLAM: 35368989" ValorUnitario="10.00" Importe="10.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="10.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1.60" /></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="1.60"><cfdi:Traslados><cfdi:Traslado Base="10.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1.60" /></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento><tfd:TimbreFiscalDigital Version="1.1" UUID="FFBCABF0-F4FF-4B83-952E-D82826818C92" FechaTimbrado="2022-04-07T16:54:28" RfcProvCertif="SPR961217NK9" Leyenda="ValorDelAtributoLeyenda" SelloCFD="l+4AYa21J8uIMelMz6+MH+GRrbwQqtfDvvG459eX4G1R3A7uQpj7ZpUeuJ8mD2GsCLNd++9N2pKi8QxHdvzkX3S14c3zOOru3E4xYIXlmbRNW8RGuYE4P+dlm93in+UJ4PfrNqtk2g6ABn9zzrlrCumj+xJcUmp8nyAIZrfjEpW3Bb+mjP6wxPg6VWZvemFgOFklXn8rBqt87MTQkAny5Bg4dB/GB5gMI8SexvYk29UGr4tMg5wYniTFQWPokSY0OUg64YMEmx8lrCnv77TMxH8FZN2pSs2SdBmkTrsAzZDHq70CRqRIDBmtbhImDJHAK1jf+OBJM8s8rIRSpQaVaw==" NoCertificadoSAT="30001000000400002495" SelloSAT="AbiOv6XQvEIIezRMnnw2EcJinXgrL4CHCq5kBBE/Iddy3ymSFbi+uVvAVHXPx+efaCAmwXOMozqGyQ+y4G9HCmz3pl3DCXfMOB2tsCRM0D5FQ+fgxmUJga8VmUDV75SQsHb4JdHUaeGTX5yBQk0ftMdNvFl1tUJb0E6DbUvzDEjKRyZTtLRrKdMm11NXzmX1tihlQdXts6nzfgMKf4y5qLlf5JAJnRsNgogREsDAo8MxJ3MOsg2+tTY1CEpZNQ9ELJmCtoQOzrYtYBjLtLU26X9qWydFKR7YPooaS7i5Wvd2m9la0rIdgzwPGb9sUSbLaFZvc2HHL6tyTofs35dRkQ==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" /></cfdi:Complemento></cfdi:Comprobante> 
+ 
+2022-04-07 16:55:07,926 [25] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-07 16:55:07,928 [25] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-07 16:55:07,951 [25] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-07 16:55:16,721 [25] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-07 16:55:22,767 [25] INFO  App  
+ Info - Datos del comprobante. Folio: 446, Número de serie del certificado: 00000000000000000000, Serie: NNEB 
+ 
+2022-04-07 16:55:55,565 [25] WARN  App  
+ Warn: El comprobante ya fue timbrado y se encuentra en la base de datos. Folio repetido. 
+ 
+2022-04-07 16:55:55,566 [25] WARN  App  
+ Warn - código: 1000 
+ 
+2022-04-07 16:55:55,569 [25] WARN  App  
+ Warn - detalle: El comprobante ya fué timbrado. 
+ 
+2022-04-07 16:55:55,573 [25] WARN  App  
+ Warn - message: Folio duplicado. RFC: MORJ7408292M8. SERIE: NNEB. FOLIO: 446. 
+ 

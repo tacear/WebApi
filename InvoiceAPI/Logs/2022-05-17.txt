@@ -1,0 +1,605 @@
+﻿2022-05-17 13:55:59,648 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-17 13:56:28,550 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+ 
+2022-05-17 13:56:28,749 [10] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-05-17 13:56:28,756 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-05-17 13:56:28,776 [10] INFO  App  
+ Info - Datos del comprobante. Folio: 0007, Número de serie del certificado: 30001000000400002434, Serie: KEREN 
+ 
+2022-05-17 13:56:28,785 [10] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-05-17 13:56:28,786 [10] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-05-17 13:56:28,841 [10] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="12487ed7-33dc-4f28-82b8-cbb21eacad46"
+  Content-Length: 4047
+} 
+ 
+2022-05-17 13:56:28,844 [10] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-05-17 13:56:28,845 [10] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-05-17 13:56:28,846 [10] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 404 
+ 
+2022-05-17 13:56:28,846 [10] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="12487ed7-33dc-4f28-82b8-cbb21eacad46"
+  Content-Length: 4047
+} 
+ 
+2022-05-17 13:56:28,846 [10] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+ 
+2022-05-17 13:56:28,847 [10] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-05-17 13:56:28,850 [10] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"123414","token": "$2b$12$JgIf1J7db4e6f06VnNPsUOaQD3SpwUnzPqXDkuirQklcc8gMCMIDS" },"issuer": {"rfc": "EKU9003173C9"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "EKU9003173C9KEREN0007","certificate-number": "30001000000400002434","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0+xml","content": "PGNmZGk6Q29tcHJvYmFudGUgeG1sbnM6Y2ZkaT0iaHR0cDovL3d3dy5zYXQuZ29iLm14L2NmZC80IiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9jZmQvNCBodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkLzQvY2ZkdjQwLnhzZCIgVmVyc2lvbj0iNC4wIiBTZXJpZT0iS0VSRU4iIEZvbGlvPSIwMDA3IiBGZWNoYT0iMjAyMi0wNS0wNVQwODoxMzo1MSIgU2VsbG89IkJmeVlVR1JCZzEydzVaNkQyL1pZNUd2WjBvMGZ1dkl5ZGtSaGh1VGZSbUZ5dERXZFdnT2g3NzNZeW1kbk9ld2kzVm1zdTRWV0FEK255ZzJWbis2dG9TUnAyMjF0dnJ4UktMV24yNnpWQkRlYUFWMitDQXVCVmxWNjJzaWVRYUs2SGxGRkNyU0pkbmJVY1prRVcyeDNjM2R1NGZPekhmQkdSRHJwczR0OHpsa2xCdTVwMzdRYS9talp1UTNvTm52dGxyaEdlN21ZYkxuelhLYTFVci9LQit1dzNmdnZ1N3FGQ3E3N2k2WTVHSXYvN2hWZmRoOWxEMllaVlA3STdaZnEyeEdMWVk2SFBjenBhSUY0Y09DVzhwc2lwMFZMQk5qRWc5R296S1lQbTd5OG9RblVsVC9nU3ZwVzc2RzFCbUZzNnBZRS9PeDVtR0s5RmdhS3hQSHZ3Zz09IiBGb3JtYVBhZ289IjAxIiBOb0NlcnRpZmljYWRvPSIzMDAwMTAwMDAwMDQwMDAwMjQzNCIgQ2VydGlmaWNhZG89Ik1JSUZ1ekNDQTZPZ0F3SUJBZ0lVTXpBd01ERXdNREF3TURBME1EQXdNREkwTXpRd0RRWUpLb1pJaHZjTkFRRUxCUUF3Z2dFck1ROHdEUVlEVlFRRERBWkJReUJWUVZReExqQXNCZ05WQkFvTUpWTkZVbFpKUTBsUElFUkZJRUZFVFVsT1NWTlVVa0ZEU1U5T0lGUlNTVUpWVkVGU1NVRXhHakFZQmdOVkJBc01FVk5CVkMxSlJWTWdRWFYwYUc5eWFYUjVNU2d3SmdZSktvWklodmNOQVFrQkZobHZjMk5oY2k1dFlYSjBhVzVsZWtCellYUXVaMjlpTG0xNE1SMHdHd1lEVlFRSkRCUXpjbUVnWTJWeWNtRmtZU0JrWlNCallXUnBlakVPTUF3R0ExVUVFUXdGTURZek56QXhDekFKQmdOVkJBWVRBazFZTVJrd0Z3WURWUVFJREJCRFNWVkVRVVFnUkVVZ1RVVllTVU5QTVJFd0R3WURWUVFIREFoRFQxbFBRVU5CVGpFUk1BOEdBMVVFTFJNSU1pNDFMalF1TkRVeEpUQWpCZ2txaGtpRzl3MEJDUUlURm5KbGMzQnZibk5oWW14bE9pQkJRMFJOUVMxVFFWUXdIaGNOTVRrd05qRTNNVGswTkRFMFdoY05Nak13TmpFM01UazBOREUwV2pDQjRqRW5NQ1VHQTFVRUF4TWVSVk5EVlVWTVFTQkxSVTFRUlZJZ1ZWSkhRVlJGSUZOQklFUkZJRU5XTVNjd0pRWURWUVFwRXg1RlUwTlZSVXhCSUV0RlRWQkZVaUJWVWtkQlZFVWdVMEVnUkVVZ1ExWXhKekFsQmdOVkJBb1RIa1ZUUTFWRlRFRWdTMFZOVUVWU0lGVlNSMEZVUlNCVFFTQkVSU0JEVmpFbE1DTUdBMVVFTFJNY1JVdFZPVEF3TXpFM00wTTVJQzhnV0VsUlFqZzVNVEV4TmxGRk5ERWVNQndHQTFVRUJSTVZJQzhnV0VsUlFqZzVNVEV4TmsxSFVrMWFVakExTVI0d0hBWURWUVFMRXhWRmMyTjFaV3hoSUV0bGJYQmxjaUJWY21kaGRHVXdnZ0VpTUEwR0NTcUdTSWIzRFFFQkFRVUFBNElCRHdBd2dnRUtBb0lCQVFDTjBwZUtwZ2ZPTDc1aVlSdjFmcXErb1ZZc0xQVlVSL0dpYlltR0tjOUluSEZ5NWxZRjZPVFlqbklJdm1rT2RSb2JiR2xDVXhPUlgvdExzbDhZYTlnbTZZbzdoSG5PRFJCSUR1cDNHSVNGekIvOTZSOUsvTXpZUU9jc2NNSW9CREFSYXljbkx2eTdGbE12TzcvcmxWbnNTQVJ4WlJPOEt6OFpra3NqMnpwZVlwalpJeWEvMzY5K29HcVFrMWNUUmtIbzU5SnZKNFRmYmsvM2lJeWY0SC9Jbmk5bkJlOWNZV28wTW5Lb2I3RER0L3ZzZGk1dEE4bU10QTk1M0xhcE55Q1pJRENSUVFsVUdOZ0RxWTkvOEY1bVV2VmdrY2N6c0lnR2R2Zjl2TVFQU2YzampDaUtqN2o2dWN4bDErRndKV21idmdObWlhVVIvMHE0bTJybTc4bEZBZ01CQUFHakhUQWJNQXdHQTFVZEV3RUIvd1FDTUFBd0N3WURWUjBQQkFRREFnYkFNQTBHQ1NxR1NJYjNEUUVCQ3dVQUE0SUNBUUJjcGoxVGpUNGppaW5JdWpJZEFsRnpFNmtSd1lKQ25ERzA4elNwNGtTblNoanhBREdFWEgyY2hlaEtNVjBGWTdjNG5qQTVlREdkQS9HMk9DVFB2RjVycGVDWlA1RHc1MDRSWmtZRGwyc3VSeit3YTFzTkJWcGJuQkpFSzBmUWNOM0lmdEJ3c2dORmRGaFV0Q3l3M2x1czFTU0piUHhqTEhTNkZjWlo1MVlTZUlmY05YT0F1VHFkaW11c2FYcTE1R3JTckNPa002bjJqZmoyc01KWU0ySFhhWEo2ckdURWdZbWhZZHd4V3RpbDZSZlpCK2ZHUS9IOUk5V0xubDRLVFpVUzZDOStOTEhoNEZQRGhTazE5ZnBTMlMvNTZhcWdGb0dBa1hBWXQ5Rnk1RUNhUGNVTElmSjFERWJzWEt5UmRDdjNKWTg5KzBNTmtPZGFEbnNlbVMybzVHbDA4ekk0aVl0dDNMNDBnQVo2ME5QaDMxa1ZMbllOc212Zk54WXlLcCtBZUp0REh5Vzl3N2Z0TTBIb2krQnVSbWNBUVNLRlYzcGs4ajUxbGEranJSQnJBVXY4YmxiUmNRNUJpWlV3SnpIRkVLSXdUc1JHb1J5RXg5NnNObkIwM242R1R3aklHejkyU21MZE5sOTVyOXJrdnArMm00UzZxMWxQdVhhRmc3REdCclhXQzhpeXFlV0UyaW9iZHdJSXVYUFRNVnFRYjEybTFkQWtKVlJPNU5kSG5QL01wcU92T2dMcW9aQk5IR3lCZzRHcW00c0NKSEN4QTFjOEVsZmEyUlFUQ2swdEF6bGxMNHZPbkkxR0hrR0puNjV4b2tHc2FVNEI0RDM2eGg3ZVdyZmo0L3BnV0htdG9EQVlhOHd6U3dvMkdWQ1pPcyttdEVnT1FCOTEvZz09IiBDb25kaWNpb25lc0RlUGFnbz0iMzAgZMOtYXMiIFN1YlRvdGFsPSIxMDAwMC4wMCIgVG90YWw9IjExNjAwLjAwIiBNb25lZGE9IkVVUiIgVGlwb0NhbWJpbz0iNzc3Ljc3IiBUaXBvRGVDb21wcm9iYW50ZT0iRSIgRXhwb3J0YWNpb249IjAxIiBNZXRvZG9QYWdvPSJQVUUiIEx1Z2FyRXhwZWRpY2lvbj0iNjQwMDAiPjxjZmRpOkVtaXNvciBSZmM9IkVLVTkwMDMxNzNDOSIgTm9tYnJlPSJFU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YiIFJlZ2ltZW5GaXNjYWw9IjYwMSIgLz48Y2ZkaTpSZWNlcHRvciBSZmM9IlhBWFgwMTAxMDEwMDAiIE5vbWJyZT0iTWFyaWEgZGVsIENhcm1lbiIgRG9taWNpbGlvRmlzY2FsUmVjZXB0b3I9IjY0MDAwIiBSZWdpbWVuRmlzY2FsUmVjZXB0b3I9IjYxNiIgVXNvQ0ZEST0iUzAxIiAvPjxjZmRpOkNvbmNlcHRvcz48Y2ZkaTpDb25jZXB0byBDbGF2ZVByb2RTZXJ2PSI4NDExMTUwNiIgTm9JZGVudGlmaWNhY2lvbj0iQTFCMkMzRDQiIENhbnRpZGFkPSIxLjAwMDAwMCIgQ2xhdmVVbmlkYWQ9Ikg4NyIgVW5pZGFkPSJQaWV6YSIgRGVzY3JpcGNpb249IkNvbmNlcHRvIGRlIHBydWViYSIgVmFsb3JVbml0YXJpbz0iMTAwMDAuMDAiIEltcG9ydGU9IjEwMDAwLjAwIiBPYmpldG9JbXA9IjAyIj48Y2ZkaTpJbXB1ZXN0b3M+PGNmZGk6VHJhc2xhZG9zPjxjZmRpOlRyYXNsYWRvIEJhc2U9IjEwMDAwLjAwIiBJbXB1ZXN0bz0iMDAyIiBUaXBvRmFjdG9yPSJUYXNhIiBUYXNhT0N1b3RhPSIwLjE2MDAwMCIgSW1wb3J0ZT0iMTYwMC4wMCIgLz48L2NmZGk6VHJhc2xhZG9zPjwvY2ZkaTpJbXB1ZXN0b3M+PC9jZmRpOkNvbmNlcHRvPjwvY2ZkaTpDb25jZXB0b3M+PGNmZGk6SW1wdWVzdG9zIFRvdGFsSW1wdWVzdG9zVHJhc2xhZGFkb3M9IjE2MDAuMDAiPjxjZmRpOlRyYXNsYWRvcz48Y2ZkaTpUcmFzbGFkbyBCYXNlPSIxMDAwMC4wMCIgSW1wdWVzdG89IjAwMiIgVGlwb0ZhY3Rvcj0iVGFzYSIgVGFzYU9DdW90YT0iMC4xNjAwMDAiIEltcG9ydGU9IjE2MDAuMDAiIC8+PC9jZmRpOlRyYXNsYWRvcz48L2NmZGk6SW1wdWVzdG9zPjwvY2ZkaTpDb21wcm9iYW50ZT4="}} 
+ 
+2022-05-17 13:56:28,851 [10] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-05-17 13:56:28,852 [10] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-05-17 13:56:29,351 [10] INFO  App  
+ Info - Response recibido: StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Tue, 17 May 2022 18:56:31 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: 6qfkiob788q3jcgpcmvobbvcg5d4tva7
+  Connection: close
+  Content-Length: 570
+  Content-Type: application/json; charset=utf-8
+} 
+ 
+2022-05-17 13:56:29,373 [10] INFO  App  
+ Info - Error de respuesta del timbrado Diverza: ["La fecha de emision no puede ser anterior a 72 horas"] 
+ 
+2022-05-17 13:56:29,374 [10] INFO  App  
+ Info - Detalle de error de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5435
+} 
+ 
+2022-05-17 13:56:29,376 [10] ERROR App  
+ Error - No se pudo realizar el timbrado con Diverza.  
+ 
+2022-05-17 13:56:29,376 [10] ERROR App  
+ Error - código: 400 
+ 
+2022-05-17 13:56:29,377 [10] ERROR App  
+ Error - detalle: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5435
+} 
+ 
+2022-05-17 13:56:29,377 [10] ERROR App  
+ Error - message: ["La fecha de emision no puede ser anterior a 72 horas"] 
+ 
+2022-05-17 13:57:49,915 [25] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-17 13:58:02,162 [25] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+ 
+2022-05-17 13:58:02,183 [25] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-05-17 13:58:02,187 [25] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-05-17 13:58:02,187 [25] INFO  App  
+ Info - Datos del comprobante. Folio: 0009, Número de serie del certificado: 30001000000400002434, Serie: KEREN 
+ 
+2022-05-17 13:58:02,203 [25] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-05-17 13:58:02,204 [25] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-05-17 13:58:02,226 [25] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="15550477-95df-48d9-8881-7a2287d3ccba"
+  Content-Length: 4047
+} 
+ 
+2022-05-17 13:58:02,230 [25] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-05-17 13:58:02,231 [25] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-05-17 13:58:02,232 [25] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 404 
+ 
+2022-05-17 13:58:02,232 [25] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="15550477-95df-48d9-8881-7a2287d3ccba"
+  Content-Length: 4047
+} 
+ 
+2022-05-17 13:58:02,232 [25] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+ 
+2022-05-17 13:58:02,233 [25] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-05-17 13:58:02,234 [25] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"123414","token": "$2b$12$JgIf1J7db4e6f06VnNPsUOaQD3SpwUnzPqXDkuirQklcc8gMCMIDS" },"issuer": {"rfc": "EKU9003173C9"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "EKU9003173C9KEREN0009","certificate-number": "30001000000400002434","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0+xml","content": "PGNmZGk6Q29tcHJvYmFudGUgeG1sbnM6Y2ZkaT0iaHR0cDovL3d3dy5zYXQuZ29iLm14L2NmZC80IiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9jZmQvNCBodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkLzQvY2ZkdjQwLnhzZCIgVmVyc2lvbj0iNC4wIiBTZXJpZT0iS0VSRU4iIEZvbGlvPSIwMDA5IiBGZWNoYT0iMjAyMi0wNS0xNlQwODoxMzo1MSIgU2VsbG89Ik54Y3lTRStUNDFiUDdRVE9hTkQ5eGtWVjJRTDBiODZhbjlkZlhONVBWSzdqVGF1NEVwUUNvV29ONlVRSG5OSDF6Z05XRnlHOU8wWE0xRnFPR3d2dmZIUDFpTGZQOVppRmZXYkVXakpDT2ZhOTZQSmRwbWE3dkdHSGwzY1VsOEMyU0dGZ2RiZzBMZm5tVG1WRW9uS0xUbHFRZlhFNWxiUlQydU5HM28xamNBTm1iK3o0cFI3R3ZnRTk1OEpuUGphNWJnL3dXellqQzVtSmdrVHJCZkU3ZVB0OC9FbFMzcFdMakpLYlh1SFhVY25WQ0xkdWlPS3VlSEhUYllGMmhiVWFzT21meUxPb3pVUUVvMUcwV05aSEN1ejgvUVp1U3VJRmhZSDh6eDQvY1dHMDdTWDR2Y25QdXN3RnAzcGZ5STc5MWFDQkRvZkxaRzhldXpoSWdDME5UUT09IiBGb3JtYVBhZ289IjAxIiBOb0NlcnRpZmljYWRvPSIzMDAwMTAwMDAwMDQwMDAwMjQzNCIgQ2VydGlmaWNhZG89Ik1JSUZ1ekNDQTZPZ0F3SUJBZ0lVTXpBd01ERXdNREF3TURBME1EQXdNREkwTXpRd0RRWUpLb1pJaHZjTkFRRUxCUUF3Z2dFck1ROHdEUVlEVlFRRERBWkJReUJWUVZReExqQXNCZ05WQkFvTUpWTkZVbFpKUTBsUElFUkZJRUZFVFVsT1NWTlVVa0ZEU1U5T0lGUlNTVUpWVkVGU1NVRXhHakFZQmdOVkJBc01FVk5CVkMxSlJWTWdRWFYwYUc5eWFYUjVNU2d3SmdZSktvWklodmNOQVFrQkZobHZjMk5oY2k1dFlYSjBhVzVsZWtCellYUXVaMjlpTG0xNE1SMHdHd1lEVlFRSkRCUXpjbUVnWTJWeWNtRmtZU0JrWlNCallXUnBlakVPTUF3R0ExVUVFUXdGTURZek56QXhDekFKQmdOVkJBWVRBazFZTVJrd0Z3WURWUVFJREJCRFNWVkVRVVFnUkVVZ1RVVllTVU5QTVJFd0R3WURWUVFIREFoRFQxbFBRVU5CVGpFUk1BOEdBMVVFTFJNSU1pNDFMalF1TkRVeEpUQWpCZ2txaGtpRzl3MEJDUUlURm5KbGMzQnZibk5oWW14bE9pQkJRMFJOUVMxVFFWUXdIaGNOTVRrd05qRTNNVGswTkRFMFdoY05Nak13TmpFM01UazBOREUwV2pDQjRqRW5NQ1VHQTFVRUF4TWVSVk5EVlVWTVFTQkxSVTFRUlZJZ1ZWSkhRVlJGSUZOQklFUkZJRU5XTVNjd0pRWURWUVFwRXg1RlUwTlZSVXhCSUV0RlRWQkZVaUJWVWtkQlZFVWdVMEVnUkVVZ1ExWXhKekFsQmdOVkJBb1RIa1ZUUTFWRlRFRWdTMFZOVUVWU0lGVlNSMEZVUlNCVFFTQkVSU0JEVmpFbE1DTUdBMVVFTFJNY1JVdFZPVEF3TXpFM00wTTVJQzhnV0VsUlFqZzVNVEV4TmxGRk5ERWVNQndHQTFVRUJSTVZJQzhnV0VsUlFqZzVNVEV4TmsxSFVrMWFVakExTVI0d0hBWURWUVFMRXhWRmMyTjFaV3hoSUV0bGJYQmxjaUJWY21kaGRHVXdnZ0VpTUEwR0NTcUdTSWIzRFFFQkFRVUFBNElCRHdBd2dnRUtBb0lCQVFDTjBwZUtwZ2ZPTDc1aVlSdjFmcXErb1ZZc0xQVlVSL0dpYlltR0tjOUluSEZ5NWxZRjZPVFlqbklJdm1rT2RSb2JiR2xDVXhPUlgvdExzbDhZYTlnbTZZbzdoSG5PRFJCSUR1cDNHSVNGekIvOTZSOUsvTXpZUU9jc2NNSW9CREFSYXljbkx2eTdGbE12TzcvcmxWbnNTQVJ4WlJPOEt6OFpra3NqMnpwZVlwalpJeWEvMzY5K29HcVFrMWNUUmtIbzU5SnZKNFRmYmsvM2lJeWY0SC9Jbmk5bkJlOWNZV28wTW5Lb2I3RER0L3ZzZGk1dEE4bU10QTk1M0xhcE55Q1pJRENSUVFsVUdOZ0RxWTkvOEY1bVV2VmdrY2N6c0lnR2R2Zjl2TVFQU2YzampDaUtqN2o2dWN4bDErRndKV21idmdObWlhVVIvMHE0bTJybTc4bEZBZ01CQUFHakhUQWJNQXdHQTFVZEV3RUIvd1FDTUFBd0N3WURWUjBQQkFRREFnYkFNQTBHQ1NxR1NJYjNEUUVCQ3dVQUE0SUNBUUJjcGoxVGpUNGppaW5JdWpJZEFsRnpFNmtSd1lKQ25ERzA4elNwNGtTblNoanhBREdFWEgyY2hlaEtNVjBGWTdjNG5qQTVlREdkQS9HMk9DVFB2RjVycGVDWlA1RHc1MDRSWmtZRGwyc3VSeit3YTFzTkJWcGJuQkpFSzBmUWNOM0lmdEJ3c2dORmRGaFV0Q3l3M2x1czFTU0piUHhqTEhTNkZjWlo1MVlTZUlmY05YT0F1VHFkaW11c2FYcTE1R3JTckNPa002bjJqZmoyc01KWU0ySFhhWEo2ckdURWdZbWhZZHd4V3RpbDZSZlpCK2ZHUS9IOUk5V0xubDRLVFpVUzZDOStOTEhoNEZQRGhTazE5ZnBTMlMvNTZhcWdGb0dBa1hBWXQ5Rnk1RUNhUGNVTElmSjFERWJzWEt5UmRDdjNKWTg5KzBNTmtPZGFEbnNlbVMybzVHbDA4ekk0aVl0dDNMNDBnQVo2ME5QaDMxa1ZMbllOc212Zk54WXlLcCtBZUp0REh5Vzl3N2Z0TTBIb2krQnVSbWNBUVNLRlYzcGs4ajUxbGEranJSQnJBVXY4YmxiUmNRNUJpWlV3SnpIRkVLSXdUc1JHb1J5RXg5NnNObkIwM242R1R3aklHejkyU21MZE5sOTVyOXJrdnArMm00UzZxMWxQdVhhRmc3REdCclhXQzhpeXFlV0UyaW9iZHdJSXVYUFRNVnFRYjEybTFkQWtKVlJPNU5kSG5QL01wcU92T2dMcW9aQk5IR3lCZzRHcW00c0NKSEN4QTFjOEVsZmEyUlFUQ2swdEF6bGxMNHZPbkkxR0hrR0puNjV4b2tHc2FVNEI0RDM2eGg3ZVdyZmo0L3BnV0htdG9EQVlhOHd6U3dvMkdWQ1pPcyttdEVnT1FCOTEvZz09IiBDb25kaWNpb25lc0RlUGFnbz0iMzAgZMOtYXMiIFN1YlRvdGFsPSIxMDAwMC4wMCIgVG90YWw9IjExNjAwLjAwIiBNb25lZGE9IkVVUiIgVGlwb0NhbWJpbz0iNzc3Ljc3IiBUaXBvRGVDb21wcm9iYW50ZT0iRSIgRXhwb3J0YWNpb249IjAxIiBNZXRvZG9QYWdvPSJQVUUiIEx1Z2FyRXhwZWRpY2lvbj0iNjQwMDAiPjxjZmRpOkVtaXNvciBSZmM9IkVLVTkwMDMxNzNDOSIgTm9tYnJlPSJFU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YiIFJlZ2ltZW5GaXNjYWw9IjYwMSIgLz48Y2ZkaTpSZWNlcHRvciBSZmM9IlhBWFgwMTAxMDEwMDAiIE5vbWJyZT0iTWFyaWEgZGVsIENhcm1lbiIgRG9taWNpbGlvRmlzY2FsUmVjZXB0b3I9IjY0MDAwIiBSZWdpbWVuRmlzY2FsUmVjZXB0b3I9IjYxNiIgVXNvQ0ZEST0iUzAxIiAvPjxjZmRpOkNvbmNlcHRvcz48Y2ZkaTpDb25jZXB0byBDbGF2ZVByb2RTZXJ2PSI4NDExMTUwNiIgTm9JZGVudGlmaWNhY2lvbj0iQTFCMkMzRDQiIENhbnRpZGFkPSIxLjAwMDAwMCIgQ2xhdmVVbmlkYWQ9Ikg4NyIgVW5pZGFkPSJQaWV6YSIgRGVzY3JpcGNpb249IkNvbmNlcHRvIGRlIHBydWViYSIgVmFsb3JVbml0YXJpbz0iMTAwMDAuMDAiIEltcG9ydGU9IjEwMDAwLjAwIiBPYmpldG9JbXA9IjAyIj48Y2ZkaTpJbXB1ZXN0b3M+PGNmZGk6VHJhc2xhZG9zPjxjZmRpOlRyYXNsYWRvIEJhc2U9IjEwMDAwLjAwIiBJbXB1ZXN0bz0iMDAyIiBUaXBvRmFjdG9yPSJUYXNhIiBUYXNhT0N1b3RhPSIwLjE2MDAwMCIgSW1wb3J0ZT0iMTYwMC4wMCIgLz48L2NmZGk6VHJhc2xhZG9zPjwvY2ZkaTpJbXB1ZXN0b3M+PC9jZmRpOkNvbmNlcHRvPjwvY2ZkaTpDb25jZXB0b3M+PGNmZGk6SW1wdWVzdG9zIFRvdGFsSW1wdWVzdG9zVHJhc2xhZGFkb3M9IjE2MDAuMDAiPjxjZmRpOlRyYXNsYWRvcz48Y2ZkaTpUcmFzbGFkbyBCYXNlPSIxMDAwMC4wMCIgSW1wdWVzdG89IjAwMiIgVGlwb0ZhY3Rvcj0iVGFzYSIgVGFzYU9DdW90YT0iMC4xNjAwMDAiIEltcG9ydGU9IjE2MDAuMDAiIC8+PC9jZmRpOlRyYXNsYWRvcz48L2NmZGk6SW1wdWVzdG9zPjwvY2ZkaTpDb21wcm9iYW50ZT4="}} 
+ 
+2022-05-17 13:58:02,234 [25] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-05-17 13:58:02,235 [25] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-05-17 13:58:03,064 [25] INFO  App  
+ Info - Response recibido: StatusCode: 201, ReasonPhrase: 'Created', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Tue, 17 May 2022 18:58:05 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: fb0ts2k32da0rkmojm679shoc987gau4
+  Content-Length: 6673
+  Content-Type: application/json; charset=utf-8
+} 
+ 
+2022-05-17 13:58:03,070 [25] INFO  App  
+ Info - Mensaje de respuesta del timbrado Diverza: <?xml version="1.0" encoding="utf-8" ?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="KEREN" Folio="0009" Fecha="2022-05-16T08:13:51" Sello="NxcySE+T41bP7QTOaND9xkVV2QL0b86an9dfXN5PVK7jTau4EpQCoWoN6UQHnNH1zgNWFyG9O0XM1FqOGwvvfHP1iLfP9ZiFfWbEWjJCOfa96PJdpma7vGGHl3cUl8C2SGFgdbg0LfnmTmVEonKLTlqQfXE5lbRT2uNG3o1jcANmb+z4pR7GvgE958JnPja5bg/wWzYjC5mJgkTrBfE7ePt8/ElS3pWLjJKbXuHXUcnVCLduiOKueHHTbYF2hbUasOmfyLOozUQEo1G0WNZHCuz8/QZuSuIFhYH8zx4/cWG07SX4vcnPuswFp3pfyI791aCBDofLZG8euzhIgC0NTQ==" FormaPago="01" NoCertificado="30001000000400002434" Certificado="MIIFuzCCA6OgAwIBAgIUMzAwMDEwMDAwMDA0MDAwMDI0MzQwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWRpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMTkwNjE3MTk0NDE0WhcNMjMwNjE3MTk0NDE0WjCB4jEnMCUGA1UEAxMeRVNDVUVMQSBLRU1QRVIgVVJHQVRFIFNBIERFIENWMScwJQYDVQQpEx5FU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YxJzAlBgNVBAoTHkVTQ1VFTEEgS0VNUEVSIFVSR0FURSBTQSBERSBDVjElMCMGA1UELRMcRUtVOTAwMzE3M0M5IC8gWElRQjg5MTExNlFFNDEeMBwGA1UEBRMVIC8gWElRQjg5MTExNk1HUk1aUjA1MR4wHAYDVQQLExVFc2N1ZWxhIEtlbXBlciBVcmdhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCN0peKpgfOL75iYRv1fqq+oVYsLPVUR/GibYmGKc9InHFy5lYF6OTYjnIIvmkOdRobbGlCUxORX/tLsl8Ya9gm6Yo7hHnODRBIDup3GISFzB/96R9K/MzYQOcscMIoBDARaycnLvy7FlMvO7/rlVnsSARxZRO8Kz8Zkksj2zpeYpjZIya/369+oGqQk1cTRkHo59JvJ4Tfbk/3iIyf4H/Ini9nBe9cYWo0MnKob7DDt/vsdi5tA8mMtA953LapNyCZIDCRQQlUGNgDqY9/8F5mUvVgkcczsIgGdvf9vMQPSf3jjCiKj7j6ucxl1+FwJWmbvgNmiaUR/0q4m2rm78lFAgMBAAGjHTAbMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBCwUAA4ICAQBcpj1TjT4jiinIujIdAlFzE6kRwYJCnDG08zSp4kSnShjxADGEXH2chehKMV0FY7c4njA5eDGdA/G2OCTPvF5rpeCZP5Dw504RZkYDl2suRz+wa1sNBVpbnBJEK0fQcN3IftBwsgNFdFhUtCyw3lus1SSJbPxjLHS6FcZZ51YSeIfcNXOAuTqdimusaXq15GrSrCOkM6n2jfj2sMJYM2HXaXJ6rGTEgYmhYdwxWtil6RfZB+fGQ/H9I9WLnl4KTZUS6C9+NLHh4FPDhSk19fpS2S/56aqgFoGAkXAYt9Fy5ECaPcULIfJ1DEbsXKyRdCv3JY89+0MNkOdaDnsemS2o5Gl08zI4iYtt3L40gAZ60NPh31kVLnYNsmvfNxYyKp+AeJtDHyW9w7ftM0Hoi+BuRmcAQSKFV3pk8j51la+jrRBrAUv8blbRcQ5BiZUwJzHFEKIwTsRGoRyEx96sNnB03n6GTwjIGz92SmLdNl95r9rkvp+2m4S6q1lPuXaFg7DGBrXWC8iyqeWE2iobdwIIuXPTMVqQb12m1dAkJVRO5NdHnP/MpqOvOgLqoZBNHGyBg4Gqm4sCJHCxA1c8Elfa2RQTCk0tAzllL4vOnI1GHkGJn65xokGsaU4B4D36xh7eWrfj4/pgWHmtoDAYa8wzSwo2GVCZOs+mtEgOQB91/g==" CondicionesDePago="30 días" SubTotal="10000.00" Total="11600.00" Moneda="EUR" TipoCambio="777.77" TipoDeComprobante="E" Exportacion="01" MetodoPago="PUE" LugarExpedicion="64000"><cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE SA DE CV" RegimenFiscal="601"/><cfdi:Receptor Rfc="XAXX010101000" Nombre="Maria del Carmen" DomicilioFiscalReceptor="64000" RegimenFiscalReceptor="616" UsoCFDI="S01"/><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="84111506" NoIdentificacion="A1B2C3D4" Cantidad="1.000000" ClaveUnidad="H87" Unidad="Pieza" Descripcion="Concepto de prueba" ValorUnitario="10000.00" Importe="10000.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="1600.00"><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento>
+        <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="40d9cde2-8bb5-4022-9838-03247f382405" RfcProvCertif="SPR190613I52" FechaTimbrado="2022-05-17T13:58:05" SelloCFD="NxcySE+T41bP7QTOaND9xkVV2QL0b86an9dfXN5PVK7jTau4EpQCoWoN6UQHnNH1zgNWFyG9O0XM1FqOGwvvfHP1iLfP9ZiFfWbEWjJCOfa96PJdpma7vGGHl3cUl8C2SGFgdbg0LfnmTmVEonKLTlqQfXE5lbRT2uNG3o1jcANmb+z4pR7GvgE958JnPja5bg/wWzYjC5mJgkTrBfE7ePt8/ElS3pWLjJKbXuHXUcnVCLduiOKueHHTbYF2hbUasOmfyLOozUQEo1G0WNZHCuz8/QZuSuIFhYH8zx4/cWG07SX4vcnPuswFp3pfyI791aCBDofLZG8euzhIgC0NTQ==" NoCertificadoSAT="30001000000400002495" SelloSAT="LU5I7e/FVPDzwvzSWX3IooEWa+simApJFXqantkusRPLXYEdk3t4Lj09kxIGVn0RVXUCJnCmwO4Ky74VsdHhnyYwUEwKrm2cYaVwG3FEkgm46u2z8SEom+2ZdyNBf1mlVBg1CYFDGbz3/5ccsHCet84o4LpAS992LWLaahos9i+tcawa3Bff3C6QCVbcf0hhCx5fGQY4kwAnCjA0mm2zPKW/iX3quQkZjpd2N9LltKZuut9/wH91UYNQdRcigViHrGefjcN5F6yz+f5osuSNe5fIuKvI3f3wxB0wYX9UHoizLk/UwB4jqVBL5ZV6Y/SPQqO/5zJo+Wv3sRAzp6b9sQ=="/>
+    </cfdi:Complemento></cfdi:Comprobante> 
+ 
+2022-05-17 13:58:03,070 [25] INFO  App  
+ Info - Detalle de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5435
+} 
+ 
+2022-05-17 13:58:06,744 [25] INFO  App  
+ Info - Modo de no guardado en la base de datos.  
+ 
+2022-05-17 13:58:06,754 [25] INFO  App  
+ Info - Se realizó el timbrado con Diverza.  
+ 
+2022-05-17 13:58:06,754 [25] INFO  App  
+ Info - código: 201 
+ 
+2022-05-17 13:58:06,754 [25] INFO  App  
+ Info - detalle: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5435
+} 
+ 
+2022-05-17 13:58:06,755 [25] INFO  App  
+ Info - message: <?xml version="1.0" encoding="utf-8" ?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="KEREN" Folio="0009" Fecha="2022-05-16T08:13:51" Sello="NxcySE+T41bP7QTOaND9xkVV2QL0b86an9dfXN5PVK7jTau4EpQCoWoN6UQHnNH1zgNWFyG9O0XM1FqOGwvvfHP1iLfP9ZiFfWbEWjJCOfa96PJdpma7vGGHl3cUl8C2SGFgdbg0LfnmTmVEonKLTlqQfXE5lbRT2uNG3o1jcANmb+z4pR7GvgE958JnPja5bg/wWzYjC5mJgkTrBfE7ePt8/ElS3pWLjJKbXuHXUcnVCLduiOKueHHTbYF2hbUasOmfyLOozUQEo1G0WNZHCuz8/QZuSuIFhYH8zx4/cWG07SX4vcnPuswFp3pfyI791aCBDofLZG8euzhIgC0NTQ==" FormaPago="01" NoCertificado="30001000000400002434" Certificado="MIIFuzCCA6OgAwIBAgIUMzAwMDEwMDAwMDA0MDAwMDI0MzQwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWRpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMTkwNjE3MTk0NDE0WhcNMjMwNjE3MTk0NDE0WjCB4jEnMCUGA1UEAxMeRVNDVUVMQSBLRU1QRVIgVVJHQVRFIFNBIERFIENWMScwJQYDVQQpEx5FU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YxJzAlBgNVBAoTHkVTQ1VFTEEgS0VNUEVSIFVSR0FURSBTQSBERSBDVjElMCMGA1UELRMcRUtVOTAwMzE3M0M5IC8gWElRQjg5MTExNlFFNDEeMBwGA1UEBRMVIC8gWElRQjg5MTExNk1HUk1aUjA1MR4wHAYDVQQLExVFc2N1ZWxhIEtlbXBlciBVcmdhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCN0peKpgfOL75iYRv1fqq+oVYsLPVUR/GibYmGKc9InHFy5lYF6OTYjnIIvmkOdRobbGlCUxORX/tLsl8Ya9gm6Yo7hHnODRBIDup3GISFzB/96R9K/MzYQOcscMIoBDARaycnLvy7FlMvO7/rlVnsSARxZRO8Kz8Zkksj2zpeYpjZIya/369+oGqQk1cTRkHo59JvJ4Tfbk/3iIyf4H/Ini9nBe9cYWo0MnKob7DDt/vsdi5tA8mMtA953LapNyCZIDCRQQlUGNgDqY9/8F5mUvVgkcczsIgGdvf9vMQPSf3jjCiKj7j6ucxl1+FwJWmbvgNmiaUR/0q4m2rm78lFAgMBAAGjHTAbMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBCwUAA4ICAQBcpj1TjT4jiinIujIdAlFzE6kRwYJCnDG08zSp4kSnShjxADGEXH2chehKMV0FY7c4njA5eDGdA/G2OCTPvF5rpeCZP5Dw504RZkYDl2suRz+wa1sNBVpbnBJEK0fQcN3IftBwsgNFdFhUtCyw3lus1SSJbPxjLHS6FcZZ51YSeIfcNXOAuTqdimusaXq15GrSrCOkM6n2jfj2sMJYM2HXaXJ6rGTEgYmhYdwxWtil6RfZB+fGQ/H9I9WLnl4KTZUS6C9+NLHh4FPDhSk19fpS2S/56aqgFoGAkXAYt9Fy5ECaPcULIfJ1DEbsXKyRdCv3JY89+0MNkOdaDnsemS2o5Gl08zI4iYtt3L40gAZ60NPh31kVLnYNsmvfNxYyKp+AeJtDHyW9w7ftM0Hoi+BuRmcAQSKFV3pk8j51la+jrRBrAUv8blbRcQ5BiZUwJzHFEKIwTsRGoRyEx96sNnB03n6GTwjIGz92SmLdNl95r9rkvp+2m4S6q1lPuXaFg7DGBrXWC8iyqeWE2iobdwIIuXPTMVqQb12m1dAkJVRO5NdHnP/MpqOvOgLqoZBNHGyBg4Gqm4sCJHCxA1c8Elfa2RQTCk0tAzllL4vOnI1GHkGJn65xokGsaU4B4D36xh7eWrfj4/pgWHmtoDAYa8wzSwo2GVCZOs+mtEgOQB91/g==" CondicionesDePago="30 días" SubTotal="10000.00" Total="11600.00" Moneda="EUR" TipoCambio="777.77" TipoDeComprobante="E" Exportacion="01" MetodoPago="PUE" LugarExpedicion="64000"><cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE SA DE CV" RegimenFiscal="601"/><cfdi:Receptor Rfc="XAXX010101000" Nombre="Maria del Carmen" DomicilioFiscalReceptor="64000" RegimenFiscalReceptor="616" UsoCFDI="S01"/><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="84111506" NoIdentificacion="A1B2C3D4" Cantidad="1.000000" ClaveUnidad="H87" Unidad="Pieza" Descripcion="Concepto de prueba" ValorUnitario="10000.00" Importe="10000.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="1600.00"><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento>
+        <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="40d9cde2-8bb5-4022-9838-03247f382405" RfcProvCertif="SPR190613I52" FechaTimbrado="2022-05-17T13:58:05" SelloCFD="NxcySE+T41bP7QTOaND9xkVV2QL0b86an9dfXN5PVK7jTau4EpQCoWoN6UQHnNH1zgNWFyG9O0XM1FqOGwvvfHP1iLfP9ZiFfWbEWjJCOfa96PJdpma7vGGHl3cUl8C2SGFgdbg0LfnmTmVEonKLTlqQfXE5lbRT2uNG3o1jcANmb+z4pR7GvgE958JnPja5bg/wWzYjC5mJgkTrBfE7ePt8/ElS3pWLjJKbXuHXUcnVCLduiOKueHHTbYF2hbUasOmfyLOozUQEo1G0WNZHCuz8/QZuSuIFhYH8zx4/cWG07SX4vcnPuswFp3pfyI791aCBDofLZG8euzhIgC0NTQ==" NoCertificadoSAT="30001000000400002495" SelloSAT="LU5I7e/FVPDzwvzSWX3IooEWa+simApJFXqantkusRPLXYEdk3t4Lj09kxIGVn0RVXUCJnCmwO4Ky74VsdHhnyYwUEwKrm2cYaVwG3FEkgm46u2z8SEom+2ZdyNBf1mlVBg1CYFDGbz3/5ccsHCet84o4LpAS992LWLaahos9i+tcawa3Bff3C6QCVbcf0hhCx5fGQY4kwAnCjA0mm2zPKW/iX3quQkZjpd2N9LltKZuut9/wH91UYNQdRcigViHrGefjcN5F6yz+f5osuSNe5fIuKvI3f3wxB0wYX9UHoizLk/UwB4jqVBL5ZV6Y/SPQqO/5zJo+Wv3sRAzp6b9sQ=="/>
+    </cfdi:Complemento></cfdi:Comprobante> 
+ 
+2022-05-17 20:23:32,790 [17] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-17 20:23:40,364 [17] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+ 
+2022-05-17 20:23:40,475 [17] ERROR App  
+ Error - Ocurrio un error en el procesamiento del docuemnto.  
+ 
+2022-05-17 20:23:40,476 [17] ERROR App  
+ Error - Mensaje: String reference not set to an instance of a String.
+Parameter name: s 
+ 
+2022-05-17 20:23:40,477 [17] ERROR App  
+ Error - StackTrace:    at System.Text.Encoding.GetBytes(String s)
+   at InvoiceAPI.Controllers.InvoicesController.GetEncodeUTF8(String stringEncode) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 922
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 1022 
+ 
+2022-05-17 20:23:40,480 [17] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-05-17 20:23:40,501 [17] INFO  App  
+ Info - Datos del comprobante. Folio: 0009, Número de serie del certificado: 30001000000400002434, Serie: KEREN 
+ 
+2022-05-17 20:23:40,517 [17] ERROR App  
+ Error - código: 1001 
+ 
+2022-05-17 20:23:40,518 [17] ERROR App  
+ Error - detalle: Proceso de procesamiento inválido. 
+ 
+2022-05-17 20:23:40,518 [17] ERROR App  
+ Error - message: String reference not set to an instance of a String.
+Parameter name: s    at System.Text.Encoding.GetBytes(String s)
+   at InvoiceAPI.Controllers.InvoicesController.GetEncodeUTF8(String stringEncode) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 922
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 1022 
+ 
+2022-05-17 20:26:10,974 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-17 20:26:24,527 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+ 
+2022-05-17 20:26:24,551 [10] ERROR App  
+ Error - Ocurrio un error en el procesamiento del docuemnto.  
+ 
+2022-05-17 20:26:24,551 [10] ERROR App  
+ Error - Mensaje: String reference not set to an instance of a String.
+Parameter name: s 
+ 
+2022-05-17 20:26:24,552 [10] ERROR App  
+ Error - StackTrace:    at System.Text.Encoding.GetBytes(String s)
+   at InvoiceAPI.Controllers.InvoicesController.GetEncodeUTF8(String stringEncode) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 922
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 1022 
+ 
+2022-05-17 20:26:24,555 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-05-17 20:26:24,583 [10] INFO  App  
+ Info - Datos del comprobante. Folio: 0009, Número de serie del certificado: 30001000000400002434, Serie: KEREN 
+ 
+2022-05-17 20:26:24,600 [10] ERROR App  
+ Error - código: 1001 
+ 
+2022-05-17 20:26:24,601 [10] ERROR App  
+ Error - detalle: Proceso de procesamiento inválido. 
+ 
+2022-05-17 20:26:24,601 [10] ERROR App  
+ Error - message: String reference not set to an instance of a String.
+Parameter name: s    at System.Text.Encoding.GetBytes(String s)
+   at InvoiceAPI.Controllers.InvoicesController.GetEncodeUTF8(String stringEncode) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 922
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 1022 
+ 
+2022-05-17 20:27:16,613 [17] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-17 20:30:17,229 [17] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+ 
+2022-05-17 21:07:16,572 [18] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-17 21:07:23,490 [18] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+ 
+2022-05-17 21:07:23,631 [18] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-05-17 21:07:23,632 [18] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-05-17 21:07:23,651 [18] INFO  App  
+ Info - Datos del comprobante. Folio: 0009, Número de serie del certificado: 30001000000400002434, Serie: KEREN 
+ 
+2022-05-17 21:07:23,667 [18] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-05-17 21:07:23,668 [18] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-05-17 21:07:23,701 [18] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="e503d6d6-183c-4150-ac9a-a7f437c3034d"
+  Content-Length: 4047
+} 
+ 
+2022-05-17 21:07:23,705 [18] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-05-17 21:07:23,706 [18] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-05-17 21:07:23,706 [18] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 404 
+ 
+2022-05-17 21:07:23,707 [18] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="e503d6d6-183c-4150-ac9a-a7f437c3034d"
+  Content-Length: 4047
+} 
+ 
+2022-05-17 21:07:23,707 [18] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+ 
+2022-05-17 21:07:23,708 [18] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-05-17 21:07:23,711 [18] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"123414","token": "$2b$12$JgIf1J7db4e6f06VnNPsUOaQD3SpwUnzPqXDkuirQklcc8gMCMIDS" },"issuer": {"rfc": "EKU9003173C9"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "EKU9003173C9KEREN0009","certificate-number": "30001000000400002434","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0+xml","content": "PGNmZGk6Q29tcHJvYmFudGUgeG1sbnM6Y2ZkaT0iaHR0cDovL3d3dy5zYXQuZ29iLm14L2NmZC80IiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9jZmQvNCBodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkLzQvY2ZkdjQwLnhzZCIgVmVyc2lvbj0iNC4wIiBTZXJpZT0iS0VSRU4iIEZvbGlvPSIwMDA5IiBGZWNoYT0iMjAyMi0wNS0xNlQwODoxMzo1MSIgU2VsbG89Ik54Y3lTRStUNDFiUDdRVE9hTkQ5eGtWVjJRTDBiODZhbjlkZlhONVBWSzdqVGF1NEVwUUNvV29ONlVRSG5OSDF6Z05XRnlHOU8wWE0xRnFPR3d2dmZIUDFpTGZQOVppRmZXYkVXakpDT2ZhOTZQSmRwbWE3dkdHSGwzY1VsOEMyU0dGZ2RiZzBMZm5tVG1WRW9uS0xUbHFRZlhFNWxiUlQydU5HM28xamNBTm1iK3o0cFI3R3ZnRTk1OEpuUGphNWJnL3dXellqQzVtSmdrVHJCZkU3ZVB0OC9FbFMzcFdMakpLYlh1SFhVY25WQ0xkdWlPS3VlSEhUYllGMmhiVWFzT21meUxPb3pVUUVvMUcwV05aSEN1ejgvUVp1U3VJRmhZSDh6eDQvY1dHMDdTWDR2Y25QdXN3RnAzcGZ5STc5MWFDQkRvZkxaRzhldXpoSWdDME5UUT09IiBGb3JtYVBhZ289IjAxIiBOb0NlcnRpZmljYWRvPSIzMDAwMTAwMDAwMDQwMDAwMjQzNCIgQ2VydGlmaWNhZG89Ik1JSUZ1ekNDQTZPZ0F3SUJBZ0lVTXpBd01ERXdNREF3TURBME1EQXdNREkwTXpRd0RRWUpLb1pJaHZjTkFRRUxCUUF3Z2dFck1ROHdEUVlEVlFRRERBWkJReUJWUVZReExqQXNCZ05WQkFvTUpWTkZVbFpKUTBsUElFUkZJRUZFVFVsT1NWTlVVa0ZEU1U5T0lGUlNTVUpWVkVGU1NVRXhHakFZQmdOVkJBc01FVk5CVkMxSlJWTWdRWFYwYUc5eWFYUjVNU2d3SmdZSktvWklodmNOQVFrQkZobHZjMk5oY2k1dFlYSjBhVzVsZWtCellYUXVaMjlpTG0xNE1SMHdHd1lEVlFRSkRCUXpjbUVnWTJWeWNtRmtZU0JrWlNCallXUnBlakVPTUF3R0ExVUVFUXdGTURZek56QXhDekFKQmdOVkJBWVRBazFZTVJrd0Z3WURWUVFJREJCRFNWVkVRVVFnUkVVZ1RVVllTVU5QTVJFd0R3WURWUVFIREFoRFQxbFBRVU5CVGpFUk1BOEdBMVVFTFJNSU1pNDFMalF1TkRVeEpUQWpCZ2txaGtpRzl3MEJDUUlURm5KbGMzQnZibk5oWW14bE9pQkJRMFJOUVMxVFFWUXdIaGNOTVRrd05qRTNNVGswTkRFMFdoY05Nak13TmpFM01UazBOREUwV2pDQjRqRW5NQ1VHQTFVRUF4TWVSVk5EVlVWTVFTQkxSVTFRUlZJZ1ZWSkhRVlJGSUZOQklFUkZJRU5XTVNjd0pRWURWUVFwRXg1RlUwTlZSVXhCSUV0RlRWQkZVaUJWVWtkQlZFVWdVMEVnUkVVZ1ExWXhKekFsQmdOVkJBb1RIa1ZUUTFWRlRFRWdTMFZOVUVWU0lGVlNSMEZVUlNCVFFTQkVSU0JEVmpFbE1DTUdBMVVFTFJNY1JVdFZPVEF3TXpFM00wTTVJQzhnV0VsUlFqZzVNVEV4TmxGRk5ERWVNQndHQTFVRUJSTVZJQzhnV0VsUlFqZzVNVEV4TmsxSFVrMWFVakExTVI0d0hBWURWUVFMRXhWRmMyTjFaV3hoSUV0bGJYQmxjaUJWY21kaGRHVXdnZ0VpTUEwR0NTcUdTSWIzRFFFQkFRVUFBNElCRHdBd2dnRUtBb0lCQVFDTjBwZUtwZ2ZPTDc1aVlSdjFmcXErb1ZZc0xQVlVSL0dpYlltR0tjOUluSEZ5NWxZRjZPVFlqbklJdm1rT2RSb2JiR2xDVXhPUlgvdExzbDhZYTlnbTZZbzdoSG5PRFJCSUR1cDNHSVNGekIvOTZSOUsvTXpZUU9jc2NNSW9CREFSYXljbkx2eTdGbE12TzcvcmxWbnNTQVJ4WlJPOEt6OFpra3NqMnpwZVlwalpJeWEvMzY5K29HcVFrMWNUUmtIbzU5SnZKNFRmYmsvM2lJeWY0SC9Jbmk5bkJlOWNZV28wTW5Lb2I3RER0L3ZzZGk1dEE4bU10QTk1M0xhcE55Q1pJRENSUVFsVUdOZ0RxWTkvOEY1bVV2VmdrY2N6c0lnR2R2Zjl2TVFQU2YzampDaUtqN2o2dWN4bDErRndKV21idmdObWlhVVIvMHE0bTJybTc4bEZBZ01CQUFHakhUQWJNQXdHQTFVZEV3RUIvd1FDTUFBd0N3WURWUjBQQkFRREFnYkFNQTBHQ1NxR1NJYjNEUUVCQ3dVQUE0SUNBUUJjcGoxVGpUNGppaW5JdWpJZEFsRnpFNmtSd1lKQ25ERzA4elNwNGtTblNoanhBREdFWEgyY2hlaEtNVjBGWTdjNG5qQTVlREdkQS9HMk9DVFB2RjVycGVDWlA1RHc1MDRSWmtZRGwyc3VSeit3YTFzTkJWcGJuQkpFSzBmUWNOM0lmdEJ3c2dORmRGaFV0Q3l3M2x1czFTU0piUHhqTEhTNkZjWlo1MVlTZUlmY05YT0F1VHFkaW11c2FYcTE1R3JTckNPa002bjJqZmoyc01KWU0ySFhhWEo2ckdURWdZbWhZZHd4V3RpbDZSZlpCK2ZHUS9IOUk5V0xubDRLVFpVUzZDOStOTEhoNEZQRGhTazE5ZnBTMlMvNTZhcWdGb0dBa1hBWXQ5Rnk1RUNhUGNVTElmSjFERWJzWEt5UmRDdjNKWTg5KzBNTmtPZGFEbnNlbVMybzVHbDA4ekk0aVl0dDNMNDBnQVo2ME5QaDMxa1ZMbllOc212Zk54WXlLcCtBZUp0REh5Vzl3N2Z0TTBIb2krQnVSbWNBUVNLRlYzcGs4ajUxbGEranJSQnJBVXY4YmxiUmNRNUJpWlV3SnpIRkVLSXdUc1JHb1J5RXg5NnNObkIwM242R1R3aklHejkyU21MZE5sOTVyOXJrdnArMm00UzZxMWxQdVhhRmc3REdCclhXQzhpeXFlV0UyaW9iZHdJSXVYUFRNVnFRYjEybTFkQWtKVlJPNU5kSG5QL01wcU92T2dMcW9aQk5IR3lCZzRHcW00c0NKSEN4QTFjOEVsZmEyUlFUQ2swdEF6bGxMNHZPbkkxR0hrR0puNjV4b2tHc2FVNEI0RDM2eGg3ZVdyZmo0L3BnV0htdG9EQVlhOHd6U3dvMkdWQ1pPcyttdEVnT1FCOTEvZz09IiBDb25kaWNpb25lc0RlUGFnbz0iMzAgZMOtYXMiIFN1YlRvdGFsPSIxMDAwMC4wMCIgVG90YWw9IjExNjAwLjAwIiBNb25lZGE9IkVVUiIgVGlwb0NhbWJpbz0iNzc3Ljc3IiBUaXBvRGVDb21wcm9iYW50ZT0iRSIgRXhwb3J0YWNpb249IjAxIiBNZXRvZG9QYWdvPSJQVUUiIEx1Z2FyRXhwZWRpY2lvbj0iNjQwMDAiPjxjZmRpOkVtaXNvciBSZmM9IkVLVTkwMDMxNzNDOSIgTm9tYnJlPSJFU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YiIFJlZ2ltZW5GaXNjYWw9IjYwMSIgLz48Y2ZkaTpSZWNlcHRvciBSZmM9IlhBWFgwMTAxMDEwMDAiIE5vbWJyZT0iTWFyaWEgZGVsIENhcm1lbiIgRG9taWNpbGlvRmlzY2FsUmVjZXB0b3I9IjY0MDAwIiBSZWdpbWVuRmlzY2FsUmVjZXB0b3I9IjYxNiIgVXNvQ0ZEST0iUzAxIiAvPjxjZmRpOkNvbmNlcHRvcz48Y2ZkaTpDb25jZXB0byBDbGF2ZVByb2RTZXJ2PSI4NDExMTUwNiIgTm9JZGVudGlmaWNhY2lvbj0iQTFCMkMzRDQiIENhbnRpZGFkPSIxLjAwMDAwMCIgQ2xhdmVVbmlkYWQ9Ikg4NyIgVW5pZGFkPSJQaWV6YSIgRGVzY3JpcGNpb249IkNvbmNlcHRvIGRlIHBydWViYSIgVmFsb3JVbml0YXJpbz0iMTAwMDAuMDAiIEltcG9ydGU9IjEwMDAwLjAwIiBPYmpldG9JbXA9IjAyIj48Y2ZkaTpJbXB1ZXN0b3M+PGNmZGk6VHJhc2xhZG9zPjxjZmRpOlRyYXNsYWRvIEJhc2U9IjEwMDAwLjAwIiBJbXB1ZXN0bz0iMDAyIiBUaXBvRmFjdG9yPSJUYXNhIiBUYXNhT0N1b3RhPSIwLjE2MDAwMCIgSW1wb3J0ZT0iMTYwMC4wMCIgLz48L2NmZGk6VHJhc2xhZG9zPjwvY2ZkaTpJbXB1ZXN0b3M+PC9jZmRpOkNvbmNlcHRvPjwvY2ZkaTpDb25jZXB0b3M+PGNmZGk6SW1wdWVzdG9zIFRvdGFsSW1wdWVzdG9zVHJhc2xhZGFkb3M9IjE2MDAuMDAiPjxjZmRpOlRyYXNsYWRvcz48Y2ZkaTpUcmFzbGFkbyBCYXNlPSIxMDAwMC4wMCIgSW1wdWVzdG89IjAwMiIgVGlwb0ZhY3Rvcj0iVGFzYSIgVGFzYU9DdW90YT0iMC4xNjAwMDAiIEltcG9ydGU9IjE2MDAuMDAiIC8+PC9jZmRpOlRyYXNsYWRvcz48L2NmZGk6SW1wdWVzdG9zPjwvY2ZkaTpDb21wcm9iYW50ZT4="}} 
+ 
+2022-05-17 21:07:23,712 [18] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-05-17 21:07:23,713 [18] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-05-17 21:07:24,213 [18] INFO  App  
+ Info - Response recibido: StatusCode: 201, ReasonPhrase: 'Created', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Wed, 18 May 2022 02:07:25 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: q19giktrl80efb1g3q2hj5e1iuqgapeg
+  Content-Length: 6673
+  Content-Type: application/json; charset=utf-8
+} 
+ 
+2022-05-17 21:07:24,222 [18] INFO  App  
+ Info - Mensaje de respuesta del timbrado Diverza: <?xml version="1.0" encoding="utf-8" ?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="KEREN" Folio="0009" Fecha="2022-05-16T08:13:51" Sello="NxcySE+T41bP7QTOaND9xkVV2QL0b86an9dfXN5PVK7jTau4EpQCoWoN6UQHnNH1zgNWFyG9O0XM1FqOGwvvfHP1iLfP9ZiFfWbEWjJCOfa96PJdpma7vGGHl3cUl8C2SGFgdbg0LfnmTmVEonKLTlqQfXE5lbRT2uNG3o1jcANmb+z4pR7GvgE958JnPja5bg/wWzYjC5mJgkTrBfE7ePt8/ElS3pWLjJKbXuHXUcnVCLduiOKueHHTbYF2hbUasOmfyLOozUQEo1G0WNZHCuz8/QZuSuIFhYH8zx4/cWG07SX4vcnPuswFp3pfyI791aCBDofLZG8euzhIgC0NTQ==" FormaPago="01" NoCertificado="30001000000400002434" Certificado="MIIFuzCCA6OgAwIBAgIUMzAwMDEwMDAwMDA0MDAwMDI0MzQwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWRpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMTkwNjE3MTk0NDE0WhcNMjMwNjE3MTk0NDE0WjCB4jEnMCUGA1UEAxMeRVNDVUVMQSBLRU1QRVIgVVJHQVRFIFNBIERFIENWMScwJQYDVQQpEx5FU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YxJzAlBgNVBAoTHkVTQ1VFTEEgS0VNUEVSIFVSR0FURSBTQSBERSBDVjElMCMGA1UELRMcRUtVOTAwMzE3M0M5IC8gWElRQjg5MTExNlFFNDEeMBwGA1UEBRMVIC8gWElRQjg5MTExNk1HUk1aUjA1MR4wHAYDVQQLExVFc2N1ZWxhIEtlbXBlciBVcmdhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCN0peKpgfOL75iYRv1fqq+oVYsLPVUR/GibYmGKc9InHFy5lYF6OTYjnIIvmkOdRobbGlCUxORX/tLsl8Ya9gm6Yo7hHnODRBIDup3GISFzB/96R9K/MzYQOcscMIoBDARaycnLvy7FlMvO7/rlVnsSARxZRO8Kz8Zkksj2zpeYpjZIya/369+oGqQk1cTRkHo59JvJ4Tfbk/3iIyf4H/Ini9nBe9cYWo0MnKob7DDt/vsdi5tA8mMtA953LapNyCZIDCRQQlUGNgDqY9/8F5mUvVgkcczsIgGdvf9vMQPSf3jjCiKj7j6ucxl1+FwJWmbvgNmiaUR/0q4m2rm78lFAgMBAAGjHTAbMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBCwUAA4ICAQBcpj1TjT4jiinIujIdAlFzE6kRwYJCnDG08zSp4kSnShjxADGEXH2chehKMV0FY7c4njA5eDGdA/G2OCTPvF5rpeCZP5Dw504RZkYDl2suRz+wa1sNBVpbnBJEK0fQcN3IftBwsgNFdFhUtCyw3lus1SSJbPxjLHS6FcZZ51YSeIfcNXOAuTqdimusaXq15GrSrCOkM6n2jfj2sMJYM2HXaXJ6rGTEgYmhYdwxWtil6RfZB+fGQ/H9I9WLnl4KTZUS6C9+NLHh4FPDhSk19fpS2S/56aqgFoGAkXAYt9Fy5ECaPcULIfJ1DEbsXKyRdCv3JY89+0MNkOdaDnsemS2o5Gl08zI4iYtt3L40gAZ60NPh31kVLnYNsmvfNxYyKp+AeJtDHyW9w7ftM0Hoi+BuRmcAQSKFV3pk8j51la+jrRBrAUv8blbRcQ5BiZUwJzHFEKIwTsRGoRyEx96sNnB03n6GTwjIGz92SmLdNl95r9rkvp+2m4S6q1lPuXaFg7DGBrXWC8iyqeWE2iobdwIIuXPTMVqQb12m1dAkJVRO5NdHnP/MpqOvOgLqoZBNHGyBg4Gqm4sCJHCxA1c8Elfa2RQTCk0tAzllL4vOnI1GHkGJn65xokGsaU4B4D36xh7eWrfj4/pgWHmtoDAYa8wzSwo2GVCZOs+mtEgOQB91/g==" CondicionesDePago="30 días" SubTotal="10000.00" Total="11600.00" Moneda="EUR" TipoCambio="777.77" TipoDeComprobante="E" Exportacion="01" MetodoPago="PUE" LugarExpedicion="64000"><cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE SA DE CV" RegimenFiscal="601"/><cfdi:Receptor Rfc="XAXX010101000" Nombre="Maria del Carmen" DomicilioFiscalReceptor="64000" RegimenFiscalReceptor="616" UsoCFDI="S01"/><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="84111506" NoIdentificacion="A1B2C3D4" Cantidad="1.000000" ClaveUnidad="H87" Unidad="Pieza" Descripcion="Concepto de prueba" ValorUnitario="10000.00" Importe="10000.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="1600.00"><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento>
+        <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="40d9cde2-8bb5-4022-9838-03247f382405" RfcProvCertif="SPR190613I52" FechaTimbrado="2022-05-17T13:58:05" SelloCFD="NxcySE+T41bP7QTOaND9xkVV2QL0b86an9dfXN5PVK7jTau4EpQCoWoN6UQHnNH1zgNWFyG9O0XM1FqOGwvvfHP1iLfP9ZiFfWbEWjJCOfa96PJdpma7vGGHl3cUl8C2SGFgdbg0LfnmTmVEonKLTlqQfXE5lbRT2uNG3o1jcANmb+z4pR7GvgE958JnPja5bg/wWzYjC5mJgkTrBfE7ePt8/ElS3pWLjJKbXuHXUcnVCLduiOKueHHTbYF2hbUasOmfyLOozUQEo1G0WNZHCuz8/QZuSuIFhYH8zx4/cWG07SX4vcnPuswFp3pfyI791aCBDofLZG8euzhIgC0NTQ==" NoCertificadoSAT="30001000000400002495" SelloSAT="LU5I7e/FVPDzwvzSWX3IooEWa+simApJFXqantkusRPLXYEdk3t4Lj09kxIGVn0RVXUCJnCmwO4Ky74VsdHhnyYwUEwKrm2cYaVwG3FEkgm46u2z8SEom+2ZdyNBf1mlVBg1CYFDGbz3/5ccsHCet84o4LpAS992LWLaahos9i+tcawa3Bff3C6QCVbcf0hhCx5fGQY4kwAnCjA0mm2zPKW/iX3quQkZjpd2N9LltKZuut9/wH91UYNQdRcigViHrGefjcN5F6yz+f5osuSNe5fIuKvI3f3wxB0wYX9UHoizLk/UwB4jqVBL5ZV6Y/SPQqO/5zJo+Wv3sRAzp6b9sQ=="/>
+    </cfdi:Complemento></cfdi:Comprobante> 
+ 
+2022-05-17 21:07:24,223 [18] INFO  App  
+ Info - Detalle de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5435
+} 
+ 
+2022-05-17 21:07:27,770 [18] INFO  App  
+ Info - Modo de no guardado en la base de datos.  
+ 
+2022-05-17 21:07:27,776 [18] INFO  App  
+ Info - Se realizó el timbrado con Diverza.  
+ 
+2022-05-17 21:07:27,778 [18] INFO  App  
+ Info - código: 201 
+ 
+2022-05-17 21:07:27,778 [18] INFO  App  
+ Info - detalle: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5435
+} 
+ 
+2022-05-17 21:07:27,779 [18] INFO  App  
+ Info - message: <?xml version="1.0" encoding="utf-8" ?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="KEREN" Folio="0009" Fecha="2022-05-16T08:13:51" Sello="NxcySE+T41bP7QTOaND9xkVV2QL0b86an9dfXN5PVK7jTau4EpQCoWoN6UQHnNH1zgNWFyG9O0XM1FqOGwvvfHP1iLfP9ZiFfWbEWjJCOfa96PJdpma7vGGHl3cUl8C2SGFgdbg0LfnmTmVEonKLTlqQfXE5lbRT2uNG3o1jcANmb+z4pR7GvgE958JnPja5bg/wWzYjC5mJgkTrBfE7ePt8/ElS3pWLjJKbXuHXUcnVCLduiOKueHHTbYF2hbUasOmfyLOozUQEo1G0WNZHCuz8/QZuSuIFhYH8zx4/cWG07SX4vcnPuswFp3pfyI791aCBDofLZG8euzhIgC0NTQ==" FormaPago="01" NoCertificado="30001000000400002434" Certificado="MIIFuzCCA6OgAwIBAgIUMzAwMDEwMDAwMDA0MDAwMDI0MzQwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWRpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMTkwNjE3MTk0NDE0WhcNMjMwNjE3MTk0NDE0WjCB4jEnMCUGA1UEAxMeRVNDVUVMQSBLRU1QRVIgVVJHQVRFIFNBIERFIENWMScwJQYDVQQpEx5FU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YxJzAlBgNVBAoTHkVTQ1VFTEEgS0VNUEVSIFVSR0FURSBTQSBERSBDVjElMCMGA1UELRMcRUtVOTAwMzE3M0M5IC8gWElRQjg5MTExNlFFNDEeMBwGA1UEBRMVIC8gWElRQjg5MTExNk1HUk1aUjA1MR4wHAYDVQQLExVFc2N1ZWxhIEtlbXBlciBVcmdhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCN0peKpgfOL75iYRv1fqq+oVYsLPVUR/GibYmGKc9InHFy5lYF6OTYjnIIvmkOdRobbGlCUxORX/tLsl8Ya9gm6Yo7hHnODRBIDup3GISFzB/96R9K/MzYQOcscMIoBDARaycnLvy7FlMvO7/rlVnsSARxZRO8Kz8Zkksj2zpeYpjZIya/369+oGqQk1cTRkHo59JvJ4Tfbk/3iIyf4H/Ini9nBe9cYWo0MnKob7DDt/vsdi5tA8mMtA953LapNyCZIDCRQQlUGNgDqY9/8F5mUvVgkcczsIgGdvf9vMQPSf3jjCiKj7j6ucxl1+FwJWmbvgNmiaUR/0q4m2rm78lFAgMBAAGjHTAbMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBCwUAA4ICAQBcpj1TjT4jiinIujIdAlFzE6kRwYJCnDG08zSp4kSnShjxADGEXH2chehKMV0FY7c4njA5eDGdA/G2OCTPvF5rpeCZP5Dw504RZkYDl2suRz+wa1sNBVpbnBJEK0fQcN3IftBwsgNFdFhUtCyw3lus1SSJbPxjLHS6FcZZ51YSeIfcNXOAuTqdimusaXq15GrSrCOkM6n2jfj2sMJYM2HXaXJ6rGTEgYmhYdwxWtil6RfZB+fGQ/H9I9WLnl4KTZUS6C9+NLHh4FPDhSk19fpS2S/56aqgFoGAkXAYt9Fy5ECaPcULIfJ1DEbsXKyRdCv3JY89+0MNkOdaDnsemS2o5Gl08zI4iYtt3L40gAZ60NPh31kVLnYNsmvfNxYyKp+AeJtDHyW9w7ftM0Hoi+BuRmcAQSKFV3pk8j51la+jrRBrAUv8blbRcQ5BiZUwJzHFEKIwTsRGoRyEx96sNnB03n6GTwjIGz92SmLdNl95r9rkvp+2m4S6q1lPuXaFg7DGBrXWC8iyqeWE2iobdwIIuXPTMVqQb12m1dAkJVRO5NdHnP/MpqOvOgLqoZBNHGyBg4Gqm4sCJHCxA1c8Elfa2RQTCk0tAzllL4vOnI1GHkGJn65xokGsaU4B4D36xh7eWrfj4/pgWHmtoDAYa8wzSwo2GVCZOs+mtEgOQB91/g==" CondicionesDePago="30 días" SubTotal="10000.00" Total="11600.00" Moneda="EUR" TipoCambio="777.77" TipoDeComprobante="E" Exportacion="01" MetodoPago="PUE" LugarExpedicion="64000"><cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE SA DE CV" RegimenFiscal="601"/><cfdi:Receptor Rfc="XAXX010101000" Nombre="Maria del Carmen" DomicilioFiscalReceptor="64000" RegimenFiscalReceptor="616" UsoCFDI="S01"/><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="84111506" NoIdentificacion="A1B2C3D4" Cantidad="1.000000" ClaveUnidad="H87" Unidad="Pieza" Descripcion="Concepto de prueba" ValorUnitario="10000.00" Importe="10000.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="1600.00"><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento>
+        <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="40d9cde2-8bb5-4022-9838-03247f382405" RfcProvCertif="SPR190613I52" FechaTimbrado="2022-05-17T13:58:05" SelloCFD="NxcySE+T41bP7QTOaND9xkVV2QL0b86an9dfXN5PVK7jTau4EpQCoWoN6UQHnNH1zgNWFyG9O0XM1FqOGwvvfHP1iLfP9ZiFfWbEWjJCOfa96PJdpma7vGGHl3cUl8C2SGFgdbg0LfnmTmVEonKLTlqQfXE5lbRT2uNG3o1jcANmb+z4pR7GvgE958JnPja5bg/wWzYjC5mJgkTrBfE7ePt8/ElS3pWLjJKbXuHXUcnVCLduiOKueHHTbYF2hbUasOmfyLOozUQEo1G0WNZHCuz8/QZuSuIFhYH8zx4/cWG07SX4vcnPuswFp3pfyI791aCBDofLZG8euzhIgC0NTQ==" NoCertificadoSAT="30001000000400002495" SelloSAT="LU5I7e/FVPDzwvzSWX3IooEWa+simApJFXqantkusRPLXYEdk3t4Lj09kxIGVn0RVXUCJnCmwO4Ky74VsdHhnyYwUEwKrm2cYaVwG3FEkgm46u2z8SEom+2ZdyNBf1mlVBg1CYFDGbz3/5ccsHCet84o4LpAS992LWLaahos9i+tcawa3Bff3C6QCVbcf0hhCx5fGQY4kwAnCjA0mm2zPKW/iX3quQkZjpd2N9LltKZuut9/wH91UYNQdRcigViHrGefjcN5F6yz+f5osuSNe5fIuKvI3f3wxB0wYX9UHoizLk/UwB4jqVBL5ZV6Y/SPQqO/5zJo+Wv3sRAzp6b9sQ=="/>
+    </cfdi:Complemento></cfdi:Comprobante> 
+ 
+2022-05-17 21:10:35,610 [7] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-17 21:10:35,640 [7] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+ 
+2022-05-17 21:10:35,753 [7] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-05-17 21:10:35,754 [7] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-05-17 21:10:35,786 [7] INFO  App  
+ Info - Datos del comprobante. Folio: 0009, Número de serie del certificado: 30001000000400002434, Serie: ORIV 
+ 
+2022-05-17 21:10:35,798 [7] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-05-17 21:10:35,799 [7] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-05-17 21:10:35,832 [7] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="eb68bd68-6a78-4fc8-a22c-5527495887b8"
+  Content-Length: 4046
+} 
+ 
+2022-05-17 21:10:35,832 [7] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-05-17 21:10:35,833 [7] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-05-17 21:10:35,833 [7] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 404 
+ 
+2022-05-17 21:10:35,834 [7] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="eb68bd68-6a78-4fc8-a22c-5527495887b8"
+  Content-Length: 4046
+} 
+ 
+2022-05-17 21:10:35,834 [7] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+ 
+2022-05-17 21:10:35,835 [7] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-05-17 21:10:35,837 [7] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"123414","token": "$2b$12$JgIf1J7db4e6f06VnNPsUOaQD3SpwUnzPqXDkuirQklcc8gMCMIDS" },"issuer": {"rfc": "EKU9003173C9"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "EKU9003173C9ORIV0009","certificate-number": "30001000000400002434","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0+xml","content": "PGNmZGk6Q29tcHJvYmFudGUgeG1sbnM6Y2ZkaT0iaHR0cDovL3d3dy5zYXQuZ29iLm14L2NmZC80IiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9jZmQvNCBodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkLzQvY2ZkdjQwLnhzZCIgVmVyc2lvbj0iNC4wIiBTZXJpZT0iT1JJViIgRm9saW89IjAwMDkiIEZlY2hhPSIyMDIyLTA1LTE2VDA4OjEzOjUxIiBTZWxsbz0iaExTbjJvckN3Rm5xdkxVTk9MaXMrNHpBODZBakVpNUk0OHB2b3NUQUdsUldrb0FadWNyYjEyd2d3TG13VXg4RFE1R1BHYmwzUU9rWkZSR3JKMXJnWm5uUERBRHJnZitROUhuZHpzUzV4bHhtK3QveFRzdkNiTU0wN0M0UmZWbXBZSEV0NFExK1VRYXhUSVhKVzVQYWlYei9yUVZBWkF3M1ZERTEwU21kUXllT2JZdmlZcE82RU1OQW9raVB6SDA2U2huWFhqNEM5Y2pUVG8rVFgwa2tGWnc5VHVqaE8ybzdYbWRBN3dqYUIxUUpYeHl1WWtjMFVGVHlxdWhEZlF6YTJKRDlEdjY5dC9FNE9VbVFWcysvSzRDVHlHMG8rTUtoU042S0VVZDh5TWE4cDVkQzdZSmZyWDI2QWVzV2JMYjRQTkQrdHpHNkVmM0MzQk1LREo2eDdBPT0iIEZvcm1hUGFnbz0iMDEiIE5vQ2VydGlmaWNhZG89IjMwMDAxMDAwMDAwNDAwMDAyNDM0IiBDZXJ0aWZpY2Fkbz0iTUlJRnV6Q0NBNk9nQXdJQkFnSVVNekF3TURFd01EQXdNREEwTURBd01ESTBNelF3RFFZSktvWklodmNOQVFFTEJRQXdnZ0VyTVE4d0RRWURWUVFEREFaQlF5QlZRVlF4TGpBc0JnTlZCQW9NSlZORlVsWkpRMGxQSUVSRklFRkVUVWxPU1ZOVVVrRkRTVTlPSUZSU1NVSlZWRUZTU1VFeEdqQVlCZ05WQkFzTUVWTkJWQzFKUlZNZ1FYVjBhRzl5YVhSNU1TZ3dKZ1lKS29aSWh2Y05BUWtCRmhsdmMyTmhjaTV0WVhKMGFXNWxla0J6WVhRdVoyOWlMbTE0TVIwd0d3WURWUVFKREJRemNtRWdZMlZ5Y21Ga1lTQmtaU0JqWVdScGVqRU9NQXdHQTFVRUVRd0ZNRFl6TnpBeEN6QUpCZ05WQkFZVEFrMVlNUmt3RndZRFZRUUlEQkJEU1ZWRVFVUWdSRVVnVFVWWVNVTlBNUkV3RHdZRFZRUUhEQWhEVDFsUFFVTkJUakVSTUE4R0ExVUVMUk1JTWk0MUxqUXVORFV4SlRBakJna3Foa2lHOXcwQkNRSVRGbkpsYzNCdmJuTmhZbXhsT2lCQlEwUk5RUzFUUVZRd0hoY05NVGt3TmpFM01UazBOREUwV2hjTk1qTXdOakUzTVRrME5ERTBXakNCNGpFbk1DVUdBMVVFQXhNZVJWTkRWVVZNUVNCTFJVMVFSVklnVlZKSFFWUkZJRk5CSUVSRklFTldNU2N3SlFZRFZRUXBFeDVGVTBOVlJVeEJJRXRGVFZCRlVpQlZVa2RCVkVVZ1UwRWdSRVVnUTFZeEp6QWxCZ05WQkFvVEhrVlRRMVZGVEVFZ1MwVk5VRVZTSUZWU1IwRlVSU0JUUVNCRVJTQkRWakVsTUNNR0ExVUVMUk1jUlV0Vk9UQXdNekUzTTBNNUlDOGdXRWxSUWpnNU1URXhObEZGTkRFZU1Cd0dBMVVFQlJNVklDOGdXRWxSUWpnNU1URXhOazFIVWsxYVVqQTFNUjR3SEFZRFZRUUxFeFZGYzJOMVpXeGhJRXRsYlhCbGNpQlZjbWRoZEdVd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUUNOMHBlS3BnZk9MNzVpWVJ2MWZxcStvVllzTFBWVVIvR2liWW1HS2M5SW5IRnk1bFlGNk9UWWpuSUl2bWtPZFJvYmJHbENVeE9SWC90THNsOFlhOWdtNllvN2hIbk9EUkJJRHVwM0dJU0Z6Qi85NlI5Sy9NellRT2NzY01Jb0JEQVJheWNuTHZ5N0ZsTXZPNy9ybFZuc1NBUnhaUk84S3o4Wmtrc2oyenBlWXBqWkl5YS8zNjkrb0dxUWsxY1RSa0hvNTlKdko0VGZiay8zaUl5ZjRIL0luaTluQmU5Y1lXbzBNbktvYjdERHQvdnNkaTV0QThtTXRBOTUzTGFwTnlDWklEQ1JRUWxVR05nRHFZOS84RjVtVXZWZ2tjY3pzSWdHZHZmOXZNUVBTZjNqakNpS2o3ajZ1Y3hsMStGd0pXbWJ2Z05taWFVUi8wcTRtMnJtNzhsRkFnTUJBQUdqSFRBYk1Bd0dBMVVkRXdFQi93UUNNQUF3Q3dZRFZSMFBCQVFEQWdiQU1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQ0FRQmNwajFUalQ0amlpbkl1aklkQWxGekU2a1J3WUpDbkRHMDh6U3A0a1NuU2hqeEFER0VYSDJjaGVoS01WMEZZN2M0bmpBNWVER2RBL0cyT0NUUHZGNXJwZUNaUDVEdzUwNFJaa1lEbDJzdVJ6K3dhMXNOQlZwYm5CSkVLMGZRY04zSWZ0QndzZ05GZEZoVXRDeXczbHVzMVNTSmJQeGpMSFM2RmNaWjUxWVNlSWZjTlhPQXVUcWRpbXVzYVhxMTVHclNyQ09rTTZuMmpmajJzTUpZTTJIWGFYSjZyR1RFZ1ltaFlkd3hXdGlsNlJmWkIrZkdRL0g5STlXTG5sNEtUWlVTNkM5K05MSGg0RlBEaFNrMTlmcFMyUy81NmFxZ0ZvR0FrWEFZdDlGeTVFQ2FQY1VMSWZKMURFYnNYS3lSZEN2M0pZODkrME1Oa09kYURuc2VtUzJvNUdsMDh6STRpWXR0M0w0MGdBWjYwTlBoMzFrVkxuWU5zbXZmTnhZeUtwK0FlSnRESHlXOXc3ZnRNMEhvaStCdVJtY0FRU0tGVjNwazhqNTFsYStqclJCckFVdjhibGJSY1E1QmlaVXdKekhGRUtJd1RzUkdvUnlFeDk2c05uQjAzbjZHVHdqSUd6OTJTbUxkTmw5NXI5cmt2cCsybTRTNnExbFB1WGFGZzdER0JyWFdDOGl5cWVXRTJpb2Jkd0lJdVhQVE1WcVFiMTJtMWRBa0pWUk81TmRIblAvTXBxT3ZPZ0xxb1pCTkhHeUJnNEdxbTRzQ0pIQ3hBMWM4RWxmYTJSUVRDazB0QXpsbEw0dk9uSTFHSGtHSm42NXhva0dzYVU0QjREMzZ4aDdlV3JmajQvcGdXSG10b0RBWWE4d3pTd28yR1ZDWk9zK210RWdPUUI5MS9nPT0iIENvbmRpY2lvbmVzRGVQYWdvPSIzMCBkw61hcyIgU3ViVG90YWw9IjEwMDAwLjAwIiBUb3RhbD0iMTE2MDAuMDAiIE1vbmVkYT0iRVVSIiBUaXBvQ2FtYmlvPSI3NzcuNzciIFRpcG9EZUNvbXByb2JhbnRlPSJFIiBFeHBvcnRhY2lvbj0iMDEiIE1ldG9kb1BhZ289IlBVRSIgTHVnYXJFeHBlZGljaW9uPSI2NDAwMCI+PGNmZGk6RW1pc29yIFJmYz0iRUtVOTAwMzE3M0M5IiBOb21icmU9IkVTQ1VFTEEgS0VNUEVSIFVSR0FURSBTQSBERSBDViIgUmVnaW1lbkZpc2NhbD0iNjAxIiAvPjxjZmRpOlJlY2VwdG9yIFJmYz0iWEFYWDAxMDEwMTAwMCIgTm9tYnJlPSJNYXJpYSBkZWwgQ2FybWVuIiBEb21pY2lsaW9GaXNjYWxSZWNlcHRvcj0iNjQwMDAiIFJlZ2ltZW5GaXNjYWxSZWNlcHRvcj0iNjE2IiBVc29DRkRJPSJTMDEiIC8+PGNmZGk6Q29uY2VwdG9zPjxjZmRpOkNvbmNlcHRvIENsYXZlUHJvZFNlcnY9Ijg0MTExNTA2IiBOb0lkZW50aWZpY2FjaW9uPSJBMUIyQzNENCIgQ2FudGlkYWQ9IjEuMDAwMDAwIiBDbGF2ZVVuaWRhZD0iSDg3IiBVbmlkYWQ9IlBpZXphIiBEZXNjcmlwY2lvbj0iQ29uY2VwdG8gZGUgcHJ1ZWJhIiBWYWxvclVuaXRhcmlvPSIxMDAwMC4wMCIgSW1wb3J0ZT0iMTAwMDAuMDAiIE9iamV0b0ltcD0iMDIiPjxjZmRpOkltcHVlc3Rvcz48Y2ZkaTpUcmFzbGFkb3M+PGNmZGk6VHJhc2xhZG8gQmFzZT0iMTAwMDAuMDAiIEltcHVlc3RvPSIwMDIiIFRpcG9GYWN0b3I9IlRhc2EiIFRhc2FPQ3VvdGE9IjAuMTYwMDAwIiBJbXBvcnRlPSIxNjAwLjAwIiAvPjwvY2ZkaTpUcmFzbGFkb3M+PC9jZmRpOkltcHVlc3Rvcz48L2NmZGk6Q29uY2VwdG8+PC9jZmRpOkNvbmNlcHRvcz48Y2ZkaTpJbXB1ZXN0b3MgVG90YWxJbXB1ZXN0b3NUcmFzbGFkYWRvcz0iMTYwMC4wMCI+PGNmZGk6VHJhc2xhZG9zPjxjZmRpOlRyYXNsYWRvIEJhc2U9IjEwMDAwLjAwIiBJbXB1ZXN0bz0iMDAyIiBUaXBvRmFjdG9yPSJUYXNhIiBUYXNhT0N1b3RhPSIwLjE2MDAwMCIgSW1wb3J0ZT0iMTYwMC4wMCIgLz48L2NmZGk6VHJhc2xhZG9zPjwvY2ZkaTpJbXB1ZXN0b3M+PC9jZmRpOkNvbXByb2JhbnRlPg=="}} 
+ 
+2022-05-17 21:10:35,839 [7] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-05-17 21:10:35,840 [7] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-05-17 21:10:36,678 [7] INFO  App  
+ Info - Response recibido: StatusCode: 201, ReasonPhrase: 'Created', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Wed, 18 May 2022 02:10:37 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: 00v0s24coqua6lgv74pa8kl61273eumd
+  Content-Length: 6668
+  Content-Type: application/json; charset=utf-8
+} 
+ 
+2022-05-17 21:10:36,680 [7] INFO  App  
+ Info - Mensaje de respuesta del timbrado Diverza: <?xml version="1.0" encoding="utf-8" ?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="ORIV" Folio="0009" Fecha="2022-05-16T08:13:51" Sello="hLSn2orCwFnqvLUNOLis+4zA86AjEi5I48pvosTAGlRWkoAZucrb12wgwLmwUx8DQ5GPGbl3QOkZFRGrJ1rgZnnPDADrgf+Q9HndzsS5xlxm+t/xTsvCbMM07C4RfVmpYHEt4Q1+UQaxTIXJW5PaiXz/rQVAZAw3VDE10SmdQyeObYviYpO6EMNAokiPzH06ShnXXj4C9cjTTo+TX0kkFZw9TujhO2o7XmdA7wjaB1QJXxyuYkc0UFTyquhDfQza2JD9Dv69t/E4OUmQVs+/K4CTyG0o+MKhSN6KEUd8yMa8p5dC7YJfrX26AesWbLb4PND+tzG6Ef3C3BMKDJ6x7A==" FormaPago="01" NoCertificado="30001000000400002434" Certificado="MIIFuzCCA6OgAwIBAgIUMzAwMDEwMDAwMDA0MDAwMDI0MzQwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWRpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMTkwNjE3MTk0NDE0WhcNMjMwNjE3MTk0NDE0WjCB4jEnMCUGA1UEAxMeRVNDVUVMQSBLRU1QRVIgVVJHQVRFIFNBIERFIENWMScwJQYDVQQpEx5FU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YxJzAlBgNVBAoTHkVTQ1VFTEEgS0VNUEVSIFVSR0FURSBTQSBERSBDVjElMCMGA1UELRMcRUtVOTAwMzE3M0M5IC8gWElRQjg5MTExNlFFNDEeMBwGA1UEBRMVIC8gWElRQjg5MTExNk1HUk1aUjA1MR4wHAYDVQQLExVFc2N1ZWxhIEtlbXBlciBVcmdhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCN0peKpgfOL75iYRv1fqq+oVYsLPVUR/GibYmGKc9InHFy5lYF6OTYjnIIvmkOdRobbGlCUxORX/tLsl8Ya9gm6Yo7hHnODRBIDup3GISFzB/96R9K/MzYQOcscMIoBDARaycnLvy7FlMvO7/rlVnsSARxZRO8Kz8Zkksj2zpeYpjZIya/369+oGqQk1cTRkHo59JvJ4Tfbk/3iIyf4H/Ini9nBe9cYWo0MnKob7DDt/vsdi5tA8mMtA953LapNyCZIDCRQQlUGNgDqY9/8F5mUvVgkcczsIgGdvf9vMQPSf3jjCiKj7j6ucxl1+FwJWmbvgNmiaUR/0q4m2rm78lFAgMBAAGjHTAbMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBCwUAA4ICAQBcpj1TjT4jiinIujIdAlFzE6kRwYJCnDG08zSp4kSnShjxADGEXH2chehKMV0FY7c4njA5eDGdA/G2OCTPvF5rpeCZP5Dw504RZkYDl2suRz+wa1sNBVpbnBJEK0fQcN3IftBwsgNFdFhUtCyw3lus1SSJbPxjLHS6FcZZ51YSeIfcNXOAuTqdimusaXq15GrSrCOkM6n2jfj2sMJYM2HXaXJ6rGTEgYmhYdwxWtil6RfZB+fGQ/H9I9WLnl4KTZUS6C9+NLHh4FPDhSk19fpS2S/56aqgFoGAkXAYt9Fy5ECaPcULIfJ1DEbsXKyRdCv3JY89+0MNkOdaDnsemS2o5Gl08zI4iYtt3L40gAZ60NPh31kVLnYNsmvfNxYyKp+AeJtDHyW9w7ftM0Hoi+BuRmcAQSKFV3pk8j51la+jrRBrAUv8blbRcQ5BiZUwJzHFEKIwTsRGoRyEx96sNnB03n6GTwjIGz92SmLdNl95r9rkvp+2m4S6q1lPuXaFg7DGBrXWC8iyqeWE2iobdwIIuXPTMVqQb12m1dAkJVRO5NdHnP/MpqOvOgLqoZBNHGyBg4Gqm4sCJHCxA1c8Elfa2RQTCk0tAzllL4vOnI1GHkGJn65xokGsaU4B4D36xh7eWrfj4/pgWHmtoDAYa8wzSwo2GVCZOs+mtEgOQB91/g==" CondicionesDePago="30 días" SubTotal="10000.00" Total="11600.00" Moneda="EUR" TipoCambio="777.77" TipoDeComprobante="E" Exportacion="01" MetodoPago="PUE" LugarExpedicion="64000"><cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE SA DE CV" RegimenFiscal="601"/><cfdi:Receptor Rfc="XAXX010101000" Nombre="Maria del Carmen" DomicilioFiscalReceptor="64000" RegimenFiscalReceptor="616" UsoCFDI="S01"/><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="84111506" NoIdentificacion="A1B2C3D4" Cantidad="1.000000" ClaveUnidad="H87" Unidad="Pieza" Descripcion="Concepto de prueba" ValorUnitario="10000.00" Importe="10000.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="1600.00"><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento>
+        <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="2a939334-fef2-4d28-aa15-1539f01efa1b" RfcProvCertif="SPR190613I52" FechaTimbrado="2022-05-17T21:10:37" SelloCFD="hLSn2orCwFnqvLUNOLis+4zA86AjEi5I48pvosTAGlRWkoAZucrb12wgwLmwUx8DQ5GPGbl3QOkZFRGrJ1rgZnnPDADrgf+Q9HndzsS5xlxm+t/xTsvCbMM07C4RfVmpYHEt4Q1+UQaxTIXJW5PaiXz/rQVAZAw3VDE10SmdQyeObYviYpO6EMNAokiPzH06ShnXXj4C9cjTTo+TX0kkFZw9TujhO2o7XmdA7wjaB1QJXxyuYkc0UFTyquhDfQza2JD9Dv69t/E4OUmQVs+/K4CTyG0o+MKhSN6KEUd8yMa8p5dC7YJfrX26AesWbLb4PND+tzG6Ef3C3BMKDJ6x7A==" NoCertificadoSAT="30001000000400002495" SelloSAT="SFAvNSIy7uhplgHJZiYx1QPDUMGgrcYgF6476E5EFWp2sKMH7rrZg4lAYWhIWgkH2Z9G1Y2wq6OIKGkTkiFNizEHChHyPsoxlXA7caRjvpeGDtajJDxnBFMGWaQEChs+dvcWnKm4qrTb05ZqtPoWQslIxw+P9WITIwxsrISgFHCKGXbAmvk5yXKzOI44E8gVw5k21mhsFhVxIvUeug5+kvV1G739vYAt7/c38kce7iDqmnnHSOIvJTuJ5IAXmOkvPr0rJtMqE97rpaYg6txUuk19bGJUOZ3mYgH1dkJ7si4MdoR0KtLYP2kpxIF2k045CGtv2nI3WSj+hZuKx2AqVQ=="/>
+    </cfdi:Complemento></cfdi:Comprobante> 
+ 
+2022-05-17 21:10:36,680 [7] INFO  App  
+ Info - Detalle de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5434
+} 
+ 
+2022-05-17 21:10:36,681 [7] INFO  App  
+ Info - Modo de no guardado en la base de datos.  
+ 
+2022-05-17 21:10:36,682 [7] INFO  App  
+ Info - Se realizó el timbrado con Diverza.  
+ 
+2022-05-17 21:10:36,683 [7] INFO  App  
+ Info - código: 201 
+ 
+2022-05-17 21:10:36,685 [7] INFO  App  
+ Info - detalle: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5434
+} 
+ 
+2022-05-17 21:10:36,685 [7] INFO  App  
+ Info - message: <?xml version="1.0" encoding="utf-8" ?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="ORIV" Folio="0009" Fecha="2022-05-16T08:13:51" Sello="hLSn2orCwFnqvLUNOLis+4zA86AjEi5I48pvosTAGlRWkoAZucrb12wgwLmwUx8DQ5GPGbl3QOkZFRGrJ1rgZnnPDADrgf+Q9HndzsS5xlxm+t/xTsvCbMM07C4RfVmpYHEt4Q1+UQaxTIXJW5PaiXz/rQVAZAw3VDE10SmdQyeObYviYpO6EMNAokiPzH06ShnXXj4C9cjTTo+TX0kkFZw9TujhO2o7XmdA7wjaB1QJXxyuYkc0UFTyquhDfQza2JD9Dv69t/E4OUmQVs+/K4CTyG0o+MKhSN6KEUd8yMa8p5dC7YJfrX26AesWbLb4PND+tzG6Ef3C3BMKDJ6x7A==" FormaPago="01" NoCertificado="30001000000400002434" Certificado="MIIFuzCCA6OgAwIBAgIUMzAwMDEwMDAwMDA0MDAwMDI0MzQwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWRpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMTkwNjE3MTk0NDE0WhcNMjMwNjE3MTk0NDE0WjCB4jEnMCUGA1UEAxMeRVNDVUVMQSBLRU1QRVIgVVJHQVRFIFNBIERFIENWMScwJQYDVQQpEx5FU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YxJzAlBgNVBAoTHkVTQ1VFTEEgS0VNUEVSIFVSR0FURSBTQSBERSBDVjElMCMGA1UELRMcRUtVOTAwMzE3M0M5IC8gWElRQjg5MTExNlFFNDEeMBwGA1UEBRMVIC8gWElRQjg5MTExNk1HUk1aUjA1MR4wHAYDVQQLExVFc2N1ZWxhIEtlbXBlciBVcmdhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCN0peKpgfOL75iYRv1fqq+oVYsLPVUR/GibYmGKc9InHFy5lYF6OTYjnIIvmkOdRobbGlCUxORX/tLsl8Ya9gm6Yo7hHnODRBIDup3GISFzB/96R9K/MzYQOcscMIoBDARaycnLvy7FlMvO7/rlVnsSARxZRO8Kz8Zkksj2zpeYpjZIya/369+oGqQk1cTRkHo59JvJ4Tfbk/3iIyf4H/Ini9nBe9cYWo0MnKob7DDt/vsdi5tA8mMtA953LapNyCZIDCRQQlUGNgDqY9/8F5mUvVgkcczsIgGdvf9vMQPSf3jjCiKj7j6ucxl1+FwJWmbvgNmiaUR/0q4m2rm78lFAgMBAAGjHTAbMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBCwUAA4ICAQBcpj1TjT4jiinIujIdAlFzE6kRwYJCnDG08zSp4kSnShjxADGEXH2chehKMV0FY7c4njA5eDGdA/G2OCTPvF5rpeCZP5Dw504RZkYDl2suRz+wa1sNBVpbnBJEK0fQcN3IftBwsgNFdFhUtCyw3lus1SSJbPxjLHS6FcZZ51YSeIfcNXOAuTqdimusaXq15GrSrCOkM6n2jfj2sMJYM2HXaXJ6rGTEgYmhYdwxWtil6RfZB+fGQ/H9I9WLnl4KTZUS6C9+NLHh4FPDhSk19fpS2S/56aqgFoGAkXAYt9Fy5ECaPcULIfJ1DEbsXKyRdCv3JY89+0MNkOdaDnsemS2o5Gl08zI4iYtt3L40gAZ60NPh31kVLnYNsmvfNxYyKp+AeJtDHyW9w7ftM0Hoi+BuRmcAQSKFV3pk8j51la+jrRBrAUv8blbRcQ5BiZUwJzHFEKIwTsRGoRyEx96sNnB03n6GTwjIGz92SmLdNl95r9rkvp+2m4S6q1lPuXaFg7DGBrXWC8iyqeWE2iobdwIIuXPTMVqQb12m1dAkJVRO5NdHnP/MpqOvOgLqoZBNHGyBg4Gqm4sCJHCxA1c8Elfa2RQTCk0tAzllL4vOnI1GHkGJn65xokGsaU4B4D36xh7eWrfj4/pgWHmtoDAYa8wzSwo2GVCZOs+mtEgOQB91/g==" CondicionesDePago="30 días" SubTotal="10000.00" Total="11600.00" Moneda="EUR" TipoCambio="777.77" TipoDeComprobante="E" Exportacion="01" MetodoPago="PUE" LugarExpedicion="64000"><cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE SA DE CV" RegimenFiscal="601"/><cfdi:Receptor Rfc="XAXX010101000" Nombre="Maria del Carmen" DomicilioFiscalReceptor="64000" RegimenFiscalReceptor="616" UsoCFDI="S01"/><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="84111506" NoIdentificacion="A1B2C3D4" Cantidad="1.000000" ClaveUnidad="H87" Unidad="Pieza" Descripcion="Concepto de prueba" ValorUnitario="10000.00" Importe="10000.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="1600.00"><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento>
+        <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="2a939334-fef2-4d28-aa15-1539f01efa1b" RfcProvCertif="SPR190613I52" FechaTimbrado="2022-05-17T21:10:37" SelloCFD="hLSn2orCwFnqvLUNOLis+4zA86AjEi5I48pvosTAGlRWkoAZucrb12wgwLmwUx8DQ5GPGbl3QOkZFRGrJ1rgZnnPDADrgf+Q9HndzsS5xlxm+t/xTsvCbMM07C4RfVmpYHEt4Q1+UQaxTIXJW5PaiXz/rQVAZAw3VDE10SmdQyeObYviYpO6EMNAokiPzH06ShnXXj4C9cjTTo+TX0kkFZw9TujhO2o7XmdA7wjaB1QJXxyuYkc0UFTyquhDfQza2JD9Dv69t/E4OUmQVs+/K4CTyG0o+MKhSN6KEUd8yMa8p5dC7YJfrX26AesWbLb4PND+tzG6Ef3C3BMKDJ6x7A==" NoCertificadoSAT="30001000000400002495" SelloSAT="SFAvNSIy7uhplgHJZiYx1QPDUMGgrcYgF6476E5EFWp2sKMH7rrZg4lAYWhIWgkH2Z9G1Y2wq6OIKGkTkiFNizEHChHyPsoxlXA7caRjvpeGDtajJDxnBFMGWaQEChs+dvcWnKm4qrTb05ZqtPoWQslIxw+P9WITIwxsrISgFHCKGXbAmvk5yXKzOI44E8gVw5k21mhsFhVxIvUeug5+kvV1G739vYAt7/c38kce7iDqmnnHSOIvJTuJ5IAXmOkvPr0rJtMqE97rpaYg6txUuk19bGJUOZ3mYgH1dkJ7si4MdoR0KtLYP2kpxIF2k045CGtv2nI3WSj+hZuKx2AqVQ=="/>
+    </cfdi:Complemento></cfdi:Comprobante> 
+ 
+2022-05-17 21:11:09,102 [17] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-17 21:11:13,186 [17] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+ 
+2022-05-17 21:11:13,310 [17] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-05-17 21:11:13,314 [17] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-05-17 21:11:13,335 [17] INFO  App  
+ Info - Datos del comprobante. Folio: 0009, Número de serie del certificado: 30001000000400002434, Serie: ORIV 
+ 
+2022-05-17 21:11:13,351 [17] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-05-17 21:11:13,352 [17] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-05-17 21:11:13,384 [17] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="d0cf241d-05fd-4307-bbb2-3c88571bb523"
+  Content-Length: 4046
+} 
+ 
+2022-05-17 21:11:13,388 [17] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-05-17 21:11:13,389 [17] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-05-17 21:11:13,390 [17] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 404 
+ 
+2022-05-17 21:11:13,390 [17] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="d0cf241d-05fd-4307-bbb2-3c88571bb523"
+  Content-Length: 4046
+} 
+ 
+2022-05-17 21:11:13,391 [17] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+ 
+2022-05-17 21:11:13,391 [17] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-05-17 21:11:13,395 [17] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"123414","token": "$2b$12$JgIf1J7db4e6f06VnNPsUOaQD3SpwUnzPqXDkuirQklcc8gMCMIDS" },"issuer": {"rfc": "EKU9003173C9"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "EKU9003173C9ORIV0009","certificate-number": "30001000000400002434","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0+xml","content": "PGNmZGk6Q29tcHJvYmFudGUgeG1sbnM6Y2ZkaT0iaHR0cDovL3d3dy5zYXQuZ29iLm14L2NmZC80IiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9jZmQvNCBodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkLzQvY2ZkdjQwLnhzZCIgVmVyc2lvbj0iNC4wIiBTZXJpZT0iT1JJViIgRm9saW89IjAwMDkiIEZlY2hhPSIyMDIyLTA1LTE2VDA4OjEzOjUxIiBTZWxsbz0iaExTbjJvckN3Rm5xdkxVTk9MaXMrNHpBODZBakVpNUk0OHB2b3NUQUdsUldrb0FadWNyYjEyd2d3TG13VXg4RFE1R1BHYmwzUU9rWkZSR3JKMXJnWm5uUERBRHJnZitROUhuZHpzUzV4bHhtK3QveFRzdkNiTU0wN0M0UmZWbXBZSEV0NFExK1VRYXhUSVhKVzVQYWlYei9yUVZBWkF3M1ZERTEwU21kUXllT2JZdmlZcE82RU1OQW9raVB6SDA2U2huWFhqNEM5Y2pUVG8rVFgwa2tGWnc5VHVqaE8ybzdYbWRBN3dqYUIxUUpYeHl1WWtjMFVGVHlxdWhEZlF6YTJKRDlEdjY5dC9FNE9VbVFWcysvSzRDVHlHMG8rTUtoU042S0VVZDh5TWE4cDVkQzdZSmZyWDI2QWVzV2JMYjRQTkQrdHpHNkVmM0MzQk1LREo2eDdBPT0iIEZvcm1hUGFnbz0iMDEiIE5vQ2VydGlmaWNhZG89IjMwMDAxMDAwMDAwNDAwMDAyNDM0IiBDZXJ0aWZpY2Fkbz0iTUlJRnV6Q0NBNk9nQXdJQkFnSVVNekF3TURFd01EQXdNREEwTURBd01ESTBNelF3RFFZSktvWklodmNOQVFFTEJRQXdnZ0VyTVE4d0RRWURWUVFEREFaQlF5QlZRVlF4TGpBc0JnTlZCQW9NSlZORlVsWkpRMGxQSUVSRklFRkVUVWxPU1ZOVVVrRkRTVTlPSUZSU1NVSlZWRUZTU1VFeEdqQVlCZ05WQkFzTUVWTkJWQzFKUlZNZ1FYVjBhRzl5YVhSNU1TZ3dKZ1lKS29aSWh2Y05BUWtCRmhsdmMyTmhjaTV0WVhKMGFXNWxla0J6WVhRdVoyOWlMbTE0TVIwd0d3WURWUVFKREJRemNtRWdZMlZ5Y21Ga1lTQmtaU0JqWVdScGVqRU9NQXdHQTFVRUVRd0ZNRFl6TnpBeEN6QUpCZ05WQkFZVEFrMVlNUmt3RndZRFZRUUlEQkJEU1ZWRVFVUWdSRVVnVFVWWVNVTlBNUkV3RHdZRFZRUUhEQWhEVDFsUFFVTkJUakVSTUE4R0ExVUVMUk1JTWk0MUxqUXVORFV4SlRBakJna3Foa2lHOXcwQkNRSVRGbkpsYzNCdmJuTmhZbXhsT2lCQlEwUk5RUzFUUVZRd0hoY05NVGt3TmpFM01UazBOREUwV2hjTk1qTXdOakUzTVRrME5ERTBXakNCNGpFbk1DVUdBMVVFQXhNZVJWTkRWVVZNUVNCTFJVMVFSVklnVlZKSFFWUkZJRk5CSUVSRklFTldNU2N3SlFZRFZRUXBFeDVGVTBOVlJVeEJJRXRGVFZCRlVpQlZVa2RCVkVVZ1UwRWdSRVVnUTFZeEp6QWxCZ05WQkFvVEhrVlRRMVZGVEVFZ1MwVk5VRVZTSUZWU1IwRlVSU0JUUVNCRVJTQkRWakVsTUNNR0ExVUVMUk1jUlV0Vk9UQXdNekUzTTBNNUlDOGdXRWxSUWpnNU1URXhObEZGTkRFZU1Cd0dBMVVFQlJNVklDOGdXRWxSUWpnNU1URXhOazFIVWsxYVVqQTFNUjR3SEFZRFZRUUxFeFZGYzJOMVpXeGhJRXRsYlhCbGNpQlZjbWRoZEdVd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUUNOMHBlS3BnZk9MNzVpWVJ2MWZxcStvVllzTFBWVVIvR2liWW1HS2M5SW5IRnk1bFlGNk9UWWpuSUl2bWtPZFJvYmJHbENVeE9SWC90THNsOFlhOWdtNllvN2hIbk9EUkJJRHVwM0dJU0Z6Qi85NlI5Sy9NellRT2NzY01Jb0JEQVJheWNuTHZ5N0ZsTXZPNy9ybFZuc1NBUnhaUk84S3o4Wmtrc2oyenBlWXBqWkl5YS8zNjkrb0dxUWsxY1RSa0hvNTlKdko0VGZiay8zaUl5ZjRIL0luaTluQmU5Y1lXbzBNbktvYjdERHQvdnNkaTV0QThtTXRBOTUzTGFwTnlDWklEQ1JRUWxVR05nRHFZOS84RjVtVXZWZ2tjY3pzSWdHZHZmOXZNUVBTZjNqakNpS2o3ajZ1Y3hsMStGd0pXbWJ2Z05taWFVUi8wcTRtMnJtNzhsRkFnTUJBQUdqSFRBYk1Bd0dBMVVkRXdFQi93UUNNQUF3Q3dZRFZSMFBCQVFEQWdiQU1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQ0FRQmNwajFUalQ0amlpbkl1aklkQWxGekU2a1J3WUpDbkRHMDh6U3A0a1NuU2hqeEFER0VYSDJjaGVoS01WMEZZN2M0bmpBNWVER2RBL0cyT0NUUHZGNXJwZUNaUDVEdzUwNFJaa1lEbDJzdVJ6K3dhMXNOQlZwYm5CSkVLMGZRY04zSWZ0QndzZ05GZEZoVXRDeXczbHVzMVNTSmJQeGpMSFM2RmNaWjUxWVNlSWZjTlhPQXVUcWRpbXVzYVhxMTVHclNyQ09rTTZuMmpmajJzTUpZTTJIWGFYSjZyR1RFZ1ltaFlkd3hXdGlsNlJmWkIrZkdRL0g5STlXTG5sNEtUWlVTNkM5K05MSGg0RlBEaFNrMTlmcFMyUy81NmFxZ0ZvR0FrWEFZdDlGeTVFQ2FQY1VMSWZKMURFYnNYS3lSZEN2M0pZODkrME1Oa09kYURuc2VtUzJvNUdsMDh6STRpWXR0M0w0MGdBWjYwTlBoMzFrVkxuWU5zbXZmTnhZeUtwK0FlSnRESHlXOXc3ZnRNMEhvaStCdVJtY0FRU0tGVjNwazhqNTFsYStqclJCckFVdjhibGJSY1E1QmlaVXdKekhGRUtJd1RzUkdvUnlFeDk2c05uQjAzbjZHVHdqSUd6OTJTbUxkTmw5NXI5cmt2cCsybTRTNnExbFB1WGFGZzdER0JyWFdDOGl5cWVXRTJpb2Jkd0lJdVhQVE1WcVFiMTJtMWRBa0pWUk81TmRIblAvTXBxT3ZPZ0xxb1pCTkhHeUJnNEdxbTRzQ0pIQ3hBMWM4RWxmYTJSUVRDazB0QXpsbEw0dk9uSTFHSGtHSm42NXhva0dzYVU0QjREMzZ4aDdlV3JmajQvcGdXSG10b0RBWWE4d3pTd28yR1ZDWk9zK210RWdPUUI5MS9nPT0iIENvbmRpY2lvbmVzRGVQYWdvPSIzMCBkw61hcyIgU3ViVG90YWw9IjEwMDAwLjAwIiBUb3RhbD0iMTE2MDAuMDAiIE1vbmVkYT0iRVVSIiBUaXBvQ2FtYmlvPSI3NzcuNzciIFRpcG9EZUNvbXByb2JhbnRlPSJFIiBFeHBvcnRhY2lvbj0iMDEiIE1ldG9kb1BhZ289IlBVRSIgTHVnYXJFeHBlZGljaW9uPSI2NDAwMCI+PGNmZGk6RW1pc29yIFJmYz0iRUtVOTAwMzE3M0M5IiBOb21icmU9IkVTQ1VFTEEgS0VNUEVSIFVSR0FURSBTQSBERSBDViIgUmVnaW1lbkZpc2NhbD0iNjAxIiAvPjxjZmRpOlJlY2VwdG9yIFJmYz0iWEFYWDAxMDEwMTAwMCIgTm9tYnJlPSJNYXJpYSBkZWwgQ2FybWVuIiBEb21pY2lsaW9GaXNjYWxSZWNlcHRvcj0iNjQwMDAiIFJlZ2ltZW5GaXNjYWxSZWNlcHRvcj0iNjE2IiBVc29DRkRJPSJTMDEiIC8+PGNmZGk6Q29uY2VwdG9zPjxjZmRpOkNvbmNlcHRvIENsYXZlUHJvZFNlcnY9Ijg0MTExNTA2IiBOb0lkZW50aWZpY2FjaW9uPSJBMUIyQzNENCIgQ2FudGlkYWQ9IjEuMDAwMDAwIiBDbGF2ZVVuaWRhZD0iSDg3IiBVbmlkYWQ9IlBpZXphIiBEZXNjcmlwY2lvbj0iQ29uY2VwdG8gZGUgcHJ1ZWJhIiBWYWxvclVuaXRhcmlvPSIxMDAwMC4wMCIgSW1wb3J0ZT0iMTAwMDAuMDAiIE9iamV0b0ltcD0iMDIiPjxjZmRpOkltcHVlc3Rvcz48Y2ZkaTpUcmFzbGFkb3M+PGNmZGk6VHJhc2xhZG8gQmFzZT0iMTAwMDAuMDAiIEltcHVlc3RvPSIwMDIiIFRpcG9GYWN0b3I9IlRhc2EiIFRhc2FPQ3VvdGE9IjAuMTYwMDAwIiBJbXBvcnRlPSIxNjAwLjAwIiAvPjwvY2ZkaTpUcmFzbGFkb3M+PC9jZmRpOkltcHVlc3Rvcz48L2NmZGk6Q29uY2VwdG8+PC9jZmRpOkNvbmNlcHRvcz48Y2ZkaTpJbXB1ZXN0b3MgVG90YWxJbXB1ZXN0b3NUcmFzbGFkYWRvcz0iMTYwMC4wMCI+PGNmZGk6VHJhc2xhZG9zPjxjZmRpOlRyYXNsYWRvIEJhc2U9IjEwMDAwLjAwIiBJbXB1ZXN0bz0iMDAyIiBUaXBvRmFjdG9yPSJUYXNhIiBUYXNhT0N1b3RhPSIwLjE2MDAwMCIgSW1wb3J0ZT0iMTYwMC4wMCIgLz48L2NmZGk6VHJhc2xhZG9zPjwvY2ZkaTpJbXB1ZXN0b3M+PC9jZmRpOkNvbXByb2JhbnRlPg=="}} 
+ 
+2022-05-17 21:11:13,396 [17] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-05-17 21:11:13,397 [17] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-05-17 21:11:13,669 [17] INFO  App  
+ Info - Response recibido: StatusCode: 201, ReasonPhrase: 'Created', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Wed, 18 May 2022 02:11:14 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: lb5ccmeblr7tr9unl168di5cdl0cccnd
+  Content-Length: 6668
+  Content-Type: application/json; charset=utf-8
+} 
+ 
+2022-05-17 21:11:13,679 [17] INFO  App  
+ Info - Mensaje de respuesta del timbrado Diverza: <?xml version="1.0" encoding="utf-8" ?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="ORIV" Folio="0009" Fecha="2022-05-16T08:13:51" Sello="hLSn2orCwFnqvLUNOLis+4zA86AjEi5I48pvosTAGlRWkoAZucrb12wgwLmwUx8DQ5GPGbl3QOkZFRGrJ1rgZnnPDADrgf+Q9HndzsS5xlxm+t/xTsvCbMM07C4RfVmpYHEt4Q1+UQaxTIXJW5PaiXz/rQVAZAw3VDE10SmdQyeObYviYpO6EMNAokiPzH06ShnXXj4C9cjTTo+TX0kkFZw9TujhO2o7XmdA7wjaB1QJXxyuYkc0UFTyquhDfQza2JD9Dv69t/E4OUmQVs+/K4CTyG0o+MKhSN6KEUd8yMa8p5dC7YJfrX26AesWbLb4PND+tzG6Ef3C3BMKDJ6x7A==" FormaPago="01" NoCertificado="30001000000400002434" Certificado="MIIFuzCCA6OgAwIBAgIUMzAwMDEwMDAwMDA0MDAwMDI0MzQwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWRpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMTkwNjE3MTk0NDE0WhcNMjMwNjE3MTk0NDE0WjCB4jEnMCUGA1UEAxMeRVNDVUVMQSBLRU1QRVIgVVJHQVRFIFNBIERFIENWMScwJQYDVQQpEx5FU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YxJzAlBgNVBAoTHkVTQ1VFTEEgS0VNUEVSIFVSR0FURSBTQSBERSBDVjElMCMGA1UELRMcRUtVOTAwMzE3M0M5IC8gWElRQjg5MTExNlFFNDEeMBwGA1UEBRMVIC8gWElRQjg5MTExNk1HUk1aUjA1MR4wHAYDVQQLExVFc2N1ZWxhIEtlbXBlciBVcmdhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCN0peKpgfOL75iYRv1fqq+oVYsLPVUR/GibYmGKc9InHFy5lYF6OTYjnIIvmkOdRobbGlCUxORX/tLsl8Ya9gm6Yo7hHnODRBIDup3GISFzB/96R9K/MzYQOcscMIoBDARaycnLvy7FlMvO7/rlVnsSARxZRO8Kz8Zkksj2zpeYpjZIya/369+oGqQk1cTRkHo59JvJ4Tfbk/3iIyf4H/Ini9nBe9cYWo0MnKob7DDt/vsdi5tA8mMtA953LapNyCZIDCRQQlUGNgDqY9/8F5mUvVgkcczsIgGdvf9vMQPSf3jjCiKj7j6ucxl1+FwJWmbvgNmiaUR/0q4m2rm78lFAgMBAAGjHTAbMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBCwUAA4ICAQBcpj1TjT4jiinIujIdAlFzE6kRwYJCnDG08zSp4kSnShjxADGEXH2chehKMV0FY7c4njA5eDGdA/G2OCTPvF5rpeCZP5Dw504RZkYDl2suRz+wa1sNBVpbnBJEK0fQcN3IftBwsgNFdFhUtCyw3lus1SSJbPxjLHS6FcZZ51YSeIfcNXOAuTqdimusaXq15GrSrCOkM6n2jfj2sMJYM2HXaXJ6rGTEgYmhYdwxWtil6RfZB+fGQ/H9I9WLnl4KTZUS6C9+NLHh4FPDhSk19fpS2S/56aqgFoGAkXAYt9Fy5ECaPcULIfJ1DEbsXKyRdCv3JY89+0MNkOdaDnsemS2o5Gl08zI4iYtt3L40gAZ60NPh31kVLnYNsmvfNxYyKp+AeJtDHyW9w7ftM0Hoi+BuRmcAQSKFV3pk8j51la+jrRBrAUv8blbRcQ5BiZUwJzHFEKIwTsRGoRyEx96sNnB03n6GTwjIGz92SmLdNl95r9rkvp+2m4S6q1lPuXaFg7DGBrXWC8iyqeWE2iobdwIIuXPTMVqQb12m1dAkJVRO5NdHnP/MpqOvOgLqoZBNHGyBg4Gqm4sCJHCxA1c8Elfa2RQTCk0tAzllL4vOnI1GHkGJn65xokGsaU4B4D36xh7eWrfj4/pgWHmtoDAYa8wzSwo2GVCZOs+mtEgOQB91/g==" CondicionesDePago="30 días" SubTotal="10000.00" Total="11600.00" Moneda="EUR" TipoCambio="777.77" TipoDeComprobante="E" Exportacion="01" MetodoPago="PUE" LugarExpedicion="64000"><cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE SA DE CV" RegimenFiscal="601"/><cfdi:Receptor Rfc="XAXX010101000" Nombre="Maria del Carmen" DomicilioFiscalReceptor="64000" RegimenFiscalReceptor="616" UsoCFDI="S01"/><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="84111506" NoIdentificacion="A1B2C3D4" Cantidad="1.000000" ClaveUnidad="H87" Unidad="Pieza" Descripcion="Concepto de prueba" ValorUnitario="10000.00" Importe="10000.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="1600.00"><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento>
+        <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="2a939334-fef2-4d28-aa15-1539f01efa1b" RfcProvCertif="SPR190613I52" FechaTimbrado="2022-05-17T21:10:37" SelloCFD="hLSn2orCwFnqvLUNOLis+4zA86AjEi5I48pvosTAGlRWkoAZucrb12wgwLmwUx8DQ5GPGbl3QOkZFRGrJ1rgZnnPDADrgf+Q9HndzsS5xlxm+t/xTsvCbMM07C4RfVmpYHEt4Q1+UQaxTIXJW5PaiXz/rQVAZAw3VDE10SmdQyeObYviYpO6EMNAokiPzH06ShnXXj4C9cjTTo+TX0kkFZw9TujhO2o7XmdA7wjaB1QJXxyuYkc0UFTyquhDfQza2JD9Dv69t/E4OUmQVs+/K4CTyG0o+MKhSN6KEUd8yMa8p5dC7YJfrX26AesWbLb4PND+tzG6Ef3C3BMKDJ6x7A==" NoCertificadoSAT="30001000000400002495" SelloSAT="SFAvNSIy7uhplgHJZiYx1QPDUMGgrcYgF6476E5EFWp2sKMH7rrZg4lAYWhIWgkH2Z9G1Y2wq6OIKGkTkiFNizEHChHyPsoxlXA7caRjvpeGDtajJDxnBFMGWaQEChs+dvcWnKm4qrTb05ZqtPoWQslIxw+P9WITIwxsrISgFHCKGXbAmvk5yXKzOI44E8gVw5k21mhsFhVxIvUeug5+kvV1G739vYAt7/c38kce7iDqmnnHSOIvJTuJ5IAXmOkvPr0rJtMqE97rpaYg6txUuk19bGJUOZ3mYgH1dkJ7si4MdoR0KtLYP2kpxIF2k045CGtv2nI3WSj+hZuKx2AqVQ=="/>
+    </cfdi:Complemento></cfdi:Comprobante> 
+ 
+2022-05-17 21:11:13,680 [17] INFO  App  
+ Info - Detalle de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5434
+} 
+ 
+2022-05-17 21:11:14,422 [17] INFO  App  
+ Info - Modo de no guardado en la base de datos.  
+ 
+2022-05-17 21:11:14,429 [17] INFO  App  
+ Info - Se realizó el timbrado con Diverza.  
+ 
+2022-05-17 21:11:14,430 [17] INFO  App  
+ Info - código: 201 
+ 
+2022-05-17 21:11:14,431 [17] INFO  App  
+ Info - detalle: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5434
+} 
+ 
+2022-05-17 21:11:14,431 [17] INFO  App  
+ Info - message: <?xml version="1.0" encoding="utf-8" ?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="ORIV" Folio="0009" Fecha="2022-05-16T08:13:51" Sello="hLSn2orCwFnqvLUNOLis+4zA86AjEi5I48pvosTAGlRWkoAZucrb12wgwLmwUx8DQ5GPGbl3QOkZFRGrJ1rgZnnPDADrgf+Q9HndzsS5xlxm+t/xTsvCbMM07C4RfVmpYHEt4Q1+UQaxTIXJW5PaiXz/rQVAZAw3VDE10SmdQyeObYviYpO6EMNAokiPzH06ShnXXj4C9cjTTo+TX0kkFZw9TujhO2o7XmdA7wjaB1QJXxyuYkc0UFTyquhDfQza2JD9Dv69t/E4OUmQVs+/K4CTyG0o+MKhSN6KEUd8yMa8p5dC7YJfrX26AesWbLb4PND+tzG6Ef3C3BMKDJ6x7A==" FormaPago="01" NoCertificado="30001000000400002434" Certificado="MIIFuzCCA6OgAwIBAgIUMzAwMDEwMDAwMDA0MDAwMDI0MzQwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWRpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMTkwNjE3MTk0NDE0WhcNMjMwNjE3MTk0NDE0WjCB4jEnMCUGA1UEAxMeRVNDVUVMQSBLRU1QRVIgVVJHQVRFIFNBIERFIENWMScwJQYDVQQpEx5FU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YxJzAlBgNVBAoTHkVTQ1VFTEEgS0VNUEVSIFVSR0FURSBTQSBERSBDVjElMCMGA1UELRMcRUtVOTAwMzE3M0M5IC8gWElRQjg5MTExNlFFNDEeMBwGA1UEBRMVIC8gWElRQjg5MTExNk1HUk1aUjA1MR4wHAYDVQQLExVFc2N1ZWxhIEtlbXBlciBVcmdhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCN0peKpgfOL75iYRv1fqq+oVYsLPVUR/GibYmGKc9InHFy5lYF6OTYjnIIvmkOdRobbGlCUxORX/tLsl8Ya9gm6Yo7hHnODRBIDup3GISFzB/96R9K/MzYQOcscMIoBDARaycnLvy7FlMvO7/rlVnsSARxZRO8Kz8Zkksj2zpeYpjZIya/369+oGqQk1cTRkHo59JvJ4Tfbk/3iIyf4H/Ini9nBe9cYWo0MnKob7DDt/vsdi5tA8mMtA953LapNyCZIDCRQQlUGNgDqY9/8F5mUvVgkcczsIgGdvf9vMQPSf3jjCiKj7j6ucxl1+FwJWmbvgNmiaUR/0q4m2rm78lFAgMBAAGjHTAbMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBCwUAA4ICAQBcpj1TjT4jiinIujIdAlFzE6kRwYJCnDG08zSp4kSnShjxADGEXH2chehKMV0FY7c4njA5eDGdA/G2OCTPvF5rpeCZP5Dw504RZkYDl2suRz+wa1sNBVpbnBJEK0fQcN3IftBwsgNFdFhUtCyw3lus1SSJbPxjLHS6FcZZ51YSeIfcNXOAuTqdimusaXq15GrSrCOkM6n2jfj2sMJYM2HXaXJ6rGTEgYmhYdwxWtil6RfZB+fGQ/H9I9WLnl4KTZUS6C9+NLHh4FPDhSk19fpS2S/56aqgFoGAkXAYt9Fy5ECaPcULIfJ1DEbsXKyRdCv3JY89+0MNkOdaDnsemS2o5Gl08zI4iYtt3L40gAZ60NPh31kVLnYNsmvfNxYyKp+AeJtDHyW9w7ftM0Hoi+BuRmcAQSKFV3pk8j51la+jrRBrAUv8blbRcQ5BiZUwJzHFEKIwTsRGoRyEx96sNnB03n6GTwjIGz92SmLdNl95r9rkvp+2m4S6q1lPuXaFg7DGBrXWC8iyqeWE2iobdwIIuXPTMVqQb12m1dAkJVRO5NdHnP/MpqOvOgLqoZBNHGyBg4Gqm4sCJHCxA1c8Elfa2RQTCk0tAzllL4vOnI1GHkGJn65xokGsaU4B4D36xh7eWrfj4/pgWHmtoDAYa8wzSwo2GVCZOs+mtEgOQB91/g==" CondicionesDePago="30 días" SubTotal="10000.00" Total="11600.00" Moneda="EUR" TipoCambio="777.77" TipoDeComprobante="E" Exportacion="01" MetodoPago="PUE" LugarExpedicion="64000"><cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE SA DE CV" RegimenFiscal="601"/><cfdi:Receptor Rfc="XAXX010101000" Nombre="Maria del Carmen" DomicilioFiscalReceptor="64000" RegimenFiscalReceptor="616" UsoCFDI="S01"/><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="84111506" NoIdentificacion="A1B2C3D4" Cantidad="1.000000" ClaveUnidad="H87" Unidad="Pieza" Descripcion="Concepto de prueba" ValorUnitario="10000.00" Importe="10000.00" ObjetoImp="02"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="1600.00"><cfdi:Traslados><cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento>
+        <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="2a939334-fef2-4d28-aa15-1539f01efa1b" RfcProvCertif="SPR190613I52" FechaTimbrado="2022-05-17T21:10:37" SelloCFD="hLSn2orCwFnqvLUNOLis+4zA86AjEi5I48pvosTAGlRWkoAZucrb12wgwLmwUx8DQ5GPGbl3QOkZFRGrJ1rgZnnPDADrgf+Q9HndzsS5xlxm+t/xTsvCbMM07C4RfVmpYHEt4Q1+UQaxTIXJW5PaiXz/rQVAZAw3VDE10SmdQyeObYviYpO6EMNAokiPzH06ShnXXj4C9cjTTo+TX0kkFZw9TujhO2o7XmdA7wjaB1QJXxyuYkc0UFTyquhDfQza2JD9Dv69t/E4OUmQVs+/K4CTyG0o+MKhSN6KEUd8yMa8p5dC7YJfrX26AesWbLb4PND+tzG6Ef3C3BMKDJ6x7A==" NoCertificadoSAT="30001000000400002495" SelloSAT="SFAvNSIy7uhplgHJZiYx1QPDUMGgrcYgF6476E5EFWp2sKMH7rrZg4lAYWhIWgkH2Z9G1Y2wq6OIKGkTkiFNizEHChHyPsoxlXA7caRjvpeGDtajJDxnBFMGWaQEChs+dvcWnKm4qrTb05ZqtPoWQslIxw+P9WITIwxsrISgFHCKGXbAmvk5yXKzOI44E8gVw5k21mhsFhVxIvUeug5+kvV1G739vYAt7/c38kce7iDqmnnHSOIvJTuJ5IAXmOkvPr0rJtMqE97rpaYg6txUuk19bGJUOZ3mYgH1dkJ7si4MdoR0KtLYP2kpxIF2k045CGtv2nI3WSj+hZuKx2AqVQ=="/>
+    </cfdi:Complemento></cfdi:Comprobante> 
+ 

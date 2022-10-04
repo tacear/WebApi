@@ -1,0 +1,579 @@
+﻿2022-04-27 17:21:11,118 [10] ERROR App  
+ Error - Ocurrio un error en el procesamiento del docuemnto.  
+ 
+2022-04-27 17:21:11,121 [10] ERROR App  
+ Error - Mensaje: An error occurred while parsing EntityName. Line 7, position 63. 
+ 
+2022-04-27 17:21:11,190 [10] ERROR App  
+ Error - StackTrace:    at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.Throw(String res, Int32 lineNo, Int32 linePos)
+   at System.Xml.XmlTextReaderImpl.HandleEntityReference(Boolean isInAttributeValue, EntityExpandType expandType, Int32& charRefEndPos)
+   at System.Xml.XmlTextReaderImpl.ParseAttributeValueSlow(Int32 curPos, Char quoteChar, NodeData attr)
+   at System.Xml.XmlTextReaderImpl.ParseAttributes()
+   at System.Xml.XmlTextReaderImpl.ParseElement()
+   at System.Xml.XmlTextReaderImpl.ParseElementContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.LoadNode(Boolean skipOverWhitespace)
+   at System.Xml.XmlLoader.LoadDocSequence(XmlDocument parentDoc)
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.LoadXml(String xml)
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 887 
+ 
+2022-04-27 17:21:31,153 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-27 17:21:31,175 [10] ERROR App  
+ Error - Ocurrió un error en la búsqueda del comprobante en la base de datos. 
+ 
+2022-04-27 17:21:31,176 [10] ERROR App  
+ Error - Mensaje: An error occurred while parsing EntityName. Line 7, position 63. 
+ 
+2022-04-27 17:21:31,177 [10] ERROR App  
+ Error - StackTrace:    at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.Throw(String res, Int32 lineNo, Int32 linePos)
+   at System.Xml.XmlTextReaderImpl.HandleEntityReference(Boolean isInAttributeValue, EntityExpandType expandType, Int32& charRefEndPos)
+   at System.Xml.XmlTextReaderImpl.ParseAttributeValueSlow(Int32 curPos, Char quoteChar, NodeData attr)
+   at System.Xml.XmlTextReaderImpl.ParseAttributes()
+   at System.Xml.XmlTextReaderImpl.ParseElement()
+   at System.Xml.XmlTextReaderImpl.ParseElementContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.LoadNode(Boolean skipOverWhitespace)
+   at System.Xml.XmlLoader.LoadDocSequence(XmlDocument parentDoc)
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.LoadXml(String xml)
+   at InvoiceAPI.Controllers.InvoicesController.SearchData(String xml) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 753 
+ 
+2022-04-27 17:25:58,319 [24] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 17:26:21,855 [24] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-27 17:26:44,173 [24] ERROR App  
+ Error - Ocurrio un error en el procesamiento del docuemnto.  
+ 
+2022-04-27 17:26:45,766 [24] ERROR App  
+ Error - Mensaje: Namespace Manager or XsltContext needed. This query has a prefix, variable, or user-defined function. 
+ 
+2022-04-27 17:26:46,858 [24] ERROR App  
+ Error - StackTrace:    at MS.Internal.Xml.XPath.CompiledXpathExpr.get_QueryTree()
+   at System.Xml.XPath.XPathNavigator.Evaluate(XPathExpression expr, XPathNodeIterator context)
+   at System.Xml.XPath.XPathNavigator.Evaluate(XPathExpression expr)
+   at System.Xml.XPath.XPathNavigator.Select(XPathExpression expr)
+   at System.Xml.XPath.XPathNavigator.Select(String xpath)
+   at System.Xml.XmlNode.SelectNodes(String xpath)
+   at System.Xml.XmlNode.SelectSingleNode(String xpath)
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 890 
+ 
+2022-04-27 17:26:53,177 [24] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-27 17:26:55,095 [24] INFO  App  
+ Info - Datos del comprobante. Folio: 374-2, Número de serie del certificado: 00001000000510819349, Serie: CPLR 
+ 
+2022-04-27 17:27:00,084 [24] ERROR App  
+ Error - código: 1001 
+ 
+2022-04-27 17:27:00,085 [24] ERROR App  
+ Error - detalle: Proceso de procesamiento inválido. 
+ 
+2022-04-27 17:27:00,085 [24] ERROR App  
+ Error - message: Namespace Manager or XsltContext needed. This query has a prefix, variable, or user-defined function.    at MS.Internal.Xml.XPath.CompiledXpathExpr.get_QueryTree()
+   at System.Xml.XPath.XPathNavigator.Evaluate(XPathExpression expr, XPathNodeIterator context)
+   at System.Xml.XPath.XPathNavigator.Evaluate(XPathExpression expr)
+   at System.Xml.XPath.XPathNavigator.Select(XPathExpression expr)
+   at System.Xml.XPath.XPathNavigator.Select(String xpath)
+   at System.Xml.XmlNode.SelectNodes(String xpath)
+   at System.Xml.XmlNode.SelectSingleNode(String xpath)
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 890 
+ 
+2022-04-27 17:31:45,754 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 17:31:56,482 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-27 17:32:16,401 [10] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-27 17:32:18,764 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-27 17:32:20,259 [10] INFO  App  
+ Info - Datos del comprobante. Folio: 374-2, Número de serie del certificado: 00001000000510819349, Serie: CPLR 
+ 
+2022-04-27 17:32:22,750 [10] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-27 17:32:22,752 [10] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-27 17:32:22,785 [10] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="dd0f60f4-d5fa-4623-8bbf-2c1f8d32ffc8"
+  Content-Length: 5146
+} 
+ 
+2022-04-27 17:32:22,789 [10] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-27 17:32:22,790 [10] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-04-27 17:32:22,790 [10] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 404 
+ 
+2022-04-27 17:32:22,790 [10] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="dd0f60f4-d5fa-4623-8bbf-2c1f8d32ffc8"
+  Content-Length: 5146
+} 
+ 
+2022-04-27 17:32:22,791 [10] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+ 
+2022-04-27 17:32:22,791 [10] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-04-27 17:36:36,554 [15] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 17:36:49,728 [15] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-27 17:37:02,346 [15] ERROR App  
+ Error - Ocurrio un error en el procesamiento del docuemnto.  
+ 
+2022-04-27 17:37:05,126 [15] ERROR App  
+ Error - Mensaje: An error occurred while parsing EntityName. Line 7, position 63. 
+ 
+2022-04-27 17:37:07,737 [15] ERROR App  
+ Error - StackTrace:    at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.Throw(String res, Int32 lineNo, Int32 linePos)
+   at System.Xml.XmlTextReaderImpl.HandleEntityReference(Boolean isInAttributeValue, EntityExpandType expandType, Int32& charRefEndPos)
+   at System.Xml.XmlTextReaderImpl.ParseAttributeValueSlow(Int32 curPos, Char quoteChar, NodeData attr)
+   at System.Xml.XmlTextReaderImpl.ParseAttributes()
+   at System.Xml.XmlTextReaderImpl.ParseElement()
+   at System.Xml.XmlTextReaderImpl.ParseElementContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.LoadNode(Boolean skipOverWhitespace)
+   at System.Xml.XmlLoader.LoadDocSequence(XmlDocument parentDoc)
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(Stream inStream)
+   at InvoiceAPI.Controllers.InvoicesController.GetEntryXmlDoc(Byte[] Bytes) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 812
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 888 
+ 
+2022-04-27 17:49:00,213 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 17:49:18,154 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-27 17:49:58,600 [10] ERROR App  
+ Error - Ocurrio un error en el procesamiento del docuemnto.  
+ 
+2022-04-27 17:49:58,601 [10] ERROR App  
+ Error - Mensaje: An error occurred while parsing EntityName. Line 7, position 63. 
+ 
+2022-04-27 17:49:58,659 [10] ERROR App  
+ Error - StackTrace:    at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.Throw(String res, Int32 lineNo, Int32 linePos)
+   at System.Xml.XmlTextReaderImpl.HandleEntityReference(Boolean isInAttributeValue, EntityExpandType expandType, Int32& charRefEndPos)
+   at System.Xml.XmlTextReaderImpl.ParseAttributeValueSlow(Int32 curPos, Char quoteChar, NodeData attr)
+   at System.Xml.XmlTextReaderImpl.ParseAttributes()
+   at System.Xml.XmlTextReaderImpl.ParseElement()
+   at System.Xml.XmlTextReaderImpl.ParseElementContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.LoadNode(Boolean skipOverWhitespace)
+   at System.Xml.XmlLoader.LoadDocSequence(XmlDocument parentDoc)
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(Stream inStream)
+   at InvoiceAPI.Controllers.InvoicesController.GetEntryXmlDoc(Byte[] Bytes) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 812
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 886 
+ 
+2022-04-27 17:57:10,459 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 17:57:32,905 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-27 17:57:44,122 [10] ERROR App  
+ Error - Ocurrio un error en el procesamiento del docuemnto.  
+ 
+2022-04-27 17:57:45,485 [10] ERROR App  
+ Error - Mensaje: The filename, directory name, or volume label syntax is incorrect : 'C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\<?xml version="1.0" encoding="UTF-8"?>
+	<cfdi:Comprobante xmlns:cfdi="http:\www.sat.gob.mx\cfd\4" xmlns:pago20="http:\www.sat.gob.mx\Pagos20" xmlns:tfd="http:\www.sat.gob.mx\TimbreFiscalDigital" xmlns:xs="http:\www.w3.org\2001\XMLSchema" xmlns:xsi="http:\www.w3.org\2001\XMLSchema-instance" Certificado="" Exportacion="01" Fecha="2022-04-20T11:19:59" Folio="374-2" LugarExpedicion="06500" Moneda="XXX" NoCertificado="00001000000510819349" Sello="" Serie="CPLR" SubTotal="0" TipoDeComprobante="P" Total="0" Version="4.0" xsi:schemaLocation="http:\www.sat.gob.mx\cfd\4 http:\www.sat.gob.mx\sitio_internet\cfd\4\cfdv40.xsd http:\www.sat.gob.mx\Pagos20 http:\www.sat.gob.mx\sitio_internet\cfd\Pagos\Pagos20.xsd http:\www.sat.gob.mx\TimbreFiscalDigital http:\www.sat.gob.mx\sitio_internet\cfd\TimbreFiscalDigital\TimbreFiscalDigitalv11.xsd">
+		<cfdi:CfdiRelacionados TipoRelacion="04">
+		<cfdi:CfdiRelacionado UUID="1586B321-461F-48CE-A2DF-695AA2E69158"\>
+		<\cfdi:CfdiRelacionados>
+		<cfdi:Emisor Rfc="MORJ7408292M8" Nombre="JUAN MANUEL MORALES RODRIGUEZ" RegimenFiscal="612"\>
+		<cfdi:Receptor DomicilioFiscalReceptor="06500" Nombre="AIR & DESIGN SA DE CV" RegimenFiscalReceptor="616" Rfc="XAXX010101000" UsoCFDI="CP01"\>
+		<cfdi:Conceptos>
+			<cfdi:Concepto Cantidad="1" ClaveProdServ="84111506" ClaveUnidad="ACT" Descripcion="Pago" Importe="0" ObjetoImp="01" ValorUnitario="0"\>
+		<\cfdi:Conceptos>
+		<cfdi:Complemento>
+			<pago20:Pagos Version="2.0">
+				<pago20:Totales MontoTotalPagos="21588.99" TotalTrasladosBaseIVA16="18611.2" TotalTrasladosImpuestoIVA16="2977.79"\>
+				<pago20:Pago FechaPago="2022-02-16T12:00:00" FormaDePagoP="17" MonedaP="MXN" Monto="21588.99" TipoCambioP="1">
+					<pago20:DoctoRelacionado IdDocumento="10FE2737-FED2-4940-BAD7-3CBBF8197701" ImpPagado="21588.99" ImpSaldoAnt="21588.99" ImpSaldoInsoluto="0.00" MonedaDR="MXN" NumParcialidad="1" ObjetoImpDR="02">
+						<pago20:ImpuestosDR>
+							<pago20:TrasladosDR>
+								<pago20:TrasladoDR BaseDR="18611.2" ImporteDR="2977.79" ImpuestoDR="002" TasaOCuotaDR="0.160000" TipoFactorDR="Tasa"\>
+							<\pago20:TrasladosDR>
+						<\pago20:ImpuestosDR>
+					<\pago20:DoctoRelacionado>
+					<pago20:ImpuestosP>
+						<pago20:TrasladosP>
+							<pago20:TrasladoP BaseP="18611.2" ImporteP="2977.79" ImpuestoP="002" TasaOCuotaP="0.160000" TipoFactorP="Tasa"\>
+						<\pago20:TrasladosP>
+					<\pago20:ImpuestosP>
+				<\pago20:Pago>
+			<\pago20:Pagos>
+		<\cfdi:Complemento>
+	<\cfdi:Comprobante>' 
+ 
+2022-04-27 17:57:46,387 [10] ERROR App  
+ Error - StackTrace:    at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(String filename)
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 886 
+ 
+2022-04-27 18:46:32,978 [22] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 18:52:39,840 [15] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 18:54:07,778 [15] ERROR App  
+ Error - Ocurrio un error en el procesamiento del docuemnto.  
+ 
+2022-04-27 18:54:09,078 [15] ERROR App  
+ Error - Mensaje: The filename, directory name, or volume label syntax is incorrect : 'C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\<?xml version="1.0" encoding="UTF-8"?>
+	<cfdi:Comprobante xmlns:cfdi="http:\www.sat.gob.mx\cfd\4" xmlns:pago20="http:\www.sat.gob.mx\Pagos20" xmlns:tfd="http:\www.sat.gob.mx\TimbreFiscalDigital" xmlns:xs="http:\www.w3.org\2001\XMLSchema" xmlns:xsi="http:\www.w3.org\2001\XMLSchema-instance" Certificado="" Exportacion="01" Fecha="2022-04-20T11:19:59" Folio="374-2" LugarExpedicion="06500" Moneda="XXX" NoCertificado="00001000000510819349" Sello="" Serie="CPLR" SubTotal="0" TipoDeComprobante="P" Total="0" Version="4.0" xsi:schemaLocation="http:\www.sat.gob.mx\cfd\4 http:\www.sat.gob.mx\sitio_internet\cfd\4\cfdv40.xsd http:\www.sat.gob.mx\Pagos20 http:\www.sat.gob.mx\sitio_internet\cfd\Pagos\Pagos20.xsd http:\www.sat.gob.mx\TimbreFiscalDigital http:\www.sat.gob.mx\sitio_internet\cfd\TimbreFiscalDigital\TimbreFiscalDigitalv11.xsd">
+		<cfdi:CfdiRelacionados TipoRelacion="04">
+		<cfdi:CfdiRelacionado UUID="1586B321-461F-48CE-A2DF-695AA2E69158"\>
+		<\cfdi:CfdiRelacionados>
+		<cfdi:Emisor Rfc="MORJ7408292M8" Nombre="JUAN MANUEL MORALES RODRIGUEZ" RegimenFiscal="612"\>
+		<cfdi:Receptor DomicilioFiscalReceptor="06500" Nombre="AIR & DESIGN SA DE CV" RegimenFiscalReceptor="616" Rfc="XAXX010101000" UsoCFDI="CP01"\>
+		<cfdi:Conceptos>
+			<cfdi:Concepto Cantidad="1" ClaveProdServ="84111506" ClaveUnidad="ACT" Descripcion="Pago" Importe="0" ObjetoImp="01" ValorUnitario="0"\>
+		<\cfdi:Conceptos>
+		<cfdi:Complemento>
+			<pago20:Pagos Version="2.0">
+				<pago20:Totales MontoTotalPagos="21588.99" TotalTrasladosBaseIVA16="18611.2" TotalTrasladosImpuestoIVA16="2977.79"\>
+				<pago20:Pago FechaPago="2022-02-16T12:00:00" FormaDePagoP="17" MonedaP="MXN" Monto="21588.99" TipoCambioP="1">
+					<pago20:DoctoRelacionado IdDocumento="10FE2737-FED2-4940-BAD7-3CBBF8197701" ImpPagado="21588.99" ImpSaldoAnt="21588.99" ImpSaldoInsoluto="0.00" MonedaDR="MXN" NumParcialidad="1" ObjetoImpDR="02">
+						<pago20:ImpuestosDR>
+							<pago20:TrasladosDR>
+								<pago20:TrasladoDR BaseDR="18611.2" ImporteDR="2977.79" ImpuestoDR="002" TasaOCuotaDR="0.160000" TipoFactorDR="Tasa"\>
+							<\pago20:TrasladosDR>
+						<\pago20:ImpuestosDR>
+					<\pago20:DoctoRelacionado>
+					<pago20:ImpuestosP>
+						<pago20:TrasladosP>
+							<pago20:TrasladoP BaseP="18611.2" ImporteP="2977.79" ImpuestoP="002" TasaOCuotaP="0.160000" TipoFactorP="Tasa"\>
+						<\pago20:TrasladosP>
+					<\pago20:ImpuestosP>
+				<\pago20:Pago>
+			<\pago20:Pagos>
+		<\cfdi:Complemento>
+	<\cfdi:Comprobante>' 
+ 
+2022-04-27 18:54:10,422 [15] ERROR App  
+ Error - StackTrace:    at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.FinishInitUriString()
+   at System.Xml.XmlTextReaderImpl..ctor(String uriStr, XmlReaderSettings settings, XmlParserContext context, XmlResolver uriResolver)
+   at System.Xml.XmlReaderSettings.CreateReader(String inputUri, XmlParserContext inputContext)
+   at System.Xml.XmlReader.Create(String inputUri, XmlReaderSettings settings)
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 897 
+ 
+2022-04-27 19:13:40,361 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 19:15:10,816 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 19:15:52,812 [10] ERROR App  
+ Error - Ocurrio un error en el procesamiento del docuemnto.  
+ 
+2022-04-27 19:15:54,165 [10] ERROR App  
+ Error - Mensaje: The filename, directory name, or volume label syntax is incorrect : 'C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\<?xml version="1.0" encoding="UTF-8"?>
+	<cfdi:Comprobante xmlns:cfdi="http:\www.sat.gob.mx\cfd\4" xmlns:pago20="http:\www.sat.gob.mx\Pagos20" xmlns:tfd="http:\www.sat.gob.mx\TimbreFiscalDigital" xmlns:xs="http:\www.w3.org\2001\XMLSchema" xmlns:xsi="http:\www.w3.org\2001\XMLSchema-instance" Certificado="" Exportacion="01" Fecha="2022-04-20T11:19:59" Folio="374-2" LugarExpedicion="06500" Moneda="XXX" NoCertificado="00001000000510819349" Sello="" Serie="CPLR" SubTotal="0" TipoDeComprobante="P" Total="0" Version="4.0" xsi:schemaLocation="http:\www.sat.gob.mx\cfd\4 http:\www.sat.gob.mx\sitio_internet\cfd\4\cfdv40.xsd http:\www.sat.gob.mx\Pagos20 http:\www.sat.gob.mx\sitio_internet\cfd\Pagos\Pagos20.xsd http:\www.sat.gob.mx\TimbreFiscalDigital http:\www.sat.gob.mx\sitio_internet\cfd\TimbreFiscalDigital\TimbreFiscalDigitalv11.xsd">
+		<cfdi:CfdiRelacionados TipoRelacion="04">
+		<cfdi:CfdiRelacionado UUID="1586B321-461F-48CE-A2DF-695AA2E69158"\>
+		<\cfdi:CfdiRelacionados>
+		<cfdi:Emisor Rfc="MORJ7408292M8" Nombre="JUAN MANUEL MORALES RODRIGUEZ" RegimenFiscal="612"\>
+		<cfdi:Receptor DomicilioFiscalReceptor="06500" Nombre="AIR & DESIGN SA DE CV" RegimenFiscalReceptor="616" Rfc="XAXX010101000" UsoCFDI="CP01"\>
+		<cfdi:Conceptos>
+			<cfdi:Concepto Cantidad="1" ClaveProdServ="84111506" ClaveUnidad="ACT" Descripcion="Pago" Importe="0" ObjetoImp="01" ValorUnitario="0"\>
+		<\cfdi:Conceptos>
+		<cfdi:Complemento>
+			<pago20:Pagos Version="2.0">
+				<pago20:Totales MontoTotalPagos="21588.99" TotalTrasladosBaseIVA16="18611.2" TotalTrasladosImpuestoIVA16="2977.79"\>
+				<pago20:Pago FechaPago="2022-02-16T12:00:00" FormaDePagoP="17" MonedaP="MXN" Monto="21588.99" TipoCambioP="1">
+					<pago20:DoctoRelacionado IdDocumento="10FE2737-FED2-4940-BAD7-3CBBF8197701" ImpPagado="21588.99" ImpSaldoAnt="21588.99" ImpSaldoInsoluto="0.00" MonedaDR="MXN" NumParcialidad="1" ObjetoImpDR="02">
+						<pago20:ImpuestosDR>
+							<pago20:TrasladosDR>
+								<pago20:TrasladoDR BaseDR="18611.2" ImporteDR="2977.79" ImpuestoDR="002" TasaOCuotaDR="0.160000" TipoFactorDR="Tasa"\>
+							<\pago20:TrasladosDR>
+						<\pago20:ImpuestosDR>
+					<\pago20:DoctoRelacionado>
+					<pago20:ImpuestosP>
+						<pago20:TrasladosP>
+							<pago20:TrasladoP BaseP="18611.2" ImporteP="2977.79" ImpuestoP="002" TasaOCuotaP="0.160000" TipoFactorP="Tasa"\>
+						<\pago20:TrasladosP>
+					<\pago20:ImpuestosP>
+				<\pago20:Pago>
+			<\pago20:Pagos>
+		<\cfdi:Complemento>
+	<\cfdi:Comprobante>' 
+ 
+2022-04-27 19:15:57,499 [10] ERROR App  
+ Error - StackTrace:    at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.FinishInitUriString()
+   at System.Xml.XmlTextReaderImpl..ctor(String uriStr, XmlReaderSettings settings, XmlParserContext context, XmlResolver uriResolver)
+   at System.Xml.XmlReaderSettings.CreateReader(String inputUri, XmlParserContext inputContext)
+   at System.Xml.XmlReader.Create(String inputUri, XmlReaderSettings settings)
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 897 
+ 
+2022-04-27 19:18:05,206 [9] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 19:18:52,186 [9] ERROR App  
+ Error - Ocurrio un error en el procesamiento del docuemnto.  
+ 
+2022-04-27 19:18:53,390 [9] ERROR App  
+ Error - Mensaje: The filename, directory name, or volume label syntax is incorrect : 'C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\<?xml version="1.0" encoding="UTF-8"?>
+	<cfdi:Comprobante xmlns:cfdi="http:\www.sat.gob.mx\cfd\4" xmlns:pago20="http:\www.sat.gob.mx\Pagos20" xmlns:tfd="http:\www.sat.gob.mx\TimbreFiscalDigital" xmlns:xs="http:\www.w3.org\2001\XMLSchema" xmlns:xsi="http:\www.w3.org\2001\XMLSchema-instance" Certificado="" Exportacion="01" Fecha="2022-04-20T11:19:59" Folio="374-2" LugarExpedicion="06500" Moneda="XXX" NoCertificado="00001000000510819349" Sello="" Serie="CPLR" SubTotal="0" TipoDeComprobante="P" Total="0" Version="4.0" xsi:schemaLocation="http:\www.sat.gob.mx\cfd\4 http:\www.sat.gob.mx\sitio_internet\cfd\4\cfdv40.xsd http:\www.sat.gob.mx\Pagos20 http:\www.sat.gob.mx\sitio_internet\cfd\Pagos\Pagos20.xsd http:\www.sat.gob.mx\TimbreFiscalDigital http:\www.sat.gob.mx\sitio_internet\cfd\TimbreFiscalDigital\TimbreFiscalDigitalv11.xsd">
+		<cfdi:CfdiRelacionados TipoRelacion="04">
+		<cfdi:CfdiRelacionado UUID="1586B321-461F-48CE-A2DF-695AA2E69158"\>
+		<\cfdi:CfdiRelacionados>
+		<cfdi:Emisor Rfc="MORJ7408292M8" Nombre="JUAN MANUEL MORALES RODRIGUEZ" RegimenFiscal="612"\>
+		<cfdi:Receptor DomicilioFiscalReceptor="06500" Nombre="AIR & DESIGN SA DE CV" RegimenFiscalReceptor="616" Rfc="XAXX010101000" UsoCFDI="CP01"\>
+		<cfdi:Conceptos>
+			<cfdi:Concepto Cantidad="1" ClaveProdServ="84111506" ClaveUnidad="ACT" Descripcion="Pago" Importe="0" ObjetoImp="01" ValorUnitario="0"\>
+		<\cfdi:Conceptos>
+		<cfdi:Complemento>
+			<pago20:Pagos Version="2.0">
+				<pago20:Totales MontoTotalPagos="21588.99" TotalTrasladosBaseIVA16="18611.2" TotalTrasladosImpuestoIVA16="2977.79"\>
+				<pago20:Pago FechaPago="2022-02-16T12:00:00" FormaDePagoP="17" MonedaP="MXN" Monto="21588.99" TipoCambioP="1">
+					<pago20:DoctoRelacionado IdDocumento="10FE2737-FED2-4940-BAD7-3CBBF8197701" ImpPagado="21588.99" ImpSaldoAnt="21588.99" ImpSaldoInsoluto="0.00" MonedaDR="MXN" NumParcialidad="1" ObjetoImpDR="02">
+						<pago20:ImpuestosDR>
+							<pago20:TrasladosDR>
+								<pago20:TrasladoDR BaseDR="18611.2" ImporteDR="2977.79" ImpuestoDR="002" TasaOCuotaDR="0.160000" TipoFactorDR="Tasa"\>
+							<\pago20:TrasladosDR>
+						<\pago20:ImpuestosDR>
+					<\pago20:DoctoRelacionado>
+					<pago20:ImpuestosP>
+						<pago20:TrasladosP>
+							<pago20:TrasladoP BaseP="18611.2" ImporteP="2977.79" ImpuestoP="002" TasaOCuotaP="0.160000" TipoFactorP="Tasa"\>
+						<\pago20:TrasladosP>
+					<\pago20:ImpuestosP>
+				<\pago20:Pago>
+			<\pago20:Pagos>
+		<\cfdi:Complemento>
+	<\cfdi:Comprobante>' 
+ 
+2022-04-27 19:18:54,593 [9] ERROR App  
+ Error - StackTrace:    at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.FinishInitUriString()
+   at System.Xml.XmlTextReaderImpl..ctor(String uriStr, XmlReaderSettings settings, XmlParserContext context, XmlResolver uriResolver)
+   at System.Xml.XmlReaderSettings.CreateReader(String inputUri, XmlParserContext inputContext)
+   at System.Xml.XmlReader.Create(String inputUri, XmlReaderSettings settings)
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 897 
+ 
+2022-04-27 20:32:37,741 [15] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 20:33:03,995 [15] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-27 20:34:30,895 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 20:34:47,225 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-27 20:35:03,646 [10] ERROR App  
+ Error - Ocurrio un error en el procesamiento del docuemnto.  
+ 
+2022-04-27 20:35:05,191 [10] ERROR App  
+ Error - Mensaje: Namespace Manager or XsltContext needed. This query has a prefix, variable, or user-defined function. 
+ 
+2022-04-27 20:35:07,294 [10] ERROR App  
+ Error - StackTrace:    at MS.Internal.Xml.XPath.CompiledXpathExpr.get_QueryTree()
+   at System.Xml.XPath.XPathNavigator.Evaluate(XPathExpression expr, XPathNodeIterator context)
+   at System.Xml.XPath.XPathNavigator.Evaluate(XPathExpression expr)
+   at System.Xml.XPath.XPathNavigator.Select(XPathExpression expr)
+   at System.Xml.XPath.XPathNavigator.Select(String xpath)
+   at System.Xml.XmlNode.SelectNodes(String xpath)
+   at System.Xml.XmlNode.SelectSingleNode(String xpath)
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 912 
+ 
+2022-04-27 20:40:54,268 [16] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 20:41:05,606 [16] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-27 20:41:27,839 [16] ERROR App  
+ Error - Ocurrio un error en el procesamiento del docuemnto.  
+ 
+2022-04-27 20:41:29,328 [16] ERROR App  
+ Error - Mensaje: Namespace Manager or XsltContext needed. This query has a prefix, variable, or user-defined function. 
+ 
+2022-04-27 20:41:30,788 [16] ERROR App  
+ Error - StackTrace:    at MS.Internal.Xml.XPath.CompiledXpathExpr.get_QueryTree()
+   at System.Xml.XPath.XPathNavigator.Evaluate(XPathExpression expr, XPathNodeIterator context)
+   at System.Xml.XPath.XPathNavigator.Evaluate(XPathExpression expr)
+   at System.Xml.XPath.XPathNavigator.Select(XPathExpression expr)
+   at System.Xml.XPath.XPathNavigator.Select(String xpath)
+   at System.Xml.XmlNode.SelectNodes(String xpath)
+   at System.Xml.XmlNode.SelectSingleNode(String xpath)
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 911 
+ 
+2022-04-27 20:50:01,864 [15] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 20:50:15,823 [15] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-27 20:51:11,868 [9] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 20:51:20,671 [9] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-27 21:02:12,251 [19] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 21:02:26,439 [19] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-27 21:08:48,056 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 21:08:58,126 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-27 21:12:18,264 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 21:12:26,352 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-27 21:13:00,916 [10] ERROR App  
+ Error - Ocurrio un error en el procesamiento del docuemnto.  
+ 
+2022-04-27 21:13:00,916 [10] ERROR App  
+ Error - Mensaje: parsing '@[^\w\.@-&]"' - [x-y] range in reverse order. 
+ 
+2022-04-27 21:13:00,951 [10] ERROR App  
+ Error - StackTrace:    at System.Text.RegularExpressions.RegexParser.ScanCharClass(Boolean caseInsensitive, Boolean scanOnly)
+   at System.Text.RegularExpressions.RegexParser.ScanRegex()
+   at System.Text.RegularExpressions.RegexParser.Parse(String re, RegexOptions op)
+   at System.Text.RegularExpressions.Regex..ctor(String pattern, RegexOptions options, TimeSpan matchTimeout, Boolean addToCache)
+   at System.Text.RegularExpressions.Regex.Replace(String input, String pattern, String replacement)
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 918 
+ 
+2022-04-27 21:19:17,437 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 21:19:29,739 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-27 21:20:05,170 [10] ERROR App  
+ Error - Ocurrio un error en el procesamiento del docuemnto.  
+ 
+2022-04-27 21:20:06,330 [10] ERROR App  
+ Error - Mensaje: parsing '@[^\w\.@-&]"' - [x-y] range in reverse order. 
+ 
+2022-04-27 21:20:08,347 [10] ERROR App  
+ Error - StackTrace:    at System.Text.RegularExpressions.RegexParser.ScanCharClass(Boolean caseInsensitive, Boolean scanOnly)
+   at System.Text.RegularExpressions.RegexParser.ScanRegex()
+   at System.Text.RegularExpressions.RegexParser.Parse(String re, RegexOptions op)
+   at System.Text.RegularExpressions.Regex..ctor(String pattern, RegexOptions options, TimeSpan matchTimeout, Boolean addToCache)
+   at System.Text.RegularExpressions.Regex.Replace(String input, String pattern, String replacement)
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 918 
+ 
+2022-04-27 21:24:04,988 [17] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 21:24:18,989 [17] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-27 21:31:45,855 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 21:31:57,550 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-27 21:34:39,048 [15] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 21:34:48,800 [15] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-27 21:57:16,289 [15] ERROR App  
+ Error - Ocurrio un error en el procesamiento del docuemnto.  
+ 
+2022-04-27 21:57:16,289 [15] ERROR App  
+ Error - Mensaje: parsing '”#$%&/()=¿?¡!;’¨´*+{}[],-  ' - Unterminated [] set. 
+ 
+2022-04-27 21:57:16,329 [15] ERROR App  
+ Error - StackTrace:    at System.Text.RegularExpressions.RegexParser.ScanCharClass(Boolean caseInsensitive, Boolean scanOnly)
+   at System.Text.RegularExpressions.RegexParser.CountCaptures()
+   at System.Text.RegularExpressions.RegexParser.Parse(String re, RegexOptions op)
+   at System.Text.RegularExpressions.Regex..ctor(String pattern, RegexOptions options, TimeSpan matchTimeout, Boolean addToCache)
+   at System.Text.RegularExpressions.Regex.Replace(String input, String pattern, String replacement)
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) 
+ 
+2022-04-27 21:57:43,932 [9] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 21:58:05,044 [9] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-27 21:59:26,784 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 21:59:39,854 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-27 22:02:25,464 [9] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-27 22:02:33,907 [9] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 

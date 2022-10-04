@@ -1,0 +1,1 @@
+﻿2022-09-17 21:14:50,654 [20] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 

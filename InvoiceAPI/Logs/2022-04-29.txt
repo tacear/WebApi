@@ -1,0 +1,1180 @@
+﻿2022-04-29 14:27:44,307 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-29 14:32:37,025 [11] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-29 14:32:37,040 [11] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-29 14:32:37,229 [11] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-29 14:32:37,230 [11] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-29 14:32:37,262 [11] INFO  App  
+ Info - Datos del comprobante. Folio: 668, Número de serie del certificado: 00001000000510819349, Serie: NARH 
+ 
+2022-04-29 14:32:37,302 [11] WARN  App  
+ Warn: El comprobante ya fue timbrado y se encuentra en la base de datos. Folio repetido. 
+ 
+2022-04-29 14:32:37,302 [11] WARN  App  
+ Warn - código: 1000 
+ 
+2022-04-29 14:32:37,303 [11] WARN  App  
+ Warn - detalle: El comprobante ya fué timbrado. 
+ 
+2022-04-29 14:32:37,303 [11] WARN  App  
+ Warn - message: Ya se encuentra registrado el comprobante en la BD. 
+ 
+2022-04-29 14:32:46,878 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-29 14:34:25,344 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-29 14:34:33,846 [10] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-29 14:34:37,934 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-29 14:34:39,605 [10] INFO  App  
+ Info - Datos del comprobante. Folio: 668, Número de serie del certificado: 00001000000510819349, Serie: NARH 
+ 
+2022-04-29 14:34:48,538 [10] WARN  App  
+ Warn: El comprobante ya fue timbrado y se encuentra en la base de datos. Folio repetido. 
+ 
+2022-04-29 14:34:48,539 [10] WARN  App  
+ Warn - código: 1000 
+ 
+2022-04-29 14:34:48,539 [10] WARN  App  
+ Warn - detalle: El comprobante ya fué timbrado. 
+ 
+2022-04-29 14:34:48,542 [10] WARN  App  
+ Warn - message: Ya se encuentra registrado el comprobante en la BD. 
+ 
+2022-04-29 14:36:23,943 [24] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-29 14:36:40,067 [24] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-29 14:36:43,066 [24] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-29 14:36:48,278 [24] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-29 14:36:50,103 [24] INFO  App  
+ Info - Datos del comprobante. Folio: 669, Número de serie del certificado: 00001000000510819349, Serie: NARHT 
+ 
+2022-04-29 14:36:52,866 [24] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-29 14:36:52,867 [24] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-29 14:36:52,900 [24] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="dcf1cd8d-c1e7-4a77-9ddc-c06d205682ec"
+  Content-Length: 1967
+} 
+ 
+2022-04-29 14:36:52,904 [24] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-29 14:36:52,904 [24] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-04-29 14:36:52,905 [24] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 404 
+ 
+2022-04-29 14:36:52,905 [24] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="dcf1cd8d-c1e7-4a77-9ddc-c06d205682ec"
+  Content-Length: 1967
+} 
+ 
+2022-04-29 14:36:52,906 [24] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+ 
+2022-04-29 14:36:52,906 [24] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-04-29 14:37:03,108 [24] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"114410","token": "$2b$12$bEDTbnccx6Hcg1plzYI1aeKEBzsWHZ2c5iIOG/vYrPHTL/tJysyyS" },"issuer": {"rfc": "MORJ7408292M8"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "MORJ7408292M8NARHT669","certificate-number": "00001000000510819349","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0_complemento+xml","content": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48Y2ZkaTpDb21wcm9iYW50ZSB4bWxuczpjYXRDRkRJPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkL2NhdGFsb2dvcyIgeG1sbnM6dGRDRkRJPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkL3RpcG9EYXRvcy90ZENGREkiIHhtbG5zOmNmZGk9Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9jZmQvNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvY2ZkLzQgaHR0cDovL3d3dy5zYXQuZ29iLm14L3NpdGlvX2ludGVybmV0L2NmZC80L2NmZHY0MC54c2QiIFZlcnNpb249IjQuMCIgU2VyaWU9Ik5BUkhUIiBGb2xpbz0iNjY5IiBGZWNoYT0iMjAyMi0wNC0yOFQwODoxMzo1MSIgU2VsbG89IiIgRm9ybWFQYWdvPSIwMSIgTm9DZXJ0aWZpY2Fkbz0iMDAwMDEwMDAwMDA1MTA4MTkzNDkiIENlcnRpZmljYWRvPSIiIENvbmRpY2lvbmVzRGVQYWdvPSIzMCBkw61hcyIgU3ViVG90YWw9IjEwMDAwLjAwIiBUb3RhbD0iMTE2MDAuMDAiIE1vbmVkYT0iRVVSIiBUaXBvQ2FtYmlvPSI3NzcuNzciIFRpcG9EZUNvbXByb2JhbnRlPSJFIiBFeHBvcnRhY2lvbj0iMDEiIE1ldG9kb1BhZ289IlBVRSIgTHVnYXJFeHBlZGljaW9uPSI2NDAwMCI+PGNmZGk6RW1pc29yIFJmYz0iTU9SSjc0MDgyOTJNOCIgTm9tYnJlPSJKVUFOIE1BTlVFTCBNT1JBTEVTIFJPRFJJR1VFWiIgUmVnaW1lbkZpc2NhbD0iNjEyIiAvPjxjZmRpOlJlY2VwdG9yIFJmYz0iWEVYWDAxMDEwMTAwMCIgTm9tYnJlPSJDQVJMT1MgRkVSTkFORE8gVmlydHVhbCAgU0FOQ0hFWiIgRG9taWNpbGlvRmlzY2FsUmVjZXB0b3I9IjY0MDAwIiBSZWdpbWVuRmlzY2FsUmVjZXB0b3I9IjYxNiIgVXNvQ0ZEST0iUzAxIiAvPjxjZmRpOkNvbmNlcHRvcz48Y2ZkaTpDb25jZXB0byBDbGF2ZVByb2RTZXJ2PSI4NDExMTUwNiIgTm9JZGVudGlmaWNhY2lvbj0iQTFCMkMzRDQiIENhbnRpZGFkPSIxLjAwMDAwMCIgQ2xhdmVVbmlkYWQ9Ikg4NyIgVW5pZGFkPSJQaWV6YSIgRGVzY3JpcGNpb249IkNvbmNlcHRvIGRlIHBydWViYSIgVmFsb3JVbml0YXJpbz0iMTAwMDAuMDAiIEltcG9ydGU9IjEwMDAwLjAwIiBPYmpldG9JbXA9IjAyIj48Y2ZkaTpJbXB1ZXN0b3M+PGNmZGk6VHJhc2xhZG9zPjxjZmRpOlRyYXNsYWRvIEJhc2U9IjEwMDAwLjAwIiBJbXB1ZXN0bz0iMDAyIiBUaXBvRmFjdG9yPSJUYXNhIiBUYXNhT0N1b3RhPSIwLjE2MDAwMCIgSW1wb3J0ZT0iMTYwMC4wMCIgLz48IS0tIDxjZmRpOlRyYXNsYWRvIEJhc2U9IjUwLjAwMDAwMCIgSW1wdWVzdG89IjAwMSIgVGlwb0ZhY3Rvcj0iVGFzYSIKICAgICAgICAgICAgICAgICAgICAgICAgVGFzYU9DdW90YT0iNTAuMDAwMDAwIiBJbXBvcnRlPSI1MC4wMDAwMDAiLz4tLT48L2NmZGk6VHJhc2xhZG9zPjwvY2ZkaTpJbXB1ZXN0b3M+PC9jZmRpOkNvbmNlcHRvPjwvY2ZkaTpDb25jZXB0b3M+PGNmZGk6SW1wdWVzdG9zIFRvdGFsSW1wdWVzdG9zVHJhc2xhZGFkb3M9IjE2MDAuMDAiPjxjZmRpOlRyYXNsYWRvcz48Y2ZkaTpUcmFzbGFkbyBCYXNlPSIxMDAwMC4wMCIgSW1wdWVzdG89IjAwMiIgVGlwb0ZhY3Rvcj0iVGFzYSIgVGFzYU9DdW90YT0iMC4xNjAwMDAiIEltcG9ydGU9IjE2MDAuMDAiIC8+PC9jZmRpOlRyYXNsYWRvcz48L2NmZGk6SW1wdWVzdG9zPjwvY2ZkaTpDb21wcm9iYW50ZT4="}} 
+ 
+2022-04-29 14:37:03,111 [24] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-04-29 14:37:03,120 [24] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-04-29 14:37:04,030 [24] INFO  App  
+ Info - Response recibido: StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Fri, 29 Apr 2022 19:37:04 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: d2thr2s2gmbut4a94iea5m0511ckhilq
+  Connection: close
+  Content-Length: 492
+  Content-Type: application/json; charset=utf-8
+} 
+ 
+2022-04-29 14:37:04,043 [24] INFO  App  
+ Info - Error de respuesta del timbrado Diverza: ["Invalid certificate, can't be readed"] 
+ 
+2022-04-29 14:37:04,044 [24] INFO  App  
+ Info - Detalle de error de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 2816
+} 
+ 
+2022-04-29 14:37:04,046 [24] ERROR App  
+ Error - No se pudo realizar el timbrado con Diverza.  
+ 
+2022-04-29 14:37:04,046 [24] ERROR App  
+ Error - código: 400 
+ 
+2022-04-29 14:37:04,047 [24] ERROR App  
+ Error - detalle: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 2816
+} 
+ 
+2022-04-29 14:37:04,047 [24] ERROR App  
+ Error - message: ["Invalid certificate, can't be readed"] 
+ 
+2022-04-29 14:40:58,138 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-29 14:42:12,283 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-29 16:32:25,665 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-29 16:34:18,589 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-29 16:35:24,993 [10] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-29 16:35:38,385 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-29 16:35:42,373 [10] INFO  App  
+ Info - Datos del comprobante. Folio: 669, Número de serie del certificado: 00001000000510819349, Serie: NARHT 
+ 
+2022-04-29 16:36:13,076 [10] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-29 16:36:14,990 [10] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-29 16:36:25,251 [10] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="04064b55-d29b-4d1a-920d-4785a0922db7"
+  Content-Length: 1967
+} 
+ 
+2022-04-29 16:36:28,722 [10] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-29 16:36:48,914 [10] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-04-29 16:36:48,914 [10] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 404 
+ 
+2022-04-29 16:36:48,914 [10] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="04064b55-d29b-4d1a-920d-4785a0922db7"
+  Content-Length: 1967
+} 
+ 
+2022-04-29 16:36:48,914 [10] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+ 
+2022-04-29 16:36:48,914 [10] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-04-29 16:40:29,893 [10] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"114410","token": "$2b$12$bEDTbnccx6Hcg1plzYI1aeKEBzsWHZ2c5iIOG/vYrPHTL/tJysyyS" },"issuer": {"rfc": "MORJ7408292M8"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "MORJ7408292M8NARHT669","certificate-number": "00001000000510819349","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0_complemento+xml","content": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48Y2ZkaTpDb21wcm9iYW50ZSB4bWxuczpjYXRDRkRJPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkL2NhdGFsb2dvcyIgeG1sbnM6dGRDRkRJPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkL3RpcG9EYXRvcy90ZENGREkiIHhtbG5zOmNmZGk9Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9jZmQvNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvY2ZkLzQgaHR0cDovL3d3dy5zYXQuZ29iLm14L3NpdGlvX2ludGVybmV0L2NmZC80L2NmZHY0MC54c2QiIFZlcnNpb249IjQuMCIgU2VyaWU9Ik5BUkhUIiBGb2xpbz0iNjY5IiBGZWNoYT0iMjAyMi0wNC0yOFQwODoxMzo1MSIgU2VsbG89IiIgRm9ybWFQYWdvPSIwMSIgTm9DZXJ0aWZpY2Fkbz0iMDAwMDEwMDAwMDA1MTA4MTkzNDkiIENlcnRpZmljYWRvPSIiIENvbmRpY2lvbmVzRGVQYWdvPSIzMCBkw61hcyIgU3ViVG90YWw9IjEwMDAwLjAwIiBUb3RhbD0iMTE2MDAuMDAiIE1vbmVkYT0iRVVSIiBUaXBvQ2FtYmlvPSI3NzcuNzciIFRpcG9EZUNvbXByb2JhbnRlPSJFIiBFeHBvcnRhY2lvbj0iMDEiIE1ldG9kb1BhZ289IlBVRSIgTHVnYXJFeHBlZGljaW9uPSI2NDAwMCI+PGNmZGk6RW1pc29yIFJmYz0iTU9SSjc0MDgyOTJNOCIgTm9tYnJlPSJKVUFOIE1BTlVFTCBNT1JBTEVTIFJPRFJJR1VFWiIgUmVnaW1lbkZpc2NhbD0iNjEyIiAvPjxjZmRpOlJlY2VwdG9yIFJmYz0iWEVYWDAxMDEwMTAwMCIgTm9tYnJlPSJDQVJMT1MgRkVSTkFORE8gVmlydHVhbCAgU0FOQ0hFWiIgRG9taWNpbGlvRmlzY2FsUmVjZXB0b3I9IjY0MDAwIiBSZWdpbWVuRmlzY2FsUmVjZXB0b3I9IjYxNiIgVXNvQ0ZEST0iUzAxIiAvPjxjZmRpOkNvbmNlcHRvcz48Y2ZkaTpDb25jZXB0byBDbGF2ZVByb2RTZXJ2PSI4NDExMTUwNiIgTm9JZGVudGlmaWNhY2lvbj0iQTFCMkMzRDQiIENhbnRpZGFkPSIxLjAwMDAwMCIgQ2xhdmVVbmlkYWQ9Ikg4NyIgVW5pZGFkPSJQaWV6YSIgRGVzY3JpcGNpb249IkNvbmNlcHRvIGRlIHBydWViYSIgVmFsb3JVbml0YXJpbz0iMTAwMDAuMDAiIEltcG9ydGU9IjEwMDAwLjAwIiBPYmpldG9JbXA9IjAyIj48Y2ZkaTpJbXB1ZXN0b3M+PGNmZGk6VHJhc2xhZG9zPjxjZmRpOlRyYXNsYWRvIEJhc2U9IjEwMDAwLjAwIiBJbXB1ZXN0bz0iMDAyIiBUaXBvRmFjdG9yPSJUYXNhIiBUYXNhT0N1b3RhPSIwLjE2MDAwMCIgSW1wb3J0ZT0iMTYwMC4wMCIgLz48IS0tIDxjZmRpOlRyYXNsYWRvIEJhc2U9IjUwLjAwMDAwMCIgSW1wdWVzdG89IjAwMSIgVGlwb0ZhY3Rvcj0iVGFzYSIKICAgICAgICAgICAgICAgICAgICAgICAgVGFzYU9DdW90YT0iNTAuMDAwMDAwIiBJbXBvcnRlPSI1MC4wMDAwMDAiLz4tLT48L2NmZGk6VHJhc2xhZG9zPjwvY2ZkaTpJbXB1ZXN0b3M+PC9jZmRpOkNvbmNlcHRvPjwvY2ZkaTpDb25jZXB0b3M+PGNmZGk6SW1wdWVzdG9zIFRvdGFsSW1wdWVzdG9zVHJhc2xhZGFkb3M9IjE2MDAuMDAiPjxjZmRpOlRyYXNsYWRvcz48Y2ZkaTpUcmFzbGFkbyBCYXNlPSIxMDAwMC4wMCIgSW1wdWVzdG89IjAwMiIgVGlwb0ZhY3Rvcj0iVGFzYSIgVGFzYU9DdW90YT0iMC4xNjAwMDAiIEltcG9ydGU9IjE2MDAuMDAiIC8+PC9jZmRpOlRyYXNsYWRvcz48L2NmZGk6SW1wdWVzdG9zPjwvY2ZkaTpDb21wcm9iYW50ZT4="}} 
+ 
+2022-04-29 16:40:29,895 [10] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-04-29 16:40:29,898 [10] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-04-29 16:40:30,634 [10] INFO  App  
+ Info - Response recibido: StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Fri, 29 Apr 2022 21:40:30 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: h7h5uu964hhf5qsorrcl6t93bf9ehcfv
+  Connection: close
+  Content-Length: 492
+  Content-Type: application/json; charset=utf-8
+} 
+ 
+2022-04-29 16:40:30,647 [10] INFO  App  
+ Info - Error de respuesta del timbrado Diverza: ["Invalid certificate, can't be readed"] 
+ 
+2022-04-29 16:40:30,648 [10] INFO  App  
+ Info - Detalle de error de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 2816
+} 
+ 
+2022-04-29 16:40:30,650 [10] ERROR App  
+ Error - No se pudo realizar el timbrado con Diverza.  
+ 
+2022-04-29 16:40:30,650 [10] ERROR App  
+ Error - código: 400 
+ 
+2022-04-29 16:40:30,651 [10] ERROR App  
+ Error - detalle: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 2816
+} 
+ 
+2022-04-29 16:40:30,652 [10] ERROR App  
+ Error - message: ["Invalid certificate, can't be readed"] 
+ 
+2022-04-29 16:41:00,112 [24] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-29 16:41:15,804 [24] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-29 16:41:23,525 [24] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-29 16:41:30,206 [24] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-29 16:41:31,359 [24] INFO  App  
+ Info - Datos del comprobante. Folio: 669, Número de serie del certificado: 00001000000510819349, Serie: NARHT 
+ 
+2022-04-29 16:41:33,255 [24] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-29 16:41:33,258 [24] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-29 16:41:33,272 [24] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="bbc3e738-4ce5-4b2a-a5f1-056b7e4180b0"
+  Content-Length: 1967
+} 
+ 
+2022-04-29 16:41:33,276 [24] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-29 16:41:33,276 [24] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-04-29 16:41:33,277 [24] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 404 
+ 
+2022-04-29 16:41:33,277 [24] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="bbc3e738-4ce5-4b2a-a5f1-056b7e4180b0"
+  Content-Length: 1967
+} 
+ 
+2022-04-29 16:41:33,277 [24] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+ 
+2022-04-29 16:41:33,278 [24] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-04-29 16:42:16,931 [24] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"114410","token": "$2b$12$bEDTbnccx6Hcg1plzYI1aeKEBzsWHZ2c5iIOG/vYrPHTL/tJysyyS" },"issuer": {"rfc": "MORJ7408292M8"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "MORJ7408292M8NARHT669","certificate-number": "00001000000510819349","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0+xml","content": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48Y2ZkaTpDb21wcm9iYW50ZSB4bWxuczpjYXRDRkRJPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkL2NhdGFsb2dvcyIgeG1sbnM6dGRDRkRJPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkL3RpcG9EYXRvcy90ZENGREkiIHhtbG5zOmNmZGk9Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9jZmQvNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvY2ZkLzQgaHR0cDovL3d3dy5zYXQuZ29iLm14L3NpdGlvX2ludGVybmV0L2NmZC80L2NmZHY0MC54c2QiIFZlcnNpb249IjQuMCIgU2VyaWU9Ik5BUkhUIiBGb2xpbz0iNjY5IiBGZWNoYT0iMjAyMi0wNC0yOFQwODoxMzo1MSIgU2VsbG89IiIgRm9ybWFQYWdvPSIwMSIgTm9DZXJ0aWZpY2Fkbz0iMDAwMDEwMDAwMDA1MTA4MTkzNDkiIENlcnRpZmljYWRvPSIiIENvbmRpY2lvbmVzRGVQYWdvPSIzMCBkw61hcyIgU3ViVG90YWw9IjEwMDAwLjAwIiBUb3RhbD0iMTE2MDAuMDAiIE1vbmVkYT0iRVVSIiBUaXBvQ2FtYmlvPSI3NzcuNzciIFRpcG9EZUNvbXByb2JhbnRlPSJFIiBFeHBvcnRhY2lvbj0iMDEiIE1ldG9kb1BhZ289IlBVRSIgTHVnYXJFeHBlZGljaW9uPSI2NDAwMCI+PGNmZGk6RW1pc29yIFJmYz0iTU9SSjc0MDgyOTJNOCIgTm9tYnJlPSJKVUFOIE1BTlVFTCBNT1JBTEVTIFJPRFJJR1VFWiIgUmVnaW1lbkZpc2NhbD0iNjEyIiAvPjxjZmRpOlJlY2VwdG9yIFJmYz0iWEVYWDAxMDEwMTAwMCIgTm9tYnJlPSJDQVJMT1MgRkVSTkFORE8gVmlydHVhbCAgU0FOQ0hFWiIgRG9taWNpbGlvRmlzY2FsUmVjZXB0b3I9IjY0MDAwIiBSZWdpbWVuRmlzY2FsUmVjZXB0b3I9IjYxNiIgVXNvQ0ZEST0iUzAxIiAvPjxjZmRpOkNvbmNlcHRvcz48Y2ZkaTpDb25jZXB0byBDbGF2ZVByb2RTZXJ2PSI4NDExMTUwNiIgTm9JZGVudGlmaWNhY2lvbj0iQTFCMkMzRDQiIENhbnRpZGFkPSIxLjAwMDAwMCIgQ2xhdmVVbmlkYWQ9Ikg4NyIgVW5pZGFkPSJQaWV6YSIgRGVzY3JpcGNpb249IkNvbmNlcHRvIGRlIHBydWViYSIgVmFsb3JVbml0YXJpbz0iMTAwMDAuMDAiIEltcG9ydGU9IjEwMDAwLjAwIiBPYmpldG9JbXA9IjAyIj48Y2ZkaTpJbXB1ZXN0b3M+PGNmZGk6VHJhc2xhZG9zPjxjZmRpOlRyYXNsYWRvIEJhc2U9IjEwMDAwLjAwIiBJbXB1ZXN0bz0iMDAyIiBUaXBvRmFjdG9yPSJUYXNhIiBUYXNhT0N1b3RhPSIwLjE2MDAwMCIgSW1wb3J0ZT0iMTYwMC4wMCIgLz48IS0tIDxjZmRpOlRyYXNsYWRvIEJhc2U9IjUwLjAwMDAwMCIgSW1wdWVzdG89IjAwMSIgVGlwb0ZhY3Rvcj0iVGFzYSIKICAgICAgICAgICAgICAgICAgICAgICAgVGFzYU9DdW90YT0iNTAuMDAwMDAwIiBJbXBvcnRlPSI1MC4wMDAwMDAiLz4tLT48L2NmZGk6VHJhc2xhZG9zPjwvY2ZkaTpJbXB1ZXN0b3M+PC9jZmRpOkNvbmNlcHRvPjwvY2ZkaTpDb25jZXB0b3M+PGNmZGk6SW1wdWVzdG9zIFRvdGFsSW1wdWVzdG9zVHJhc2xhZGFkb3M9IjE2MDAuMDAiPjxjZmRpOlRyYXNsYWRvcz48Y2ZkaTpUcmFzbGFkbyBCYXNlPSIxMDAwMC4wMCIgSW1wdWVzdG89IjAwMiIgVGlwb0ZhY3Rvcj0iVGFzYSIgVGFzYU9DdW90YT0iMC4xNjAwMDAiIEltcG9ydGU9IjE2MDAuMDAiIC8+PC9jZmRpOlRyYXNsYWRvcz48L2NmZGk6SW1wdWVzdG9zPjwvY2ZkaTpDb21wcm9iYW50ZT4="}} 
+ 
+2022-04-29 16:42:16,932 [24] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-04-29 16:42:16,935 [24] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-04-29 16:42:17,268 [24] INFO  App  
+ Info - Response recibido: StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Fri, 29 Apr 2022 21:42:17 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: cgompojt3do87g9i2vgirb9galr3608c
+  Connection: close
+  Content-Length: 492
+  Content-Type: application/json; charset=utf-8
+} 
+ 
+2022-04-29 16:42:17,275 [24] INFO  App  
+ Info - Error de respuesta del timbrado Diverza: ["Invalid certificate, can't be readed"] 
+ 
+2022-04-29 16:42:17,276 [24] INFO  App  
+ Info - Detalle de error de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 2804
+} 
+ 
+2022-04-29 16:42:17,278 [24] ERROR App  
+ Error - No se pudo realizar el timbrado con Diverza.  
+ 
+2022-04-29 16:42:17,278 [24] ERROR App  
+ Error - código: 400 
+ 
+2022-04-29 16:42:17,279 [24] ERROR App  
+ Error - detalle: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 2804
+} 
+ 
+2022-04-29 16:42:17,279 [24] ERROR App  
+ Error - message: ["Invalid certificate, can't be readed"] 
+ 
+2022-04-29 16:46:48,090 [9] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-29 16:46:48,103 [9] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-29 16:46:48,221 [9] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-29 16:46:48,222 [9] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-29 16:46:48,252 [9] INFO  App  
+ Info - Datos del comprobante. Folio: 374-2, Número de serie del certificado: 00001000000510819349, Serie: CPLR 
+ 
+2022-04-29 16:46:48,255 [9] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-29 16:46:48,256 [9] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-29 16:46:48,287 [9] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="a488b39e-04fc-48b4-874a-fcc77069adf9"
+  Content-Length: 2537
+} 
+ 
+2022-04-29 16:46:48,287 [9] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-29 16:46:48,288 [9] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-04-29 16:46:48,288 [9] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 404 
+ 
+2022-04-29 16:46:48,289 [9] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="a488b39e-04fc-48b4-874a-fcc77069adf9"
+  Content-Length: 2537
+} 
+ 
+2022-04-29 16:46:48,289 [9] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+ 
+2022-04-29 16:46:48,290 [9] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-04-29 16:46:48,292 [9] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"114410","token": "$2b$12$bEDTbnccx6Hcg1plzYI1aeKEBzsWHZ2c5iIOG/vYrPHTL/tJysyyS" },"issuer": {"rfc": "MORJ7408292M8"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "MORJ7408292M8CPLR3742","certificate-number": "00001000000510819349","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0_complemento+xml","content": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48Y2ZkaTpDb21wcm9iYW50ZSB4bWxuczpjZmRpPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvY2ZkLzQiIHhtbG5zOnBhZ28yMD0iaHR0cDovL3d3dy5zYXQuZ29iLm14L1BhZ29zMjAiIHhtbG5zOnRmZD0iaHR0cDovL3d3dy5zYXQuZ29iLm14L1RpbWJyZUZpc2NhbERpZ2l0YWwiIHhtbG5zOnhzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgQ2VydGlmaWNhZG89IiIgRXhwb3J0YWNpb249IjAxIiBGZWNoYT0iMjAyMi0wNC0yOFQxMToxOTo1OSIgRm9saW89IjM3NC0yIiBMdWdhckV4cGVkaWNpb249IjA2NTAwIiBNb25lZGE9IlhYWCIgTm9DZXJ0aWZpY2Fkbz0iMDAwMDEwMDAwMDA1MTA4MTkzNDkiIFNlbGxvPSIiIFNlcmllPSJDUExSIiBTdWJUb3RhbD0iMCIgVGlwb0RlQ29tcHJvYmFudGU9IlAiIFRvdGFsPSIwIiBWZXJzaW9uPSI0LjAiIHhzaTpzY2hlbWFMb2NhdGlvbj0iaHR0cDovL3d3dy5zYXQuZ29iLm14L2NmZC80IGh0dHA6Ly93d3cuc2F0LmdvYi5teC9zaXRpb19pbnRlcm5ldC9jZmQvNC9jZmR2NDAueHNkIGh0dHA6Ly93d3cuc2F0LmdvYi5teC9QYWdvczIwIGh0dHA6Ly93d3cuc2F0LmdvYi5teC9zaXRpb19pbnRlcm5ldC9jZmQvUGFnb3MvUGFnb3MyMC54c2QgaHR0cDovL3d3dy5zYXQuZ29iLm14L1RpbWJyZUZpc2NhbERpZ2l0YWwgaHR0cDovL3d3dy5zYXQuZ29iLm14L3NpdGlvX2ludGVybmV0L2NmZC9UaW1icmVGaXNjYWxEaWdpdGFsL1RpbWJyZUZpc2NhbERpZ2l0YWx2MTEueHNkIj48Y2ZkaTpDZmRpUmVsYWNpb25hZG9zIFRpcG9SZWxhY2lvbj0iMDQiPjxjZmRpOkNmZGlSZWxhY2lvbmFkbyBVVUlEPSIxNTg2QjMyMS00NjFGLTQ4Q0UtQTJERi02OTVBQTJFNjkxNTgiIC8+PC9jZmRpOkNmZGlSZWxhY2lvbmFkb3M+PGNmZGk6RW1pc29yIFJmYz0iTU9SSjc0MDgyOTJNOCIgTm9tYnJlPSJKVUFOIE1BTlVFTCBNT1JBTEVTIFJPRFJJR1VFWiIgUmVnaW1lbkZpc2NhbD0iNjEyIiAvPjxjZmRpOlJlY2VwdG9yIERvbWljaWxpb0Zpc2NhbFJlY2VwdG9yPSIwNjUwMCIgTm9tYnJlPSJBSVIgREVTSUdOIFNBIERFIENWIiBSZWdpbWVuRmlzY2FsUmVjZXB0b3I9IjYxNiIgUmZjPSJYQVhYMDEwMTAxMDAwIiBVc29DRkRJPSJDUDAxIiAvPjxjZmRpOkNvbmNlcHRvcz48Y2ZkaTpDb25jZXB0byBDYW50aWRhZD0iMSIgQ2xhdmVQcm9kU2Vydj0iODQxMTE1MDYiIENsYXZlVW5pZGFkPSJBQ1QiIERlc2NyaXBjaW9uPSJQYWdvIiBJbXBvcnRlPSIwIiBPYmpldG9JbXA9IjAxIiBWYWxvclVuaXRhcmlvPSIwIiAvPjwvY2ZkaTpDb25jZXB0b3M+PGNmZGk6Q29tcGxlbWVudG8+PHBhZ28yMDpQYWdvcyBWZXJzaW9uPSIyLjAiPjxwYWdvMjA6VG90YWxlcyBNb250b1RvdGFsUGFnb3M9IjIxNTg4Ljk5IiBUb3RhbFRyYXNsYWRvc0Jhc2VJVkExNj0iMTg2MTEuMiIgVG90YWxUcmFzbGFkb3NJbXB1ZXN0b0lWQTE2PSIyOTc3Ljc5IiAvPjxwYWdvMjA6UGFnbyBGZWNoYVBhZ289IjIwMjItMDItMTZUMTI6MDA6MDAiIEZvcm1hRGVQYWdvUD0iMTciIE1vbmVkYVA9Ik1YTiIgTW9udG89IjIxNTg4Ljk5IiBUaXBvQ2FtYmlvUD0iMSI+PHBhZ28yMDpEb2N0b1JlbGFjaW9uYWRvIElkRG9jdW1lbnRvPSIxMEZFMjczNy1GRUQyLTQ5NDAtQkFENy0zQ0JCRjgxOTc3MDEiIEltcFBhZ2Fkbz0iMjE1ODguOTkiIEltcFNhbGRvQW50PSIyMTU4OC45OSIgSW1wU2FsZG9JbnNvbHV0bz0iMC4wMCIgTW9uZWRhRFI9Ik1YTiIgTnVtUGFyY2lhbGlkYWQ9IjEiIE9iamV0b0ltcERSPSIwMiI+PHBhZ28yMDpJbXB1ZXN0b3NEUj48cGFnbzIwOlRyYXNsYWRvc0RSPjxwYWdvMjA6VHJhc2xhZG9EUiBCYXNlRFI9IjE4NjExLjIiIEltcG9ydGVEUj0iMjk3Ny43OSIgSW1wdWVzdG9EUj0iMDAyIiBUYXNhT0N1b3RhRFI9IjAuMTYwMDAwIiBUaXBvRmFjdG9yRFI9IlRhc2EiIC8+PC9wYWdvMjA6VHJhc2xhZG9zRFI+PC9wYWdvMjA6SW1wdWVzdG9zRFI+PC9wYWdvMjA6RG9jdG9SZWxhY2lvbmFkbz48cGFnbzIwOkltcHVlc3Rvc1A+PHBhZ28yMDpUcmFzbGFkb3NQPjxwYWdvMjA6VHJhc2xhZG9QIEJhc2VQPSIxODYxMS4yIiBJbXBvcnRlUD0iMjk3Ny43OSIgSW1wdWVzdG9QPSIwMDIiIFRhc2FPQ3VvdGFQPSIwLjE2MDAwMCIgVGlwb0ZhY3RvclA9IlRhc2EiIC8+PC9wYWdvMjA6VHJhc2xhZG9zUD48L3BhZ28yMDpJbXB1ZXN0b3NQPjwvcGFnbzIwOlBhZ28+PC9wYWdvMjA6UGFnb3M+PC9jZmRpOkNvbXBsZW1lbnRvPjwvY2ZkaTpDb21wcm9iYW50ZT4="}} 
+ 
+2022-04-29 16:46:48,293 [9] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-04-29 16:46:48,293 [9] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-04-29 16:46:48,701 [9] INFO  App  
+ Info - Response recibido: StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Fri, 29 Apr 2022 21:46:49 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: aa3ivu0ji3ig14dlhia15du8lsi6t47t
+  Connection: close
+  Content-Length: 492
+  Content-Type: application/json; charset=utf-8
+} 
+ 
+2022-04-29 16:46:48,711 [9] INFO  App  
+ Info - Error de respuesta del timbrado Diverza: ["Invalid certificate, can't be readed"] 
+ 
+2022-04-29 16:46:48,711 [9] INFO  App  
+ Info - Detalle de error de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 3576
+} 
+ 
+2022-04-29 16:46:48,712 [9] ERROR App  
+ Error - No se pudo realizar el timbrado con Diverza.  
+ 
+2022-04-29 16:46:48,712 [9] ERROR App  
+ Error - código: 400 
+ 
+2022-04-29 16:46:48,712 [9] ERROR App  
+ Error - detalle: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 3576
+} 
+ 
+2022-04-29 16:46:48,713 [9] ERROR App  
+ Error - message: ["Invalid certificate, can't be readed"] 
+ 
+2022-04-29 16:47:01,081 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-29 16:47:56,441 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-29 16:51:50,520 [10] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-29 16:52:05,057 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-29 16:52:07,924 [10] INFO  App  
+ Info - Datos del comprobante. Folio: 374-2, Número de serie del certificado: 00001000000510819349, Serie: CPLR 
+ 
+2022-04-29 16:52:14,297 [10] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-29 16:52:14,298 [10] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-29 16:52:14,331 [10] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="c08cebde-a53a-48d6-bb73-8848173beeb3"
+  Content-Length: 2537
+} 
+ 
+2022-04-29 16:52:14,337 [10] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-29 16:52:14,338 [10] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-04-29 16:52:14,338 [10] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 404 
+ 
+2022-04-29 16:52:14,339 [10] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="c08cebde-a53a-48d6-bb73-8848173beeb3"
+  Content-Length: 2537
+} 
+ 
+2022-04-29 16:52:14,339 [10] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+ 
+2022-04-29 16:52:14,339 [10] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-04-29 16:53:04,269 [10] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"114410","token": "$2b$12$bEDTbnccx6Hcg1plzYI1aeKEBzsWHZ2c5iIOG/vYrPHTL/tJysyyS" },"issuer": {"rfc": "MORJ7408292M8"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "MORJ7408292M8CPLR3742","certificate-number": "00001000000510819349","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0_complemento+xml","content": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48Y2ZkaTpDb21wcm9iYW50ZSB4bWxuczpjZmRpPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvY2ZkLzQiIHhtbG5zOnBhZ28yMD0iaHR0cDovL3d3dy5zYXQuZ29iLm14L1BhZ29zMjAiIHhtbG5zOnRmZD0iaHR0cDovL3d3dy5zYXQuZ29iLm14L1RpbWJyZUZpc2NhbERpZ2l0YWwiIHhtbG5zOnhzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgQ2VydGlmaWNhZG89IiIgRXhwb3J0YWNpb249IjAxIiBGZWNoYT0iMjAyMi0wNC0yOFQxMToxOTo1OSIgRm9saW89IjM3NC0yIiBMdWdhckV4cGVkaWNpb249IjA2NTAwIiBNb25lZGE9IlhYWCIgTm9DZXJ0aWZpY2Fkbz0iMDAwMDEwMDAwMDA1MTA4MTkzNDkiIFNlbGxvPSIiIFNlcmllPSJDUExSIiBTdWJUb3RhbD0iMCIgVGlwb0RlQ29tcHJvYmFudGU9IlAiIFRvdGFsPSIwIiBWZXJzaW9uPSI0LjAiIHhzaTpzY2hlbWFMb2NhdGlvbj0iaHR0cDovL3d3dy5zYXQuZ29iLm14L2NmZC80IGh0dHA6Ly93d3cuc2F0LmdvYi5teC9zaXRpb19pbnRlcm5ldC9jZmQvNC9jZmR2NDAueHNkIGh0dHA6Ly93d3cuc2F0LmdvYi5teC9QYWdvczIwIGh0dHA6Ly93d3cuc2F0LmdvYi5teC9zaXRpb19pbnRlcm5ldC9jZmQvUGFnb3MvUGFnb3MyMC54c2QgaHR0cDovL3d3dy5zYXQuZ29iLm14L1RpbWJyZUZpc2NhbERpZ2l0YWwgaHR0cDovL3d3dy5zYXQuZ29iLm14L3NpdGlvX2ludGVybmV0L2NmZC9UaW1icmVGaXNjYWxEaWdpdGFsL1RpbWJyZUZpc2NhbERpZ2l0YWx2MTEueHNkIj48Y2ZkaTpDZmRpUmVsYWNpb25hZG9zIFRpcG9SZWxhY2lvbj0iMDQiPjxjZmRpOkNmZGlSZWxhY2lvbmFkbyBVVUlEPSIxNTg2QjMyMS00NjFGLTQ4Q0UtQTJERi02OTVBQTJFNjkxNTgiIC8+PC9jZmRpOkNmZGlSZWxhY2lvbmFkb3M+PGNmZGk6RW1pc29yIFJmYz0iTU9SSjc0MDgyOTJNOCIgTm9tYnJlPSJKVUFOIE1BTlVFTCBNT1JBTEVTIFJPRFJJR1VFWiIgUmVnaW1lbkZpc2NhbD0iNjEyIiAvPjxjZmRpOlJlY2VwdG9yIERvbWljaWxpb0Zpc2NhbFJlY2VwdG9yPSIwNjUwMCIgTm9tYnJlPSJBSVIgREVTSUdOIFNBIERFIENWIiBSZWdpbWVuRmlzY2FsUmVjZXB0b3I9IjYxNiIgUmZjPSJYQVhYMDEwMTAxMDAwIiBVc29DRkRJPSJDUDAxIiAvPjxjZmRpOkNvbmNlcHRvcz48Y2ZkaTpDb25jZXB0byBDYW50aWRhZD0iMSIgQ2xhdmVQcm9kU2Vydj0iODQxMTE1MDYiIENsYXZlVW5pZGFkPSJBQ1QiIERlc2NyaXBjaW9uPSJQYWdvIiBJbXBvcnRlPSIwIiBPYmpldG9JbXA9IjAxIiBWYWxvclVuaXRhcmlvPSIwIiAvPjwvY2ZkaTpDb25jZXB0b3M+PGNmZGk6Q29tcGxlbWVudG8+PHBhZ28yMDpQYWdvcyBWZXJzaW9uPSIyLjAiPjxwYWdvMjA6VG90YWxlcyBNb250b1RvdGFsUGFnb3M9IjIxNTg4Ljk5IiBUb3RhbFRyYXNsYWRvc0Jhc2VJVkExNj0iMTg2MTEuMiIgVG90YWxUcmFzbGFkb3NJbXB1ZXN0b0lWQTE2PSIyOTc3Ljc5IiAvPjxwYWdvMjA6UGFnbyBGZWNoYVBhZ289IjIwMjItMDItMTZUMTI6MDA6MDAiIEZvcm1hRGVQYWdvUD0iMTciIE1vbmVkYVA9Ik1YTiIgTW9udG89IjIxNTg4Ljk5IiBUaXBvQ2FtYmlvUD0iMSI+PHBhZ28yMDpEb2N0b1JlbGFjaW9uYWRvIElkRG9jdW1lbnRvPSIxMEZFMjczNy1GRUQyLTQ5NDAtQkFENy0zQ0JCRjgxOTc3MDEiIEltcFBhZ2Fkbz0iMjE1ODguOTkiIEltcFNhbGRvQW50PSIyMTU4OC45OSIgSW1wU2FsZG9JbnNvbHV0bz0iMC4wMCIgTW9uZWRhRFI9Ik1YTiIgTnVtUGFyY2lhbGlkYWQ9IjEiIE9iamV0b0ltcERSPSIwMiI+PHBhZ28yMDpJbXB1ZXN0b3NEUj48cGFnbzIwOlRyYXNsYWRvc0RSPjxwYWdvMjA6VHJhc2xhZG9EUiBCYXNlRFI9IjE4NjExLjIiIEltcG9ydGVEUj0iMjk3Ny43OSIgSW1wdWVzdG9EUj0iMDAyIiBUYXNhT0N1b3RhRFI9IjAuMTYwMDAwIiBUaXBvRmFjdG9yRFI9IlRhc2EiIC8+PC9wYWdvMjA6VHJhc2xhZG9zRFI+PC9wYWdvMjA6SW1wdWVzdG9zRFI+PC9wYWdvMjA6RG9jdG9SZWxhY2lvbmFkbz48cGFnbzIwOkltcHVlc3Rvc1A+PHBhZ28yMDpUcmFzbGFkb3NQPjxwYWdvMjA6VHJhc2xhZG9QIEJhc2VQPSIxODYxMS4yIiBJbXBvcnRlUD0iMjk3Ny43OSIgSW1wdWVzdG9QPSIwMDIiIFRhc2FPQ3VvdGFQPSIwLjE2MDAwMCIgVGlwb0ZhY3RvclA9IlRhc2EiIC8+PC9wYWdvMjA6VHJhc2xhZG9zUD48L3BhZ28yMDpJbXB1ZXN0b3NQPjwvcGFnbzIwOlBhZ28+PC9wYWdvMjA6UGFnb3M+PC9jZmRpOkNvbXBsZW1lbnRvPjwvY2ZkaTpDb21wcm9iYW50ZT4="}} 
+ 
+2022-04-29 16:53:04,270 [10] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-04-29 16:53:04,274 [10] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-04-29 16:53:04,984 [10] INFO  App  
+ Info - Response recibido: StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Fri, 29 Apr 2022 21:53:05 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: o8r4d1aqns09huvro6j1coecj4qachsu
+  Connection: close
+  Content-Length: 492
+  Content-Type: application/json; charset=utf-8
+} 
+ 
+2022-04-29 16:53:04,999 [10] INFO  App  
+ Info - Error de respuesta del timbrado Diverza: ["Invalid certificate, can't be readed"] 
+ 
+2022-04-29 16:53:05,000 [10] INFO  App  
+ Info - Detalle de error de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 3576
+} 
+ 
+2022-04-29 16:53:05,002 [10] ERROR App  
+ Error - No se pudo realizar el timbrado con Diverza.  
+ 
+2022-04-29 16:53:05,003 [10] ERROR App  
+ Error - código: 400 
+ 
+2022-04-29 16:53:05,004 [10] ERROR App  
+ Error - detalle: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 3576
+} 
+ 
+2022-04-29 16:53:05,004 [10] ERROR App  
+ Error - message: ["Invalid certificate, can't be readed"] 
+ 
+2022-04-29 16:55:40,725 [30] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-29 16:55:54,483 [30] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-29 16:56:00,066 [30] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-29 16:56:14,805 [30] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-29 16:56:16,306 [30] INFO  App  
+ Info - Datos del comprobante. Folio: 4804506, Número de serie del certificado: 00001000000510819349, Serie: FNEX 
+ 
+2022-04-29 17:01:33,180 [30] WARN  App  
+ Warn: El comprobante ya fue timbrado y se encuentra en la base de datos. Folio repetido. 
+ 
+2022-04-29 17:01:33,182 [30] WARN  App  
+ Warn - código: 1000 
+ 
+2022-04-29 17:01:33,187 [30] WARN  App  
+ Warn - detalle: El comprobante ya fué timbrado. 
+ 
+2022-04-29 17:01:33,189 [30] WARN  App  
+ Warn - message: Ya se encuentra registrado el comprobante en la BD. 
+ 
+2022-04-29 17:02:25,634 [37] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-29 17:02:32,737 [37] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-29 17:03:03,106 [37] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-29 17:03:11,548 [37] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-29 17:03:12,211 [37] INFO  App  
+ Info - Datos del comprobante. Folio: 4804507, Número de serie del certificado: 00001000000510819349, Serie: FNEX 
+ 
+2022-04-29 17:03:31,763 [37] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-29 17:03:31,767 [37] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-29 17:03:31,788 [37] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="af31f4d1-9c5e-4b2c-bddd-a68c4464cad4"
+  Content-Length: 1803
+} 
+ 
+2022-04-29 17:03:31,792 [37] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-29 17:03:31,792 [37] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-04-29 17:03:31,793 [37] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 404 
+ 
+2022-04-29 17:03:31,793 [37] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="af31f4d1-9c5e-4b2c-bddd-a68c4464cad4"
+  Content-Length: 1803
+} 
+ 
+2022-04-29 17:03:31,794 [37] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+ 
+2022-04-29 17:03:31,794 [37] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-04-29 17:04:00,160 [37] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"114410","token": "$2b$12$bEDTbnccx6Hcg1plzYI1aeKEBzsWHZ2c5iIOG/vYrPHTL/tJysyyS" },"issuer": {"rfc": "MORJ7408292M8"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "MORJ7408292M8FNEX4804507","certificate-number": "00001000000510819349","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0+xml","content": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxjZmRpOkNvbXByb2JhbnRlIEV4cG9ydGFjaW9uPSIwMSIgTHVnYXJFeHBlZGljaW9uPSI1MjIyNyIgVGlwb0RlQ29tcHJvYmFudGU9IkkiIE1ldG9kb1BhZ289IlBVRSIgVG90YWw9IjExLjYwIiBNb25lZGE9Ik1YTiIgU3ViVG90YWw9IjEwLjAwIiBDZXJ0aWZpY2Fkbz0iIiBOb0NlcnRpZmljYWRvPSIwMDAwMTAwMDAwMDUxMDgxOTM0OSIgRm9ybWFQYWdvPSIwMSIgU2VsbG89IiIgRmVjaGE9IjIwMjItMDQtMjlUMTE6MTY6MzkiIEZvbGlvPSI0ODA0NTA3IiBTZXJpZT0iRk5FWCIgVmVyc2lvbj0iNC4wIiB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9jZmQvNCBodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkLzQvY2ZkdjQwLnhzZCIgeG1sbnM6bnMzPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvVGltYnJlRmlzY2FsRGlnaXRhbCIgeG1sbnM6Y2ZkaT0iaHR0cDovL3d3dy5zYXQuZ29iLm14L2NmZC80IiB4bWxuczpwYWdvMjA9Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9QYWdvczIwIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIj48Y2ZkaTpJbmZvcm1hY2lvbkdsb2JhbCBQZXJpb2RpY2lkYWQ9IjAxIiBNZXNlcz0iMDEiIEHDsW89IjIwMjIiIC8+PGNmZGk6RW1pc29yIFJmYz0iTU9SSjc0MDgyOTJNOCIgTm9tYnJlPSJKVUFOIE1BTlVFTCBNT1JBTEVTIFJPRFJJR1VFWiIgUmVnaW1lbkZpc2NhbD0iNjEyIiAvPjxjZmRpOlJlY2VwdG9yIFJmYz0iWEFYWDAxMDEwMTAwMCIgTm9tYnJlPSJQVUJMSUNPIEVOIEdFTkVSQUwiIFVzb0NGREk9IlMwMSIgRG9taWNpbGlvRmlzY2FsUmVjZXB0b3I9IjUyMjI3IiBSZWdpbWVuRmlzY2FsUmVjZXB0b3I9IjYxNiIgLz48Y2ZkaTpDb25jZXB0b3M+PGNmZGk6Q29uY2VwdG8gT2JqZXRvSW1wPSIwMiIgSW1wb3J0ZT0iMTAuMDAiIFZhbG9yVW5pdGFyaW89IjEwLjAwIiBEZXNjcmlwY2lvbj0iU0VSVklDSU8gUE9SIElOVEVSQ09ORVhJT04gUUxMUCAwNDQgTExBTTogMzUzNjg5ODkiIFVuaWRhZD0iU2VydmljaW8iIENsYXZlVW5pZGFkPSJFNDgiIENhbnRpZGFkPSIxIiBOb0lkZW50aWZpY2FjaW9uPSIwIiBDbGF2ZVByb2RTZXJ2PSI4MzExMjUwNSI+PGNmZGk6SW1wdWVzdG9zPjxjZmRpOlRyYXNsYWRvcz48Y2ZkaTpUcmFzbGFkbyBJbXBvcnRlPSIxLjYwIiBUYXNhT0N1b3RhPSIwLjE2MDAwMCIgVGlwb0ZhY3Rvcj0iVGFzYSIgSW1wdWVzdG89IjAwMiIgQmFzZT0iMTAuMDAiIC8+PC9jZmRpOlRyYXNsYWRvcz48L2NmZGk6SW1wdWVzdG9zPjwvY2ZkaTpDb25jZXB0bz48L2NmZGk6Q29uY2VwdG9zPjxjZmRpOkltcHVlc3RvcyBUb3RhbEltcHVlc3Rvc1RyYXNsYWRhZG9zPSIxLjYwIj48Y2ZkaTpUcmFzbGFkb3M+PGNmZGk6VHJhc2xhZG8gSW1wb3J0ZT0iMS42MCIgVGFzYU9DdW90YT0iMC4xNjAwMDAiIFRpcG9GYWN0b3I9IlRhc2EiIEltcHVlc3RvPSIwMDIiIEJhc2U9IjEwLjAwIiAvPjwvY2ZkaTpUcmFzbGFkb3M+PC9jZmRpOkltcHVlc3Rvcz48L2NmZGk6Q29tcHJvYmFudGU+"}} 
+ 
+2022-04-29 17:04:00,161 [37] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-04-29 17:04:00,165 [37] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-04-29 17:04:00,743 [37] INFO  App  
+ Info - Response recibido: StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Fri, 29 Apr 2022 22:04:01 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: 02ln740c1nr3o7i18uodjoseedif3dms
+  Connection: close
+  Content-Length: 492
+  Content-Type: application/json; charset=utf-8
+} 
+ 
+2022-04-29 17:04:00,751 [37] INFO  App  
+ Info - Error de respuesta del timbrado Diverza: ["Invalid certificate, can't be readed"] 
+ 
+2022-04-29 17:04:00,751 [37] INFO  App  
+ Info - Detalle de error de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 2587
+} 
+ 
+2022-04-29 17:04:00,753 [37] ERROR App  
+ Error - No se pudo realizar el timbrado con Diverza.  
+ 
+2022-04-29 17:04:00,753 [37] ERROR App  
+ Error - código: 400 
+ 
+2022-04-29 17:04:00,754 [37] ERROR App  
+ Error - detalle: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 2587
+} 
+ 
+2022-04-29 17:04:00,754 [37] ERROR App  
+ Error - message: ["Invalid certificate, can't be readed"] 
+ 
+2022-04-29 17:51:28,261 [22] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-29 17:52:18,360 [22] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-29 17:58:29,551 [22] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-29 17:58:35,560 [22] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-29 17:58:46,354 [22] INFO  App  
+ Info - Datos del comprobante. Folio: 4804507, Número de serie del certificado: 00001000000510819349, Serie: FNEX 
+ 
+2022-04-29 17:58:52,483 [22] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-29 17:58:52,485 [22] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-29 17:58:52,515 [22] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="3221a757-ba15-4941-b729-1e4d56540db0"
+  Content-Length: 1803
+} 
+ 
+2022-04-29 17:58:52,520 [22] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-29 17:58:52,523 [22] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-04-29 17:58:52,523 [22] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 404 
+ 
+2022-04-29 17:58:52,524 [22] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="3221a757-ba15-4941-b729-1e4d56540db0"
+  Content-Length: 1803
+} 
+ 
+2022-04-29 17:58:52,524 [22] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+ 
+2022-04-29 17:58:52,524 [22] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-04-29 17:59:50,741 [22] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"114410","token": "$2b$12$bEDTbnccx6Hcg1plzYI1aeKEBzsWHZ2c5iIOG/vYrPHTL/tJysyyS" },"issuer": {"rfc": "MORJ7408292M8"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "MORJ7408292M8FNEX4804507","certificate-number": "00001000000510819349","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0+xml","content": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxjZmRpOkNvbXByb2JhbnRlIEV4cG9ydGFjaW9uPSIwMSIgTHVnYXJFeHBlZGljaW9uPSI1MjIyNyIgVGlwb0RlQ29tcHJvYmFudGU9IkkiIE1ldG9kb1BhZ289IlBVRSIgVG90YWw9IjExLjYwIiBNb25lZGE9Ik1YTiIgU3ViVG90YWw9IjEwLjAwIiBDZXJ0aWZpY2Fkbz0iIiBOb0NlcnRpZmljYWRvPSIwMDAwMTAwMDAwMDUxMDgxOTM0OSIgRm9ybWFQYWdvPSIwMSIgU2VsbG89IiIgRmVjaGE9IjIwMjItMDQtMjlUMTE6MTY6MzkiIEZvbGlvPSI0ODA0NTA3IiBTZXJpZT0iRk5FWCIgVmVyc2lvbj0iNC4wIiB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9jZmQvNCBodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkLzQvY2ZkdjQwLnhzZCIgeG1sbnM6bnMzPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvVGltYnJlRmlzY2FsRGlnaXRhbCIgeG1sbnM6Y2ZkaT0iaHR0cDovL3d3dy5zYXQuZ29iLm14L2NmZC80IiB4bWxuczpwYWdvMjA9Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9QYWdvczIwIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIj48Y2ZkaTpJbmZvcm1hY2lvbkdsb2JhbCBQZXJpb2RpY2lkYWQ9IjAxIiBNZXNlcz0iMDEiIEHDsW89IjIwMjIiIC8+PGNmZGk6RW1pc29yIFJmYz0iTU9SSjc0MDgyOTJNOCIgTm9tYnJlPSJKVUFOIE1BTlVFTCBNT1JBTEVTIFJPRFJJR1VFWiIgUmVnaW1lbkZpc2NhbD0iNjEyIiAvPjxjZmRpOlJlY2VwdG9yIFJmYz0iWEFYWDAxMDEwMTAwMCIgTm9tYnJlPSJQVUJMSUNPIEVOIEdFTkVSQUwiIFVzb0NGREk9IlMwMSIgRG9taWNpbGlvRmlzY2FsUmVjZXB0b3I9IjUyMjI3IiBSZWdpbWVuRmlzY2FsUmVjZXB0b3I9IjYxNiIgLz48Y2ZkaTpDb25jZXB0b3M+PGNmZGk6Q29uY2VwdG8gT2JqZXRvSW1wPSIwMiIgSW1wb3J0ZT0iMTAuMDAiIFZhbG9yVW5pdGFyaW89IjEwLjAwIiBEZXNjcmlwY2lvbj0iU0VSVklDSU8gUE9SIElOVEVSQ09ORVhJT04gUUxMUCAwNDQgTExBTTogMzUzNjg5ODkiIFVuaWRhZD0iU2VydmljaW8iIENsYXZlVW5pZGFkPSJFNDgiIENhbnRpZGFkPSIxIiBOb0lkZW50aWZpY2FjaW9uPSIwIiBDbGF2ZVByb2RTZXJ2PSI4MzExMjUwNSI+PGNmZGk6SW1wdWVzdG9zPjxjZmRpOlRyYXNsYWRvcz48Y2ZkaTpUcmFzbGFkbyBJbXBvcnRlPSIxLjYwIiBUYXNhT0N1b3RhPSIwLjE2MDAwMCIgVGlwb0ZhY3Rvcj0iVGFzYSIgSW1wdWVzdG89IjAwMiIgQmFzZT0iMTAuMDAiIC8+PC9jZmRpOlRyYXNsYWRvcz48L2NmZGk6SW1wdWVzdG9zPjwvY2ZkaTpDb25jZXB0bz48L2NmZGk6Q29uY2VwdG9zPjxjZmRpOkltcHVlc3RvcyBUb3RhbEltcHVlc3Rvc1RyYXNsYWRhZG9zPSIxLjYwIj48Y2ZkaTpUcmFzbGFkb3M+PGNmZGk6VHJhc2xhZG8gSW1wb3J0ZT0iMS42MCIgVGFzYU9DdW90YT0iMC4xNjAwMDAiIFRpcG9GYWN0b3I9IlRhc2EiIEltcHVlc3RvPSIwMDIiIEJhc2U9IjEwLjAwIiAvPjwvY2ZkaTpUcmFzbGFkb3M+PC9jZmRpOkltcHVlc3Rvcz48L2NmZGk6Q29tcHJvYmFudGU+"}} 
+ 
+2022-04-29 18:00:05,579 [22] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-04-29 18:04:12,228 [22] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-04-29 18:04:34,596 [22] INFO  App  
+ Info - Response recibido: StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Fri, 29 Apr 2022 23:04:32 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: jvq68ie8n78nan0ofbd8hquco4v5hdmn
+  Connection: close
+  Content-Length: 492
+  Content-Type: application/json; charset=utf-8
+} 
+ 
+2022-04-29 18:06:13,182 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-29 18:06:17,999 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-29 18:06:23,575 [10] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-29 18:06:27,214 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-29 18:06:30,441 [10] INFO  App  
+ Info - Datos del comprobante. Folio: 4804507, Número de serie del certificado: 00001000000510819349, Serie: FNEX 
+ 
+2022-04-29 18:06:30,978 [10] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-29 18:06:30,982 [10] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-29 18:06:31,012 [10] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="5ac80013-96f9-4ae0-8a85-6d157e2792e9"
+  Content-Length: 1817
+} 
+ 
+2022-04-29 18:06:31,016 [10] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-29 18:06:31,016 [10] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-04-29 18:06:31,017 [10] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 404 
+ 
+2022-04-29 18:06:31,017 [10] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="5ac80013-96f9-4ae0-8a85-6d157e2792e9"
+  Content-Length: 1817
+} 
+ 
+2022-04-29 18:06:31,018 [10] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+ 
+2022-04-29 18:06:31,018 [10] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-04-29 18:06:38,190 [10] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"114410","token": "$2b$12$bEDTbnccx6Hcg1plzYI1aeKEBzsWHZ2c5iIOG/vYrPHTL/tJysyyS" },"issuer": {"rfc": "MORJ7408292M8"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "MORJ7408292M8FNEX4804507","certificate-number": "00001000000510819349","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0+xml","content": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxjZmRpOkNvbXByb2JhbnRlIEV4cG9ydGFjaW9uPSIwMSIgTHVnYXJFeHBlZGljaW9uPSI1MjIyNyIgVGlwb0RlQ29tcHJvYmFudGU9IkkiIE1ldG9kb1BhZ289IlBVRSIgVG90YWw9IjExLjYwIiBNb25lZGE9Ik1YTiIgU3ViVG90YWw9IjEwLjAwIiBDZXJ0aWZpY2Fkbz0iIiBOb0NlcnRpZmljYWRvPSIwMDAwMTAwMDAwMDUxMDgxOTM0OSIgRm9ybWFQYWdvPSIwMSIgU2VsbG89IiIgRmVjaGE9IjIwMjItMDQtMjlUMTE6MTY6MzkiIEZvbGlvPSI0ODA0NTA3IiBTZXJpZT0iRk5FWCIgVmVyc2lvbj0iNC4wIiB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9jZmQvNCBodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkLzQvY2ZkdjQwLnhzZCIgeG1sbnM6bnMzPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvVGltYnJlRmlzY2FsRGlnaXRhbCIgeG1sbnM6Y2ZkaT0iaHR0cDovL3d3dy5zYXQuZ29iLm14L2NmZC80IiB4bWxuczpwYWdvMjA9Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9QYWdvczIwIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIj48Y2ZkaTpJbmZvcm1hY2lvbkdsb2JhbCBQZXJpb2RpY2lkYWQ9IjAxIiBNZXNlcz0iMDEiIEHDsW89IjIwMjIiIC8+PGNmZGk6RW1pc29yIFJmYz0iTU9SSjc0MDgyOTJNOCIgTm9tYnJlPSJKVUFOIE1BTlVFTCBNT1JBTEVTIFJPRFJJR1VFWiIgUmVnaW1lbkZpc2NhbD0iNjEyIiAvPjxjZmRpOlJlY2VwdG9yIFJmYz0iWEFYWDAxMDEwMTAwMCIgTm9tYnJlPSJQVUJMSUNPIEVOIEdFTkVSQUwiIFVzb0NGREk9IlMwMSIgRG9taWNpbGlvRmlzY2FsUmVjZXB0b3I9IjUyMjI3IiBSZWdpbWVuRmlzY2FsUmVjZXB0b3I9IjYxNiIgLz48Y2ZkaTpDb25jZXB0b3M+PGNmZGk6Q29uY2VwdG8gT2JqZXRvSW1wPSIwMiIgSW1wb3J0ZT0iMTAuMDAiIFZhbG9yVW5pdGFyaW89IjEwLjAwIiBEZXNjcmlwY2lvbj0iU0VSVklDSU8gUE9SIElOVEVSQ09ORVhJT04gUUxMUCAwNDQgTExBTTogMzUzNjg5ODkiIFVuaWRhZD0iU2VydmljaW8iIENsYXZlVW5pZGFkPSJFNDgiIENhbnRpZGFkPSIxIiBOb0lkZW50aWZpY2FjaW9uPSIwIiBDbGF2ZVByb2RTZXJ2PSI4MzExMjUwNSI+PGNmZGk6SW1wdWVzdG9zPjxjZmRpOlRyYXNsYWRvcz48Y2ZkaTpUcmFzbGFkbyBJbXBvcnRlPSIxLjYwIiBUYXNhT0N1b3RhPSIwLjE2MDAwMCIgVGlwb0ZhY3Rvcj0iVGFzYSIgSW1wdWVzdG89IjAwMiIgQmFzZT0iMTAuMDAiIC8+PC9jZmRpOlRyYXNsYWRvcz48L2NmZGk6SW1wdWVzdG9zPjwvY2ZkaTpDb25jZXB0bz48L2NmZGk6Q29uY2VwdG9zPjxjZmRpOkltcHVlc3RvcyBUb3RhbEltcHVlc3Rvc1RyYXNsYWRhZG9zPSIxLjYwIj48Y2ZkaTpUcmFzbGFkb3M+PGNmZGk6VHJhc2xhZG8gSW1wb3J0ZT0iMS42MCIgVGFzYU9DdW90YT0iMC4xNjAwMDAiIFRpcG9GYWN0b3I9IlRhc2EiIEltcHVlc3RvPSIwMDIiIEJhc2U9IjEwLjAwIiAvPjwvY2ZkaTpUcmFzbGFkb3M+PC9jZmRpOkltcHVlc3Rvcz48L2NmZGk6Q29tcHJvYmFudGU+"}} 
+ 
+2022-04-29 18:06:38,192 [10] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-04-29 18:06:41,164 [10] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-04-29 18:06:41,474 [10] INFO  App  
+ Info - Response recibido: StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Fri, 29 Apr 2022 23:06:41 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: 2olsv4a89tl227spls36u3b0k4rlfamd
+  Connection: close
+  Content-Length: 492
+  Content-Type: application/json; charset=utf-8
+} 
+ 
+2022-04-29 18:06:41,487 [10] INFO  App  
+ Info - Error de respuesta del timbrado Diverza: ["Invalid certificate, can't be readed"] 
+ 
+2022-04-29 18:06:41,487 [10] INFO  App  
+ Info - Detalle de error de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 2587
+} 
+ 
+2022-04-29 18:06:41,489 [10] ERROR App  
+ Error - No se pudo realizar el timbrado con Diverza.  
+ 
+2022-04-29 18:06:41,489 [10] ERROR App  
+ Error - código: 400 
+ 
+2022-04-29 18:06:41,490 [10] ERROR App  
+ Error - detalle: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 2587
+} 
+ 
+2022-04-29 18:06:41,490 [10] ERROR App  
+ Error - message: ["Invalid certificate, can't be readed"] 
+ 
+2022-04-29 18:07:01,108 [17] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-29 18:08:10,820 [17] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-29 18:08:21,126 [17] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-29 18:14:30,996 [17] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-29 18:14:33,051 [17] INFO  App  
+ Info - Datos del comprobante. Folio: 4804507, Número de serie del certificado: 00001000000510819349, Serie: FNEX 
+ 
+2022-04-29 18:14:34,567 [17] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-29 18:14:34,568 [17] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-29 18:14:34,591 [17] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="f0096790-d4a0-4530-9868-e9d362c71ade"
+  Content-Length: 1817
+} 
+ 
+2022-04-29 18:14:34,595 [17] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-29 18:14:34,595 [17] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-04-29 18:14:34,595 [17] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 404 
+ 
+2022-04-29 18:14:34,596 [17] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="f0096790-d4a0-4530-9868-e9d362c71ade"
+  Content-Length: 1817
+} 
+ 
+2022-04-29 18:14:34,596 [17] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+ 
+2022-04-29 18:14:34,596 [17] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-04-29 18:18:23,948 [17] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"114410","token": "$2b$12$bEDTbnccx6Hcg1plzYI1aeKEBzsWHZ2c5iIOG/vYrPHTL/tJysyyS" },"issuer": {"rfc": "MORJ7408292M8"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "MORJ7408292M8FNEX4804507","certificate-number": "00001000000510819349","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0+xml","content": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxjZmRpOkNvbXByb2JhbnRlIEV4cG9ydGFjaW9uPSIwMSIgTHVnYXJFeHBlZGljaW9uPSI1MjIyNyIgVGlwb0RlQ29tcHJvYmFudGU9IkkiIE1ldG9kb1BhZ289IlBVRSIgVG90YWw9IjExLjYwIiBNb25lZGE9Ik1YTiIgU3ViVG90YWw9IjEwLjAwIiBDZXJ0aWZpY2Fkbz0iIiBOb0NlcnRpZmljYWRvPSIwMDAwMTAwMDAwMDUxMDgxOTM0OSIgRm9ybWFQYWdvPSIwMSIgU2VsbG89IiIgRmVjaGE9IjIwMjItMDQtMjlUMTE6MTY6MzkiIEZvbGlvPSI0ODA0NTA3IiBTZXJpZT0iRk5FWCIgVmVyc2lvbj0iNC4wIiB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9jZmQvNCBodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkLzQvY2ZkdjQwLnhzZCIgeG1sbnM6bnMzPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvVGltYnJlRmlzY2FsRGlnaXRhbCIgeG1sbnM6Y2ZkaT0iaHR0cDovL3d3dy5zYXQuZ29iLm14L2NmZC80IiB4bWxuczpwYWdvMjA9Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9QYWdvczIwIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIj48Y2ZkaTpJbmZvcm1hY2lvbkdsb2JhbCBQZXJpb2RpY2lkYWQ9IjAxIiBNZXNlcz0iMDEiIEHDsW89IjIwMjIiIC8+PGNmZGk6RW1pc29yIFJmYz0iTU9SSjc0MDgyOTJNOCIgTm9tYnJlPSJKVUFOIE1BTlVFTCBNT1JBTEVTIFJPRFJJR1VFWiIgUmVnaW1lbkZpc2NhbD0iNjEyIiAvPjxjZmRpOlJlY2VwdG9yIFJmYz0iWEFYWDAxMDEwMTAwMCIgTm9tYnJlPSJQVUJMSUNPIEVOIEdFTkVSQUwiIFVzb0NGREk9IlMwMSIgRG9taWNpbGlvRmlzY2FsUmVjZXB0b3I9IjUyMjI3IiBSZWdpbWVuRmlzY2FsUmVjZXB0b3I9IjYxNiIgLz48Y2ZkaTpDb25jZXB0b3M+PGNmZGk6Q29uY2VwdG8gT2JqZXRvSW1wPSIwMiIgSW1wb3J0ZT0iMTAuMDAiIFZhbG9yVW5pdGFyaW89IjEwLjAwIiBEZXNjcmlwY2lvbj0iU0VSVklDSU8gUE9SIElOVEVSQ09ORVhJT04gUUxMUCAwNDQgTExBTTogMzUzNjg5ODkiIFVuaWRhZD0iU2VydmljaW8iIENsYXZlVW5pZGFkPSJFNDgiIENhbnRpZGFkPSIxIiBOb0lkZW50aWZpY2FjaW9uPSIwIiBDbGF2ZVByb2RTZXJ2PSI4MzExMjUwNSI+PGNmZGk6SW1wdWVzdG9zPjxjZmRpOlRyYXNsYWRvcz48Y2ZkaTpUcmFzbGFkbyBJbXBvcnRlPSIxLjYwIiBUYXNhT0N1b3RhPSIwLjE2MDAwMCIgVGlwb0ZhY3Rvcj0iVGFzYSIgSW1wdWVzdG89IjAwMiIgQmFzZT0iMTAuMDAiIC8+PC9jZmRpOlRyYXNsYWRvcz48L2NmZGk6SW1wdWVzdG9zPjwvY2ZkaTpDb25jZXB0bz48L2NmZGk6Q29uY2VwdG9zPjxjZmRpOkltcHVlc3RvcyBUb3RhbEltcHVlc3Rvc1RyYXNsYWRhZG9zPSIxLjYwIj48Y2ZkaTpUcmFzbGFkb3M+PGNmZGk6VHJhc2xhZG8gSW1wb3J0ZT0iMS42MCIgVGFzYU9DdW90YT0iMC4xNjAwMDAiIFRpcG9GYWN0b3I9IlRhc2EiIEltcHVlc3RvPSIwMDIiIEJhc2U9IjEwLjAwIiAvPjwvY2ZkaTpUcmFzbGFkb3M+PC9jZmRpOkltcHVlc3Rvcz48L2NmZGk6Q29tcHJvYmFudGU+"}} 
+ 
+2022-04-29 18:18:47,257 [17] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-04-29 18:18:52,018 [17] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-04-29 18:18:52,376 [17] INFO  App  
+ Info - Response recibido: StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Fri, 29 Apr 2022 23:18:52 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: m2bp0s928r1qfrrm2i02qpk5jc64ukgm
+  Connection: close
+  Content-Length: 492
+  Content-Type: application/json; charset=utf-8
+} 
+ 
+2022-04-29 18:18:52,383 [17] INFO  App  
+ Info - Error de respuesta del timbrado Diverza: ["Invalid certificate, can't be readed"] 
+ 
+2022-04-29 18:18:52,383 [17] INFO  App  
+ Info - Detalle de error de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 2587
+} 
+ 
+2022-04-29 18:18:52,385 [17] ERROR App  
+ Error - No se pudo realizar el timbrado con Diverza.  
+ 
+2022-04-29 18:18:52,386 [17] ERROR App  
+ Error - código: 400 
+ 
+2022-04-29 18:18:52,386 [17] ERROR App  
+ Error - detalle: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 2587
+} 
+ 
+2022-04-29 18:18:52,386 [17] ERROR App  
+ Error - message: ["Invalid certificate, can't be readed"] 
+ 
+2022-04-29 18:19:57,187 [37] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-29 18:20:03,484 [37] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-29 18:20:17,302 [37] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-29 18:20:25,332 [37] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-29 18:20:28,705 [37] INFO  App  
+ Info - Datos del comprobante. Folio: 669, Número de serie del certificado: 00001000000510819349, Serie: NARHT 
+ 
+2022-04-29 18:20:38,428 [37] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-29 18:20:38,429 [37] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-29 18:20:38,455 [37] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="f86115f3-3ed8-4d57-9e8a-67d7c183b987"
+  Content-Length: 2252
+} 
+ 
+2022-04-29 18:20:38,461 [37] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-29 18:20:38,462 [37] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-04-29 18:20:38,462 [37] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 404 
+ 
+2022-04-29 18:20:38,463 [37] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="f86115f3-3ed8-4d57-9e8a-67d7c183b987"
+  Content-Length: 2252
+} 
+ 
+2022-04-29 18:20:38,464 [37] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+ 
+2022-04-29 18:20:38,464 [37] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-04-29 18:20:50,848 [37] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"114410","token": "$2b$12$bEDTbnccx6Hcg1plzYI1aeKEBzsWHZ2c5iIOG/vYrPHTL/tJysyyS" },"issuer": {"rfc": "MORJ7408292M8"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "MORJ7408292M8NARHT669","certificate-number": "00001000000510819349","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0+xml","content": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48Y2ZkaTpDb21wcm9iYW50ZSB4bWxuczpjYXRDRkRJPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkL2NhdGFsb2dvcyIgeG1sbnM6dGRDRkRJPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkL3RpcG9EYXRvcy90ZENGREkiIHhtbG5zOmNmZGk9Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9jZmQvNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvY2ZkLzQgaHR0cDovL3d3dy5zYXQuZ29iLm14L3NpdGlvX2ludGVybmV0L2NmZC80L2NmZHY0MC54c2QiIFZlcnNpb249IjQuMCIgU2VyaWU9Ik5BUkhUIiBGb2xpbz0iNjY5IiBGZWNoYT0iMjAyMi0wNC0yOFQwODoxMzo1MSIgU2VsbG89IiIgRm9ybWFQYWdvPSIwMSIgTm9DZXJ0aWZpY2Fkbz0iMDAwMDEwMDAwMDA1MTA4MTkzNDkiIENlcnRpZmljYWRvPSIiIENvbmRpY2lvbmVzRGVQYWdvPSIzMCBkw61hcyIgU3ViVG90YWw9IjEwMDAwLjAwIiBUb3RhbD0iMTE2MDAuMDAiIE1vbmVkYT0iRVVSIiBUaXBvQ2FtYmlvPSI3NzcuNzciIFRpcG9EZUNvbXByb2JhbnRlPSJFIiBFeHBvcnRhY2lvbj0iMDEiIE1ldG9kb1BhZ289IlBVRSIgTHVnYXJFeHBlZGljaW9uPSI2NDAwMCI+PGNmZGk6RW1pc29yIFJmYz0iTU9SSjc0MDgyOTJNOCIgTm9tYnJlPSJKVUFOIE1BTlVFTCBNT1JBTEVTIFJPRFJJR1VFWiIgUmVnaW1lbkZpc2NhbD0iNjEyIiAvPjxjZmRpOlJlY2VwdG9yIFJmYz0iWEVYWDAxMDEwMTAwMCIgTm9tYnJlPSJDQVJMT1MgRkVSTkFORE8gVmlydHVhbCAmYW1wOyBTQU5DSEVaIiBEb21pY2lsaW9GaXNjYWxSZWNlcHRvcj0iNjQwMDAiIFJlZ2ltZW5GaXNjYWxSZWNlcHRvcj0iNjE2IiBVc29DRkRJPSJTMDEiIC8+PGNmZGk6Q29uY2VwdG9zPjxjZmRpOkNvbmNlcHRvIENsYXZlUHJvZFNlcnY9Ijg0MTExNTA2IiBOb0lkZW50aWZpY2FjaW9uPSJBMUIyQzNENCIgQ2FudGlkYWQ9IjEuMDAwMDAwIiBDbGF2ZVVuaWRhZD0iSDg3IiBVbmlkYWQ9IlBpZXphIiBEZXNjcmlwY2lvbj0iQ29uY2VwdG8gZGUgcHJ1ZWJhIiBWYWxvclVuaXRhcmlvPSIxMDAwMC4wMCIgSW1wb3J0ZT0iMTAwMDAuMDAiIE9iamV0b0ltcD0iMDIiPjxjZmRpOkltcHVlc3Rvcz48Y2ZkaTpUcmFzbGFkb3M+PGNmZGk6VHJhc2xhZG8gQmFzZT0iMTAwMDAuMDAiIEltcHVlc3RvPSIwMDIiIFRpcG9GYWN0b3I9IlRhc2EiIFRhc2FPQ3VvdGE9IjAuMTYwMDAwIiBJbXBvcnRlPSIxNjAwLjAwIiAvPjwhLS0gPGNmZGk6VHJhc2xhZG8gQmFzZT0iNTAuMDAwMDAwIiBJbXB1ZXN0bz0iMDAxIiBUaXBvRmFjdG9yPSJUYXNhIgogICAgICAgICAgICAgICAgICAgICAgICBUYXNhT0N1b3RhPSI1MC4wMDAwMDAiIEltcG9ydGU9IjUwLjAwMDAwMCIvPi0tPjwvY2ZkaTpUcmFzbGFkb3M+PC9jZmRpOkltcHVlc3Rvcz48L2NmZGk6Q29uY2VwdG8+PC9jZmRpOkNvbmNlcHRvcz48Y2ZkaTpJbXB1ZXN0b3MgVG90YWxJbXB1ZXN0b3NUcmFzbGFkYWRvcz0iMTYwMC4wMCI+PGNmZGk6VHJhc2xhZG9zPjxjZmRpOlRyYXNsYWRvIEJhc2U9IjEwMDAwLjAwIiBJbXB1ZXN0bz0iMDAyIiBUaXBvRmFjdG9yPSJUYXNhIiBUYXNhT0N1b3RhPSIwLjE2MDAwMCIgSW1wb3J0ZT0iMTYwMC4wMCIgLz48L2NmZGk6VHJhc2xhZG9zPjwvY2ZkaTpJbXB1ZXN0b3M+PC9jZmRpOkNvbXByb2JhbnRlPg=="}} 
+ 
+2022-04-29 18:20:50,849 [37] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-04-29 18:20:54,620 [37] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-04-29 18:20:54,945 [37] INFO  App  
+ Info - Response recibido: StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Fri, 29 Apr 2022 23:20:54 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: 666ijqdcd5h4bi5goim9sv2mka8mkpvg
+  Connection: close
+  Content-Length: 492
+  Content-Type: application/json; charset=utf-8
+} 
+ 
+2022-04-29 18:20:54,950 [37] INFO  App  
+ Info - Error de respuesta del timbrado Diverza: ["Invalid certificate, can't be readed"] 
+ 
+2022-04-29 18:20:54,950 [37] INFO  App  
+ Info - Detalle de error de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 2812
+} 
+ 
+2022-04-29 18:20:54,955 [37] ERROR App  
+ Error - No se pudo realizar el timbrado con Diverza.  
+ 
+2022-04-29 18:20:54,955 [37] ERROR App  
+ Error - código: 400 
+ 
+2022-04-29 18:20:54,956 [37] ERROR App  
+ Error - detalle: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 2812
+} 
+ 
+2022-04-29 18:20:54,956 [37] ERROR App  
+ Error - message: ["Invalid certificate, can't be readed"] 
+ 
+2022-04-29 18:29:59,398 [19] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-29 18:37:29,765 [19] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-29 18:46:08,396 [19] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-29 18:46:32,312 [19] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-29 18:46:50,472 [19] INFO  App  
+ Info - Datos del comprobante. Folio: 669, Número de serie del certificado: 00001000000510819349, Serie: NARHT 
+ 
+2022-04-29 19:02:21,659 [19] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-04-29 19:02:25,842 [19] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-04-29 19:03:11,601 [19] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="94ac7667-c4da-439a-8a33-fb34f67cc1ea"
+  Content-Length: 1967
+} 
+ 
+2022-04-29 19:04:40,630 [19] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-04-29 19:05:47,791 [19] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-04-29 19:05:49,807 [19] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 404 
+ 
+2022-04-29 19:05:51,203 [19] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="94ac7667-c4da-439a-8a33-fb34f67cc1ea"
+  Content-Length: 1967
+} 
+ 
+2022-04-29 19:05:53,302 [19] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+ 
+2022-04-29 19:05:55,945 [19] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-04-29 19:10:24,204 [19] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"114410","token": "$2b$12$bEDTbnccx6Hcg1plzYI1aeKEBzsWHZ2c5iIOG/vYrPHTL/tJysyyS" },"issuer": {"rfc": "MORJ7408292M8"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "MORJ7408292M8NARHT669","certificate-number": "00001000000510819349","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0+xml","content": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48Y2ZkaTpDb21wcm9iYW50ZSB4bWxuczpjYXRDRkRJPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkL2NhdGFsb2dvcyIgeG1sbnM6dGRDRkRJPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkL3RpcG9EYXRvcy90ZENGREkiIHhtbG5zOmNmZGk9Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9jZmQvNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvY2ZkLzQgaHR0cDovL3d3dy5zYXQuZ29iLm14L3NpdGlvX2ludGVybmV0L2NmZC80L2NmZHY0MC54c2QiIFZlcnNpb249IjQuMCIgU2VyaWU9Ik5BUkhUIiBGb2xpbz0iNjY5IiBGZWNoYT0iMjAyMi0wNC0yOFQwODoxMzo1MSIgU2VsbG89IiIgRm9ybWFQYWdvPSIwMSIgTm9DZXJ0aWZpY2Fkbz0iMDAwMDEwMDAwMDA1MTA4MTkzNDkiIENlcnRpZmljYWRvPSIiIENvbmRpY2lvbmVzRGVQYWdvPSIzMCBkw61hcyIgU3ViVG90YWw9IjEwMDAwLjAwIiBUb3RhbD0iMTE2MDAuMDAiIE1vbmVkYT0iRVVSIiBUaXBvQ2FtYmlvPSI3NzcuNzciIFRpcG9EZUNvbXByb2JhbnRlPSJFIiBFeHBvcnRhY2lvbj0iMDEiIE1ldG9kb1BhZ289IlBVRSIgTHVnYXJFeHBlZGljaW9uPSI2NDAwMCI+PGNmZGk6RW1pc29yIFJmYz0iTU9SSjc0MDgyOTJNOCIgTm9tYnJlPSJKVUFOIE1BTlVFTCBNT1JBTEVTIFJPRFJJR1VFWiIgUmVnaW1lbkZpc2NhbD0iNjEyIiAvPjxjZmRpOlJlY2VwdG9yIFJmYz0iWEVYWDAxMDEwMTAwMCIgTm9tYnJlPSJDQVJMT1MgRkVSTkFORE8gVmlydHVhbCAgU0FOQ0hFWiIgRG9taWNpbGlvRmlzY2FsUmVjZXB0b3I9IjY0MDAwIiBSZWdpbWVuRmlzY2FsUmVjZXB0b3I9IjYxNiIgVXNvQ0ZEST0iUzAxIiAvPjxjZmRpOkNvbmNlcHRvcz48Y2ZkaTpDb25jZXB0byBDbGF2ZVByb2RTZXJ2PSI4NDExMTUwNiIgTm9JZGVudGlmaWNhY2lvbj0iQTFCMkMzRDQiIENhbnRpZGFkPSIxLjAwMDAwMCIgQ2xhdmVVbmlkYWQ9Ikg4NyIgVW5pZGFkPSJQaWV6YSIgRGVzY3JpcGNpb249IkNvbmNlcHRvIGRlIHBydWViYSIgVmFsb3JVbml0YXJpbz0iMTAwMDAuMDAiIEltcG9ydGU9IjEwMDAwLjAwIiBPYmpldG9JbXA9IjAyIj48Y2ZkaTpJbXB1ZXN0b3M+PGNmZGk6VHJhc2xhZG9zPjxjZmRpOlRyYXNsYWRvIEJhc2U9IjEwMDAwLjAwIiBJbXB1ZXN0bz0iMDAyIiBUaXBvRmFjdG9yPSJUYXNhIiBUYXNhT0N1b3RhPSIwLjE2MDAwMCIgSW1wb3J0ZT0iMTYwMC4wMCIgLz48IS0tIDxjZmRpOlRyYXNsYWRvIEJhc2U9IjUwLjAwMDAwMCIgSW1wdWVzdG89IjAwMSIgVGlwb0ZhY3Rvcj0iVGFzYSIKICAgICAgICAgICAgICAgICAgICAgICAgVGFzYU9DdW90YT0iNTAuMDAwMDAwIiBJbXBvcnRlPSI1MC4wMDAwMDAiLz4tLT48L2NmZGk6VHJhc2xhZG9zPjwvY2ZkaTpJbXB1ZXN0b3M+PC9jZmRpOkNvbmNlcHRvPjwvY2ZkaTpDb25jZXB0b3M+PGNmZGk6SW1wdWVzdG9zIFRvdGFsSW1wdWVzdG9zVHJhc2xhZGFkb3M9IjE2MDAuMDAiPjxjZmRpOlRyYXNsYWRvcz48Y2ZkaTpUcmFzbGFkbyBCYXNlPSIxMDAwMC4wMCIgSW1wdWVzdG89IjAwMiIgVGlwb0ZhY3Rvcj0iVGFzYSIgVGFzYU9DdW90YT0iMC4xNjAwMDAiIEltcG9ydGU9IjE2MDAuMDAiIC8+PC9jZmRpOlRyYXNsYWRvcz48L2NmZGk6SW1wdWVzdG9zPjwvY2ZkaTpDb21wcm9iYW50ZT4="}} 
+ 
+2022-04-29 19:10:24,213 [19] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-04-29 19:10:28,690 [19] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-04-29 19:10:29,143 [19] INFO  App  
+ Info - Response recibido: StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Sat, 30 Apr 2022 00:10:29 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: llcpcnmj8k66n2kq6sfekjeao9lvtpaq
+  Connection: close
+  Content-Length: 492
+  Content-Type: application/json; charset=utf-8
+} 
+ 
+2022-04-29 19:10:29,153 [19] INFO  App  
+ Info - Error de respuesta del timbrado Diverza: ["Invalid certificate, can't be readed"] 
+ 
+2022-04-29 19:10:29,154 [19] INFO  App  
+ Info - Detalle de error de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 2804
+} 
+ 
+2022-04-29 19:10:29,156 [19] ERROR App  
+ Error - No se pudo realizar el timbrado con Diverza.  
+ 
+2022-04-29 19:10:29,156 [19] ERROR App  
+ Error - código: 400 
+ 
+2022-04-29 19:10:29,156 [19] ERROR App  
+ Error - detalle: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 2804
+} 
+ 
+2022-04-29 19:10:29,157 [19] ERROR App  
+ Error - message: ["Invalid certificate, can't be readed"] 
+ 
+2022-04-29 19:11:20,439 [50] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-04-29 19:11:40,023 [50] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-04-29 19:11:54,393 [50] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-04-29 19:12:04,755 [50] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-04-29 19:12:08,635 [50] INFO  App  
+ Info - Datos del comprobante. Folio: 446, Número de serie del certificado: 00000000000000000000, Serie: NNEB 
+ 
+2022-04-29 19:12:23,348 [50] WARN  App  
+ Warn: El comprobante ya fue timbrado y se encuentra en la base de datos. Folio repetido. 
+ 
+2022-04-29 19:12:23,352 [50] WARN  App  
+ Warn - código: 1000 
+ 
+2022-04-29 19:12:23,355 [50] WARN  App  
+ Warn - detalle: El comprobante ya fué timbrado. 
+ 
+2022-04-29 19:12:23,356 [50] WARN  App  
+ Warn - message: Ya se encuentra registrado el comprobante en la BD. 
+ 

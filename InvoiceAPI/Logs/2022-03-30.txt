@@ -1,0 +1,27 @@
+﻿2022-03-30 20:03:52,128 [8] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-03-30 20:03:52,140 [8] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 00001000000510819349 
+ 
+2022-03-30 20:03:52,254 [8] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-03-30 20:03:52,255 [8] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-03-30 20:03:52,288 [8] INFO  App  
+ Info - Datos del comprobante. Folio: 001, Número de serie del certificado: 30001000000400002495, Serie: NCR 
+ 
+2022-03-30 20:03:52,296 [8] WARN  App  
+ Warn: El comprobante ya fue timbrado y se encuentra en la base de datos. 
+ 
+2022-03-30 20:03:52,296 [8] WARN  App  
+ Warn - código: 1000 
+ 
+2022-03-30 20:03:52,296 [8] WARN  App  
+ Warn - detalle: El comprobante ya fué timbrado. 
+ 
+2022-03-30 20:03:52,296 [8] WARN  App  
+ Warn - message: Ya se encuentra registrado el comprobante en la BD. 
+ 

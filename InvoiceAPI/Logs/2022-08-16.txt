@@ -1,0 +1,214 @@
+﻿2022-08-16 12:45:37,739 [26] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 12:45:40,768 [26] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-08-16 12:45:44,598 [26] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-08-16 12:45:44,601 [26] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-08-16 12:45:44,622 [26] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 480465580, Número de serie del certificado: 30001000000400002412, rfc: EKU9003173C9, Serie: AAAB 
+2022-08-16 12:45:44,622 [26] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-08-16 12:45:44,631 [26] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Luna.  
+2022-08-16 12:45:44,639 [26] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Luna.  
+2022-08-16 12:45:45,079 [26] INFO InvoiceAPI.LoggerManager - App  Info - Respuesta recibida. Request: Unauthorized 
+2022-08-16 12:45:45,080 [26] ERROR InvoiceAPI.LoggerManager - App  Error - No se pudo realizar el timbrado con LUNA.  
+2022-08-16 12:45:45,080 [26] ERROR InvoiceAPI.LoggerManager - App  Error - código: *** CODIGO LUNA *** error 
+2022-08-16 12:45:45,081 [26] ERROR InvoiceAPI.LoggerManager - App  Error - detalle: *** DETALLES LUNA *** 401 
+2022-08-16 12:45:45,081 [26] ERROR InvoiceAPI.LoggerManager - App  Error - mensjae: *** MENSAJE LUNA *** Unauthorized 
+2022-08-16 12:45:45,081 [26] INFO InvoiceAPI.LoggerManager - App  Tiene file over y prepara el envío para timbrar con Diverza.  
+2022-08-16 12:45:45,097 [26] INFO InvoiceAPI.LoggerManager - App  Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"123414","token": "$2b$12$JgIf1J7db4e6f06VnNPsUOaQD3SpwUnzPqXDkuirQklcc8gMCMIDS" },"issuer": {"rfc": "EKU9003173C9"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "EKU9003173C9AAAB480465580","certificate-number": "30001000000400002434","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0+xml","content": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxjZmRpOkNvbXByb2JhbnRlIEV4cG9ydGFjaW9uPSIwMSIgTHVnYXJFeHBlZGljaW9uPSI1MjIyNyIgVGlwb0RlQ29tcHJvYmFudGU9IkkiIE1ldG9kb1BhZ289IlBVRSIgVG90YWw9IjExLjYwIiBNb25lZGE9Ik1YTiIgU3ViVG90YWw9IjEwLjAwIiBDZXJ0aWZpY2Fkbz0iTUlJRnV6Q0NBNk9nQXdJQkFnSVVNekF3TURFd01EQXdNREEwTURBd01ESTBNelF3RFFZSktvWklodmNOQVFFTEJRQXdnZ0VyTVE4d0RRWURWUVFEREFaQlF5QlZRVlF4TGpBc0JnTlZCQW9NSlZORlVsWkpRMGxQSUVSRklFRkVUVWxPU1ZOVVVrRkRTVTlPSUZSU1NVSlZWRUZTU1VFeEdqQVlCZ05WQkFzTUVWTkJWQzFKUlZNZ1FYVjBhRzl5YVhSNU1TZ3dKZ1lKS29aSWh2Y05BUWtCRmhsdmMyTmhjaTV0WVhKMGFXNWxla0J6WVhRdVoyOWlMbTE0TVIwd0d3WURWUVFKREJRemNtRWdZMlZ5Y21Ga1lTQmtaU0JqWVdScGVqRU9NQXdHQTFVRUVRd0ZNRFl6TnpBeEN6QUpCZ05WQkFZVEFrMVlNUmt3RndZRFZRUUlEQkJEU1ZWRVFVUWdSRVVnVFVWWVNVTlBNUkV3RHdZRFZRUUhEQWhEVDFsUFFVTkJUakVSTUE4R0ExVUVMUk1JTWk0MUxqUXVORFV4SlRBakJna3Foa2lHOXcwQkNRSVRGbkpsYzNCdmJuTmhZbXhsT2lCQlEwUk5RUzFUUVZRd0hoY05NVGt3TmpFM01UazBOREUwV2hjTk1qTXdOakUzTVRrME5ERTBXakNCNGpFbk1DVUdBMVVFQXhNZVJWTkRWVVZNUVNCTFJVMVFSVklnVlZKSFFWUkZJRk5CSUVSRklFTldNU2N3SlFZRFZRUXBFeDVGVTBOVlJVeEJJRXRGVFZCRlVpQlZVa2RCVkVVZ1UwRWdSRVVnUTFZeEp6QWxCZ05WQkFvVEhrVlRRMVZGVEVFZ1MwVk5VRVZTSUZWU1IwRlVSU0JUUVNCRVJTQkRWakVsTUNNR0ExVUVMUk1jUlV0Vk9UQXdNekUzTTBNNUlDOGdXRWxSUWpnNU1URXhObEZGTkRFZU1Cd0dBMVVFQlJNVklDOGdXRWxSUWpnNU1URXhOazFIVWsxYVVqQTFNUjR3SEFZRFZRUUxFeFZGYzJOMVpXeGhJRXRsYlhCbGNpQlZjbWRoZEdVd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUUNOMHBlS3BnZk9MNzVpWVJ2MWZxcStvVllzTFBWVVIvR2liWW1HS2M5SW5IRnk1bFlGNk9UWWpuSUl2bWtPZFJvYmJHbENVeE9SWC90THNsOFlhOWdtNllvN2hIbk9EUkJJRHVwM0dJU0Z6Qi85NlI5Sy9NellRT2NzY01Jb0JEQVJheWNuTHZ5N0ZsTXZPNy9ybFZuc1NBUnhaUk84S3o4Wmtrc2oyenBlWXBqWkl5YS8zNjkrb0dxUWsxY1RSa0hvNTlKdko0VGZiay8zaUl5ZjRIL0luaTluQmU5Y1lXbzBNbktvYjdERHQvdnNkaTV0QThtTXRBOTUzTGFwTnlDWklEQ1JRUWxVR05nRHFZOS84RjVtVXZWZ2tjY3pzSWdHZHZmOXZNUVBTZjNqakNpS2o3ajZ1Y3hsMStGd0pXbWJ2Z05taWFVUi8wcTRtMnJtNzhsRkFnTUJBQUdqSFRBYk1Bd0dBMVVkRXdFQi93UUNNQUF3Q3dZRFZSMFBCQVFEQWdiQU1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQ0FRQmNwajFUalQ0amlpbkl1aklkQWxGekU2a1J3WUpDbkRHMDh6U3A0a1NuU2hqeEFER0VYSDJjaGVoS01WMEZZN2M0bmpBNWVER2RBL0cyT0NUUHZGNXJwZUNaUDVEdzUwNFJaa1lEbDJzdVJ6K3dhMXNOQlZwYm5CSkVLMGZRY04zSWZ0QndzZ05GZEZoVXRDeXczbHVzMVNTSmJQeGpMSFM2RmNaWjUxWVNlSWZjTlhPQXVUcWRpbXVzYVhxMTVHclNyQ09rTTZuMmpmajJzTUpZTTJIWGFYSjZyR1RFZ1ltaFlkd3hXdGlsNlJmWkIrZkdRL0g5STlXTG5sNEtUWlVTNkM5K05MSGg0RlBEaFNrMTlmcFMyUy81NmFxZ0ZvR0FrWEFZdDlGeTVFQ2FQY1VMSWZKMURFYnNYS3lSZEN2M0pZODkrME1Oa09kYURuc2VtUzJvNUdsMDh6STRpWXR0M0w0MGdBWjYwTlBoMzFrVkxuWU5zbXZmTnhZeUtwK0FlSnRESHlXOXc3ZnRNMEhvaStCdVJtY0FRU0tGVjNwazhqNTFsYStqclJCckFVdjhibGJSY1E1QmlaVXdKekhGRUtJd1RzUkdvUnlFeDk2c05uQjAzbjZHVHdqSUd6OTJTbUxkTmw5NXI5cmt2cCsybTRTNnExbFB1WGFGZzdER0JyWFdDOGl5cWVXRTJpb2Jkd0lJdVhQVE1WcVFiMTJtMWRBa0pWUk81TmRIblAvTXBxT3ZPZ0xxb1pCTkhHeUJnNEdxbTRzQ0pIQ3hBMWM4RWxmYTJSUVRDazB0QXpsbEw0dk9uSTFHSGtHSm42NXhva0dzYVU0QjREMzZ4aDdlV3JmajQvcGdXSG10b0RBWWE4d3pTd28yR1ZDWk9zK210RWdPUUI5MS9nPT0iIE5vQ2VydGlmaWNhZG89IjMwMDAxMDAwMDAwNDAwMDAyNDM0IiBGb3JtYVBhZ289IjAxIiBTZWxsbz0iT2Iwd3YxdnEwYVFMSWVXcmNkQWk1bjN0eTZBazRSMjNiZjhRSUlXalpiNGRwUnZnNHpqaVA3VXU0aitxME5yMGpoZjk4cXZEM0pQS1YveVUwUkxwLzNaczR4MnJGTUZLRFRIcXlWK1RVUGxUWCtsb1h1MUlPd05ZeUtCa1RWRnJVaEdOV1cwT1FGVXZESVZyeEk1UDhEQi9YeVBTb0t3Z1FwTUg2NUhMdWRLQ0hKWDFnUnZYeVYyN3M2ZVVGRkhtVFk3MXp0T3A4UzMvM2VFMVlQKzltV3hnVHoveUEwVDBXRVRlR3ZBWDcwcFA1djFhRlpzRkoycTEyS3RRaUJxRHlzVHFYM2toUVp3dlExNTluMWdIUFVrdGNTRjZYZEh4SVNiWEp2YkE5WFJGREJZVEFnS0xYRUprNTJMdmlIaDRXNmYxNGJLbUkrYlBOOTlSMUxBUktBPT0iIEZlY2hhPSIyMDIyLTA4LTE3VDEwOjAzOjMyIiBGb2xpbz0iNDgwNDY1NTgwIiBTZXJpZT0iQUFBQiIgVmVyc2lvbj0iNC4wIiB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9jZmQvNCBodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkLzQvY2ZkdjQwLnhzZCIgQ29uZGljaW9uZXNEZVBhZ289IlBhZ8OzIGEgNjAgIGTDrWFzIGEgcGFydMOtciBlbnRyZWdhIEZhY3R1cmEgIMOhw6nDrcOzw7ogw4HDicONw5PDmiDDkcOxIiB4bWxuczp0ZENGREk9Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9zaXRpb19pbnRlcm5ldC9jZmQvdGlwb0RhdG9zL3RkQ0ZESSIgeG1sbnM6bnMzPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvVGltYnJlRmlzY2FsRGlnaXRhbCIgeG1sbnM6Y2ZkaT0iaHR0cDovL3d3dy5zYXQuZ29iLm14L2NmZC80IiB4bWxuczpjYXRDRkRJPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkL2NhdGFsb2dvcyIgeG1sbnM6cGFnbzIwPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvUGFnb3MyMCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSI+PGNmZGk6RW1pc29yIFJlZ2ltZW5GaXNjYWw9IjYwMSIgTm9tYnJlPSJFU0NVRUxBIEtFTVBFUiBVUkdBVEUgU0EgREUgQ1YiIFJmYz0iRUtVOTAwMzE3M0M5IiAvPjxjZmRpOlJlY2VwdG9yIFJlZ2ltZW5GaXNjYWxSZWNlcHRvcj0iNjE2IiBEb21pY2lsaW9GaXNjYWxSZWNlcHRvcj0iNTIyMjciIFVzb0NGREk9IlMwMSIgTm9tYnJlPSJJdsOhJmFwb3M7biBEYSRuaWUjJGwgR8OzbSNleiBCw6FyYyhlw7FhL3Mg4oCdSnVhbuKAnSAgw6HDqcOtw7PDuiDDgcOJw43Dk8OaIMORw7EiIFJmYz0iWEFYWDAxMDEwMTAwMCIgLz48Y2ZkaTpDb25jZXB0b3M+PGNmZGk6Q29uY2VwdG8gT2JqZXRvSW1wPSIwMiIgSW1wb3J0ZT0iMTAuMDAiIFZhbG9yVW5pdGFyaW89IjEwLjAwIiBEZXNjcmlwY2lvbj0iIMOhw6nDrcOzw7ogw4HDicONw5PDmiDDkcOxIFNFUlZJQ0lPIFBPUiBJTlRFUkNPTkVYSU9OIG3DoXMgUUxMUCAwNDQgTExBTTogMzUzNjg5ODkiIFVuaWRhZD0iU2VydmljaW8iIENsYXZlVW5pZGFkPSJFNDgiIENhbnRpZGFkPSIxIiBOb0lkZW50aWZpY2FjaW9uPSIwIiBDbGF2ZVByb2RTZXJ2PSI4MzExMjUwNSI+PGNmZGk6SW1wdWVzdG9zPjxjZmRpOlRyYXNsYWRvcz48Y2ZkaTpUcmFzbGFkbyBJbXBvcnRlPSIxLjYwIiBUYXNhT0N1b3RhPSIwLjE2MDAwMCIgVGlwb0ZhY3Rvcj0iVGFzYSIgSW1wdWVzdG89IjAwMiIgQmFzZT0iMTAuMDAiIC8+PC9jZmRpOlRyYXNsYWRvcz48L2NmZGk6SW1wdWVzdG9zPjwvY2ZkaTpDb25jZXB0bz48L2NmZGk6Q29uY2VwdG9zPjxjZmRpOkltcHVlc3RvcyBUb3RhbEltcHVlc3Rvc1RyYXNsYWRhZG9zPSIxLjYwIj48Y2ZkaTpUcmFzbGFkb3M+PGNmZGk6VHJhc2xhZG8gSW1wb3J0ZT0iMS42MCIgVGFzYU9DdW90YT0iMC4xNjAwMDAiIFRpcG9GYWN0b3I9IlRhc2EiIEltcHVlc3RvPSIwMDIiIEJhc2U9IjEwLjAwIiAvPjwvY2ZkaTpUcmFzbGFkb3M+PC9jZmRpOkltcHVlc3Rvcz48L2NmZGk6Q29tcHJvYmFudGU+"}} 
+2022-08-16 12:45:45,099 [26] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar con Diverza.  
+2022-08-16 12:45:45,100 [26] INFO InvoiceAPI.LoggerManager - App  Info - Request enviado: System.Net.Http.StringContent 
+2022-08-16 12:45:45,649 [26] INFO InvoiceAPI.LoggerManager - App  Info - Response recibido: StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Tue, 16 Aug 2022 17:45:48 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: sm3ejqhve0sdefrrk7f861msca5fi1lk
+  Connection: close
+  Content-Length: 566
+  Content-Type: application/json; charset=utf-8
+} 
+2022-08-16 12:45:45,664 [26] INFO InvoiceAPI.LoggerManager - App  Info - Error de respuesta del timbrado Diverza: ["La fecha de emision no puede ser mayor a 5 minutos"] 
+2022-08-16 12:45:45,664 [26] INFO InvoiceAPI.LoggerManager - App  Info - Detalle de error de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 6015
+} 
+2022-08-16 12:45:45,666 [26] ERROR InvoiceAPI.LoggerManager - App  Error - No se pudo realizar el timbrado con DIVERZA.  
+2022-08-16 12:45:45,666 [26] ERROR InvoiceAPI.LoggerManager - App  Error - código: 400 
+2022-08-16 12:45:45,667 [26] ERROR InvoiceAPI.LoggerManager - App  Error - detalle: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 6015
+} 
+2022-08-16 12:45:45,667 [26] ERROR InvoiceAPI.LoggerManager - App  Error - mensaje: ["La fecha de emision no puede ser mayor a 5 minutos"] 
+2022-08-16 12:47:34,524 [37] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 12:47:36,664 [37] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-08-16 12:48:59,025 [20] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 12:49:01,542 [20] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-08-16 12:49:06,186 [20] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-08-16 12:49:06,190 [20] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-08-16 12:49:06,210 [20] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 480465580, Número de serie del certificado: 30001000000400002412, rfc: EKU9003173C9, Serie: AAAB 
+2022-08-16 12:49:06,211 [20] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-08-16 12:49:06,218 [20] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Luna.  
+2022-08-16 12:49:06,225 [20] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Luna.  
+2022-08-16 12:49:06,692 [20] INFO InvoiceAPI.LoggerManager - App  Info - Respuesta recibida. Request: Unauthorized 
+2022-08-16 12:50:40,272 [17] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 12:50:41,814 [17] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-08-16 12:50:46,704 [17] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-08-16 12:50:46,708 [17] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-08-16 12:50:46,728 [17] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 480465580, Número de serie del certificado: 30001000000400002412, rfc: EKU9003173C9, Serie: AAAB 
+2022-08-16 12:50:46,728 [17] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-08-16 12:50:46,735 [17] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Luna.  
+2022-08-16 12:50:46,750 [17] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Luna.  
+2022-08-16 12:50:47,193 [17] INFO InvoiceAPI.LoggerManager - App  Info - Respuesta recibida. Request: Unauthorized 
+2022-08-16 12:50:47,194 [17] INFO InvoiceAPI.LoggerManager - App  Info - Se realizó el timbrado con Diverza.  
+2022-08-16 12:50:47,195 [17] INFO InvoiceAPI.LoggerManager - App  Info - código:  
+2022-08-16 12:50:47,196 [17] INFO InvoiceAPI.LoggerManager - App  Info - detalle:  
+2022-08-16 12:50:47,197 [17] INFO InvoiceAPI.LoggerManager - App  Info - message:  
+2022-08-16 12:53:27,651 [17] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 12:53:30,938 [17] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-08-16 12:53:35,260 [17] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-08-16 12:53:35,264 [17] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-08-16 12:53:35,285 [17] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 480465581, Número de serie del certificado: 30001000000400002412, rfc: EKU9003173C9, Serie: AAAC 
+2022-08-16 12:53:35,285 [17] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-08-16 12:53:35,293 [17] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Luna.  
+2022-08-16 12:53:51,001 [17] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Luna.  
+2022-08-16 13:11:19,998 [27] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 13:11:22,355 [27] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-08-16 13:11:25,551 [27] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-08-16 13:11:25,554 [27] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-08-16 13:11:25,575 [27] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 480465581, Número de serie del certificado: 30001000000400002412, rfc: EKU9003173C9, Serie: AAAC 
+2022-08-16 13:11:25,576 [27] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  1 
+2022-08-16 13:11:25,584 [27] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Luna.  
+2022-08-16 13:11:33,366 [27] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Luna.  
+2022-08-16 13:12:06,424 [27] INFO InvoiceAPI.LoggerManager - App  Info - Respuesta recibida. Request: Unauthorized 
+2022-08-16 13:12:06,425 [27] INFO InvoiceAPI.LoggerManager - App  Info - Se realizó el timbrado con Diverza.  
+2022-08-16 13:12:06,426 [27] INFO InvoiceAPI.LoggerManager - App  Info - código:  
+2022-08-16 13:12:06,427 [27] INFO InvoiceAPI.LoggerManager - App  Info - detalle:  
+2022-08-16 13:12:06,428 [27] INFO InvoiceAPI.LoggerManager - App  Info - message:  
+2022-08-16 16:01:06,598 [31] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 16:01:15,068 [31] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-08-16 16:01:18,154 [31] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-08-16 16:01:18,159 [31] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-08-16 16:01:18,178 [31] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 480465581, Número de serie del certificado: 30001000000400002412, rfc: EKU9003173C9, Serie: AAAC 
+2022-08-16 16:01:18,179 [31] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  2 
+2022-08-16 16:01:18,271 [31] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Luna.  
+2022-08-16 16:01:23,835 [31] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Luna.  
+2022-08-16 17:14:20,258 [31] INFO InvoiceAPI.LoggerManager - App  Info - Respuesta recibida. Request: Unauthorized 
+2022-08-16 17:14:20,261 [31] INFO InvoiceAPI.LoggerManager - App  Info - Se realizó el timbrado con Diverza.  
+2022-08-16 17:14:20,265 [31] INFO InvoiceAPI.LoggerManager - App  Info - código:  
+2022-08-16 17:14:20,277 [31] INFO InvoiceAPI.LoggerManager - App  Info - detalle:  
+2022-08-16 17:14:20,278 [31] INFO InvoiceAPI.LoggerManager - App  Info - message:  
+2022-08-16 17:15:26,244 [10] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 17:15:44,862 [10] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-08-16 17:17:38,444 [10] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-08-16 17:17:38,454 [10] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-08-16 17:17:38,475 [10] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 480465581, Número de serie del certificado: 30001000000400002412, rfc: EKU9003173C9, Serie: AAAC 
+2022-08-16 17:17:38,475 [10] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  2 
+2022-08-16 17:17:38,578 [10] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Luna.  
+2022-08-16 17:18:23,963 [10] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Luna.  
+2022-08-16 17:21:58,146 [10] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 17:23:38,152 [17] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 17:25:41,926 [17] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-08-16 17:27:45,300 [9] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 17:27:56,522 [9] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-08-16 17:27:59,968 [9] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-08-16 17:27:59,971 [9] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-08-16 17:27:59,992 [9] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 09315200, Número de serie del certificado: 30001000000400002434, rfc: EKU9003173C9, Serie: A 
+2022-08-16 17:27:59,992 [9] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  2 
+2022-08-16 17:27:59,999 [9] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Luna.  
+2022-08-16 17:28:08,300 [9] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Luna.  
+2022-08-16 17:33:55,696 [10] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 17:34:03,968 [10] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-08-16 17:34:14,858 [10] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-08-16 17:34:14,862 [10] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-08-16 17:34:14,883 [10] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 09315200, Número de serie del certificado: 30001000000400002434, rfc: EKU9003173C9, Serie: A 
+2022-08-16 17:34:14,884 [10] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  2 
+2022-08-16 17:34:14,894 [10] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Luna.  
+2022-08-16 17:34:24,462 [10] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Luna.  
+2022-08-16 17:42:30,282 [10] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 17:42:30,296 [10] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-08-16 17:42:31,417 [10] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-08-16 17:42:31,419 [10] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-08-16 17:42:31,453 [10] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 093026, Número de serie del certificado: 30001000000400002434, rfc: EKU9003173C9, Serie: A 
+2022-08-16 17:42:31,453 [10] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  2 
+2022-08-16 17:42:31,456 [10] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Luna.  
+2022-08-16 17:42:31,457 [10] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Luna.  
+2022-08-16 17:42:31,637 [10] INFO InvoiceAPI.LoggerManager - App  Info - Respuesta recibida. Request: Unauthorized 
+2022-08-16 17:42:31,638 [10] INFO InvoiceAPI.LoggerManager - App  Info - Se realizó el timbrado con Diverza.  
+2022-08-16 17:42:31,638 [10] INFO InvoiceAPI.LoggerManager - App  Info - código:  
+2022-08-16 17:42:31,638 [10] INFO InvoiceAPI.LoggerManager - App  Info - detalle:  
+2022-08-16 17:42:31,638 [10] INFO InvoiceAPI.LoggerManager - App  Info - message:  
+2022-08-16 17:42:51,154 [10] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 17:42:57,331 [10] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-08-16 17:43:02,585 [10] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-08-16 17:43:02,588 [10] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-08-16 17:43:02,589 [10] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 093026, Número de serie del certificado: 30001000000400002434, rfc: EKU9003173C9, Serie: A 
+2022-08-16 17:43:02,589 [10] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  2 
+2022-08-16 17:43:02,595 [10] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Luna.  
+2022-08-16 17:43:07,251 [10] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Luna.  
+2022-08-16 17:49:34,358 [10] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 17:49:39,600 [10] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-08-16 17:49:43,054 [10] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-08-16 17:49:43,059 [10] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-08-16 17:49:43,080 [10] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 093026, Número de serie del certificado: 30001000000400002434, rfc: EKU9003173C9, Serie: A 
+2022-08-16 17:49:43,081 [10] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  2 
+2022-08-16 17:49:43,087 [10] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Luna.  
+2022-08-16 17:49:45,086 [10] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Luna.  
+2022-08-16 17:50:23,865 [10] INFO InvoiceAPI.LoggerManager - App  Info - Respuesta recibida. Request: Unauthorized 
+2022-08-16 17:50:23,866 [10] INFO InvoiceAPI.LoggerManager - App  Info - Se realizó el timbrado con Diverza.  
+2022-08-16 17:50:23,868 [10] INFO InvoiceAPI.LoggerManager - App  Info - código:  
+2022-08-16 17:50:23,868 [10] INFO InvoiceAPI.LoggerManager - App  Info - detalle:  
+2022-08-16 17:50:23,868 [10] INFO InvoiceAPI.LoggerManager - App  Info - message:  
+2022-08-16 17:54:42,684 [9] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 17:54:48,572 [9] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-08-16 17:54:53,088 [9] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-08-16 17:54:53,092 [9] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-08-16 17:54:53,114 [9] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 093026, Número de serie del certificado: 30001000000400002434, rfc: EKU9003173C9, Serie: A 
+2022-08-16 17:54:53,114 [9] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  2 
+2022-08-16 17:54:53,120 [9] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Luna.  
+2022-08-16 17:55:01,511 [9] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Luna.  
+2022-08-16 18:18:23,180 [61] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 18:18:35,761 [16] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 18:18:40,422 [16] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-08-16 18:18:43,613 [16] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-08-16 18:18:43,617 [16] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-08-16 18:18:43,637 [16] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 09315200, Número de serie del certificado: 00000000000000000000, rfc: EKU9003173C9, Serie: Alz 
+2022-08-16 18:18:43,638 [16] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  2 
+2022-08-16 18:18:43,644 [16] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Luna.  
+2022-08-16 18:18:46,764 [16] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Luna.  
+2022-08-16 18:24:55,202 [10] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 18:24:58,760 [10] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-08-16 18:25:01,163 [10] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-08-16 18:25:01,167 [10] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-08-16 18:25:01,189 [10] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 09315200, Número de serie del certificado: 00000000000000000000, rfc: EKU9003173C9, Serie: Alz 
+2022-08-16 18:25:01,189 [10] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  2 
+2022-08-16 18:25:01,196 [10] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Luna.  
+2022-08-16 18:25:03,199 [10] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Luna.  
+2022-08-16 21:27:33,164 [30] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 21:27:40,221 [30] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-08-16 21:27:48,247 [30] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-08-16 21:27:48,253 [30] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-08-16 21:27:48,275 [30] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 09315200, Número de serie del certificado: 00000000000000000000, rfc: EKU9003173C9, Serie: Alz 
+2022-08-16 21:27:48,276 [30] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  2 
+2022-08-16 21:27:48,290 [30] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Luna.  
+2022-08-16 21:27:54,463 [30] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Luna.  
+2022-08-16 21:27:59,216 [30] INFO InvoiceAPI.LoggerManager - App  Info - Respuesta recibida. Request: Unauthorized 
+2022-08-16 21:27:59,216 [30] INFO InvoiceAPI.LoggerManager - App  Info - Se realizó el timbrado con Diverza.  
+2022-08-16 21:27:59,217 [30] INFO InvoiceAPI.LoggerManager - App  Info - código:  
+2022-08-16 21:27:59,218 [30] INFO InvoiceAPI.LoggerManager - App  Info - detalle:  
+2022-08-16 21:27:59,218 [30] INFO InvoiceAPI.LoggerManager - App  Info - message:  
+2022-08-16 21:28:21,217 [33] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 21:28:37,204 [33] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-08-16 21:28:40,496 [33] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-08-16 21:28:40,498 [33] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-08-16 21:28:40,499 [33] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 09315200, Número de serie del certificado: 00000000000000000000, rfc: EKU9003173C9, Serie: Alz 
+2022-08-16 21:28:40,500 [33] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  2 
+2022-08-16 21:28:40,507 [33] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Luna.  
+2022-08-16 21:28:48,117 [33] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Luna.  
+2022-08-16 21:38:46,262 [10] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-08-16 21:38:56,714 [10] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-08-16 21:38:59,253 [10] INFO InvoiceAPI.LoggerManager - App  Info - El proceso de digestion fue correcto.  
+2022-08-16 21:38:59,257 [10] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-08-16 21:38:59,278 [10] INFO InvoiceAPI.LoggerManager - App  Info - Datos del comprobante. Folio: 09315200, Número de serie del certificado: 00000000000000000000, rfc: EKU9003173C9, Serie: Alz 
+2022-08-16 21:38:59,278 [10] INFO InvoiceAPI.LoggerManager - App  Antes de pasar valor de Oracle o SQL:  2 
+2022-08-16 21:38:59,286 [10] INFO InvoiceAPI.LoggerManager - App  Prepara el envío para timbrar con Luna.  
+2022-08-16 21:39:06,227 [10] INFO InvoiceAPI.LoggerManager - App  Info - Envío a timbrar el documento con Luna.  

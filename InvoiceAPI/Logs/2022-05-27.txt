@@ -1,0 +1,393 @@
+﻿2022-05-27 11:01:01,233 [15] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-27 11:01:06,243 [15] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+ 
+2022-05-27 11:01:06,383 [15] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-05-27 11:01:06,385 [15] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-05-27 11:01:06,407 [15] INFO  App  
+ Info - Datos del comprobante. Folio: 203289, Número de serie del certificado: 00000000000000000000, rfc: EKU9003173C9, Serie: ATCX 
+ 
+2022-05-27 11:01:06,407 [15] INFO  App  
+ Antes de pasar valor de Oracle o SQL:  2 
+ 
+2022-05-27 11:01:06,481 [15] ERROR App  
+ Error - Ocurrió un error en la búsqueda del comprobante en la base de datos. 
+ 
+2022-05-27 11:01:06,481 [15] ERROR App  
+ Error - Mensaje: Object reference not set to an instance of an object. 
+ 
+2022-05-27 11:01:06,514 [15] ERROR App  
+ Error - StackTrace:    at InvoiceAPI.Data.BrokerDAL.ExisteComprobanteSQL(ComprobantesDTO comprobante) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Data\BrokerDAL.cs:line 153
+   at InvoiceAPI.Controllers.InvoicesController.SearchData(String xml) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 865 
+ 
+2022-05-27 11:01:41,909 [20] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-27 11:01:48,238 [20] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+ 
+2022-05-27 11:01:48,261 [20] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-05-27 11:01:48,262 [20] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-05-27 11:01:48,263 [20] INFO  App  
+ Info - Datos del comprobante. Folio: 0001, Número de serie del certificado: 30001000000400002434, rfc: EKU9003173C9, Serie: AMBA 
+ 
+2022-05-27 11:01:48,264 [20] INFO  App  
+ Antes de pasar valor de Oracle o SQL:  2 
+ 
+2022-05-27 11:01:48,290 [20] ERROR App  
+ Error - Ocurrió un error en la búsqueda del comprobante en la base de datos. 
+ 
+2022-05-27 11:01:48,291 [20] ERROR App  
+ Error - Mensaje: Object reference not set to an instance of an object. 
+ 
+2022-05-27 11:01:48,292 [20] ERROR App  
+ Error - StackTrace:    at InvoiceAPI.Data.BrokerDAL.ExisteComprobanteSQL(ComprobantesDTO comprobante) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Data\BrokerDAL.cs:line 153
+   at InvoiceAPI.Controllers.InvoicesController.SearchData(String xml) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 865 
+ 
+2022-05-27 11:04:07,308 [9] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-27 11:04:10,546 [9] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+ 
+2022-05-27 11:04:10,676 [9] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-05-27 11:04:10,678 [9] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-05-27 11:04:10,698 [9] INFO  App  
+ Info - Datos del comprobante. Folio: 203289, Número de serie del certificado: 00000000000000000000, rfc: EKU9003173C9, Serie: ATCX 
+ 
+2022-05-27 11:04:10,699 [9] INFO  App  
+ Antes de pasar valor de Oracle o SQL:  2 
+ 
+2022-05-27 11:04:10,718 [9] ERROR App  
+ Error - Ocurrió un error en la búsqueda del comprobante en la base de datos. 
+ 
+2022-05-27 11:04:10,718 [9] ERROR App  
+ Error - Mensaje: Object reference not set to an instance of an object. 
+ 
+2022-05-27 11:04:10,747 [9] ERROR App  
+ Error - StackTrace:    at InvoiceAPI.Data.BrokerDAL.ExisteComprobanteSQL(ComprobantesDTO comprobante) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Data\BrokerDAL.cs:line 153
+   at InvoiceAPI.Controllers.InvoicesController.SearchData(String xml) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 866 
+ 
+2022-05-27 11:05:59,310 [15] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-27 11:06:01,179 [15] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+ 
+2022-05-27 11:06:01,306 [15] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-05-27 11:06:01,307 [15] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-05-27 11:06:01,327 [15] INFO  App  
+ Info - Datos del comprobante. Folio: 203289, Número de serie del certificado: 00000000000000000000, rfc: EKU9003173C9, Serie: ATCX 
+ 
+2022-05-27 11:06:01,328 [15] INFO  App  
+ Antes de pasar valor de Oracle o SQL:  2 
+ 
+2022-05-27 11:06:01,399 [15] ERROR App  
+ Error - Ocurrió un error en la búsqueda del comprobante en la base de datos. 
+ 
+2022-05-27 11:06:01,399 [15] ERROR App  
+ Error - Mensaje: Object reference not set to an instance of an object. 
+ 
+2022-05-27 11:06:01,399 [15] ERROR App  
+ Error - StackTrace:    at InvoiceAPI.Data.BrokerDAL.ExisteComprobanteSQL(ComprobantesDTO comprobante) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Data\BrokerDAL.cs:line 217
+   at InvoiceAPI.Controllers.InvoicesController.SearchData(String xml) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 866 
+ 
+2022-05-27 11:07:05,415 [22] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-27 11:07:10,099 [22] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+ 
+2022-05-27 11:07:10,124 [22] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-05-27 11:07:18,461 [22] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-05-27 11:07:32,898 [22] INFO  App  
+ Info - Datos del comprobante. Folio: 203289, Número de serie del certificado: 00000000000000000000, rfc: EKU9003173C9, Serie: ATCX 
+ 
+2022-05-27 11:07:36,184 [22] INFO  App  
+ Antes de pasar valor de Oracle o SQL:  2 
+ 
+2022-05-27 11:08:17,089 [22] ERROR App  
+ Error - Ocurrió un error en la búsqueda del comprobante en la base de datos. 
+ 
+2022-05-27 11:08:17,089 [22] ERROR App  
+ Error - Mensaje: Object reference not set to an instance of an object. 
+ 
+2022-05-27 11:08:17,090 [22] ERROR App  
+ Error - StackTrace:    at InvoiceAPI.Data.BrokerDAL.ExisteComprobanteSQL(ComprobantesDTO comprobante) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Data\BrokerDAL.cs:line 217
+   at InvoiceAPI.Controllers.InvoicesController.SearchData(String xml) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 866 
+ 
+2022-05-27 11:08:47,073 [9] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-27 11:08:49,466 [9] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+ 
+2022-05-27 11:08:49,593 [9] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-05-27 11:08:49,948 [9] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-05-27 11:08:49,974 [9] INFO  App  
+ Info - Datos del comprobante. Folio: 203289, Número de serie del certificado: 00000000000000000000, rfc: EKU9003173C9, Serie: ATCX 
+ 
+2022-05-27 11:08:49,975 [9] INFO  App  
+ Antes de pasar valor de Oracle o SQL:  2 
+ 
+2022-05-27 11:09:42,974 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-27 11:09:45,781 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+ 
+2022-05-27 11:09:45,907 [10] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-05-27 11:09:46,308 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-05-27 11:09:46,331 [10] INFO  App  
+ Info - Datos del comprobante. Folio: 203289, Número de serie del certificado: 00000000000000000000, rfc: EKU9003173C9, Serie: ATCX 
+ 
+2022-05-27 11:09:46,332 [10] INFO  App  
+ Antes de pasar valor de Oracle o SQL:  2 
+ 
+2022-05-27 11:09:48,133 [10] ERROR App  
+ Error - Ocurrió un error en la búsqueda del comprobante en la base de datos. 
+ 
+2022-05-27 11:09:48,133 [10] ERROR App  
+ Error - Mensaje: Object reference not set to an instance of an object. 
+ 
+2022-05-27 11:09:48,134 [10] ERROR App  
+ Error - StackTrace:    at InvoiceAPI.Data.BrokerDAL.ExisteComprobanteSQL(ComprobantesDTO comprobante) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Data\BrokerDAL.cs:line 216
+   at InvoiceAPI.Controllers.InvoicesController.SearchData(String xml) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 866 
+ 
+2022-05-27 11:10:05,709 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-27 11:10:10,103 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+ 
+2022-05-27 11:10:10,130 [10] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-05-27 11:10:17,709 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-05-27 11:10:25,211 [10] INFO  App  
+ Info - Datos del comprobante. Folio: 203289, Número de serie del certificado: 00000000000000000000, rfc: EKU9003173C9, Serie: ATCX 
+ 
+2022-05-27 11:10:27,601 [10] INFO  App  
+ Antes de pasar valor de Oracle o SQL:  2 
+ 
+2022-05-27 11:10:46,109 [10] ERROR App  
+ Error - Ocurrió un error en la búsqueda del comprobante en la base de datos. 
+ 
+2022-05-27 11:10:46,110 [10] ERROR App  
+ Error - Mensaje: Object reference not set to an instance of an object. 
+ 
+2022-05-27 11:10:46,111 [10] ERROR App  
+ Error - StackTrace:    at InvoiceAPI.Data.BrokerDAL.ExisteComprobanteSQL(ComprobantesDTO comprobante) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Data\BrokerDAL.cs:line 216
+   at InvoiceAPI.Controllers.InvoicesController.SearchData(String xml) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 866 
+ 
+2022-05-27 11:11:38,857 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-27 11:11:54,247 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+ 
+2022-05-27 11:11:54,386 [10] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-05-27 11:12:00,776 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-05-27 11:12:06,540 [10] INFO  App  
+ Info - Datos del comprobante. Folio: 203289, Número de serie del certificado: 00000000000000000000, rfc: EKU9003173C9, Serie: ATCX 
+ 
+2022-05-27 11:12:09,027 [10] INFO  App  
+ Antes de pasar valor de Oracle o SQL:  2 
+ 
+2022-05-27 11:12:30,126 [10] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-05-27 11:12:30,127 [10] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-05-27 11:12:30,162 [10] INFO  App  
+ Info - Solicitud enviada. Request: Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="b5c1a499-3407-437a-9d4f-238a3b287ead"
+  Content-Length: 3897
+} 
+ 
+2022-05-27 11:12:30,169 [10] INFO  App  
+ Info - Respuesta recibida. Request: System.Net.Http.HttpConnection+HttpConnectionResponseContent 
+ 
+2022-05-27 11:12:30,170 [10] ERROR App  
+ Error - No se pudo realizar el timbrado con Seguritata.  
+ 
+2022-05-27 11:12:30,170 [10] ERROR App  
+ Error - código: *** SEGURIDATA CODE: 404 
+ 
+2022-05-27 11:12:30,171 [10] ERROR App  
+ Error - detalle: *** SEGURIDATA DETAILS***:Method: POST, RequestUri: 'http://200.66.66.211:9001/cfdi40/sstamp', Version: 2.0, Content: System.Net.Http.MultipartFormDataContent, Headers:
+{
+  Authorization: Basic Y2ZkaTMzLXNnZGF0YTpQcnVlYmFzMzMuc2dkYXRh
+  Content-Type: multipart/form-data; boundary="b5c1a499-3407-437a-9d4f-238a3b287ead"
+  Content-Length: 3897
+} 
+ 
+2022-05-27 11:12:30,172 [10] ERROR App  
+ Error - message: *** SEGURIDATA MESSAGE***:{"code":404,"message":"HTTP POST for /cfdi40/sstamp is not supported."} 
+ 
+2022-05-27 11:12:30,173 [10] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-05-27 11:12:30,176 [10] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"123414","token": "$2b$12$JgIf1J7db4e6f06VnNPsUOaQD3SpwUnzPqXDkuirQklcc8gMCMIDS" },"issuer": {"rfc": "EKU9003173C9"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "EKU9003173C9ATCX203289","certificate-number": "30001000000400002434","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0+xml","content": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxjZmRpOkNvbXByb2JhbnRlIEV4cG9ydGFjaW9uPSIwMSIgRGVzY3VlbnRvPSIwLjAiIEx1Z2FyRXhwZWRpY2lvbj0iMDY1MDAiIFRpcG9EZUNvbXByb2JhbnRlPSJJIiBNZXRvZG9QYWdvPSJQVUUiIFRvdGFsPSIwLjAxIiBNb25lZGE9Ik1YTiIgVGlwb0NhbWJpbz0iMSIgU3ViVG90YWw9IjAuMDEiIENlcnRpZmljYWRvPSJNSUlGdXpDQ0E2T2dBd0lCQWdJVU16QXdNREV3TURBd01EQTBNREF3TURJME16UXdEUVlKS29aSWh2Y05BUUVMQlFBd2dnRXJNUTh3RFFZRFZRUUREQVpCUXlCVlFWUXhMakFzQmdOVkJBb01KVk5GVWxaSlEwbFBJRVJGSUVGRVRVbE9TVk5VVWtGRFNVOU9JRlJTU1VKVlZFRlNTVUV4R2pBWUJnTlZCQXNNRVZOQlZDMUpSVk1nUVhWMGFHOXlhWFI1TVNnd0pnWUpLb1pJaHZjTkFRa0JGaGx2YzJOaGNpNXRZWEowYVc1bGVrQnpZWFF1WjI5aUxtMTRNUjB3R3dZRFZRUUpEQlF6Y21FZ1kyVnljbUZrWVNCa1pTQmpZV1JwZWpFT01Bd0dBMVVFRVF3Rk1EWXpOekF4Q3pBSkJnTlZCQVlUQWsxWU1Sa3dGd1lEVlFRSURCQkRTVlZFUVVRZ1JFVWdUVVZZU1VOUE1SRXdEd1lEVlFRSERBaERUMWxQUVVOQlRqRVJNQThHQTFVRUxSTUlNaTQxTGpRdU5EVXhKVEFqQmdrcWhraUc5dzBCQ1FJVEZuSmxjM0J2Ym5OaFlteGxPaUJCUTBSTlFTMVRRVlF3SGhjTk1Ua3dOakUzTVRrME5ERTBXaGNOTWpNd05qRTNNVGswTkRFMFdqQ0I0akVuTUNVR0ExVUVBeE1lUlZORFZVVk1RU0JMUlUxUVJWSWdWVkpIUVZSRklGTkJJRVJGSUVOV01TY3dKUVlEVlFRcEV4NUZVME5WUlV4QklFdEZUVkJGVWlCVlVrZEJWRVVnVTBFZ1JFVWdRMVl4SnpBbEJnTlZCQW9USGtWVFExVkZURUVnUzBWTlVFVlNJRlZTUjBGVVJTQlRRU0JFUlNCRFZqRWxNQ01HQTFVRUxSTWNSVXRWT1RBd016RTNNME01SUM4Z1dFbFJRamc1TVRFeE5sRkZOREVlTUJ3R0ExVUVCUk1WSUM4Z1dFbFJRamc1TVRFeE5rMUhVazFhVWpBMU1SNHdIQVlEVlFRTEV4VkZjMk4xWld4aElFdGxiWEJsY2lCVmNtZGhkR1V3Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQ04wcGVLcGdmT0w3NWlZUnYxZnFxK29WWXNMUFZVUi9HaWJZbUdLYzlJbkhGeTVsWUY2T1RZam5JSXZta09kUm9iYkdsQ1V4T1JYL3RMc2w4WWE5Z202WW83aEhuT0RSQklEdXAzR0lTRnpCLzk2UjlLL016WVFPY3NjTUlvQkRBUmF5Y25Mdnk3RmxNdk83L3JsVm5zU0FSeFpSTzhLejhaa2tzajJ6cGVZcGpaSXlhLzM2OStvR3FRazFjVFJrSG81OUp2SjRUZmJrLzNpSXlmNEgvSW5pOW5CZTljWVdvME1uS29iN0REdC92c2RpNXRBOG1NdEE5NTNMYXBOeUNaSURDUlFRbFVHTmdEcVk5LzhGNW1VdlZna2NjenNJZ0dkdmY5dk1RUFNmM2pqQ2lLajdqNnVjeGwxK0Z3SldtYnZnTm1pYVVSLzBxNG0ycm03OGxGQWdNQkFBR2pIVEFiTUF3R0ExVWRFd0VCL3dRQ01BQXdDd1lEVlIwUEJBUURBZ2JBTUEwR0NTcUdTSWIzRFFFQkN3VUFBNElDQVFCY3BqMVRqVDRqaWluSXVqSWRBbEZ6RTZrUndZSkNuREcwOHpTcDRrU25TaGp4QURHRVhIMmNoZWhLTVYwRlk3YzRuakE1ZURHZEEvRzJPQ1RQdkY1cnBlQ1pQNUR3NTA0UlprWURsMnN1Unord2Exc05CVnBibkJKRUswZlFjTjNJZnRCd3NnTkZkRmhVdEN5dzNsdXMxU1NKYlB4akxIUzZGY1paNTFZU2VJZmNOWE9BdVRxZGltdXNhWHExNUdyU3JDT2tNNm4yamZqMnNNSllNMkhYYVhKNnJHVEVnWW1oWWR3eFd0aWw2UmZaQitmR1EvSDlJOVdMbmw0S1RaVVM2QzkrTkxIaDRGUERoU2sxOWZwUzJTLzU2YXFnRm9HQWtYQVl0OUZ5NUVDYVBjVUxJZkoxREVic1hLeVJkQ3YzSlk4OSswTU5rT2RhRG5zZW1TMm81R2wwOHpJNGlZdHQzTDQwZ0FaNjBOUGgzMWtWTG5ZTnNtdmZOeFl5S3ArQWVKdERIeVc5dzdmdE0wSG9pK0J1Um1jQVFTS0ZWM3BrOGo1MWxhK2pyUkJyQVV2OGJsYlJjUTVCaVpVd0p6SEZFS0l3VHNSR29SeUV4OTZzTm5CMDNuNkdUd2pJR3o5MlNtTGRObDk1cjlya3ZwKzJtNFM2cTFsUHVYYUZnN0RHQnJYV0M4aXlxZVdFMmlvYmR3SUl1WFBUTVZxUWIxMm0xZEFrSlZSTzVOZEhuUC9NcHFPdk9nTHFvWkJOSEd5Qmc0R3FtNHNDSkhDeEExYzhFbGZhMlJRVENrMHRBemxsTDR2T25JMUdIa0dKbjY1eG9rR3NhVTRCNEQzNnhoN2VXcmZqNC9wZ1dIbXRvREFZYTh3elN3bzJHVkNaT3MrbXRFZ09RQjkxL2c9PSIgTm9DZXJ0aWZpY2Fkbz0iMzAwMDEwMDAwMDA0MDAwMDI0MzQiIEZvcm1hUGFnbz0iOTkiIFNlbGxvPSJHa0pIODdNbFZZTlMyQnY3R09xVFpRTHFqUU5CeUNTeDBZbFBXcFk3NTBoWldFdVhwMHpGWG9tL1pvSnk2blByRVBpTVhibzhRbm5ibGRKc1FQOCs2blJ5RGhNaFBVdUhDUzJxbGg1d1BNa3VHV0htUzNoVUpVOTR5SlR1bkRXTTdBSzJaTTh2VmZyZ0lheVk0RThOTEcxY2Z1T0UrNW1HTzlwSFFzZHphUE1OcVNUTTRVdDB3dFYwRmZkemxJUi9Oci9lbnZzaTRKZnc5bUdzWVFTcUlZdk12RngvTVNuODhaL1BRU0w1c281RllEaTdjanFWWThXRVdzN3dGbkFrVGhNUXNOd0ZDREhkWVVyWE92Zi9ld01tWEx5UG9EY0N1UDhXblRZMStLZkNNRVo5UmVSdGZRYlYzSzZ0M01UMnVYeUVPUGpScldIbGlKZlRsV01ucnc9PSIgRmVjaGE9IjIwMjItMDUtMjZUMTg6NTk6NTciIEZvbGlvPSIyMDMyODkiIFNlcmllPSJBVENYIiBWZXJzaW9uPSI0LjAiIHhzaTpzY2hlbWFMb2NhdGlvbj0iaHR0cDovL3d3dy5zYXQuZ29iLm14L2NmZC80IGh0dHA6Ly93d3cuc2F0LmdvYi5teC9zaXRpb19pbnRlcm5ldC9jZmQvNC9jZmR2NDAueHNkIiB4bWxuczp0ZENGREk9Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9zaXRpb19pbnRlcm5ldC9jZmQvdGlwb0RhdG9zL3RkQ0ZESSIgeG1sbnM6bnMzPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvVGltYnJlRmlzY2FsRGlnaXRhbCIgeG1sbnM6Y2ZkaT0iaHR0cDovL3d3dy5zYXQuZ29iLm14L2NmZC80IiB4bWxuczpjYXRDRkRJPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkL2NhdGFsb2dvcyIgeG1sbnM6cGFnbzIwPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvUGFnb3MyMCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSI+PGNmZGk6RW1pc29yIFJmYz0iRUtVOTAwMzE3M0M5IiBOb21icmU9IkVTQ1VFTEEgS0VNUEVSIFVSR0FURSIgUmVnaW1lbkZpc2NhbD0iNjAxIiAvPjxjZmRpOlJlY2VwdG9yIFJlZ2ltZW5GaXNjYWxSZWNlcHRvcj0iNjAxIiBEb21pY2lsaW9GaXNjYWxSZWNlcHRvcj0iMDY1MDAiIFVzb0NGREk9IkcwMyIgTm9tYnJlPSJIRUlOWiIgUmZjPSJIRUlOMTIxMTEwUlI2IiAvPjxjZmRpOkNvbmNlcHRvcz48Y2ZkaTpDb25jZXB0byBPYmpldG9JbXA9IjAxIiBEZXNjdWVudG89IjAuMDAiIEltcG9ydGU9IjAuMDEiIFZhbG9yVW5pdGFyaW89IjAuMDEiIERlc2NyaXBjaW9uPSJBTENBVEVMIDUwOThPIFBJWEk0IDYgSU5DSEVTIERPUkFETyBTSU0gODk1MjAwMDAwMDI1MDE5OTc3NTYgSU1FSSAzNTc1MDI0NTE5OTc3NTYiIFVuaWRhZD0iUGllemEiIENsYXZlVW5pZGFkPSJIODciIENhbnRpZGFkPSIxIiBOb0lkZW50aWZpY2FjaW9uPSIzNTc1MDI0NTE5OTc3NTYiIENsYXZlUHJvZFNlcnY9IjQzMTkxNTAxIiAvPjwvY2ZkaTpDb25jZXB0b3M+PC9jZmRpOkNvbXByb2JhbnRlPg=="}} 
+ 
+2022-05-27 11:12:30,177 [10] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-05-27 11:12:30,177 [10] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-05-27 11:12:30,696 [10] INFO  App  
+ Info - Response recibido: StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Fri, 27 May 2022 16:12:34 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: 9tggkcr658323fttj6hl81kvs16ll3g7
+  Connection: close
+  Content-Length: 5730
+  Content-Type: application/json; charset=utf-8
+} 
+ 
+2022-05-27 11:12:30,714 [10] INFO  App  
+ Info - Error de respuesta del timbrado Diverza: [{"sat_error_message":"El campo Nombre del emisor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","sat_error_code":"CFDI40138","message":"El campo Nombre del emisor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","field":"EmisorNombre","code":1450},{"sat_error_message":"El campo Nombre del emisor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Emisor.","sat_error_code":"CFDI40139","message":"El campo Nombre del emisor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Emisor.","field":"EmisorNombre","code":1450},{"sat_error_message":"Este RFC del receptor no existe en la lista de RFC inscritos no cancelados del SAT.","sat_error_code":"CFDI40143","message":"Rfc : HEIN121110RR6 should be Present in L_RFC","field":"Rfc","code":1450},{"sat_error_message":"El campo Nombre del receptor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","sat_error_code":"CFDI40144","message":"El campo Nombre del receptor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","field":"ReceptorNombre","code":1450},{"sat_error_message":"El campo Nombre del receptor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Receptor.","sat_error_code":"CFDI40145","message":"El campo Nombre del receptor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Receptor.","field":"ReceptorNombre","code":1450},{"sat_error_message":"El campo DomicilioFiscalReceptor del receptor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","sat_error_code":"CFDI40147","message":"El campo DomicilioFiscalReceptor del receptor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","field":"DomicilioFiscalReceptor","code":1450},{"sat_error_message":"El campo DomicilioFiscalReceptor del receptor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Receptor.","sat_error_code":"CFDI40148","message":"El campo DomicilioFiscalReceptor del receptor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Receptor.","field":"DomicilioFiscalReceptor","code":1450},{"sat_error_message":"La clave del campo RegimenFiscalR debe corresponder con el tipo de persona (física o moral).","sat_error_code":"CFDI40158","message":"The field RegimenFiscalReceptor with value 601 does not correspond to possible values 605|606|607|608|610|611|612|614|615|616|621|625|626 when the field ERFC = HEIN121110RR6","field":"RegimenFiscalReceptor","code":1450}] 
+ 
+2022-05-27 11:12:30,715 [10] INFO  App  
+ Info - Detalle de error de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5340
+} 
+ 
+2022-05-27 11:12:30,718 [10] ERROR App  
+ Error - No se pudo realizar el timbrado con Diverza.  
+ 
+2022-05-27 11:12:30,718 [10] ERROR App  
+ Error - código: 400 
+ 
+2022-05-27 11:12:30,719 [10] ERROR App  
+ Error - detalle: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5340
+} 
+ 
+2022-05-27 11:12:30,719 [10] ERROR App  
+ Error - message: [{"sat_error_message":"El campo Nombre del emisor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","sat_error_code":"CFDI40138","message":"El campo Nombre del emisor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","field":"EmisorNombre","code":1450},{"sat_error_message":"El campo Nombre del emisor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Emisor.","sat_error_code":"CFDI40139","message":"El campo Nombre del emisor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Emisor.","field":"EmisorNombre","code":1450},{"sat_error_message":"Este RFC del receptor no existe en la lista de RFC inscritos no cancelados del SAT.","sat_error_code":"CFDI40143","message":"Rfc : HEIN121110RR6 should be Present in L_RFC","field":"Rfc","code":1450},{"sat_error_message":"El campo Nombre del receptor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","sat_error_code":"CFDI40144","message":"El campo Nombre del receptor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","field":"ReceptorNombre","code":1450},{"sat_error_message":"El campo Nombre del receptor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Receptor.","sat_error_code":"CFDI40145","message":"El campo Nombre del receptor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Receptor.","field":"ReceptorNombre","code":1450},{"sat_error_message":"El campo DomicilioFiscalReceptor del receptor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","sat_error_code":"CFDI40147","message":"El campo DomicilioFiscalReceptor del receptor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","field":"DomicilioFiscalReceptor","code":1450},{"sat_error_message":"El campo DomicilioFiscalReceptor del receptor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Receptor.","sat_error_code":"CFDI40148","message":"El campo DomicilioFiscalReceptor del receptor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Receptor.","field":"DomicilioFiscalReceptor","code":1450},{"sat_error_message":"La clave del campo RegimenFiscalR debe corresponder con el tipo de persona (física o moral).","sat_error_code":"CFDI40158","message":"The field RegimenFiscalReceptor with value 601 does not correspond to possible values 605|606|607|608|610|611|612|614|615|616|621|625|626 when the field ERFC = HEIN121110RR6","field":"RegimenFiscalReceptor","code":1450}] 
+ 
+2022-05-27 12:07:33,658 [10] INFO  App  
+ Usuario que solicita el proceso: admin 
+ 
+2022-05-27 12:07:36,262 [10] INFO  App  
+ Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+ 
+2022-05-27 12:07:36,403 [10] INFO  App  
+ Info - El proceso de digestion fue correcto.  
+ 
+2022-05-27 12:07:36,732 [10] INFO  App  
+ Info - Búsqueda del comprobante en la base de datos. 
+ 
+2022-05-27 12:07:36,760 [10] INFO  App  
+ Info - Datos del comprobante. Folio: 203289, Número de serie del certificado: 00000000000000000000, rfc: EKU9003173C9, Serie: ATCX 
+ 
+2022-05-27 12:07:36,761 [10] INFO  App  
+ Antes de pasar valor de Oracle o SQL:  2 
+ 
+2022-05-27 12:07:37,893 [10] INFO  App  
+ Prepara el envío para timbrar con Diverza.  
+ 
+2022-05-27 12:07:37,897 [10] INFO  App  
+ Info - Lo que se enviará al timbrado con Diverza. Usuario: admin. Contenido: {"credentials": {"id":"123414","token": "$2b$12$JgIf1J7db4e6f06VnNPsUOaQD3SpwUnzPqXDkuirQklcc8gMCMIDS" },"issuer": {"rfc": "EKU9003173C9"},"receiver": {"emails": [{"email": "micorreo@hotmail.com","format":"xml+pdf","template": "letter"}]},"document": {"ref-id": "EKU9003173C9ATCX203289","certificate-number": "30001000000400002434","section": "all","format": "xml","template": "letter","type": "application/vnd.diverza.cfdi_4.0+xml","content": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxjZmRpOkNvbXByb2JhbnRlIEV4cG9ydGFjaW9uPSIwMSIgRGVzY3VlbnRvPSIwLjAiIEx1Z2FyRXhwZWRpY2lvbj0iMDY1MDAiIFRpcG9EZUNvbXByb2JhbnRlPSJJIiBNZXRvZG9QYWdvPSJQVUUiIFRvdGFsPSIwLjAxIiBNb25lZGE9Ik1YTiIgVGlwb0NhbWJpbz0iMSIgU3ViVG90YWw9IjAuMDEiIENlcnRpZmljYWRvPSJNSUlGdXpDQ0E2T2dBd0lCQWdJVU16QXdNREV3TURBd01EQTBNREF3TURJME16UXdEUVlKS29aSWh2Y05BUUVMQlFBd2dnRXJNUTh3RFFZRFZRUUREQVpCUXlCVlFWUXhMakFzQmdOVkJBb01KVk5GVWxaSlEwbFBJRVJGSUVGRVRVbE9TVk5VVWtGRFNVOU9JRlJTU1VKVlZFRlNTVUV4R2pBWUJnTlZCQXNNRVZOQlZDMUpSVk1nUVhWMGFHOXlhWFI1TVNnd0pnWUpLb1pJaHZjTkFRa0JGaGx2YzJOaGNpNXRZWEowYVc1bGVrQnpZWFF1WjI5aUxtMTRNUjB3R3dZRFZRUUpEQlF6Y21FZ1kyVnljbUZrWVNCa1pTQmpZV1JwZWpFT01Bd0dBMVVFRVF3Rk1EWXpOekF4Q3pBSkJnTlZCQVlUQWsxWU1Sa3dGd1lEVlFRSURCQkRTVlZFUVVRZ1JFVWdUVVZZU1VOUE1SRXdEd1lEVlFRSERBaERUMWxQUVVOQlRqRVJNQThHQTFVRUxSTUlNaTQxTGpRdU5EVXhKVEFqQmdrcWhraUc5dzBCQ1FJVEZuSmxjM0J2Ym5OaFlteGxPaUJCUTBSTlFTMVRRVlF3SGhjTk1Ua3dOakUzTVRrME5ERTBXaGNOTWpNd05qRTNNVGswTkRFMFdqQ0I0akVuTUNVR0ExVUVBeE1lUlZORFZVVk1RU0JMUlUxUVJWSWdWVkpIUVZSRklGTkJJRVJGSUVOV01TY3dKUVlEVlFRcEV4NUZVME5WUlV4QklFdEZUVkJGVWlCVlVrZEJWRVVnVTBFZ1JFVWdRMVl4SnpBbEJnTlZCQW9USGtWVFExVkZURUVnUzBWTlVFVlNJRlZTUjBGVVJTQlRRU0JFUlNCRFZqRWxNQ01HQTFVRUxSTWNSVXRWT1RBd016RTNNME01SUM4Z1dFbFJRamc1TVRFeE5sRkZOREVlTUJ3R0ExVUVCUk1WSUM4Z1dFbFJRamc1TVRFeE5rMUhVazFhVWpBMU1SNHdIQVlEVlFRTEV4VkZjMk4xWld4aElFdGxiWEJsY2lCVmNtZGhkR1V3Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLQW9JQkFRQ04wcGVLcGdmT0w3NWlZUnYxZnFxK29WWXNMUFZVUi9HaWJZbUdLYzlJbkhGeTVsWUY2T1RZam5JSXZta09kUm9iYkdsQ1V4T1JYL3RMc2w4WWE5Z202WW83aEhuT0RSQklEdXAzR0lTRnpCLzk2UjlLL016WVFPY3NjTUlvQkRBUmF5Y25Mdnk3RmxNdk83L3JsVm5zU0FSeFpSTzhLejhaa2tzajJ6cGVZcGpaSXlhLzM2OStvR3FRazFjVFJrSG81OUp2SjRUZmJrLzNpSXlmNEgvSW5pOW5CZTljWVdvME1uS29iN0REdC92c2RpNXRBOG1NdEE5NTNMYXBOeUNaSURDUlFRbFVHTmdEcVk5LzhGNW1VdlZna2NjenNJZ0dkdmY5dk1RUFNmM2pqQ2lLajdqNnVjeGwxK0Z3SldtYnZnTm1pYVVSLzBxNG0ycm03OGxGQWdNQkFBR2pIVEFiTUF3R0ExVWRFd0VCL3dRQ01BQXdDd1lEVlIwUEJBUURBZ2JBTUEwR0NTcUdTSWIzRFFFQkN3VUFBNElDQVFCY3BqMVRqVDRqaWluSXVqSWRBbEZ6RTZrUndZSkNuREcwOHpTcDRrU25TaGp4QURHRVhIMmNoZWhLTVYwRlk3YzRuakE1ZURHZEEvRzJPQ1RQdkY1cnBlQ1pQNUR3NTA0UlprWURsMnN1Unord2Exc05CVnBibkJKRUswZlFjTjNJZnRCd3NnTkZkRmhVdEN5dzNsdXMxU1NKYlB4akxIUzZGY1paNTFZU2VJZmNOWE9BdVRxZGltdXNhWHExNUdyU3JDT2tNNm4yamZqMnNNSllNMkhYYVhKNnJHVEVnWW1oWWR3eFd0aWw2UmZaQitmR1EvSDlJOVdMbmw0S1RaVVM2QzkrTkxIaDRGUERoU2sxOWZwUzJTLzU2YXFnRm9HQWtYQVl0OUZ5NUVDYVBjVUxJZkoxREVic1hLeVJkQ3YzSlk4OSswTU5rT2RhRG5zZW1TMm81R2wwOHpJNGlZdHQzTDQwZ0FaNjBOUGgzMWtWTG5ZTnNtdmZOeFl5S3ArQWVKdERIeVc5dzdmdE0wSG9pK0J1Um1jQVFTS0ZWM3BrOGo1MWxhK2pyUkJyQVV2OGJsYlJjUTVCaVpVd0p6SEZFS0l3VHNSR29SeUV4OTZzTm5CMDNuNkdUd2pJR3o5MlNtTGRObDk1cjlya3ZwKzJtNFM2cTFsUHVYYUZnN0RHQnJYV0M4aXlxZVdFMmlvYmR3SUl1WFBUTVZxUWIxMm0xZEFrSlZSTzVOZEhuUC9NcHFPdk9nTHFvWkJOSEd5Qmc0R3FtNHNDSkhDeEExYzhFbGZhMlJRVENrMHRBemxsTDR2T25JMUdIa0dKbjY1eG9rR3NhVTRCNEQzNnhoN2VXcmZqNC9wZ1dIbXRvREFZYTh3elN3bzJHVkNaT3MrbXRFZ09RQjkxL2c9PSIgTm9DZXJ0aWZpY2Fkbz0iMzAwMDEwMDAwMDA0MDAwMDI0MzQiIEZvcm1hUGFnbz0iOTkiIFNlbGxvPSJHa0pIODdNbFZZTlMyQnY3R09xVFpRTHFqUU5CeUNTeDBZbFBXcFk3NTBoWldFdVhwMHpGWG9tL1pvSnk2blByRVBpTVhibzhRbm5ibGRKc1FQOCs2blJ5RGhNaFBVdUhDUzJxbGg1d1BNa3VHV0htUzNoVUpVOTR5SlR1bkRXTTdBSzJaTTh2VmZyZ0lheVk0RThOTEcxY2Z1T0UrNW1HTzlwSFFzZHphUE1OcVNUTTRVdDB3dFYwRmZkemxJUi9Oci9lbnZzaTRKZnc5bUdzWVFTcUlZdk12RngvTVNuODhaL1BRU0w1c281RllEaTdjanFWWThXRVdzN3dGbkFrVGhNUXNOd0ZDREhkWVVyWE92Zi9ld01tWEx5UG9EY0N1UDhXblRZMStLZkNNRVo5UmVSdGZRYlYzSzZ0M01UMnVYeUVPUGpScldIbGlKZlRsV01ucnc9PSIgRmVjaGE9IjIwMjItMDUtMjZUMTg6NTk6NTciIEZvbGlvPSIyMDMyODkiIFNlcmllPSJBVENYIiBWZXJzaW9uPSI0LjAiIHhzaTpzY2hlbWFMb2NhdGlvbj0iaHR0cDovL3d3dy5zYXQuZ29iLm14L2NmZC80IGh0dHA6Ly93d3cuc2F0LmdvYi5teC9zaXRpb19pbnRlcm5ldC9jZmQvNC9jZmR2NDAueHNkIiB4bWxuczp0ZENGREk9Imh0dHA6Ly93d3cuc2F0LmdvYi5teC9zaXRpb19pbnRlcm5ldC9jZmQvdGlwb0RhdG9zL3RkQ0ZESSIgeG1sbnM6bnMzPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvVGltYnJlRmlzY2FsRGlnaXRhbCIgeG1sbnM6Y2ZkaT0iaHR0cDovL3d3dy5zYXQuZ29iLm14L2NmZC80IiB4bWxuczpjYXRDRkRJPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvc2l0aW9faW50ZXJuZXQvY2ZkL2NhdGFsb2dvcyIgeG1sbnM6cGFnbzIwPSJodHRwOi8vd3d3LnNhdC5nb2IubXgvUGFnb3MyMCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSI+PGNmZGk6RW1pc29yIFJmYz0iRUtVOTAwMzE3M0M5IiBOb21icmU9IkVTQ1VFTEEgS0VNUEVSIFVSR0FURSIgUmVnaW1lbkZpc2NhbD0iNjAxIiAvPjxjZmRpOlJlY2VwdG9yIFJlZ2ltZW5GaXNjYWxSZWNlcHRvcj0iNjAxIiBEb21pY2lsaW9GaXNjYWxSZWNlcHRvcj0iMDY1MDAiIFVzb0NGREk9IkcwMyIgTm9tYnJlPSJIRUlOWiIgUmZjPSJIRUlOMTIxMTEwUlI2IiAvPjxjZmRpOkNvbmNlcHRvcz48Y2ZkaTpDb25jZXB0byBPYmpldG9JbXA9IjAxIiBEZXNjdWVudG89IjAuMDAiIEltcG9ydGU9IjAuMDEiIFZhbG9yVW5pdGFyaW89IjAuMDEiIERlc2NyaXBjaW9uPSJBTENBVEVMIDUwOThPIFBJWEk0IDYgSU5DSEVTIERPUkFETyBTSU0gODk1MjAwMDAwMDI1MDE5OTc3NTYgSU1FSSAzNTc1MDI0NTE5OTc3NTYiIFVuaWRhZD0iUGllemEiIENsYXZlVW5pZGFkPSJIODciIENhbnRpZGFkPSIxIiBOb0lkZW50aWZpY2FjaW9uPSIzNTc1MDI0NTE5OTc3NTYiIENsYXZlUHJvZFNlcnY9IjQzMTkxNTAxIiAvPjwvY2ZkaTpDb25jZXB0b3M+PC9jZmRpOkNvbXByb2JhbnRlPg=="}} 
+ 
+2022-05-27 12:07:37,898 [10] INFO  App  
+ Info - Envío a timbrar con Diverza.  
+ 
+2022-05-27 12:07:37,899 [10] INFO  App  
+ Info - Request enviado: System.Net.Http.StringContent 
+ 
+2022-05-27 12:07:38,347 [10] INFO  App  
+ Info - Response recibido: StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.HttpConnection+HttpConnectionResponseContent, Headers:
+{
+  Date: Fri, 27 May 2022 17:07:42 GMT
+  Server: Cowboy
+  Cache-Control: must-revalidate, max-age=0, private
+  X-Request-ID: b6k4r2vdhcfp8jj6obg84uc4bpiklgan
+  Connection: close
+  Content-Length: 5730
+  Content-Type: application/json; charset=utf-8
+} 
+ 
+2022-05-27 12:07:38,369 [10] INFO  App  
+ Info - Error de respuesta del timbrado Diverza: [{"sat_error_message":"El campo Nombre del emisor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","sat_error_code":"CFDI40138","message":"El campo Nombre del emisor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","field":"EmisorNombre","code":1450},{"sat_error_message":"El campo Nombre del emisor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Emisor.","sat_error_code":"CFDI40139","message":"El campo Nombre del emisor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Emisor.","field":"EmisorNombre","code":1450},{"sat_error_message":"Este RFC del receptor no existe en la lista de RFC inscritos no cancelados del SAT.","sat_error_code":"CFDI40143","message":"Rfc : HEIN121110RR6 should be Present in L_RFC","field":"Rfc","code":1450},{"sat_error_message":"El campo Nombre del receptor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","sat_error_code":"CFDI40144","message":"El campo Nombre del receptor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","field":"ReceptorNombre","code":1450},{"sat_error_message":"El campo Nombre del receptor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Receptor.","sat_error_code":"CFDI40145","message":"El campo Nombre del receptor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Receptor.","field":"ReceptorNombre","code":1450},{"sat_error_message":"El campo DomicilioFiscalReceptor del receptor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","sat_error_code":"CFDI40147","message":"El campo DomicilioFiscalReceptor del receptor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","field":"DomicilioFiscalReceptor","code":1450},{"sat_error_message":"El campo DomicilioFiscalReceptor del receptor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Receptor.","sat_error_code":"CFDI40148","message":"El campo DomicilioFiscalReceptor del receptor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Receptor.","field":"DomicilioFiscalReceptor","code":1450},{"sat_error_message":"La clave del campo RegimenFiscalR debe corresponder con el tipo de persona (física o moral).","sat_error_code":"CFDI40158","message":"The field RegimenFiscalReceptor with value 601 does not correspond to possible values 605|606|607|608|610|611|612|614|615|616|621|625|626 when the field ERFC = HEIN121110RR6","field":"RegimenFiscalReceptor","code":1450}] 
+ 
+2022-05-27 12:07:38,370 [10] INFO  App  
+ Info - Detalle de error de respuesta del timbrado Diverza: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5340
+} 
+ 
+2022-05-27 12:07:38,374 [10] ERROR App  
+ Error - No se pudo realizar el timbrado con Diverza.  
+ 
+2022-05-27 12:07:38,375 [10] ERROR App  
+ Error - código: ***DIVERZA CODE: 400 
+ 
+2022-05-27 12:07:38,375 [10] ERROR App  
+ Error - detalle: ***DIVERZA DETAILS***: Method: POST, RequestUri: 'https://serviciosdemo.diverza.com/api/v2/documents/stamp', Version: 2.0, Content: System.Net.Http.StringContent, Headers:
+{
+  Content-Type: application/json
+  Content-Length: 5340
+} 
+ 
+2022-05-27 12:07:38,376 [10] ERROR App  
+ Error - message: ***DIVERZA MESSAGE***: [{"sat_error_message":"El campo Nombre del emisor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","sat_error_code":"CFDI40138","message":"El campo Nombre del emisor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","field":"EmisorNombre","code":1450},{"sat_error_message":"El campo Nombre del emisor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Emisor.","sat_error_code":"CFDI40139","message":"El campo Nombre del emisor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Emisor.","field":"EmisorNombre","code":1450},{"sat_error_message":"Este RFC del receptor no existe en la lista de RFC inscritos no cancelados del SAT.","sat_error_code":"CFDI40143","message":"Rfc : HEIN121110RR6 should be Present in L_RFC","field":"Rfc","code":1450},{"sat_error_message":"El campo Nombre del receptor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","sat_error_code":"CFDI40144","message":"El campo Nombre del receptor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","field":"ReceptorNombre","code":1450},{"sat_error_message":"El campo Nombre del receptor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Receptor.","sat_error_code":"CFDI40145","message":"El campo Nombre del receptor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Receptor.","field":"ReceptorNombre","code":1450},{"sat_error_message":"El campo DomicilioFiscalReceptor del receptor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","sat_error_code":"CFDI40147","message":"El campo DomicilioFiscalReceptor del receptor, debe encontrarse en la lista de RFC inscritos no cancelados en el SAT.","field":"DomicilioFiscalReceptor","code":1450},{"sat_error_message":"El campo DomicilioFiscalReceptor del receptor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Receptor.","sat_error_code":"CFDI40148","message":"El campo DomicilioFiscalReceptor del receptor, debe pertenecer al nombre asociado al RFC registrado en el campo Rfc del Receptor.","field":"DomicilioFiscalReceptor","code":1450},{"sat_error_message":"La clave del campo RegimenFiscalR debe corresponder con el tipo de persona (física o moral).","sat_error_code":"CFDI40158","message":"The field RegimenFiscalReceptor with value 601 does not correspond to possible values 605|606|607|608|610|611|612|614|615|616|621|625|626 when the field ERFC = HEIN121110RR6","field":"RegimenFiscalReceptor","code":1450}] 
+ 
+2022-05-27 12:07:38,376 [10] INFO  App  
+ Prepara el envío para timbrar con Seguridata.  
+ 
+2022-05-27 12:07:38,378 [10] INFO  App  
+ Info - Envío a timbrar el documento con Seguridata.  
+ 
+2022-05-27 12:07:38,410 [10] ERROR App  
+ Error- Ocurrio un error al intentar timbrar el archivo con Seguridata. One or more errors occurred. (No such host is known) 
+ 

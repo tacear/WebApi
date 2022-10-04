@@ -1,0 +1,26 @@
+﻿2022-07-05 18:30:37,018 [24] INFO InvoiceAPI.LoggerManager - App  Usuario que solicita el proceso: admin 
+2022-07-05 18:30:38,813 [24] INFO InvoiceAPI.LoggerManager - App  Info - Proceso de digestión el archivo con el número de certificado: 30001000000400002434 
+2022-07-05 18:30:38,885 [24] ERROR InvoiceAPI.LoggerManager - App  Error - Ocurrio un error en el procesamiento del docuemnto.  
+2022-07-05 18:30:38,885 [24] ERROR InvoiceAPI.LoggerManager - App  Error - Mensaje: There are multiple root elements. Line 2, position 2130. 
+2022-07-05 18:30:38,992 [24] ERROR InvoiceAPI.LoggerManager - App  Error - StackTrace:    at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.LoadDocSequence(XmlDocument parentDoc)
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(Stream inStream)
+   at InvoiceAPI.Controllers.InvoicesController.GetEntryXmlDoc(Byte[] Bytes) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 904
+   at InvoiceAPI.Controllers.InvoicesController.ProcesoDigestion(String xmlFile, String numCertificado) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 968 
+2022-07-05 18:30:39,756 [24] INFO InvoiceAPI.LoggerManager - App  Info - Búsqueda del comprobante en la base de datos. 
+2022-07-05 18:30:39,773 [24] ERROR InvoiceAPI.LoggerManager - App  Error - Ocurrió un error en la búsqueda del comprobante en la base de datos. 
+2022-07-05 18:30:39,773 [24] ERROR InvoiceAPI.LoggerManager - App  Error - Mensaje: There are multiple root elements. Line 2, position 2130. 
+2022-07-05 18:30:39,773 [24] ERROR InvoiceAPI.LoggerManager - App  Error - StackTrace:    at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.LoadDocSequence(XmlDocument parentDoc)
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.LoadXml(String xml)
+   at InvoiceAPI.Controllers.InvoicesController.SearchData(String xml) in C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\Controllers\InvoicesController.cs:line 838 

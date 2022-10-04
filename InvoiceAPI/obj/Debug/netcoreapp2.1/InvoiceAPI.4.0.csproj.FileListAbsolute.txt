@@ -1,0 +1,60 @@
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.RazorAssemblyInfo.cache
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.RazorAssemblyInfo.cs
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.dll.config
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.deps.json
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.runtimeconfig.json
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.dll
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.pdb
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.RazorTargetAssemblyInfo.cache
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.dll
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.pdb
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0 - Copy\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.dll.config
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0 - Copy\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.deps.json
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0 - Copy\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.runtimeconfig.json
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0 - Copy\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0 - Copy\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.dll
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0 - Copy\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.pdb
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0 - Copy\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0 - Copy\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0 - Copy\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.RazorAssemblyInfo.cache
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0 - Copy\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.RazorAssemblyInfo.cs
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0 - Copy\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0 - Copy\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0 - Copy\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.RazorTargetAssemblyInfo.cache
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0 - Copy\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.dll
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0 - Copy\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.pdb
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0-CP\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.dll.config
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0-CP\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.deps.json
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0-CP\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.runtimeconfig.json
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0-CP\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0-CP\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.dll
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0-CP\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.pdb
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0-CP\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0-CP\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0-CP\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.RazorAssemblyInfo.cache
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0-CP\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.RazorAssemblyInfo.cs
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0-CP\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0-CP\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0-CP\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.RazorTargetAssemblyInfo.cache
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0-CP\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.dll
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0-CP\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.pdb
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.dll.config
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.deps.json
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.runtimeconfig.json
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.dll
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\bin\Debug\netcoreapp2.1\InvoiceAPI.4.0.pdb
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.RazorAssemblyInfo.cache
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.RazorAssemblyInfo.cs
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.RazorTargetAssemblyInfo.cache
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.dll
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.pdb
+C:\Users\Administrator\source\repos\InvoiceAPI_4.0_adicion\InvoiceAPI\obj\Debug\netcoreapp2.1\InvoiceAPI.4.0.csprojAssemblyReference.cache
